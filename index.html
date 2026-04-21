@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0366d6">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AI 助手">
+<link rel="manifest" href="./manifest.json">
+<title>AI 助手</title>
+<style>
+:root {
+  --primary: #0366d6;
+  --primary-dark: #0256ba;
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --border: #e1e4e8;
+  --text: #24292e;
+  --text-sec: #586069;
+  --accent: #28a745;
+  --danger: #d73a49;
+  --radius: 12px;
+  --nav-h: 60px;
+  --top-h: 56px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; overflow: hidden; }
+body {
+  font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  user-select: none;
+}
+
+/* ── Top Bar ── */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: calc(var(--top-h) + var(--safe-top));
+  padding-top: var(--safe-top);
+  background: var(--primary);
+  color: white;
+  display: flex; align-items: center; justify-content: space-between;
+  padding-left: 16px; padding-right: 8px;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+.topbar-title { font-size: 1.1rem; font-weight: 600; }
+.topbar-subtitle { font-size: 0.75rem; opacity: 0.8; margin-top: 1px; }
+.topbar-info { flex: 1; margin-left: 10px; }
+.topbar-btn {
+  background: rgba(255,255,255,0.15);
+  border: none; color: white;
+  padding: 8px 14px; border-radius: 20px;
+  font-size: 0.85rem; cursor: pointer;
+  display: flex; align-items: center; gap: 6px;
+  transition: background 0.15s;
+}
+.topbar-btn:active { background: rgba(255,255,255,0.3); }
+
+/* ── Content ── */
+.content {
+  position: fixed;
+  top: calc(var(--top-h) + var(--safe-top));
+  bottom: calc(var(--nav-h) + var(--safe-bottom));
+  left: 0; right: 0;
+  overflow: hidden;
+}
+.tab-pane {
+  position: absolute; inset: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0; pointer-events: none;
+  transform: translateX(20px);
+  transition: opacity 0.2s, transform 0.2s;
+  padding: 12px;
+}
+.tab-pane.active {
+  opacity: 1; pointer-events: auto;
+  transform: translateX(0);
+}
+.tab-pane.slide-left { transform: translateX(-20px); }
+
+/* ── Bottom Nav ── */
+.bottom-nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  height: calc(var(--nav-h) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  display: flex; z-index: 100;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.06);
+}
+.nav-btn {
+  flex: 1; border: none; background: none;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  color: var(--text-sec); cursor: pointer;
+  gap: 3px; font-size: 0.7rem;
+  transition: color 0.15s;
+  position: relative;
+}
+.nav-btn svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 2; }
+.nav-btn.active { color: var(--primary); }
+.nav-btn.active::before {
+  content: '';
+  position: absolute; top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 32px; height: 3px;
+  background: var(--primary);
+  border-radius: 0 0 3px 3px;
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.card-top {
+  background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+  color: white; padding: 16px;
+}
+.card-top .repo-num { font-size: 0.7rem; opacity: 0.75; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px; }
+.card-top .repo-name { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
+.card-top .repo-full { font-size: 0.8rem; opacity: 0.7; }
+.card-body { padding: 16px; }
+.summary-box {
+  background: #f1f8ff;
+  border-left: 4px solid var(--primary);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  font-size: 1rem; font-weight: 500;
+  color: var(--primary-dark); margin-bottom: 16px;
+}
+.section-title {
+  font-size: 0.75rem; font-weight: 600; color: var(--text-sec);
+  text-transform: uppercase; letter-spacing: 0.8px;
+  margin-bottom: 8px; margin-top: 14px;
+  display: flex; align-items: center; gap: 6px;
+}
+.highlights { list-style: none; }
+.highlights li {
+  padding: 6px 0 6px 20px; position: relative;
+  font-size: 0.9rem; line-height: 1.5; color: var(--text);
+  border-bottom: 1px solid var(--bg);
+}
+.highlights li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.target-badge {
+  display: inline-block; background: #fff3cd; color: #856404;
+  padding: 6px 12px; border-radius: 20px; font-size: 0.85rem;
+}
+.quickstart-box {
+  background: #1b1f23; color: #e1e4e8;
+  padding: 12px 14px; border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem; line-height: 1.6;
+  white-space: pre-wrap; word-break: break-all;
+}
+.card-actions {
+  display: flex; gap: 8px;
+  padding: 12px 16px; border-top: 1px solid var(--border);
+}
+.btn {
+  flex: 1; padding: 10px;
+  border: none; border-radius: 8px;
+  font-size: 0.9rem; cursor: pointer; font-weight: 500;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.btn:active { opacity: 0.8; transform: scale(0.97); }
+.btn-primary { background: var(--primary); color: white; }
+.btn-ghost { background: var(--bg); color: var(--text); border: 1px solid var(--border); }
+
+/* ── Empty / Loading / Error ── */
+.state-center {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  min-height: 60vh; text-align: center;
+  color: var(--text-sec); padding: 32px; gap: 12px;
+}
+.state-center svg { width: 64px; height: 64px; opacity: 0.3; }
+.state-center p { font-size: 0.95rem; line-height: 1.6; }
+.state-center .hint { font-size: 0.82rem; opacity: 0.7; }
+.spinner {
+  width: 40px; height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── History ── */
+.history-item {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 16px; margin-bottom: 8px;
+  display: flex; align-items: center; cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+.history-item:active { box-shadow: 0 0 0 2px var(--primary); }
+.history-date { font-weight: 600; font-size: 1rem; flex: 1; }
+.history-count { font-size: 0.82rem; color: var(--text-sec); }
+.history-arrow { color: var(--text-sec); margin-left: 8px; }
+.history-today-badge {
+  background: var(--primary); color: white;
+  font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; margin-left: 8px;
+}
+
+/* ── Chat ── */
+#tab-chat { display: flex; flex-direction: column; padding: 0; }
+.chat-messages {
+  flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch;
+  padding: 12px; display: flex; flex-direction: column; gap: 10px;
+}
+.chat-input-row {
+  padding: 10px 12px;
+  padding-bottom: max(10px, env(keyboard-inset-bottom, 0px));
+  background: var(--card); border-top: 1px solid var(--border);
+  display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0;
+}
+#chat-input {
+  flex: 1; border: 1.5px solid var(--border); border-radius: 22px;
+  padding: 10px 16px; font-size: 0.95rem; outline: none;
+  resize: none; max-height: 120px; min-height: 42px;
+  font-family: inherit; background: var(--bg);
+  transition: border-color 0.15s; line-height: 1.4; overflow-y: auto;
+}
+#chat-input:focus { border-color: var(--primary); background: white; }
+#send-btn {
+  width: 42px; height: 42px; background: var(--primary);
+  border: none; border-radius: 50%; color: white; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  transition: background 0.15s, transform 0.1s;
+}
+#send-btn:active { transform: scale(0.9); }
+#send-btn:disabled { background: var(--border); cursor: not-allowed; }
+.bubble {
+  max-width: 85%; padding: 10px 14px; border-radius: 18px;
+  font-size: 0.92rem; line-height: 1.6; word-break: break-word;
+}
+.bubble.user {
+  align-self: flex-end; background: var(--primary); color: white;
+  border-bottom-right-radius: 4px;
+}
+.bubble.ai {
+  align-self: flex-start; background: var(--card);
+  border: 1px solid var(--border); color: var(--text); border-bottom-left-radius: 4px;
+}
+.bubble.ai code { background: #f0f0f0; padding: 1px 5px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.85em; }
+.bubble.ai pre { background: #1b1f23; color: #e1e4e8; padding: 10px; border-radius: 8px; overflow-x: auto; margin-top: 6px; font-size: 0.82em; }
+.bubble.ai pre code { background: none; padding: 0; color: inherit; }
+.bubble.ai strong { font-weight: 600; }
+.bubble.ai ul, .bubble.ai ol { padding-left: 18px; margin: 4px 0; }
+.bubble.ai li { margin-bottom: 2px; }
+.bubble.ai h3, .bubble.ai h2 { font-size: 1em; font-weight: 700; margin: 8px 0 4px; }
+.bubble-time { font-size: 0.68rem; color: var(--text-sec); margin-top: 2px; }
+.typing-indicator {
+  display: flex; gap: 4px; padding: 12px 16px;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 18px; border-bottom-left-radius: 4px; align-self: flex-start;
+}
+.typing-dot {
+  width: 8px; height: 8px; background: var(--text-sec); border-radius: 50%;
+  animation: bounce 1.2s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.3s; }
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-6px); opacity: 1; }
+}
+.chat-welcome { text-align: center; padding: 20px 16px; color: var(--text-sec); }
+.chat-welcome .avatar {
+  width: 56px; height: 56px; background: var(--primary); border-radius: 50%;
+  margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
+}
+.chat-welcome h3 { font-size: 1rem; color: var(--text); margin-bottom: 6px; }
+.chat-welcome p { font-size: 0.85rem; line-height: 1.5; }
+.quick-questions { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 12px; }
+.quick-q {
+  background: var(--bg); border: 1px solid var(--border); border-radius: 16px;
+  padding: 6px 12px; font-size: 0.8rem; color: var(--primary); cursor: pointer; transition: background 0.15s;
+}
+.quick-q:active { background: #dce8f5; }
+
+/* ── Toast ── */
+.toast {
+  position: fixed;
+  bottom: calc(var(--nav-h) + var(--safe-bottom) + 12px);
+  left: 50%; transform: translateX(-50%) translateY(20px);
+  background: #1b1f23; color: white;
+  padding: 10px 20px; border-radius: 22px; font-size: 0.88rem;
+  opacity: 0; transition: opacity 0.2s, transform 0.2s;
+  z-index: 200; white-space: nowrap; pointer-events: none;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ── Settings Modal ── */
+.modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.5); z-index: 300;
+  align-items: center; justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.visible { display: flex; }
+.modal-box {
+  background: var(--card); border-radius: 16px;
+  padding: 24px; width: 100%; max-width: 380px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+.modal-box h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.modal-box .modal-desc { font-size: 0.82rem; color: var(--text-sec); margin-bottom: 16px; line-height: 1.5; }
+.modal-box label { font-size: 0.82rem; color: var(--text-sec); display: block; margin-bottom: 6px; }
+.modal-box input[type=password], .modal-box input[type=text] {
+  width: 100%; border: 1.5px solid var(--border); border-radius: 8px;
+  padding: 10px 14px; font-size: 0.9rem; outline: none;
+  transition: border-color 0.15s; margin-bottom: 16px; font-family: inherit;
+}
+.modal-box input:focus { border-color: var(--primary); }
+.modal-actions { display: flex; gap: 8px; }
+.modal-hint { font-size: 0.75rem; color: var(--text-sec); margin-top: 12px; line-height: 1.6; }
+.modal-hint a { color: var(--primary); }
+
+/* ── Install Banner ── */
+#install-banner {
+  display: none; position: fixed;
+  bottom: calc(var(--nav-h) + var(--safe-bottom) + 8px);
+  left: 12px; right: 12px;
+  background: var(--primary); color: white;
+  border-radius: 12px; padding: 12px 16px; z-index: 150;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2); align-items: center; gap: 10px;
+}
+#install-banner.visible { display: flex; }
+#install-banner p { flex: 1; font-size: 0.88rem; }
+#install-banner button {
+  background: white; color: var(--primary); border: none; border-radius: 20px;
+  padding: 6px 14px; font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<header class="topbar">
+  <svg viewBox="0 0 24 24" width="32" height="32" style="border-radius:8px;background:rgba(255,255,255,0.2);padding:4px;" fill="none" stroke="white" stroke-width="1.5">
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  </svg>
+  <div class="topbar-info">
+    <div class="topbar-title">AI 助手</div>
+    <div class="topbar-subtitle" id="topbar-date">加载中...</div>
+  </div>
+  <button class="topbar-btn" onclick="openSettings()">
+    <svg viewBox="0 0 24 24" width="15" height="15" stroke="white" fill="none" stroke-width="2">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+    </svg>
+    设置
+  </button>
+</header>
+
+<!-- Content Tabs -->
+<main class="content">
+
+  <!-- Tab: Today -->
+  <div id="tab-today" class="tab-pane active">
+    <div id="today-content">
+      <div class="state-center"><div class="spinner"></div><p>正在加载...</p></div>
+    </div>
+  </div>
+
+  <!-- Tab: History -->
+  <div id="tab-history" class="tab-pane">
+    <div id="history-content">
+      <div class="state-center"><div class="spinner"></div></div>
+    </div>
+  </div>
+
+  <!-- Tab: Chat -->
+  <div id="tab-chat" class="tab-pane" style="display:flex;flex-direction:column;">
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-welcome">
+        <div class="avatar">🤖</div>
+        <h3>DeepSeek AI 助手</h3>
+        <p>你可以问我任何技术问题，或者让我深入解读今日推荐的项目</p>
+        <div class="quick-questions">
+          <span class="quick-q" onclick="sendQuick('今天推荐了什么项目？帮我总结一下')">今日精选</span>
+          <span class="quick-q" onclick="sendQuick('最近有哪些值得学习的 AI 开源项目？')">AI 项目</span>
+          <span class="quick-q" onclick="sendQuick('帮我推荐几个提高开发效率的工具')">开发工具</span>
+          <span class="quick-q" onclick="sendQuick('最近 GitHub 上 Rust 语言有什么热门项目？')">Rust 热门</span>
+        </div>
+      </div>
+    </div>
+    <div class="chat-input-row">
+      <textarea id="chat-input" placeholder="问我任何问题..." rows="1"
+        onkeydown="handleChatKey(event)" oninput="autoResize(this)"></textarea>
+      <button id="send-btn" onclick="sendMessage()">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="white" stroke-width="2.5">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</main>
+
+<!-- Bottom Nav -->
+<nav class="bottom-nav">
+  <button class="nav-btn active" data-tab="today" onclick="switchTab('today',this)">
+    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    <span>今日</span>
+  </button>
+  <button class="nav-btn" data-tab="history" onclick="switchTab('history',this)">
+    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>历史</span>
+  </button>
+  <button class="nav-btn" data-tab="chat" onclick="switchTab('chat',this)">
+    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>对话</span>
+  </button>
+</nav>
+
+<!-- Settings Modal -->
+<div class="modal-overlay" id="settings-modal">
+  <div class="modal-box">
+    <h3>⚙️ 设置</h3>
+    <p class="modal-desc">API Key 只保存在你的设备本地，不上传到任何服务器。</p>
+    <label>DeepSeek API Key</label>
+    <input type="password" id="api-key-input" placeholder="sk-xxxxxxxxxxxxxxxx">
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeSettings()">取消</button>
+      <button class="btn btn-primary" onclick="saveSettings()">保存</button>
+    </div>
+    <p class="modal-hint">
+      还没有 Key？前往
+      <a href="https://platform.deepseek.com/api_keys" target="_blank">platform.deepseek.com</a>
+      免费注册获取。
+    </p>
+  </div>
+</div>
+
+<!-- Install Banner -->
+<div id="install-banner">
+  <p>📱 添加到主屏幕，像 App 一样使用</p>
+  <button onclick="installPWA()">安装</button>
+  <button onclick="dismissInstall()" style="background:transparent;color:rgba(255,255,255,0.7);border:none;cursor:pointer;padding:6px;">✕</button>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ── 常量 ────────────────────────────────────────────────────────────────────
+const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions';
+const DEEPSEEK_MODEL   = 'deepseek-chat';
+const SESSION_ID = 'sess_' + Math.random().toString(36).slice(2);
+
+// ── State ───────────────────────────────────────────────────────────────────
+let currentTab = 'today';
+let todayData  = null;
+let deferredInstall = null;
+
+// ── Chat history (safe parse) ─────────────────────────────────────────────
+let chatHistory;
+try {
+  chatHistory = JSON.parse(localStorage.getItem('chat_history') || '[]');
+  if (!Array.isArray(chatHistory)) chatHistory = [];
+} catch(e) {
+  chatHistory = [];
+  try { localStorage.removeItem('chat_history'); } catch(_) {}
+}
+
+// ── Tab switching ────────────────────────────────────────────────────────
+function switchTab(name, btn) {
+  if (currentTab === name) return;
+  const prev = document.getElementById('tab-' + currentTab);
+  const next = document.getElementById('tab-' + name);
+  prev.classList.remove('active');
+  prev.classList.add('slide-left');
+  setTimeout(() => prev.classList.remove('slide-left'), 250);
+  next.classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentTab = name;
+  if (name === 'history') loadHistory();
+  if (name === 'chat') focusChatInput();
+}
+
+// ── Load Today (从静态 JSON 文件) ────────────────────────────────────────
+async function loadToday() {
+  const container = document.getElementById('today-content');
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const yesterStr = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+
+  for (const [date, note] of [[todayStr, ''], [yesterStr, ' (昨日)']]) {
+    try {
+      const res = await fetch('./data/' + date + '.json');
+      if (res.ok) {
+        const data = await res.json();
+        todayData = data;
+        renderPicks(container, data.picks, data.date);
+        document.getElementById('topbar-date').textContent = data.date + note;
+        return;
+      }
+    } catch(e) {}
+  }
+  renderEmpty(container);
+}
+
+// ── Load History ─────────────────────────────────────────────────────────
+async function loadHistory() {
+  const container = document.getElementById('history-content');
+  try {
+    const res = await fetch('./data/index.json');
+    if (!res.ok) throw new Error('暂无历史');
+    const json = await res.json();
+    const today = new Date().toISOString().slice(0, 10);
+    if (!json.dates || json.dates.length === 0) {
+      container.innerHTML = '<div class="state-center"><p>暂无历史记录</p></div>';
+      return;
+    }
+    container.innerHTML = json.dates.map(d => `
+      <div class="history-item" onclick="loadDay('${d}')">
+        <div class="history-date">${d}</div>
+        ${d === today ? '<span class="history-today-badge">今日</span>' : ''}
+        <span class="history-arrow">›</span>
+      </div>`).join('');
+  } catch(e) {
+    container.innerHTML = '<div class="state-center"><p>暂无历史记录</p><p class="hint">数据每天自动更新</p></div>';
+  }
+}
+
+async function loadDay(date) {
+  switchTab('today', document.querySelector('[data-tab="today"]'));
+  const container = document.getElementById('today-content');
+  container.innerHTML = '<div class="state-center"><div class="spinner"></div></div>';
+  try {
+    const res = await fetch('./data/' + date + '.json');
+    if (!res.ok) throw new Error('未找到该日期数据');
+    const data = await res.json();
+    renderPicks(container, data.picks, date);
+    document.getElementById('topbar-date').textContent = date;
+  } catch(e) {
+    renderError(container, e.message);
+  }
+}
+
+// ── Render helpers ────────────────────────────────────────────────────────
+function renderPicks(container, picks, date) {
+  if (!picks || picks.length === 0) { renderEmpty(container); return; }
+  container.innerHTML = picks.map((p, i) => `
+    <div class="card">
+      <div class="card-top">
+        <div class="repo-num">今日精选 ${i+1} / ${picks.length}</div>
+        <div class="repo-name">${p.full_name ? p.full_name.split('/').pop() : '项目'}</div>
+        <div class="repo-full">${escapeHtml(p.full_name || '')}</div>
+      </div>
+      <div class="card-body">
+        <div class="summary-box">${escapeHtml(p.summary || '')}</div>
+        <div class="section-title">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.873 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg>
+          为什么值得关注
+        </div>
+        <ul class="highlights">${(p.highlights||[]).map(h => '<li>' + escapeHtml(h) + '</li>').join('')}</ul>
+        <div class="section-title">👥 适合谁用</div>
+        <div><span class="target-badge">${escapeHtml(p.target_users||'')}</span></div>
+        <div class="section-title">⚡ 快速上手</div>
+        <div class="quickstart-box">${escapeHtml(p.quick_start||'')}</div>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="openUrl('${escapeAttr(p.url||'')}')">访问 GitHub →</button>
+        <button class="btn btn-ghost" onclick="askAbout('${escapeAttr(p.full_name||'')}')">深入了解</button>
+      </div>
+    </div>`).join('');
+}
+
+function renderEmpty(container) {
+  container.innerHTML = `
+    <div class="state-center">
+      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      <p>今日暂无数据</p>
+      <p class="hint">数据由 GitHub Actions 每天自动更新</p>
+    </div>`;
+}
+
+function renderError(container, msg) {
+  container.innerHTML = `
+    <div class="state-center">
+      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5">
+        <circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>
+      </svg>
+      <p>加载失败</p>
+      <p class="hint">${escapeHtml(msg)}</p>
+      <button class="btn btn-ghost" style="margin-top:16px;max-width:200px;" onclick="loadToday()">重试</button>
+    </div>`;
+}
+
+// ── Settings ─────────────────────────────────────────────────────────────
+function openSettings() {
+  const saved = localStorage.getItem('deepseek_api_key') || '';
+  document.getElementById('api-key-input').value = saved;
+  document.getElementById('settings-modal').classList.add('visible');
+}
+
+function closeSettings() {
+  document.getElementById('settings-modal').classList.remove('visible');
+}
+
+function saveSettings() {
+  const key = document.getElementById('api-key-input').value.trim();
+  if (key) {
+    localStorage.setItem('deepseek_api_key', key);
+    showToast('✅ API Key 已保存');
+  } else {
+    localStorage.removeItem('deepseek_api_key');
+    showToast('API Key 已清除');
+  }
+  closeSettings();
+}
+
+// ── Chat ─────────────────────────────────────────────────────────────────
+function renderSavedHistory() {
+  chatHistory.forEach(msg => appendBubble(msg.role, msg.content, msg.time, false));
+}
+
+function appendBubble(role, content, time, save = true) {
+  const msgs = document.getElementById('chat-messages');
+  const welcome = msgs.querySelector('.chat-welcome');
+  if (welcome && role === 'user') welcome.remove();
+
+  const div = document.createElement('div');
+  div.className = 'bubble ' + (role === 'user' ? 'user' : 'ai');
+  div.innerHTML = role === 'user' ? escapeHtml(content) : renderMarkdown(content);
+  msgs.appendChild(div);
+
+  if (time) {
+    const t = document.createElement('div');
+    t.className = 'bubble-time';
+    t.style.textAlign = role === 'user' ? 'right' : 'left';
+    t.textContent = time;
+    msgs.appendChild(t);
+  }
+  msgs.scrollTop = msgs.scrollHeight;
+
+  if (save) {
+    chatHistory.push({ role, content, time: time || '' });
+    if (chatHistory.length > 100) chatHistory = chatHistory.slice(-100);
+    try { localStorage.setItem('chat_history', JSON.stringify(chatHistory)); } catch(_) {}
+  }
+}
+
+function showTyping() {
+  const msgs = document.getElementById('chat-messages');
+  const el = document.createElement('div');
+  el.className = 'typing-indicator'; el.id = 'typing';
+  el.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+  msgs.appendChild(el);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function hideTyping() {
+  const el = document.getElementById('typing');
+  if (el) el.remove();
+}
+
+async function sendMessage() {
+  const input = document.getElementById('chat-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+
+  const apiKey = localStorage.getItem('deepseek_api_key');
+  if (!apiKey) {
+    openSettings();
+    showToast('⚠️ 请先设置 API Key');
+    return;
+  }
+
+  input.value = '';
+  input.style.height = '';
+  document.getElementById('send-btn').disabled = true;
+
+  const time = new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+  appendBubble('user', msg, time);
+  showTyping();
+
+  const systemContent = '你是一个专注技术领域的 AI 助手，擅长解读开源项目和分析技术趋势。'
+    + '用中文回答，简洁清晰，适当使用 Markdown 格式（代码用代码块，重点用加粗）。'
+    + (todayData ? '\n\n当前用户正在查看的 GitHub 项目：' + (todayData.picks||[]).map(p => p.full_name).join(', ') : '');
+
+  const messages = [
+    { role: 'system', content: systemContent },
+    ...chatHistory.slice(-20),
+    { role: 'user', content: msg }
+  ];
+
+  try {
+    const res = await fetch(DEEPSEEK_API_URL, {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Bearer ' + apiKey,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: DEEPSEEK_MODEL,
+        messages,
+        temperature: 0.7,
+        max_tokens: 2000
+      })
+    });
+    const json = await res.json();
+    hideTyping();
+    if (json.choices && json.choices[0]) {
+      appendBubble('ai', json.choices[0].message.content, time);
+    } else {
+      const errMsg = json.error ? json.error.message : JSON.stringify(json);
+      appendBubble('ai', '请求失败：' + errMsg, time);
+    }
+  } catch(e) {
+    hideTyping();
+    appendBubble('ai', '网络错误：' + e.message, time);
+  } finally {
+    document.getElementById('send-btn').disabled = false;
+    document.getElementById('chat-input').focus();
+  }
+}
+
+function sendQuick(text) {
+  document.getElementById('chat-input').value = text;
+  sendMessage();
+}
+
+function handleChatKey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+}
+
+function autoResize(el) {
+  el.style.height = '';
+  el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+}
+
+function askAbout(repoName) {
+  switchTab('chat', document.querySelector('[data-tab="chat"]'));
+  setTimeout(() => {
+    document.getElementById('chat-input').value = '请详细介绍一下 ' + repoName + ' 这个项目，包括核心架构、主要功能和实际使用场景';
+    sendMessage();
+  }, 300);
+}
+
+function focusChatInput() {
+  setTimeout(() => document.getElementById('chat-input').focus(), 400);
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────
+function openUrl(url) { if (url) window.open(url, '_blank'); }
+
+function escapeHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function escapeAttr(s) {
+  return String(s).replace(/'/g, '&#39;').replace(/"/g, '&quot;');
+}
+
+function showToast(msg, duration = 3000) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), duration);
+}
+
+function renderMarkdown(text) {
+  let s = escapeHtml(text);
+  s = s.replace(/```(\w*)\n?([\s\S]*?)```/g, '<pre><code>$2</code></pre>');
+  s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+  s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+  s = s.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+  s = s.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+  s = s.replace(/^[*-] (.+)$/gm, '<li>$1</li>');
+  s = s.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+  s = s.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+  s = s.replace(/\n\n/g, '</p><p>');
+  s = s.replace(/\n/g, '<br>');
+  return '<p>' + s + '</p>';
+}
+
+// ── PWA Install ───────────────────────────────────────────────────────────
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredInstall = e;
+  document.getElementById('install-banner').classList.add('visible');
+});
+
+async function installPWA() {
+  if (!deferredInstall) return;
+  deferredInstall.prompt();
+  await deferredInstall.userChoice;
+  deferredInstall = null;
+  document.getElementById('install-banner').classList.remove('visible');
+}
+
+function dismissInstall() {
+  document.getElementById('install-banner').classList.remove('visible');
+}
+
+// ── Service Worker ─────────────────────────────────────────────────────────
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('topbar-date').textContent =
+    new Date().toLocaleDateString('zh-CN', { year:'numeric', month:'2-digit', day:'2-digit' });
+  loadToday();
+  renderSavedHistory();
+
+  // 首次使用提示设置 API Key
+  if (!localStorage.getItem('deepseek_api_key')) {
+    setTimeout(openSettings, 800);
+  }
+
+  // 点击 modal 外部关闭
+  document.getElementById('settings-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeSettings();
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-20",
+  "picks": [
+    {
+      "full_name": "paperless-ngx/paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "summary": "社区驱动的超级文档管理系统",
+      "highlights": [
+        "技术价值：作为开源文档管理系统的标杆，它集成了OCR、智能标签、全文搜索和自动化工作流，将物理文档数字化并实现智能化管理，技术栈成熟且功能全面。",
+        "实用性强：直接解决了个人和团队（如家庭、小型企业、开发者）的纸质文档堆积、难以查找和归档的痛点，支持从扫描到归档的全流程，是提升效率的利器。",
+        "社区活跃：项目拥有近4万星，今日新增近400星，社区支持强劲，插件丰富，持续迭代，避免了私有云服务的供应商锁定问题。"
+      ],
+      "target_users": "个人用户、家庭、小型团队、自由职业者、任何希望将纸质文件数字化并实现高效检索和管理的人。",
+      "quick_start": "1. 确保已安装Docker和Docker Compose。2. 克隆项目仓库。3. 复制并调整`docker-compose.yml`和`.env`文件。4. 运行`docker-compose up -d`。5. 在浏览器中访问 `http://localhost:8000` 即可开始上传或扫描文档。"
+    },
+    {
+      "full_name": "openai/openai-agents-python",
+      "url": "https://github.com/openai/openai-agents-python",
+      "summary": "OpenAI官方轻量级多智能体框架",
+      "highlights": [
+        "技术创新：由OpenAI官方发布，代表了其对于AI智能体（Agent）工作流构建的最新思考和最佳实践。框架设计轻量但强大，专注于简化多智能体协作的复杂性。",
+        "对开发者帮助大：为开发者构建复杂的AI应用（如自动化客服、工作流编排、多步骤任务处理）提供了官方、可靠的脚手架和模式，能显著降低开发门槛和集成成本。",
+        "生态与前景：作为OpenAI生态的重要补充，它很可能成为未来AI智能体开发的事实标准之一，早期关注和学习有助于跟上技术趋势，并利用其与OpenAI API的无缝集成能力。"
+      ],
+      "target_users": "AI应用开发者、研究人、希望构建复杂自动化工作流或探索多智能体协作的工程师、以及任何对基于大模型的智能体开发感兴趣的技术人员。",
+      "quick_start": "1. 确保Python环境（建议3.10+）。2. 使用pip安装：`pip install openai-agents`。3. 设置OpenAI API密钥环境变量。4. 访问项目README，复制并运行一个简单的“对话代理”或“工具使用代理”的示例代码，即可在本地与智能体交互。"
+    }
+  ]
+}

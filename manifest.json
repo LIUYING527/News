@@ -1,0 +1,19 @@
+{
+  "name": "GitHub 精选 · AI 助手",
+  "short_name": "AI 助手",
+  "description": "每日 GitHub 精选 + DeepSeek AI 对话助手",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0366d6",
+  "theme_color": "#0366d6",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
