@@ -697,7 +697,10 @@ async function sendMessage() {
 
   const messages = [
     { role: 'system', content: systemContent },
-    ...chatHistory.slice(-20),
+    ...chatHistory.slice(-20).map(m => ({
+      role: m.role === 'ai' ? 'assistant' : m.role,
+      content: m.content
+    })),
     { role: 'user', content: msg }
   ];
 
@@ -718,7 +721,7 @@ async function sendMessage() {
     const json = await res.json();
     hideTyping();
     if (json.choices && json.choices[0]) {
-      appendBubble('ai', json.choices[0].message.content, time);
+      appendBubble('assistant', json.choices[0].message.content, time);
     } else {
       const errMsg = json.error ? json.error.message : JSON.stringify(json);
       appendBubble('ai', '请求失败：' + errMsg, time);
