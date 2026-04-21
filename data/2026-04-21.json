@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-21",
+  "picks": [
+    {
+      "full_name": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "summary": "利用WiFi信号实现人体姿态估计",
+      "highlights": [
+        "技术创新：将普通WiFi信号转化为实时人体姿态、生命体征和存在检测，无需任何摄像头或图像数据，在隐私保护和硬件成本上具有颠覆性优势。",
+        "应用潜力巨大：可广泛应用于智能家居（无感存在检测）、医疗健康（非接触式生命体征监测）、安防监控（隔墙感知）以及隐私敏感环境下的行为分析。",
+        "技术栈先进：基于Rust语言开发，保证了高性能和内存安全，项目本身是前沿无线感知（WiFi Sensing）与计算机视觉（DensePose）的交叉领域研究工程化典范。"
+      ],
+      "target_users": "物联网（IoT）开发者、计算机视觉/感知算法研究员、智能家居/智慧建筑产品经理、关注隐私安全的安防系统开发者、以及对无线信号处理感兴趣的学生和工程师。",
+      "quick_start": "1. 克隆仓库：`git clone https://github.com/ruvnet/RuView.git`；2. 按照README中的硬件要求（支持监控模式的WiFi网卡）准备环境；3. 运行提供的示例脚本或Docker容器，在指定区域移动，观察终端输出的实时姿态或存在检测结果。"
+    },
+    {
+      "full_name": "paperless-ngx/paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "summary": "强大的开源个人/团队文档管理系统",
+      "highlights": [
+        "实用性强，解决普遍痛点：完美解决个人和团队纸质文件数字化、归档混乱、检索困难的问题。支持扫描、自动OCR文字识别、智能标签分类和全文搜索，是构建个人知识库或团队文档中心的利器。",
+        "生态成熟，社区活跃：作为paperless项目的继任者，拥有近4万Star和活跃的社区支持，功能持续迭代，插件丰富（如邮件集成），部署方式多样（Docker, 裸机安装）。",
+        "技术栈稳健，自主可控：基于Python/Django开发，使用PostgreSQL数据库，所有数据自托管，完全掌控隐私。其文档解析、索引和检索架构对开发者有很好的学习参考价值。"
+      ],
+      "target_users": "任何希望实现无纸化办公的个人用户、小型团队或家庭；需要管理大量合同、票据、档案的行政、财务或法务人员；寻求替代商业文档管理系统的开发者及企业IT管理员。",
+      "quick_start": "1. 使用Docker Compose最快体验：`git clone`项目后，复制`docker-compose.yml`和`.env.example`文件并配置；2. 运行`docker-compose up -d`启动服务；3. 浏览器访问 `http://localhost:8000`，使用默认账户登录，即可开始上传PDF或图片文档，系统会自动处理并建立索引。"
+    }
+  ]
+}
