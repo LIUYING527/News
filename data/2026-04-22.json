@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-22",
+  "picks": [
+    {
+      "full_name": "Fincept-Corporation/FinceptTerminal",
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "summary": "面向开发者的现代金融数据分析终端",
+      "highlights": [
+        "技术整合度高：基于Python构建，集成了先进的金融市场分析、投资研究和经济数据工具，为开发者提供了一个可编程、可扩展的金融数据探索平台。",
+        "实用性强且开源：直接解决了金融科技开发者、量化分析师获取和处理专业金融数据的痛点，开源模式允许深度定制和集成到现有工作流中。",
+        "增长势头迅猛：单日新增超过2500星，表明项目解决了市场强烈需求，社区活跃度和关注度极高，生态有望快速成熟。"
+      ],
+      "target_users": "金融科技开发者、量化交易员、数据分析师、对金融市场感兴趣并希望用代码进行数据驱动决策的研究人员。",
+      "quick_start": "1. 克隆项目仓库 `git clone https://github.com/Fincept-Corporation/FinceptTerminal.git`。2. 按照README中的安装指南，使用pip或conda安装依赖。3. 运行主程序或示例脚本，通常是一个命令如 `python main.py` 或 `streamlit run app.py`，即可启动本地分析终端界面。"
+    },
+    {
+      "full_name": "sansan0/TrendRadar",
+      "url": "https://github.com/sansan0/TrendRadar",
+      "summary": "AI驱动的多平台舆情与趋势监控系统",
+      "highlights": [
+        "技术创新与集成：深度融合AI能力（智能筛选、翻译、分析简报）与MCP（Model Context Protocol）架构，使AI助手能直接对话式分析舆情数据，超越了传统爬虫+RSS的监控工具。",
+        "场景覆盖全面：支持从多平台聚合信息到智能推送的完整链路，集成了微信、飞书、钉钉等几乎所有主流通知渠道，开箱即用，实用性强。",
+        "架构灵活且注重隐私：支持Docker部署，数据可本地或云端自持，满足了企业对数据隐私和安全的需求，同时提供了强大的自定义和扩展能力。"
+      ],
+      "target_users": "需要监控品牌舆情、市场趋势的开发者、运营人员、产品经理、市场分析师，以及任何希望用自动化工具管理信息流、告别信息过载的互联网从业者。",
+      "quick_start": "1. 使用Docker快速部署：`docker run -d -p 3000:3000 --name trendradar [镜像名]`（具体镜像名参考项目README）。2. 访问本地 `http://localhost:3000` 进入Web配置界面。3. 在界面中添加需要监控的RSS源或平台关键词，并配置一个简单的AI分析任务或推送渠道，即可立即收到测试信息。"
+    }
+  ]
+}
