@@ -6,7 +6,7 @@
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta, date
 
 import requests
 from bs4 import BeautifulSoup
@@ -68,7 +68,24 @@ def fetch_trending(limit: int = 15) -> list[dict]:
     return repos
 
 
-# ─── 2. AI 筛选与讲解 ────────────────────────────────────────────────────
+# ─── 2. 加载近期已推送项目（避免重复）───────────────────────────────────
+
+def load_recent_picks(days: int = 3) -> set:
+    recent = set()
+    today = date.today()
+    for i in range(1, days + 1):
+        path = os.path.join(DATA_DIR, f"{today - timedelta(days=i)}.json")
+        if os.path.exists(path):
+            try:
+                with open(path, encoding="utf-8") as f:
+                    for p in json.load(f).get("picks", []):
+                        recent.add(p["full_name"])
+            except Exception:
+                pass
+    return recent
+
+
+# ─── 3. AI 筛选与讲解 ────────────────────────────────────────────────────
 
 def ai_select_and_explain(repos: list[dict]) -> list[dict]:
     repo_list_text = "\n".join(
@@ -120,7 +137,7 @@ full_name, url, summary, highlights(数组), target_users, quick_start
     return json.loads(raw.strip())
 
 
-# ─── 3. 保存数据并更新索引 ───────────────────────────────────────────────
+# ─── 4. 保存数据并更新索引 ───────────────────────────────────────────────
 
 def save_daily(picks: list[dict]) -> str:
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -162,7 +179,15 @@ def main():
 
     print("正在抓取 GitHub Trending...")
     repos = fetch_trending(limit=15)
-    print(f"获取到 {len(repos)} 个项目，正在 AI 分析...")
+    print(f"获取到 {len(repos)} 个项目，过滤近期重复项目...")
+
+    recent = load_recent_picks(days=3)
+    if recent:
+        before = len(repos)
+        repos = [r for r in repos if r["full_name"] not in recent]
+        print(f"过滤掉 {before - len(repos)} 个近3天已推送项目，剩余 {len(repos)} 个候选")
+
+    print("正在 AI 分析...")
     picks = ai_select_and_explain(repos)
     path  = save_daily(picks)
     print(f"✅ 已保存到 {path}")
