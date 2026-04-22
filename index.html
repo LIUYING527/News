@@ -10,6 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="AI 助手">
 <link rel="manifest" href="./manifest.json">
 <title>AI 助手</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <style>
 :root {
   --primary: #0366d6;
@@ -327,6 +328,20 @@ body {
 .modal-hint { font-size: 0.75rem; color: var(--text-sec); margin-top: 12px; line-height: 1.6; }
 .modal-hint a { color: var(--primary); }
 
+/* ── Auth ── */
+.auth-btn {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: none; color: white; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s; margin-right: 6px; flex-shrink: 0;
+}
+.auth-btn:active { background: rgba(255,255,255,0.3); }
+.auth-btn.logged-in { background: rgba(40,167,69,0.5); }
+.auth-tabs { display: flex; border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 16px; }
+.auth-tabs button { flex: 1; border: none; padding: 9px; font-size: 0.88rem; cursor: pointer; background: var(--bg); color: var(--text-sec); }
+.auth-tabs button.active { background: var(--primary); color: white; }
+
 /* ── Install Banner ── */
 #install-banner {
   display: none; position: fixed;
@@ -355,6 +370,12 @@ body {
     <div class="topbar-title">AI 助手</div>
     <div class="topbar-subtitle" id="topbar-date">加载中...</div>
   </div>
+  <button class="auth-btn" id="auth-btn" onclick="openAuthModal()" title="账号同步">
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="white" fill="none" stroke-width="2">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+      <circle cx="12" cy="7" r="4"/>
+    </svg>
+  </button>
   <button class="topbar-btn" onclick="openSettings()">
     <svg viewBox="0 0 24 24" width="15" height="15" stroke="white" fill="none" stroke-width="2">
       <circle cx="12" cy="12" r="3"/>
@@ -452,10 +473,125 @@ body {
   <button onclick="dismissInstall()" style="background:transparent;color:rgba(255,255,255,0.7);border:none;cursor:pointer;padding:6px;">✕</button>
 </div>
 
+<!-- Auth Modal -->
+<div class="modal-overlay" id="auth-modal">
+  <div class="modal-box">
+    <div id="auth-login-view">
+      <h3>🔐 账号同步</h3>
+      <p class="modal-desc">登录后聊天记录自动同步，换浏览器也不丢失。</p>
+      <div class="auth-tabs">
+        <button class="active" onclick="setAuthMode('login')">登录</button>
+        <button onclick="setAuthMode('register')">注册</button>
+      </div>
+      <label>邮箱</label>
+      <input type="text" id="auth-email" placeholder="your@email.com" autocomplete="email">
+      <label>密码</label>
+      <input type="password" id="auth-password" placeholder="至少6位" autocomplete="current-password">
+      <div class="modal-actions">
+        <button class="btn btn-ghost" onclick="closeAuthModal()">取消</button>
+        <button class="btn btn-primary" id="auth-submit-btn" onclick="submitAuth()">登录</button>
+      </div>
+    </div>
+    <div id="auth-user-view" style="display:none;text-align:center;padding:8px 0;">
+      <div style="font-size:2.5rem;margin-bottom:10px;">👤</div>
+      <div id="auth-user-email" style="font-weight:600;margin-bottom:4px;word-break:break-all;"></div>
+      <div style="font-size:0.8rem;color:var(--text-sec);margin-bottom:20px;">已登录 · 聊天记录自动同步 ☁️</div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" onclick="closeAuthModal()">关闭</button>
+        <button class="btn btn-ghost" style="color:var(--danger)" onclick="logoutUser()">退出登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
 <script>
+// ── Supabase Auth & Sync ─────────────────────────────────────────────────
+const sb = supabase.createClient(
+  'https://wzlypptsytnqfsmwxpzf.supabase.co',
+  'sb_publishable_9rXFdTyDO2yai9uLBRJSNQ_6irPiu6E'
+);
+const APP_NAME = 'news';
+let sbUser = null, syncTimer = null;
+
+async function initAuth() {
+  const { data: { session } } = await sb.auth.getSession();
+  if (session) { sbUser = session.user; updateAuthUI(); await loadCloudData(); }
+  sb.auth.onAuthStateChange((_e, session) => { sbUser = session?.user || null; updateAuthUI(); });
+}
+
+function updateAuthUI() {
+  document.getElementById('auth-btn').classList.toggle('logged-in', !!sbUser);
+}
+
+let authMode = 'login';
+function setAuthMode(mode) {
+  authMode = mode;
+  const tabs = document.querySelectorAll('.auth-tabs button');
+  tabs[0].classList.toggle('active', mode === 'login');
+  tabs[1].classList.toggle('active', mode === 'register');
+  document.getElementById('auth-submit-btn').textContent = mode === 'login' ? '登录' : '注册';
+}
+
+function openAuthModal() {
+  document.getElementById('auth-login-view').style.display = sbUser ? 'none' : 'block';
+  document.getElementById('auth-user-view').style.display = sbUser ? 'block' : 'none';
+  if (sbUser) document.getElementById('auth-user-email').textContent = sbUser.email;
+  document.getElementById('auth-modal').classList.add('visible');
+}
+
+function closeAuthModal() { document.getElementById('auth-modal').classList.remove('visible'); }
+
+async function submitAuth() {
+  const email = document.getElementById('auth-email').value.trim();
+  const password = document.getElementById('auth-password').value;
+  if (!email || !password) { showToast('请填写邮箱和密码'); return; }
+  const btn = document.getElementById('auth-submit-btn');
+  btn.disabled = true; btn.textContent = '请稍候...';
+  const { data, error } = await (authMode === 'login'
+    ? sb.auth.signInWithPassword({ email, password })
+    : sb.auth.signUp({ email, password }));
+  if (error) {
+    showToast('❌ ' + error.message);
+  } else if (authMode === 'login') {
+    sbUser = data.user; updateAuthUI();
+    await loadCloudData();
+    showToast('✅ 登录成功，数据已同步'); closeAuthModal();
+  } else {
+    showToast('✅ 注册成功！请查收验证邮件后登录'); setAuthMode('login');
+  }
+  btn.disabled = false; btn.textContent = authMode === 'login' ? '登录' : '注册';
+}
+
+async function logoutUser() {
+  await sb.auth.signOut(); sbUser = null; updateAuthUI(); closeAuthModal(); showToast('已退出登录');
+}
+
+async function loadCloudData() {
+  if (!sbUser) return;
+  const { data } = await sb.from('sync_data')
+    .select('data').eq('user_id', sbUser.id).eq('app_name', APP_NAME).single();
+  if (!data?.data?.chat_history?.length) return;
+  chatHistory = data.data.chat_history;
+  try { localStorage.setItem('chat_history', JSON.stringify(chatHistory)); } catch(_) {}
+  const msgs = document.getElementById('chat-messages');
+  msgs.querySelectorAll('.bubble, .bubble-time').forEach(el => el.remove());
+  chatHistory.forEach(m => appendBubble(m.role, m.content, m.time, false));
+}
+
+async function saveCloudData() {
+  if (!sbUser) return;
+  await sb.from('sync_data').upsert({
+    user_id: sbUser.id, app_name: APP_NAME,
+    data: { chat_history: chatHistory, saved_at: new Date().toISOString() },
+    updated_at: new Date().toISOString()
+  }, { onConflict: 'user_id,app_name' });
+}
+
+function scheduleSave() { clearTimeout(syncTimer); syncTimer = setTimeout(saveCloudData, 3000); }
+
 // ── 常量 ────────────────────────────────────────────────────────────────────
 const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions';
 const DEEPSEEK_MODEL   = 'deepseek-chat';
@@ -654,6 +790,7 @@ function appendBubble(role, content, time, save = true) {
     chatHistory.push({ role, content, time: time || '' });
     if (chatHistory.length > 100) chatHistory = chatHistory.slice(-100);
     try { localStorage.setItem('chat_history', JSON.stringify(chatHistory)); } catch(_) {}
+    scheduleSave();
   }
 }
 
@@ -825,15 +962,15 @@ document.addEventListener('DOMContentLoaded', () => {
     new Date().toLocaleDateString('zh-CN', { year:'numeric', month:'2-digit', day:'2-digit' });
   loadToday();
   renderSavedHistory();
+  initAuth();
 
-  // 首次使用提示设置 API Key
-  if (!localStorage.getItem('deepseek_api_key')) {
-    setTimeout(openSettings, 800);
-  }
+  if (!localStorage.getItem('deepseek_api_key')) setTimeout(openSettings, 800);
 
-  // 点击 modal 外部关闭
   document.getElementById('settings-modal').addEventListener('click', function(e) {
     if (e.target === this) closeSettings();
+  });
+  document.getElementById('auth-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeAuthModal();
   });
 });
 </script>
