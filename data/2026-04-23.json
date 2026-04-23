@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-23",
+  "picks": [
+    {
+      "full_name": "langfuse/langfuse",
+      "url": "https://github.com/langfuse/langfuse",
+      "summary": "开源LLM工程平台",
+      "highlights": [
+        "提供LLM应用全栈可观测性：集成了追踪、评估、提示词管理、数据集管理等功能，帮助开发者系统性调试、分析和优化基于LLM的应用，是构建可靠AI产品的关键基础设施。",
+        "生态兼容性强：无缝集成LangChain、OpenAI SDK、LiteLLM等主流开发库，并支持OpenTelemetry标准，可轻松接入现有技术栈，降低集成成本。",
+        "开源且功能完整：作为YC W23项目，它提供了媲美商业产品的完整功能（如生产环境监控、A/B测试、基于反馈的再训练），同时保持开源透明，社区活跃，迭代迅速。"
+      ],
+      "target_users": "所有开发基于大语言模型（LLM）应用的工程师、研究者和产品团队，尤其是需要将AI功能部署到生产环境、关注效果、成本和稳定性的团队。",
+      "quick_start": "1. 访问官方演示平台 (https://cloud.langfuse.com) 直接体验。2. 本地使用：`docker compose up -d` 一键部署。3. 在现有代码中，安装SDK (`npm install langfuse`)，添加几行追踪代码，即可在Langfuse仪表板查看请求详情、延迟和token消耗。"
+    },
+    {
+      "full_name": "HKUDS/RAG-Anything",
+      "url": "https://github.com/HKUDS/RAG-Anything",
+      "summary": "一体化RAG框架",
+      "highlights": [
+        "“All-in-One”设计理念：将RAG（检索增强生成）流程中的文档加载、解析、向量化、检索、重排、生成等环节高度模块化和集成，提供开箱即用的统一解决方案，极大简化了RAG系统的搭建和实验流程。",
+        "支持多模态与任意数据源：不仅限于文本，框架设计旨在支持图像、音频等多模态数据的检索与生成，标题“RAG-Anything”体现了其面向任意数据类型的雄心，拓展了RAG技术的应用边界。",
+        "由顶尖学术团队维护：来自香港大学数据科学实验室，保证了项目的技术前瞻性和代码质量，适合希望基于坚实学术基础进行二次开发或研究的研究人员和工程师。"
+      ],
+      "target_users": "需要快速构建或实验RAG应用的AI工程师、算法研究员、以及任何想为现有系统（如客服、知识库、内容创作）添加智能文档问答和生成能力开发者。",
+      "quick_start": "1. 克隆项目：`git clone https://github.com/HKUDS/RAG-Anything.git`。2. 按照README，使用提供的Docker Compose文件快速启动所有依赖服务（如向量数据库）。3. 运行示例脚本，体验从加载本地PDF文档到进行智能问答的完整流程。"
+    }
+  ]
+}
