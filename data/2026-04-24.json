@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-24",
+  "picks": [
+    {
+      "full_name": "cline/cline",
+      "url": "https://github.com/cline/cline",
+      "summary": "IDE内自主编码助手",
+      "highlights": [
+        "完全自主：可创建/编辑文件、执行命令、使用浏览器，全程需用户授权，安全可控",
+        "深度集成：直接嵌入VS Code等IDE，无需切换工具，提升开发效率",
+        "社区活跃：60k+ stars，持续更新，适合各类编码场景"
+      ],
+      "target_users": "所有使用IDE的开发者，尤其是需要快速原型开发、代码重构或自动化任务的工程师",
+      "quick_start": "在VS Code中安装Cline扩展，打开项目，通过聊天窗口输入自然语言指令（如“创建一个REST API端点”），Cline将自动生成代码并执行"
+    },
+    {
+      "full_name": "zilliztech/claude-context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "summary": "代码搜索MCP工具",
+      "highlights": [
+        "全仓上下文：将整个代码库作为Claude Code的上下文，支持精准语义搜索，无需手动片段",
+        "高效协作：基于MCP协议，无缝集成Claude Code，提升代码理解和生成质量",
+        "实用性强：8k+ stars，今日新增1k+，适合大型项目代码导航和调试"
+      ],
+      "target_users": "使用Claude Code的AI编程用户，以及需要快速理解或导航大型代码库的开发者",
+      "quick_start": "安装claude-context MCP服务器（npm install -g claude-context），在Claude Code中配置后，输入“搜索代码中所有数据库连接方法”即可获得结果"
+    }
+  ]
+}
