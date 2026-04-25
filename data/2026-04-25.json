@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-25",
+  "picks": [
+    {
+      "full_name": "huggingface/ml-intern",
+      "url": "https://github.com/huggingface/ml-intern",
+      "summary": "开源ML工程师代理",
+      "highlights": [
+        "自动完成论文阅读、模型训练和部署，极大降低ML工程门槛",
+        "基于Hugging Face生态，直接复用社区模型与数据集",
+        "适合快速验证研究思路或自动化重复性ML任务"
+      ],
+      "target_users": "机器学习工程师、研究人员、希望自动化ML工作流的开发者",
+      "quick_start": "克隆仓库后运行 `pip install -r requirements.txt && python ml_intern.py --task 'train a sentiment model on IMDB'`"
+    },
+    {
+      "full_name": "microsoft/typescript-go",
+      "url": "https://github.com/microsoft/typescript-go",
+      "summary": "TypeScript原生Go移植版",
+      "highlights": [
+        "微软官方开发，将TypeScript编译器用Go重写，性能有望大幅提升",
+        "保留完整TS类型系统和兼容性，未来可能替代现有编译器",
+        "对大型项目编译速度优化至关重要，尤其适合CI/CD场景"
+      ],
+      "target_users": "TypeScript全栈开发者、前端架构师、工具链开发者",
+      "quick_start": "克隆仓库后运行 `go build -o tsc cmd/tsc/main.go && ./tsc --version`"
+    }
+  ]
+}
