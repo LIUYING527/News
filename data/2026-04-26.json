@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-26",
+  "picks": [
+    {
+      "full_name": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "summary": "一站式开发者产品分析平台",
+      "highlights": [
+        "集产品分析、会话回放、错误追踪、功能开关、实验、调查、数据仓库、CDP、AI助手于一体，替代多个独立工具",
+        "开源自托管，数据完全可控，适合对隐私敏感或需要定制化的团队",
+        "社区活跃（33k+ stars），文档完善，支持Python/JS等主流语言SDK，集成成本低"
+      ],
+      "target_users": "全栈开发者、产品经理、SaaS创业团队、需要自建用户分析体系的开发者",
+      "quick_start": "docker run -e POSTHOG_HOST=http://localhost:8010 posthog/posthog:latest -p 8010:8010，访问http://localhost:8010即可完成初始配置并开始接入"
+    },
+    {
+      "full_name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "summary": "从零复刻各种技术的教程集合",
+      "highlights": [
+        "涵盖Git、数据库、Docker、Redis、编译器、操作系统等50+热门技术，每个项目都有详细步骤和代码示例",
+        "实战驱动学习，适合想深入理解底层原理的开发者，而非简单使用API",
+        "持续更新，社区贡献活跃（495k+ stars），是开源教育领域的标杆项目"
+      ],
+      "target_users": "中高级开发者、计算机专业学生、技术面试准备者、对系统设计感兴趣的工程师",
+      "quick_start": "打开仓库README，选择感兴趣的技术（如“Build your own Git”），按教程从零开始编写核心逻辑，通常1小时内可完成基础实现"
+    }
+  ]
+}
