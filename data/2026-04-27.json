@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-27",
+  "picks": [
+    {
+      "full_name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "summary": "浏览器端代码知识图谱引擎",
+      "highlights": [
+        "无需服务器，直接在浏览器中分析GitHub仓库或ZIP文件，生成交互式代码知识图谱，并内置Graph RAG Agent用于智能问答",
+        "零部署成本，隐私安全（所有计算在本地完成），适合快速探索大型代码库的依赖关系和架构",
+        "结合知识图谱与检索增强生成（RAG），可让开发者像聊天一样询问代码结构、函数调用关系等"
+      ],
+      "target_users": "需要快速理解陌生代码库的前后端开发者、代码审查者、以及技术文档编写者",
+      "quick_start": "打开项目页面，拖入一个GitHub仓库链接或ZIP文件，浏览器即自动生成知识图谱，可直接点击节点或通过内置Agent提问"
+    },
+    {
+      "full_name": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "summary": "AI桌面操控的开源基础设施",
+      "highlights": [
+        "提供沙箱、SDK和基准测试，用于训练和评估能控制完整桌面（macOS/Linux/Windows）的AI代理",
+        "开源且跨平台，填补了计算机使用代理（Computer-Use Agents）领域的基础设施空白，可直接用于自动化测试、GUI操作等场景",
+        "包含标准化基准，方便开发者对比不同AI代理的桌面操控能力，降低实验门槛"
+      ],
+      "target_users": "研究AI代理的开发者、自动化测试工程师、以及需要构建桌面级RPA工具的团队",
+      "quick_start": "克隆仓库后，根据文档运行提供的沙箱示例，通过SDK在本地启动一个桌面环境并让AI代理执行点击、输入等操作"
+    }
+  ]
+}
