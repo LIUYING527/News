@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-28",
+  "picks": [
+    {
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "AI编程技能集合",
+      "highlights": [
+        "直接来自作者个人Claude配置的真实工程技能，实用性极高",
+        "今日新增超5600星，社区反响火爆，说明内容切中开发者需求",
+        "可无缝集成到Claude CLI或VSCode中，提升AI辅助编码效率"
+      ],
+      "target_users": "使用Claude进行AI辅助编程的开发者、希望提升AI代码生成质量的工程师",
+      "quick_start": "克隆仓库后，将.claude目录中的技能文件复制到本地~/.claude/目录，重启Claude即可生效"
+    },
+    {
+      "full_name": "microsoft/VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "summary": "开源前沿语音AI",
+      "highlights": [
+        "微软官方开源的前沿语音AI框架，技术背书强",
+        "提供完整的语音合成与识别能力，可直接用于构建语音交互应用",
+        "支持多语言和实时处理，适合集成到各种产品中"
+      ],
+      "target_users": "语音应用开发者、AI产品经理、需要语音交互能力的全栈工程师",
+      "quick_start": "使用pip安装依赖后，运行示例脚本即可体验语音合成与识别，5分钟内完成基础调用"
+    }
+  ]
+}
