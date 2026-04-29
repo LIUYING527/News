@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-29",
+  "picks": [
+    {
+      "full_name": "donnemartin/system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "summary": "系统设计面试与架构学习宝典",
+      "highlights": [
+        "涵盖分布式系统核心概念（缓存、负载均衡、数据库分片等），配有详细图解和Anki记忆卡，适合系统性学习",
+        "社区活跃度极高（345k+ star），持续更新，包含真实面试案例和设计题解答",
+        "直接提升架构设计能力，对日常开发中高并发、可扩展性设计有实际指导价值"
+      ],
+      "target_users": "准备系统设计面试的开发者、后端工程师、希望提升架构设计能力的技术人员",
+      "quick_start": "直接在GitHub仓库README中浏览目录，选择感兴趣的主题（如“Design a URL shortener”）阅读图解和文字说明；也可下载Anki卡片包进行记忆训练。"
+    },
+    {
+      "full_name": "CJackHwang/ds2api",
+      "url": "https://github.com/CJackHwang/ds2api",
+      "summary": "多模型API统一转换中间件",
+      "highlights": [
+        "将Deepseek等客户端协议转换为OpenAI/Google/Claude兼容API，支持多账号轮询，解决API格式不兼容痛点",
+        "提供编译二进制、Vercel Serverless和Docker部署方式，轻量高性能，5分钟即可搭建私有API网关",
+        "直接降低调用多种AI模型的集成成本，适合需要灵活切换LLM服务的开发场景"
+      ],
+      "target_users": "需要对接多个AI模型API的开发者、希望统一API管理的前后端工程师、AI应用集成者",
+      "quick_start": "docker run -p 8080:8080 cjackhwang/ds2api，然后向http://localhost:8080/v1/chat/completions发送兼容OpenAI格式的请求即可。"
+    }
+  ]
+}
