@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-30",
+  "picks": [
+    {
+      "full_name": "warpdotdev/warp",
+      "url": "https://github.com/warpdotdev/warp",
+      "summary": "AI增强的智能终端开发环境",
+      "highlights": [
+        "基于Rust构建，性能优异，原生支持GPU加速渲染",
+        "集成智能代理（Agent）能力，可自动执行开发任务、生成命令",
+        "今日新增12,822星，社区极度活跃，代表了终端工具的下一代范式"
+      ],
+      "target_users": "日常使用终端的开发者、DevOps工程师、希望用AI提升命令行效率的技术人员",
+      "quick_start": "访问官网 warp.dev 下载对应操作系统安装包，安装后打开终端即可体验AI辅助命令补全与任务自动化"
+    },
+    {
+      "full_name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "summary": "海量免费编程书籍资源列表",
+      "highlights": [
+        "收录超过3000本免费编程书籍，覆盖几乎所有编程语言和技术栈",
+        "社区维护长达10年以上，持续更新，总星数超过38万",
+        "支持多语言分类，是开发者自学和查资料的首选索引"
+      ],
+      "target_users": "所有编程学习者、技术培训讲师、需要快速查阅资料的全栈开发者",
+      "quick_start": "在GitHub仓库中直接浏览 README，按语言或主题查找书籍，点击链接即可在线阅读或下载"
+    }
+  ]
+}
