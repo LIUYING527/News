@@ -9,7 +9,6 @@ import sys
 from datetime import datetime, timedelta, date
 
 import requests
-from bs4 import BeautifulSoup
 
 # ─── 配置（环境变量优先，其次 config.py）──────────────────────────────────
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
@@ -31,39 +30,31 @@ DEEPSEEK_MODEL   = "deepseek-chat"
 # ─── 1. 抓取 GitHub Trending ─────────────────────────────────────────────
 
 def fetch_trending(limit: int = 15) -> list[dict]:
-    url = "https://github.com/trending"
+    since = (date.today() - timedelta(days=1)).strftime("%Y-%m-%d")
+    url = (
+        f"https://api.github.com/search/repositories"
+        f"?q=created:>{since}&sort=stars&order=desc&per_page={limit}"
+    )
     headers = {
-        "Accept-Language": "en-US,en;q=0.9",
-        "User-Agent": (
-            "Mozilla/5.0 (Linux; Android 12) "
-            "AppleWebKit/537.36 Chrome/112 Safari/537.36"
-        ),
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
     }
+    github_token = os.environ.get("GITHUB_TOKEN")
+    if github_token:
+        headers["Authorization"] = f"Bearer {github_token}"
+
     resp = requests.get(url, headers=headers, timeout=15)
     resp.raise_for_status()
 
-    soup = BeautifulSoup(resp.text, "html.parser")
     repos = []
-    for article in soup.select("article.Box-row")[:limit]:
-        name_tag = article.select_one("h2 a")
-        if not name_tag:
-            continue
-        full_name   = name_tag.get("href", "").strip("/")
-        desc_tag    = article.select_one("p.col-9")
-        description = desc_tag.get_text(strip=True) if desc_tag else ""
-        lang_tag    = article.select_one("[itemprop=programmingLanguage]")
-        language    = lang_tag.get_text(strip=True) if lang_tag else "Unknown"
-        star_tag    = article.select_one("a[href$='/stargazers']")
-        stars       = star_tag.get_text(strip=True).replace(",", "") if star_tag else "0"
-        today_tag   = article.select_one(".float-sm-right")
-        stars_today = today_tag.get_text(strip=True) if today_tag else ""
+    for item in resp.json().get("items", []):
         repos.append({
-            "full_name":   full_name,
-            "url":         f"https://github.com/{full_name}",
-            "description": description,
-            "language":    language,
-            "stars":       stars,
-            "stars_today": stars_today,
+            "full_name":   item["full_name"],
+            "url":         item["html_url"],
+            "description": item.get("description") or "",
+            "language":    item.get("language") or "Unknown",
+            "stars":       str(item["stargazers_count"]),
+            "stars_today": "",
         })
     return repos
 
