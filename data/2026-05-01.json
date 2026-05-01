@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-01",
+  "picks": [
+    {
+      "full_name": "xiaou61/thesis-skills",
+      "url": "https://github.com/xiaou61/thesis-skills",
+      "summary": "论文写作自动化工具链",
+      "highlights": [
+        "基于两年接单经验总结的标准化论文写作流程，包含生图、规划、降低AIGC检测等模块",
+        "提供可直接复用的Python脚本，帮助开发者快速生成论文图表、结构规划并优化AI痕迹",
+        "实用性强，特别适合需要高效完成学术写作或降低查重/查AI率的人群"
+      ],
+      "target_users": "学术写作者、研究生、需要批量产出论文的科研人员、希望降低AIGC检测风险的开发者",
+      "quick_start": "克隆仓库后，查看README中的使用说明，运行Python脚本即可生成标准论文模板或图表"
+    },
+    {
+      "full_name": "karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner",
+      "url": "https://github.com/karollooool/Porting-CVE-2026-31431-Copy-Fail-to-a-Constrained-Java-Runner",
+      "summary": "Java安全漏洞利用移植工具",
+      "highlights": [
+        "将CVE-2026-31431（copy.fail漏洞）移植到受限Java执行环境，利用FFM系统调用层和javac注解处理器实现攻击向量",
+        "展示在沙箱/容器等受限环境下绕过安全限制的技术思路，对安全研究和Java底层机制理解有参考价值",
+        "技术深度高，涉及Java新特性（FFM API）与注解处理器的结合使用，适合安全工程师学习"
+      ],
+      "target_users": "安全研究员、Java逆向工程师、对CVE漏洞利用感兴趣的开发者、Java平台安全运维人员",
+      "quick_start": "克隆仓库，查看PoC代码和注释，在本地Java 21+环境运行示例脚本，观察漏洞触发效果"
+    }
+  ]
+}
