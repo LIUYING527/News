@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-02",
+  "picks": [
+    {
+      "full_name": "Fefedu973/Windows-Search-Redirector",
+      "url": "https://github.com/Fefedu973/Windows-Search-Redirector",
+      "summary": "Windows搜索重定向工具",
+      "highlights": [
+        "可拦截Windows搜索入口，将搜索请求转发到PowerToys Run等第三方启动器，提升搜索效率",
+        "支持转发已输入的文本，无缝过渡到替代启动器，用户体验流畅",
+        "基于Windhawk mod实现，轻量且易于配置，适合追求高效操作的Windows用户"
+      ],
+      "target_users": "Windows高级用户、开发者、PowerToys使用者、希望提升搜索效率的日常办公人群",
+      "quick_start": "下载安装Windhawk，导入此mod，在设置中配置目标启动器（如PowerToys Run），重启后按Win键即可体验重定向搜索"
+    },
+    {
+      "full_name": "greenflute/tiny-grid-viewer",
+      "url": "https://github.com/greenflute/tiny-grid-viewer",
+      "summary": "VS Code网格查看器扩展",
+      "highlights": [
+        "支持将XML、JSON、YAML、INI、TOML等配置文件以可编辑的网格形式展示，大幅提升阅读和编辑效率",
+        "递归显示嵌套结构，方便快速定位和修改深层数据，适合处理复杂配置",
+        "作为VS Code扩展，安装即用，无需额外配置，对日常开发工作流有直接帮助"
+      ],
+      "target_users": "前端/后端开发者、DevOps工程师、经常处理配置文件的程序员",
+      "quick_start": "在VS Code扩展商店搜索“Tiny Grid Viewer”并安装，打开任意JSON/YAML文件，右键选择“Open as Grid”即可查看编辑"
+    }
+  ]
+}
