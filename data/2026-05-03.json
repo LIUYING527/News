@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-03",
+  "picks": [
+    {
+      "full_name": "EdwardJoke/wasup",
+      "url": "https://github.com/EdwardJoke/wasup",
+      "summary": "AI代理任务与文档同步工具",
+      "highlights": [
+        "集成AI agent技能，自动管理任务和项目文档同步，减少人工协调成本",
+        "专为开发者与AI代理协作设计，解决任务管理中的常见痛点",
+        "无语言限制，可直接集成到现有开发工作流中提升效率"
+      ],
+      "target_users": "使用AI辅助开发的程序员、需要自动化任务管理的团队、关注AI agent落地的开发者",
+      "quick_start": "克隆仓库后，查看README中的快速配置指南，通过示例脚本调用AI agent完成第一个任务同步"
+    },
+    {
+      "full_name": "JagdeepSinghCeh/reconmind",
+      "url": "https://github.com/JagdeepSinghCeh/reconmind",
+      "summary": "AI驱动的漏洞赏金自动化工具",
+      "highlights": [
+        "覆盖OWASP Top 10漏洞（XSS、SQLi、SSRF等），自动完成侦察→扫描→模糊测试→报告全流程",
+        "结合AI能力提升漏洞发现效率，适合红队和安全研究人员快速评估目标",
+        "Python实现，易于扩展和集成到现有安全工具链"
+      ],
+      "target_users": "安全研究员、渗透测试工程师、漏洞赏金猎人、对AI+安全感兴趣的开发者",
+      "quick_start": "pip install -r requirements.txt后，运行python reconmind.py -u <目标URL>，即可开始自动化扫描"
+    }
+  ]
+}
