@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-04",
+  "picks": [
+    {
+      "full_name": "bdsantoso168/job-gap-analyzer-agent",
+      "url": "https://github.com/bdsantoso168/job-gap-analyzer-agent",
+      "summary": "LLM驱动的简历匹配分析器",
+      "highlights": [
+        "基于大语言模型自动比对简历与职位描述，输出COVERED/WEAK/MISSING标记",
+        "生成可直接使用的优化简历要点改写建议，并给出匹配分数",
+        "适合求职场景，能大幅节省人工筛选和优化简历的时间"
+      ],
+      "target_users": "求职者、招聘人员、HR、以及需要快速匹配岗位要求的开发者",
+      "quick_start": "克隆仓库，安装Jupyter Notebook依赖，运行提供的.ipynb文件，输入简历文本和职位描述即可获得分析结果"
+    },
+    {
+      "full_name": "ashishsoni-dev/php-url-shortener",
+      "url": "https://github.com/ashishsoni-dev/php-url-shortener",
+      "summary": "PHP+MySQL高性能短链接生成器",
+      "highlights": [
+        "内置缓存和速率限制，支持高并发场景",
+        "支持链接过期时间设置，适合临时链接或营销活动",
+        "基于PHP和MySQL，部署简单，适合自建短链接服务"
+      ],
+      "target_users": "需要自建URL缩短服务的开发者、站长、营销团队",
+      "quick_start": "克隆仓库，导入MySQL表结构，配置数据库连接，将项目部署到PHP服务器即可使用"
+    }
+  ]
+}
