@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-05",
+  "picks": [
+    {
+      "full_name": "mhagrelius/FuncyTown",
+      "url": "https://github.com/mhagrelius/FuncyTown",
+      "summary": "强类型Result模式C#库",
+      "highlights": [
+        "基于C# 14 / .NET 10，利用Roslyn源生成器自动生成领域专用Result别名，减少样板代码",
+        "提供强类型Result<T, TError>，提升错误处理的可读性和类型安全",
+        "适合替代传统异常或弱类型Tuple，尤其适用于领域驱动设计（DDD）和函数式编程风格"
+      ],
+      "target_users": "C# 开发者，尤其是使用.NET 10+、关注错误处理模式和代码质量的团队",
+      "quick_start": "在.NET 10项目中添加NuGet包引用，定义Result<Order, OrderError>，源生成器会自动生成OrderResult和OrderErrorResult等别名，直接使用即可。"
+    },
+    {
+      "full_name": "TangibleResearch/Halgorithem",
+      "url": "https://github.com/TangibleResearch/Halgorithem",
+      "summary": "AI幻觉检测算法",
+      "highlights": [
+        "专注检测大语言模型输出中的幻觉（hallucination）问题，提升AI应用可靠性",
+        "采用Python实现，算法可集成到现有LLM工作流中，用于内容审核或事实校验",
+        "对开发者构建可信AI助手、客服系统或知识库问答有直接实用价值"
+      ],
+      "target_users": "AI应用开发者、LLM运维工程师、需要验证模型输出真实性的研究人员",
+      "quick_start": "克隆仓库，安装依赖（pip install -r requirements.txt），运行示例脚本对LLM输出文本进行幻觉评分。"
+    }
+  ]
+}
