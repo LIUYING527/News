@@ -114,6 +114,16 @@ body {
   background: var(--primary);
   border-radius: 0 0 3px 3px;
 }
+.nav-icon-wrap { position: relative; display: inline-flex; }
+.nav-badge {
+  display: none; position: absolute; top: -4px; right: -6px;
+  min-width: 16px; height: 16px;
+  background: var(--danger); color: white;
+  border-radius: 8px; font-size: 0.6rem;
+  align-items: center; justify-content: center;
+  padding: 0 3px; line-height: 1;
+}
+.nav-badge.visible { display: flex; }
 
 /* ── Cards ── */
 .card {
@@ -165,7 +175,7 @@ body {
   white-space: pre-wrap; word-break: break-all;
 }
 .card-actions {
-  display: flex; gap: 8px;
+  display: flex; gap: 8px; align-items: center;
   padding: 12px 16px; border-top: 1px solid var(--border);
 }
 .btn {
@@ -177,6 +187,108 @@ body {
 .btn:active { opacity: 0.8; transform: scale(0.97); }
 .btn-primary { background: var(--primary); color: white; }
 .btn-ghost { background: var(--bg); color: var(--text); border: 1px solid var(--border); }
+
+/* ── Fav Button (on card) ── */
+.fav-btn {
+  flex: none; width: 40px; height: 40px;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-sec); transition: color 0.15s, background 0.15s, transform 0.1s;
+}
+.fav-btn svg { width: 20px; height: 20px; stroke: currentColor; stroke-width: 2; fill: none; transition: fill 0.15s; }
+.fav-btn:active { transform: scale(0.88); }
+.fav-btn.active { color: #e3a008; background: #fffbeb; border-color: #fde68a; }
+.fav-btn.active svg { fill: currentColor; }
+
+/* ── Favorites Tab ── */
+.fav-chips {
+  display: flex; gap: 8px; overflow-x: auto;
+  padding-bottom: 12px; scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.fav-chips::-webkit-scrollbar { display: none; }
+.fav-chip {
+  flex-shrink: 0; padding: 6px 14px; border-radius: 20px;
+  font-size: 0.82rem; border: 1.5px solid var(--border);
+  background: var(--card); color: var(--text-sec);
+  cursor: pointer; white-space: nowrap; transition: all 0.15s;
+}
+.fav-chip.active { background: var(--primary); color: white; border-color: var(--primary); }
+.fav-item {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); margin-bottom: 10px;
+  overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.fav-item-top { display: flex; align-items: flex-start; padding: 14px 14px 8px; gap: 10px; }
+.fav-item-info { flex: 1; min-width: 0; }
+.fav-item-name { font-weight: 700; font-size: 0.95rem; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fav-item-repo { font-size: 0.72rem; color: var(--text-sec); margin-top: 2px; }
+.fav-item-summary { font-size: 0.83rem; color: var(--text-sec); margin-top: 5px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.fav-item-footer { display: flex; align-items: center; padding: 6px 14px 12px; gap: 8px; }
+.fav-item-date { font-size: 0.73rem; color: var(--text-sec); flex: 1; }
+.fav-tag-btn {
+  font-size: 0.72rem; padding: 4px 10px; border-radius: 12px;
+  background: #f1f8ff; color: var(--primary); border: 1px solid #c8e0f9;
+  cursor: pointer; white-space: nowrap; transition: background 0.15s;
+}
+.fav-tag-btn.has-tag { background: #e8f5e9; color: #2e7d32; border-color: #a5d6a7; }
+.fav-del-btn {
+  width: 30px; height: 30px; border: none; background: none;
+  color: var(--text-sec); cursor: pointer; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.fav-del-btn:active { color: var(--danger); background: #ffeaea; }
+.fav-github-btn {
+  flex: none; padding: 4px 10px; border: 1px solid var(--border);
+  border-radius: 6px; background: var(--bg); color: var(--text);
+  font-size: 0.75rem; cursor: pointer; white-space: nowrap;
+}
+
+/* ── Category Sheet ── */
+.sheet-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.45); z-index: 300;
+  align-items: flex-end; justify-content: center;
+}
+.sheet-overlay.visible { display: flex; }
+.sheet-box {
+  background: var(--card); border-radius: 20px 20px 0 0;
+  padding: 20px 20px calc(20px + var(--safe-bottom));
+  width: 100%; max-width: 480px;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.15);
+  animation: slideUp 0.22s ease;
+}
+@keyframes slideUp {
+  from { transform: translateY(60px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.sheet-handle {
+  width: 36px; height: 4px; background: var(--border);
+  border-radius: 2px; margin: 0 auto 16px;
+}
+.sheet-box h4 { font-size: 1rem; margin-bottom: 14px; color: var(--text); }
+.sheet-cats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.sheet-cat {
+  padding: 7px 16px; border-radius: 20px; font-size: 0.85rem;
+  border: 1.5px solid var(--border); background: var(--bg);
+  color: var(--text); cursor: pointer; transition: all 0.15s;
+}
+.sheet-cat.active { background: var(--primary); color: white; border-color: var(--primary); }
+.sheet-cat.remove { color: var(--danger); border-color: #fca5a5; background: #fff5f5; }
+.sheet-input-row { display: flex; gap: 8px; margin-bottom: 14px; }
+.sheet-input-row input {
+  flex: 1; border: 1.5px solid var(--border); border-radius: 8px;
+  padding: 9px 12px; font-size: 0.88rem; outline: none; font-family: inherit;
+  background: var(--bg);
+}
+.sheet-input-row input:focus { border-color: var(--primary); background: white; }
+.sheet-input-row button {
+  padding: 9px 16px; border: none; border-radius: 8px;
+  background: var(--primary); color: white; font-size: 0.85rem; cursor: pointer; white-space: nowrap;
+}
+.sheet-actions { display: flex; gap: 8px; }
 
 /* ── Empty / Loading / Error ── */
 .state-center {
@@ -429,6 +541,11 @@ body {
     </div>
   </div>
 
+  <!-- Tab: Favorites -->
+  <div id="tab-favorites" class="tab-pane">
+    <div id="favorites-content"></div>
+  </div>
+
 </main>
 
 <!-- Bottom Nav -->
@@ -444,6 +561,13 @@ body {
   <button class="nav-btn" data-tab="chat" onclick="switchTab('chat',this)">
     <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
     <span>对话</span>
+  </button>
+  <button class="nav-btn" data-tab="favorites" onclick="switchTab('favorites',this)">
+    <div class="nav-icon-wrap">
+      <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+      <span class="nav-badge" id="fav-badge"></span>
+    </div>
+    <span>收藏</span>
   </button>
 </nav>
 
@@ -478,7 +602,7 @@ body {
   <div class="modal-box">
     <div id="auth-login-view">
       <h3>🔐 账号同步</h3>
-      <p class="modal-desc">登录后聊天记录自动同步，换浏览器也不丢失。</p>
+      <p class="modal-desc">登录后聊天记录和收藏自动同步，换浏览器也不丢失。</p>
       <div class="auth-tabs">
         <button class="active" onclick="setAuthMode('login')">登录</button>
         <button onclick="setAuthMode('register')">注册</button>
@@ -495,11 +619,28 @@ body {
     <div id="auth-user-view" style="display:none;text-align:center;padding:8px 0;">
       <div style="font-size:2.5rem;margin-bottom:10px;">👤</div>
       <div id="auth-user-email" style="font-weight:600;margin-bottom:4px;word-break:break-all;"></div>
-      <div style="font-size:0.8rem;color:var(--text-sec);margin-bottom:20px;">已登录 · 聊天记录自动同步 ☁️</div>
+      <div style="font-size:0.8rem;color:var(--text-sec);margin-bottom:20px;">已登录 · 聊天记录和收藏自动同步 ☁️</div>
       <div class="modal-actions">
         <button class="btn btn-ghost" onclick="closeAuthModal()">关闭</button>
         <button class="btn btn-ghost" style="color:var(--danger)" onclick="logoutUser()">退出登录</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Category Sheet -->
+<div class="sheet-overlay" id="cat-sheet">
+  <div class="sheet-box">
+    <div class="sheet-handle"></div>
+    <h4>选择分类</h4>
+    <div class="sheet-cats" id="sheet-cats"></div>
+    <div class="sheet-input-row">
+      <input type="text" id="cat-input" placeholder="输入新分类名称...">
+      <button onclick="addNewCategory()">添加</button>
+    </div>
+    <div class="sheet-actions">
+      <button class="btn btn-ghost" onclick="closeCatSheet()" style="flex:1;">取消</button>
+      <button class="btn btn-primary" onclick="confirmCategory()" style="flex:1;">确认</button>
     </div>
   </div>
 </div>
@@ -573,19 +714,26 @@ async function loadCloudData() {
   if (!sbUser) return;
   const { data } = await sb.from('sync_data')
     .select('data').eq('user_id', sbUser.id).eq('app_name', APP_NAME).single();
-  if (!data?.data?.chat_history?.length) return;
-  chatHistory = data.data.chat_history;
-  try { localStorage.setItem('chat_history', JSON.stringify(chatHistory)); } catch(_) {}
-  const msgs = document.getElementById('chat-messages');
-  msgs.querySelectorAll('.bubble, .bubble-time').forEach(el => el.remove());
-  chatHistory.forEach(m => appendBubble(m.role, m.content, m.time, false));
+  if (!data?.data) return;
+  if (data.data.chat_history?.length) {
+    chatHistory = data.data.chat_history;
+    try { localStorage.setItem('chat_history', JSON.stringify(chatHistory)); } catch(_) {}
+    const msgs = document.getElementById('chat-messages');
+    msgs.querySelectorAll('.bubble, .bubble-time').forEach(el => el.remove());
+    chatHistory.forEach(m => appendBubble(m.role, m.content, m.time, false));
+  }
+  if (Array.isArray(data.data.favorites) && data.data.favorites.length) {
+    favorites = data.data.favorites;
+    try { localStorage.setItem('favorites', JSON.stringify(favorites)); } catch(_) {}
+    updateFavBadge();
+  }
 }
 
 async function saveCloudData() {
   if (!sbUser) return;
   await sb.from('sync_data').upsert({
     user_id: sbUser.id, app_name: APP_NAME,
-    data: { chat_history: chatHistory, saved_at: new Date().toISOString() },
+    data: { chat_history: chatHistory, favorites: favorites, saved_at: new Date().toISOString() },
     updated_at: new Date().toISOString()
   }, { onConflict: 'user_id,app_name' });
 }
@@ -601,6 +749,7 @@ const SESSION_ID = 'sess_' + Math.random().toString(36).slice(2);
 let currentTab = 'today';
 let todayData  = null;
 let deferredInstall = null;
+let picksMap = {}; // full_name -> pick + date, for favorite lookup
 
 // ── Chat history (safe parse) ─────────────────────────────────────────────
 let chatHistory;
@@ -611,6 +760,24 @@ try {
   chatHistory = [];
   try { localStorage.removeItem('chat_history'); } catch(_) {}
 }
+
+// ── Favorites (safe parse) ────────────────────────────────────────────────
+let favorites;
+try {
+  favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+  if (!Array.isArray(favorites)) favorites = [];
+} catch(e) { favorites = []; }
+
+let userCats;
+try {
+  userCats = JSON.parse(localStorage.getItem('fav_categories') || '[]');
+  if (!Array.isArray(userCats)) userCats = [];
+} catch(e) { userCats = []; }
+
+const DEFAULT_CATS = ['AI/ML', '工具', '框架', '语言', '其他'];
+let currentFavFilter = 'all';
+let catSheetTarget = null;
+let catSheetSelected = '';
 
 // ── Tab switching ────────────────────────────────────────────────────────
 function switchTab(name, btn) {
@@ -626,6 +793,7 @@ function switchTab(name, btn) {
   currentTab = name;
   if (name === 'history') loadHistory();
   if (name === 'chat') focusChatInput();
+  if (name === 'favorites') renderFavorites();
 }
 
 // ── Load Today (从静态 JSON 文件) ────────────────────────────────────────
@@ -690,6 +858,9 @@ async function loadDay(date) {
 // ── Render helpers ────────────────────────────────────────────────────────
 function renderPicks(container, picks, date) {
   if (!picks || picks.length === 0) { renderEmpty(container); return; }
+  // Store picks in map so toggleFavorite can look them up by full_name
+  picks.forEach(p => { if (p.full_name) picksMap[p.full_name] = { ...p, date }; });
+
   container.innerHTML = picks.map((p, i) => `
     <div class="card">
       <div class="card-top">
@@ -712,6 +883,11 @@ function renderPicks(container, picks, date) {
       <div class="card-actions">
         <button class="btn btn-primary" onclick="openUrl('${escapeAttr(p.url||'')}')">访问 GitHub →</button>
         <button class="btn btn-ghost" onclick="askAbout('${escapeAttr(p.full_name||'')}')">深入了解</button>
+        <button class="fav-btn ${isFavorited(p.full_name) ? 'active' : ''}" data-id="${escapeAttr(p.full_name)}" onclick="toggleFavorite('${escapeAttr(p.full_name)}')" title="收藏">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20" fill="${isFavorited(p.full_name) ? 'currentColor' : 'none'}">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </button>
       </div>
     </div>`).join('');
 }
@@ -737,6 +913,203 @@ function renderError(container, msg) {
       <p class="hint">${escapeHtml(msg)}</p>
       <button class="btn btn-ghost" style="margin-top:16px;max-width:200px;" onclick="loadToday()">重试</button>
     </div>`;
+}
+
+// ── Favorites ─────────────────────────────────────────────────────────────
+function isFavorited(full_name) {
+  return favorites.some(f => f.id === full_name);
+}
+
+function toggleFavorite(full_name) {
+  const idx = favorites.findIndex(f => f.id === full_name);
+  if (idx >= 0) {
+    favorites.splice(idx, 1);
+    saveFavorites();
+    updateFavBtn(full_name, false);
+    showToast('已取消收藏');
+  } else {
+    const pick = picksMap[full_name] || {};
+    favorites.unshift({
+      id: full_name,
+      full_name: full_name,
+      name: full_name.split('/').pop(),
+      summary: pick.summary || '',
+      url: pick.url || '',
+      highlights: pick.highlights || [],
+      target_users: pick.target_users || '',
+      quick_start: pick.quick_start || '',
+      date: pick.date || new Date().toISOString().slice(0, 10),
+      saved_at: new Date().toISOString(),
+      category: ''
+    });
+    saveFavorites();
+    updateFavBtn(full_name, true);
+    showToast('已收藏');
+  }
+}
+
+function updateFavBtn(full_name, active) {
+  document.querySelectorAll('.fav-btn').forEach(btn => {
+    if (btn.dataset.id === full_name) {
+      btn.classList.toggle('active', active);
+      const svg = btn.querySelector('svg');
+      if (svg) svg.setAttribute('fill', active ? 'currentColor' : 'none');
+    }
+  });
+}
+
+function saveFavorites() {
+  try { localStorage.setItem('favorites', JSON.stringify(favorites)); } catch(_) {}
+  updateFavBadge();
+  scheduleSave();
+}
+
+function updateFavBadge() {
+  const badge = document.getElementById('fav-badge');
+  if (!badge) return;
+  if (favorites.length > 0) {
+    badge.textContent = favorites.length > 99 ? '99+' : favorites.length;
+    badge.classList.add('visible');
+  } else {
+    badge.classList.remove('visible');
+  }
+}
+
+function getAllCategories() {
+  const usedCats = favorites.filter(f => f.category).map(f => f.category);
+  return [...new Set([...DEFAULT_CATS, ...userCats, ...usedCats])];
+}
+
+function renderFavorites() {
+  const container = document.getElementById('favorites-content');
+  if (favorites.length === 0) {
+    container.innerHTML = `
+      <div class="state-center">
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+        </svg>
+        <p>还没有收藏</p>
+        <p class="hint">在今日或历史页面点击 ★ 收藏感兴趣的项目</p>
+      </div>`;
+    return;
+  }
+
+  const usedCats = [...new Set(favorites.filter(f => f.category).map(f => f.category))];
+  const uncategorizedCount = favorites.filter(f => !f.category).length;
+
+  // Validate filter still exists
+  if (currentFavFilter !== 'all' && currentFavFilter !== 'uncategorized' && !usedCats.includes(currentFavFilter)) {
+    currentFavFilter = 'all';
+  }
+
+  const chips = [
+    `<div class="fav-chip ${currentFavFilter === 'all' ? 'active' : ''}" onclick="filterFavs('all')">全部 (${favorites.length})</div>`,
+    uncategorizedCount > 0 ? `<div class="fav-chip ${currentFavFilter === 'uncategorized' ? 'active' : ''}" onclick="filterFavs('uncategorized')">未分类 (${uncategorizedCount})</div>` : '',
+    ...usedCats.map(c => `<div class="fav-chip ${currentFavFilter === c ? 'active' : ''}" onclick="filterFavs('${escapeAttr(c)}')">${escapeHtml(c)} (${favorites.filter(f => f.category === c).length})</div>`)
+  ].join('');
+
+  const filtered = currentFavFilter === 'all' ? favorites
+    : currentFavFilter === 'uncategorized' ? favorites.filter(f => !f.category)
+    : favorites.filter(f => f.category === currentFavFilter);
+
+  if (filtered.length === 0) {
+    container.innerHTML = `
+      <div class="fav-chips">${chips}</div>
+      <div class="state-center" style="min-height:40vh;">
+        <p>该分类下暂无收藏</p>
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = `
+    <div class="fav-chips">${chips}</div>
+    ${filtered.map(f => `
+      <div class="fav-item">
+        <div class="fav-item-top">
+          <div class="fav-item-info">
+            <div class="fav-item-name">${escapeHtml(f.name || f.full_name)}</div>
+            <div class="fav-item-repo">${escapeHtml(f.full_name)}</div>
+            <div class="fav-item-summary">${escapeHtml(f.summary)}</div>
+          </div>
+          <button class="fav-del-btn" onclick="removeFavorite('${escapeAttr(f.id)}')" title="取消收藏">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="fav-item-footer">
+          <div class="fav-item-date">📅 ${f.date}</div>
+          <button class="fav-tag-btn ${f.category ? 'has-tag' : ''}" onclick="openCatSheet('${escapeAttr(f.id)}')">${f.category ? escapeHtml(f.category) : '+ 分类'}</button>
+          <button class="fav-github-btn" onclick="openUrl('${escapeAttr(f.url)}')">GitHub →</button>
+        </div>
+      </div>
+    `).join('')}`;
+}
+
+function filterFavs(cat) {
+  currentFavFilter = cat;
+  renderFavorites();
+}
+
+function removeFavorite(id) {
+  favorites = favorites.filter(f => f.id !== id);
+  saveFavorites();
+  updateFavBtn(id, false);
+  renderFavorites();
+  showToast('已取消收藏');
+}
+
+// ── Category Sheet ─────────────────────────────────────────────────────────
+function openCatSheet(id) {
+  catSheetTarget = id;
+  const fav = favorites.find(f => f.id === id);
+  catSheetSelected = fav ? (fav.category || '') : '';
+  document.getElementById('cat-input').value = '';
+  renderCatSheet();
+  document.getElementById('cat-sheet').classList.add('visible');
+}
+
+function closeCatSheet() {
+  document.getElementById('cat-sheet').classList.remove('visible');
+  catSheetTarget = null;
+}
+
+function renderCatSheet() {
+  const cats = getAllCategories();
+  const html = [
+    ...cats.map(c => `<div class="sheet-cat ${catSheetSelected === c ? 'active' : ''}" onclick="selectCat('${escapeAttr(c)}')">${escapeHtml(c)}</div>`),
+    `<div class="sheet-cat remove ${catSheetSelected === '' ? 'active' : ''}" onclick="selectCat('')">移除分类</div>`
+  ].join('');
+  document.getElementById('sheet-cats').innerHTML = html;
+}
+
+function selectCat(c) {
+  catSheetSelected = c;
+  renderCatSheet();
+}
+
+function addNewCategory() {
+  const input = document.getElementById('cat-input');
+  const val = input.value.trim();
+  if (!val) return;
+  if (!userCats.includes(val) && !DEFAULT_CATS.includes(val)) {
+    userCats.push(val);
+    try { localStorage.setItem('fav_categories', JSON.stringify(userCats)); } catch(_) {}
+  }
+  catSheetSelected = val;
+  input.value = '';
+  renderCatSheet();
+}
+
+function confirmCategory() {
+  if (!catSheetTarget) return;
+  const fav = favorites.find(f => f.id === catSheetTarget);
+  if (fav) {
+    fav.category = catSheetSelected;
+    saveFavorites();
+    renderFavorites();
+  }
+  closeCatSheet();
 }
 
 // ── Settings ─────────────────────────────────────────────────────────────
@@ -963,6 +1336,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadToday();
   renderSavedHistory();
   initAuth();
+  updateFavBadge();
 
   if (!localStorage.getItem('deepseek_api_key')) setTimeout(openSettings, 800);
 
@@ -971,6 +1345,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('auth-modal').addEventListener('click', function(e) {
     if (e.target === this) closeAuthModal();
+  });
+  document.getElementById('cat-sheet').addEventListener('click', function(e) {
+    if (e.target === this) closeCatSheet();
   });
 });
 </script>
