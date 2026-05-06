@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-06",
+  "picks": [
+    {
+      "full_name": "WeritoP/BetterNitroDiscord",
+      "url": "https://github.com/WeritoP/BetterNitroDiscord",
+      "summary": "Discord Nitro功能解锁插件",
+      "highlights": [
+        "解锁屏幕共享高级模式、跨服务器和GIF表情等Nitro专属功能，无需付费订阅",
+        "基于BetterDiscord框架，安装即用，社区活跃度高（461星）",
+        "显著提升Discord日常使用体验，尤其适合重度用户和社群管理者"
+      ],
+      "target_users": "Discord重度用户、社群管理员、希望免费体验Nitro功能的普通用户",
+      "quick_start": "1. 安装BetterDiscord客户端；2. 将插件文件放入BetterDiscord插件目录；3. 重启Discord并在插件设置中启用。"
+    },
+    {
+      "full_name": "Se3do/ngine-CAD-Engine",
+      "url": "https://github.com/Se3do/ngine-CAD-Engine",
+      "summary": "C++20 2D几何核心与约束求解器",
+      "highlights": [
+        "专为CAD/PLM软件设计的可扩展2D几何引擎，支持复杂约束求解",
+        "使用现代C++20标准，代码质量高，适合集成到工业级图形应用中",
+        "开源且模块化设计，便于开发者定制和扩展几何算法"
+      ],
+      "target_users": "CAD/PLM软件开发者、计算机图形学研究者、需要几何约束求解的嵌入式系统工程师",
+      "quick_start": "1. git clone仓库；2. 使用CMake配置构建；3. 运行示例程序测试几何约束求解功能。"
+    }
+  ]
+}
