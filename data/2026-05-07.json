@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-07",
+  "picks": [
+    {
+      "full_name": "lucataco/cog-motif-video",
+      "url": "https://github.com/lucataco/cog-motif-video",
+      "summary": "文本转视频DiT模型封装",
+      "highlights": [
+        "基于Motif-Video-2B模型，参数规模20亿，采用Apache 2.0开源协议，可商用",
+        "提供Cog封装，可一键部署到Replicate平台，降低AI视频生成使用门槛",
+        "技术前沿，采用Diffusion Transformer架构，生成视频质量高"
+      ],
+      "target_users": "AI应用开发者、视频生成爱好者、需要快速集成文本转视频功能的团队",
+      "quick_start": "克隆仓库后运行 `cog predict -i prompt=\"a cat walking\"` 即可生成视频，或直接访问Replicate在线体验"
+    },
+    {
+      "full_name": "aryadevkota/Python_SEC-MarketMicrostructure-InteractiveDashboard",
+      "url": "https://github.com/aryadevkota/Python_SEC-MarketMicrostructure-InteractiveDashboard",
+      "summary": "SEC市场微观结构分析仪表盘",
+      "highlights": [
+        "构建从SEC数据源到交互式仪表盘的完整数据管道，实用性强",
+        "聚焦市场微观结构，适合量化交易、金融数据分析场景",
+        "基于Python生态，可扩展性强，支持自定义指标和可视化"
+      ],
+      "target_users": "量化交易开发者、金融数据分析师、对市场微观结构感兴趣的Python开发者",
+      "quick_start": "克隆仓库，安装依赖后运行 `python dashboard.py`，即可在浏览器中查看交互式金融数据仪表盘"
+    }
+  ]
+}
