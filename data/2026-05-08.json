@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-08",
+  "picks": [
+    {
+      "full_name": "AethelisDEV/ae-abyss",
+      "url": "https://github.com/AethelisDEV/ae-abyss",
+      "summary": "本地AI编程引擎与编辑器",
+      "highlights": [
+        "基于Rust和Candle，本地运行高性能AI模型，无需依赖云端API，保障代码隐私与低延迟",
+        "定位为AI编程引擎与编辑器，支持代码补全、生成等核心开发场景，直接提升编码效率",
+        "采用本地优先架构，可离线使用，适合对数据安全和响应速度有高要求的开发者"
+      ],
+      "target_users": "追求隐私、低延迟AI辅助的Rust/全栈开发者，以及喜欢本地化工具的实验性开发者",
+      "quick_start": "克隆仓库后，按照README安装Rust和Candle依赖，运行cargo build编译，启动内置编辑器即可体验AI辅助编码"
+    },
+    {
+      "full_name": "viiamo/pumpfun-sniper-bot",
+      "url": "https://github.com/viiamo/pumpfun-sniper-bot",
+      "summary": "Pump.fun快速狙击机器人",
+      "highlights": [
+        "专为Pump.fun平台设计的狙击机器人，支持批量买入（bundle buy），抢占代币首发先机",
+        "使用Shell脚本实现，轻量且易于部署，可快速对接Solana生态的自动化交易需求",
+        "针对高频交易场景优化，声称速度最快，适合DeFi套利和Meme币交易者"
+      ],
+      "target_users": "加密货币交易者、Solana生态开发者、量化交易爱好者",
+      "quick_start": "克隆仓库后，配置钱包私钥和RPC节点，运行bash sniper.sh启动脚本，设置狙击参数即可自动监控并买入新代币"
+    }
+  ]
+}
