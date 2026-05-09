@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-09",
+  "picks": [
+    {
+      "full_name": "daichi-yoshikawa/tofu_backend",
+      "url": "https://github.com/daichi-yoshikawa/tofu_backend",
+      "summary": "生产级Django多租户SaaS后端样板",
+      "highlights": [
+        "内置JWT认证、SSO、Celery异步任务、OpenAPI文档，开箱即用",
+        "专为多租户SaaS设计，包含测试数据工具和AI代理工作流集成",
+        "采用Django最佳实践，适合快速搭建企业级后端服务"
+      ],
+      "target_users": "需要快速构建多租户SaaS应用的Python/Django开发者，尤其关注AI代理集成的团队",
+      "quick_start": "克隆仓库后，运行docker-compose up启动，访问localhost:8000/docs查看API文档"
+    },
+    {
+      "full_name": "detain/php-dup-finder",
+      "url": "https://github.com/detain/php-dup-finder",
+      "summary": "PHP代码重复检测与重构助手",
+      "highlights": [
+        "基于AST分析，支持规范化、n-gram指纹、树编辑距离等多种检测算法",
+        "能自动建议提取函数签名，包含类型化参数孔，提升重构效率",
+        "提供CLI、JSON和静态HTML三种报告格式，方便集成到CI/CD"
+      ],
+      "target_users": "维护大型PHP代码库的开发者、技术负责人，以及重视代码质量的团队",
+      "quick_start": "安装后运行php-dup-finder scan /path/to/project，查看生成的report.html"
+    }
+  ]
+}
