@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-10",
+  "picks": [
+    {
+      "full_name": "ilaykav/scvelo-rs",
+      "url": "https://github.com/ilaykav/scvelo-rs",
+      "summary": "scvelo的Rust加速库",
+      "highlights": [
+        "使用Rust + PyO3实现，可无缝替代Python版scvelo，显著提升单细胞RNA速度分析的计算性能",
+        "面向生物信息学场景，适合处理大规模单细胞数据集，降低运行时间和内存开销",
+        "作为PyO3原生扩展，易于集成到现有Python工作流中"
+      ],
+      "target_users": "生物信息学开发者、单细胞数据分析研究人员、需要加速Python科学计算的Rust开发者",
+      "quick_start": "通过pip安装：pip install scvelo-rs，然后直接替换import scvelo as scv为import scvelo_rs as scv即可加速现有代码。"
+    },
+    {
+      "full_name": "ohwhen/gw",
+      "url": "https://github.com/ohwhen/gw",
+      "summary": "Git worktree的zsh小助手",
+      "highlights": [
+        "极简的zsh shell辅助工具，专为git worktree命令提供便捷快捷方式，减少重复输入",
+        "对日常使用git worktree进行多分支并行开发的开发者极为实用，提升工作效率",
+        "代码量小，易于理解和定制，适合嵌入个人shell配置"
+      ],
+      "target_users": "频繁使用git worktree的开发者、zsh用户、追求工作流效率的运维和全栈工程师",
+      "quick_start": "克隆仓库后，将gw脚本添加到zsh的source路径，或直接source gw.zsh，然后使用gw命令代替完整的git worktree命令。"
+    }
+  ]
+}
