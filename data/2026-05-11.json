@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-11",
+  "picks": [
+    {
+      "full_name": "itsuzef/goalkeeper",
+      "url": "https://github.com/itsuzef/goalkeeper",
+      "summary": "AI目标执行合同框架",
+      "highlights": [
+        "核心创新：通过合同驱动的自主执行机制，让Claude Code等AI代理在预设的完成标准（Definition of Done）下自动执行并验证目标，类似智能合约思想应用于AI工作流",
+        "实用性强：解决AI任务执行中缺乏明确边界和验收标准的问题，适合需要自动化多步骤AI任务或构建可靠AI Agent的开发者",
+        "技术架构：Python实现，提供Gate（门控）和Judge（裁判）子代理，支持可编程的完成条件，易于集成到现有AI流水线"
+      ],
+      "target_users": "AI Agent开发者、自动化工作流工程师、Claude Code高级用户、关注LLM可靠性的研究人员",
+      "quick_start": "git clone https://github.com/itsuzef/goalkeeper.git && cd goalkeeper && pip install -r requirements.txt && python example.py 即可看到合同驱动目标执行的演示"
+    },
+    {
+      "full_name": "Zepesky/Anfimixis",
+      "url": "https://github.com/Zepesky/Anfimixis",
+      "summary": "医学Anki卡片摘要工具",
+      "highlights": [
+        "精准定位：专为医学学习者设计，自动总结Anki闪卡内容，解决海量医学卡片复习效率低下的痛点",
+        "技术实用：Python实现，可直接处理Anki导出的数据，生成结构化摘要，支持自定义输出格式",
+        "开源可扩展：代码简洁，易于二次开发或集成到个人学习工作流中，适合医学教育领域的工具链补充"
+      ],
+      "target_users": "医学生、医学教育工作者、Anki重度用户、需要高效复习医学知识的学习者",
+      "quick_start": "git clone https://github.com/Zepesky/Anfimixis.git && cd Anfimixis && python main.py --help 查看用法，然后导入你的Anki卡片文件即可生成摘要"
+    }
+  ]
+}
