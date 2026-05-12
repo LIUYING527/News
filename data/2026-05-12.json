@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-12",
+  "picks": [
+    {
+      "full_name": "Frankierags/stadium-pulse",
+      "url": "https://github.com/Frankierags/stadium-pulse",
+      "summary": "实时体育计分板系统",
+      "highlights": [
+        "集成Flask后端与JavaScript前端，实现实时分数更新，适合开发者快速搭建实时数据展示应用",
+        "支持WLED硬件集成，可将比分同步到LED灯带，兼具实用性与趣味性，适合创客或体育赛事场景",
+        "代码结构清晰，易于扩展，可作为学习Flask实时通信与物联网集成的参考项目"
+      ],
+      "target_users": "对实时数据可视化感兴趣的Web开发者、创客、体育赛事组织者",
+      "quick_start": "git clone后运行 flask run，浏览器打开本地地址即可看到实时计分板界面"
+    },
+    {
+      "full_name": "laithse1/AuctionsPlatform",
+      "url": "https://github.com/laithse1/AuctionsPlatform",
+      "summary": "汽车拍卖智能聚合平台",
+      "highlights": [
+        "自动抓取多个拍卖源的车辆列表，去重并归一化，解决信息分散痛点，提升比价效率",
+        "内置风险评分与交易质量评估模型，帮助用户快速判断车况与性价比，降低决策成本",
+        "仅提供浏览分析，不参与竞价，保持中立性，适合二手车买家或行业分析师使用"
+      ],
+      "target_users": "二手车买家、汽车行业分析师、对数据聚合与评分模型感兴趣的Python开发者",
+      "quick_start": "git clone后安装依赖，配置拍卖源API密钥，运行主脚本即可在本地查看聚合的车辆Feed"
+    }
+  ]
+}
