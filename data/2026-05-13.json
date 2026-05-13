@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-13",
+  "picks": [
+    {
+      "full_name": "M4xSec/claude-max-token-saver",
+      "url": "https://github.com/M4xSec/claude-max-token-saver",
+      "summary": "Claude Code 极致 Token 节省插件",
+      "highlights": [
+        "通过5种机制（如上下文压缩、请求合并等）主动节省Token，显著降低使用成本",
+        "专为Claude Code CLI设计，直接集成到开发工作流中",
+        "对高频调用AI API的开发者能带来立竿见影的经济效益"
+      ],
+      "target_users": "重度使用 Claude Code 进行代码生成、调试或自动化脚本的开发者",
+      "quick_start": "克隆仓库，按照README指示安装为Claude Code插件，重启终端即可自动生效"
+    },
+    {
+      "full_name": "M4xSec/claude-code-token-counter",
+      "url": "https://github.com/M4xSec/claude-code-token-counter",
+      "summary": "终端实时显示Token用量与速率限制",
+      "highlights": [
+        "在终端状态栏实时展示速率限制、上下文窗口使用情况，避免请求被拒",
+        "轻量级Python插件，对Claude Code工作流无性能影响",
+        "帮助开发者精准控制API调用，防止因超限导致中断"
+      ],
+      "target_users": "需要监控 Claude Code API 调用限额的开发者，尤其是进行批量或长时间AI交互的团队",
+      "quick_start": "pip安装依赖，加载为Claude Code状态栏插件，运行任意Claude命令即可看到实时数据"
+    }
+  ]
+}
