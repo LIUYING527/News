@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-14",
+  "picks": [
+    {
+      "full_name": "CyberSealNull/CcCompanion",
+      "url": "https://github.com/CyberSealNull/CcCompanion",
+      "summary": "iPhone上的Claude Code客户端",
+      "highlights": [
+        "将Claude Code带到iOS设备，实现移动端AI编程助手体验",
+        "本地优先架构，数据运行在自有Mac和手机上，隐私安全可控",
+        "附带轻量Python推送服务器，方便远程触发与交互"
+      ],
+      "target_users": "iOS开发者、移动端AI工具爱好者、需要远程编写或调试代码的开发者",
+      "quick_start": "克隆仓库，按照README配置本地Mac端推送服务器，然后在iPhone上安装iOS客户端并连接即可使用"
+    },
+    {
+      "full_name": "cityjia/defi-starter",
+      "url": "https://github.com/cityjia/defi-starter",
+      "summary": "DeFi应用快速启动模板",
+      "highlights": [
+        "包含AMM、借贷和质押等核心DeFi智能合约模板，开箱即用",
+        "基于Solidity，兼容EVM链，可直接部署至以太坊、Polygon等网络",
+        "适合快速原型开发和学习DeFi合约设计模式"
+      ],
+      "target_users": "DeFi开发者、区块链学习者、希望快速搭建DeFi原型的创业者",
+      "quick_start": "克隆仓库，使用Hardhat或Foundry编译合约，运行本地测试网络并部署示例合约"
+    }
+  ]
+}
