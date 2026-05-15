@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-15",
+  "picks": [
+    {
+      "full_name": "Codexirra/SaaS-MVP-Web-Application-Template",
+      "url": "https://github.com/Codexirra/SaaS-MVP-Web-Application-Template",
+      "summary": "SaaS MVP 全栈模板",
+      "highlights": [
+        "完整的前后端技术栈：React + Vite + TypeScript 前端，FastAPI 后端，PostgreSQL 数据库，适合快速启动 SaaS 项目",
+        "开箱即用的 MVP 架构，省去从零搭建基础设施的繁琐工作，对独立开发者或小团队极为实用",
+        "技术选型现代且主流，易于扩展和维护，社区可在此基础上快速迭代"
+      ],
+      "target_users": "想快速构建 SaaS 产品原型的前端/全栈开发者、创业团队",
+      "quick_start": "git clone 仓库，按照 README 中的步骤安装前端依赖（npm install）和后端依赖（pip install -r requirements.txt），配置数据库连接后即可本地运行"
+    },
+    {
+      "full_name": "OscarG552266/qevo",
+      "url": "https://github.com/OscarG552266/qevo",
+      "summary": "自适应量子元编译器",
+      "highlights": [
+        "基于 Qiskit 构建，提供自适应量子编译能力，可优化量子电路以提升执行效率",
+        "技术创新性强，面向量子计算前沿领域，为开发者降低量子编程的复杂度",
+        "项目描述明确，有明确的量子计算应用场景，适合探索量子算法优化的研究人员"
+      ],
+      "target_users": "量子计算研究人员、对量子编程感兴趣的后端/算法工程师",
+      "quick_start": "安装 Qiskit 和项目依赖（pip install qiskit qevo），导入库并调用 Q-Evo 的编译接口对简单量子电路进行优化测试"
+    }
+  ]
+}
