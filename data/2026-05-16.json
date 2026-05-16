@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-16",
+  "picks": [
+    {
+      "full_name": "CarlosPozoC/Poker-with-friends",
+      "url": "https://github.com/CarlosPozoC/Poker-with-friends",
+      "summary": "自托管多人德州扑克",
+      "highlights": [
+        "基于WebSocket的实时多人对战，支持自托管和ngrok隧道，可随时随地与朋友联机",
+        "使用TypeScript开发，结构清晰，适合学习全栈实时游戏开发",
+        "完整的德州扑克规则实现，可直接部署使用，娱乐与学习价值兼备"
+      ],
+      "target_users": "对实时游戏开发感兴趣的全栈开发者、想和朋友玩自托管扑克游戏的玩家",
+      "quick_start": "克隆仓库，运行npm install安装依赖，执行npm start启动服务，通过ngrok暴露本地端口即可邀请朋友加入"
+    },
+    {
+      "full_name": "sdrahim786/Smart-Meters-London-Prediction-",
+      "url": "https://github.com/sdrahim786/Smart-Meters-London-Prediction-",
+      "summary": "伦敦智能电表用电预测",
+      "highlights": [
+        "结合机器学习与深度学习模型（如LSTM等）进行家庭日用电量预测，实用性强",
+        "基于真实伦敦智能电表数据集，适合作为时间序列预测的实战项目",
+        "代码和Notebook结构完整，可直接复现并应用于能源管理或IoT场景"
+      ],
+      "target_users": "数据科学家、机器学习工程师、关注能源预测或时间序列建模的开发者",
+      "quick_start": "克隆仓库，打开Jupyter Notebook，按顺序运行各单元格即可加载数据、训练模型并查看预测效果"
+    }
+  ]
+}
