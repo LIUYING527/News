@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-17",
+  "picks": [
+    {
+      "full_name": "zhiyingzzhou/renewlet",
+      "url": "https://github.com/zhiyingzzhou/renewlet",
+      "summary": "自托管订阅管理控制台",
+      "highlights": [
+        "一站式管理AI工具、云服务、开发工具等订阅的续费、预算和支出",
+        "自托管部署，数据隐私可控，适合家庭实验室和团队内部使用",
+        "清爽界面，支持通知提醒，帮助开发者避免服务中断和超支"
+      ],
+      "target_users": "独立开发者、小团队、家庭实验室运维者、需要管理多个SaaS订阅的技术人员",
+      "quick_start": "git clone 仓库，运行 docker-compose up -d 启动，浏览器访问 localhost:3000 即可添加订阅"
+    },
+    {
+      "full_name": "boulanouarmohamed1/githubguide",
+      "url": "https://github.com/boulanouarmohamed1/githubguide",
+      "summary": "本地Git仓库智能问答助手",
+      "highlights": [
+        "基于本地LLM，索引源代码后支持自然语言问答及带引用的回答",
+        "无需联网，保护代码隐私，适合企业或敏感项目",
+        "可追溯的代理工作流，帮助新成员快速理解不熟悉的代码库"
+      ],
+      "target_users": "刚接手陌生项目的开发者、需要代码审查的团队、注重代码隐私的企业开发者",
+      "quick_start": "pip install githubguide，在项目目录运行 githubguide index，然后问 '这个模块的核心逻辑是什么？'"
+    }
+  ]
+}
