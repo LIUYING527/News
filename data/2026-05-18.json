@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-18",
+  "picks": [
+    {
+      "full_name": "AlexanderWangY/spectral",
+      "url": "https://github.com/AlexanderWangY/spectral",
+      "summary": "去中心化服务发现网络",
+      "highlights": [
+        "基于自愈扩展图实现去中心化服务注册与发现，无需中心节点或数据库，容错性强",
+        "使用Rust编写，性能高且内存安全，适合构建高可靠微服务基础设施",
+        "设计新颖，结合图论与分布式系统，对研究P2P网络和弹性架构的开发者有启发"
+      ],
+      "target_users": "分布式系统工程师、微服务架构师、对去中心化基础设施感兴趣的Rust开发者",
+      "quick_start": "克隆仓库后运行 cargo build，参考示例配置启动多个节点，观察自动发现和自愈过程"
+    },
+    {
+      "full_name": "aymanjourney/prompt-injection-guardrails",
+      "url": "https://github.com/aymanjourney/prompt-injection-guardrails",
+      "summary": "AI提示注入防护正则库",
+      "highlights": [
+        "提供专业正则表达式规则集，可有效检测和阻止针对AI代理的提示注入攻击",
+        "即插即用，无需复杂配置，直接集成到现有AI应用或LLM调用流程中",
+        "针对当前AI安全热点问题，实用性强，能提升企业级AI系统的鲁棒性"
+      ],
+      "target_users": "AI应用开发者、安全工程师、LLM运维人员、关注AI安全的团队",
+      "quick_start": "下载项目中的正则规则文件，在AI请求处理逻辑中引入规则匹配，对可疑输入进行拦截或告警"
+    }
+  ]
+}
