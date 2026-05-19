@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-19",
+  "picks": [
+    {
+      "full_name": "he4rt/marketing-extension",
+      "url": "https://github.com/he4rt/marketing-extension",
+      "summary": "X/Twitter社区互动追踪Chrome扩展",
+      "highlights": [
+        "被动捕获X/Twitter GraphQL响应，无需手动操作即可追踪社区互动数据",
+        "导出结构化JSON格式，方便集成到He4rt Hub或其他分析系统",
+        "基于JavaScript开发，适合前端开发者快速修改和扩展功能"
+      ],
+      "target_users": "社区运营人员、营销分析师、需要量化社交媒体互动的开发者",
+      "quick_start": "克隆仓库，在Chrome中加载扩展文件夹，访问X/Twitter后自动捕获GraphQL响应，导出JSON文件"
+    },
+    {
+      "full_name": "fushenguang/maestro",
+      "url": "https://github.com/fushenguang/maestro",
+      "summary": "AI驱动的Issue到PR自动化工具",
+      "highlights": [
+        "利用Claude代理自主解决Linear issue并生成Pull Request，大幅减少人工编码",
+        "基于TypeScript、Tauri和Supabase构建，技术栈现代且易于集成",
+        "适合提升开发团队效率，尤其适用于自动化处理重复性任务"
+      ],
+      "target_users": "追求自动化工作流的开发者、团队负责人、对AI辅助开发感兴趣的工程师",
+      "quick_start": "克隆仓库，配置Supabase和Linear API密钥，运行本地环境后创建示例issue，观察AI自动生成PR"
+    }
+  ]
+}
