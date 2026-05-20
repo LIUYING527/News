@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-20",
+  "picks": [
+    {
+      "full_name": "Satsuj1n/xp-mcp",
+      "url": "https://github.com/Satsuj1n/xp-mcp",
+      "summary": "本地优先的XP投资组合MCP服务器",
+      "highlights": [
+        "基于MCP协议，可直接在Claude Desktop中查询巴西XP Investimentos投资组合，实现AI对话式资产管理",
+        "本地优先、只读设计，不抓取页面、不存储凭证，使用SQLite缓存数据，安全且高效",
+        "TypeScript编写，对开发者友好，可作为学习MCP协议与金融数据集成的最佳实践参考"
+      ],
+      "target_users": "使用XP Investimentos的巴西投资者、开发AI投资助手的全栈工程师、MCP协议学习者",
+      "quick_start": "克隆仓库，运行`npm install && npm run build`，在Claude Desktop配置MCP服务器路径，即可通过自然语言查询持仓"
+    },
+    {
+      "full_name": "dboles99/amplified-futures-vcv",
+      "url": "https://github.com/dboles99/amplified-futures-vcv",
+      "summary": "VCV Rack 2的实验性噪声合成插件",
+      "highlights": [
+        "实现非波振荡器群、反馈系统和性能崩溃乐器，为模块化合成器社区提供独特的实验性音源",
+        "C++编写，代码结构清晰，可作为VCV Rack插件开发的参考项目，学习音频信号处理与模块化架构",
+        "适合电子音乐制作人、声音设计师和合成器爱好者，能直接加载到VCV Rack 2中实时演奏"
+      ],
+      "target_users": "模块化合成器玩家、电子音乐制作人、音频插件开发者、声音设计爱好者",
+      "quick_start": "安装VCV Rack 2，克隆仓库并用CMake编译，将插件文件夹复制到Rack的plugins目录，启动Rack即可加载模块"
+    }
+  ]
+}
