@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-21",
+  "picks": [
+    {
+      "full_name": "zcding4812/AgentForge",
+      "url": "https://github.com/zcding4812/AgentForge",
+      "summary": "通用AI Agent编排平台",
+      "highlights": [
+        "基于LangChain和LangGraph构建，支持多Agent串行/并行协作与命名空间隔离，适合复杂工作流编排",
+        "内置多种执行策略、RAG多模式检索、MCP工具集成及全链路审计追踪，生产级特性完备",
+        "以「像素工作室」为交互入口，降低使用门槛，适合快速构建和调试AI Agent应用"
+      ],
+      "target_users": "AI应用开发者、LangChain用户、需要构建多Agent协作系统的技术团队",
+      "quick_start": "git clone https://github.com/zcding4812/AgentForge.git && cd AgentForge && pip install -r requirements.txt && python main.py"
+    },
+    {
+      "full_name": "Bharat-Uniyal/hotel-management-api",
+      "url": "https://github.com/Bharat-Uniyal/hotel-management-api",
+      "summary": "酒店管理RESTful API",
+      "highlights": [
+        "基于Node.js、Express和MongoDB构建，完整实现员工记录和菜单项管理，代码结构清晰",
+        "集成JWT认证、bcrypt密码哈希和基于角色的员工过滤，安全机制完善",
+        "适合作为中小型酒店管理系统的后端参考实现，或快速搭建类似CRUD服务的脚手架"
+      ],
+      "target_users": "Node.js后端开发者、需要快速搭建RESTful API的团队、学习Express+MongoDB实战的开发者",
+      "quick_start": "git clone https://github.com/Bharat-Uniyal/hotel-management-api.git && cd hotel-management-api && npm install && cp .env.example .env && npm start"
+    }
+  ]
+}
