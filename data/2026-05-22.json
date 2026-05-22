@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-22",
+  "picks": [
+    {
+      "full_name": "aguo17/hermes-mcp-guard",
+      "url": "https://github.com/aguo17/hermes-mcp-guard",
+      "summary": "MCP安全防护工具",
+      "highlights": [
+        "专注于MCP（Model Context Protocol）的安全防护，填补了该领域工具空白",
+        "基于Python实现，易于集成到现有AI应用开发流程中",
+        "可能提供请求验证、注入防护等实用安全功能，对使用MCP的开发者极具价值"
+      ],
+      "target_users": "AI应用开发者、使用MCP协议构建智能体的工程师、关注AI安全的技术团队",
+      "quick_start": "克隆仓库后，运行 pip install -r requirements.txt 安装依赖，参照示例配置文件启动安全防护中间件"
+    },
+    {
+      "full_name": "fletcherroberts/awesome-smart-contract-auditors",
+      "url": "https://github.com/fletcherroberts/awesome-smart-contract-auditors",
+      "summary": "智能合约审计公司精选列表",
+      "highlights": [
+        "精心整理的智能合约审计公司及区块链安全公司名单，包含Hashlock等权威机构",
+        "为开发者选择审计服务提供可靠的参考，节省调研时间",
+        "维护者带有明确观点，列表质量有保障，适合项目安全评估阶段使用"
+      ],
+      "target_users": "区块链开发者、智能合约工程师、DeFi项目方、需要审计服务的Web3团队",
+      "quick_start": "直接打开仓库README，浏览分类好的审计公司列表，按需联系或参考评价"
+    }
+  ]
+}
