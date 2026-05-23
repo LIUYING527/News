@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-23",
+  "picks": [
+    {
+      "full_name": "gokulgml/polymarket-copy-trading-bot",
+      "url": "https://github.com/gokulgml/polymarket-copy-trading-bot",
+      "summary": "Polymarket跟单交易机器人",
+      "highlights": [
+        "实现自动复制其他交易者的操作，适合Polymarket预测市场高频交易场景",
+        "基于TypeScript开发，代码结构清晰，易于二次开发和定制策略",
+        "解决手动跟单效率低的问题，提升交易响应速度"
+      ],
+      "target_users": "加密货币交易者、量化交易开发者、对预测市场自动化感兴趣的开发者",
+      "quick_start": "克隆仓库后，配置Polymarket API密钥和跟单目标地址，运行npm install && npm start即可启动机器人。"
+    },
+    {
+      "full_name": "Wavesonics/klibs-skill",
+      "url": "https://github.com/Wavesonics/klibs-skill",
+      "summary": "Claude Code的KMP库搜索插件",
+      "highlights": [
+        "作为Claude Code插件，支持用自然语言描述需求并自动搜索Kotlin Multiplatform库",
+        "对接klibs.io库索引，大幅提升KMP开发中的库发现效率",
+        "结合AI编程助手，实现从需求到库选择的智能化工作流"
+      ],
+      "target_users": "Kotlin Multiplatform开发者、使用Claude Code的AI辅助编程用户、移动端跨平台开发者",
+      "quick_start": "安装Claude Code后，按照仓库README配置插件，在对话中输入自然语言描述即可触发搜索。"
+    }
+  ]
+}
