@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-24",
+  "picks": [
+    {
+      "full_name": "gitcursora/oleap-uniapp-demo",
+      "url": "https://github.com/gitcursora/oleap-uniapp-demo",
+      "summary": "Oleap BLE SDK教学演示项目",
+      "highlights": [
+        "基于uni-app跨平台框架，一套代码可编译到iOS、Android、H5等多个平台，降低BLE开发门槛",
+        "提供完整的BLE SDK教学示例，包含扫描、连接、数据交互等核心流程，适合快速集成蓝牙功能",
+        "项目结构清晰，注释完整，适合作为物联网或智能硬件开发的入门参考"
+      ],
+      "target_users": "使用uni-app进行跨平台开发的移动端开发者、物联网/IoT应用开发者、BLE蓝牙功能集成者",
+      "quick_start": "克隆仓库后，使用HBuilderX打开项目，运行到手机或模拟器即可体验BLE扫描与连接示例"
+    },
+    {
+      "full_name": "gitcursora/oleap-uniapp-demo",
+      "url": "https://github.com/gitcursora/oleap-uniapp-demo",
+      "summary": "Oleap BLE SDK教学演示项目",
+      "highlights": [
+        "基于uni-app跨平台框架，一套代码可编译到iOS、Android、H5等多个平台，降低BLE开发门槛",
+        "提供完整的BLE SDK教学示例，包含扫描、连接、数据交互等核心流程，适合快速集成蓝牙功能",
+        "项目结构清晰，注释完整，适合作为物联网或智能硬件开发的入门参考"
+      ],
+      "target_users": "使用uni-app进行跨平台开发的移动端开发者、物联网/IoT应用开发者、BLE蓝牙功能集成者",
+      "quick_start": "克隆仓库后，使用HBuilderX打开项目，运行到手机或模拟器即可体验BLE扫描与连接示例"
+    }
+  ]
+}
