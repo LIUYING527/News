@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-25",
+  "picks": [
+    {
+      "full_name": "Jarred-Sumner/xmac",
+      "url": "https://github.com/Jarred-Sumner/xmac",
+      "summary": "macOS SDK下载工具",
+      "highlights": [
+        "从Apple公共CDN直接下载和提取macOS SDK，省去手动寻找和配置的麻烦",
+        "专为跨编译场景设计，类似xwin但对macOS更专注，适合CI/CD和构建系统集成",
+        "TypeScript实现，轻量且易于集成到Node.js工作流中"
+      ],
+      "target_users": "需要跨平台编译macOS应用的开发者、CI/CD工程师、使用Rust/Go等语言交叉编译到macOS的开发者",
+      "quick_start": "运行 `npx xmac download --version 14.5` 即可下载并解压指定版本的macOS SDK到本地目录，然后配置编译器指向该路径。"
+    },
+    {
+      "full_name": "tnilabs/pagerproof",
+      "url": "https://github.com/tnilabs/pagerproof",
+      "summary": "AI编码代理生产实践",
+      "highlights": [
+        "将FAANG级软件工程规范转化为AI编码代理可执行的规则，减少‘玄学’式开发",
+        "提供即用型生产级配置，提升AI生成代码的可靠性和可维护性",
+        "适合希望用AI辅助但避免代码质量下降的团队，直接降低代码审查和调试成本"
+      ],
+      "target_users": "使用AI编码助手（如GitHub Copilot、Cursor）的开发者、想规范AI输出质量的团队、DevOps和代码审查者",
+      "quick_start": "克隆仓库后，将 `pagerproof.yaml` 配置放入项目根目录，AI代理会自动应用规则；或直接阅读README中的示例规则并手动调整。"
+    }
+  ]
+}
