@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-26",
+  "picks": [
+    {
+      "full_name": "rayrouteline20/eset-password-recovery",
+      "url": "https://github.com/rayrouteline20/eset-password-recovery",
+      "summary": "ESET密码恢复工具",
+      "highlights": [
+        "从注册表提取ESET锁密码哈希，通过暴力破解恢复密码",
+        "适用于忘记ESET管理密码的应急场景，技术实现简洁有效",
+        "对安全运维人员有实用价值，可学习密码哈希提取与破解原理"
+      ],
+      "target_users": "系统管理员、安全运维人员、忘记ESET密码的用户",
+      "quick_start": "下载项目后，以管理员身份运行脚本，输入注册表路径即可提取哈希并自动尝试破解。"
+    },
+    {
+      "full_name": "novaprivatefury/MiniTool-Power-Data-Recovery",
+      "url": "https://github.com/novaprivatefury/MiniTool-Power-Data-Recovery",
+      "summary": "MiniTool数据恢复工具",
+      "highlights": [
+        "支持恢复删除、格式化、无法访问的磁盘数据，兼容Windows 10/11",
+        "社区持续维护更新至2026年，稳定性高",
+        "提供图形化界面，操作简单，适合非技术用户快速恢复丢失文件"
+      ],
+      "target_users": "普通用户、开发者、数据恢复需求者（如误删文件、磁盘故障）",
+      "quick_start": "下载并安装软件，选择要扫描的磁盘，点击扫描后预览可恢复文件，勾选目标文件点击恢复即可。"
+    }
+  ]
+}
