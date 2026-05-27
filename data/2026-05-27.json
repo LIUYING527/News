@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-27",
+  "picks": [
+    {
+      "full_name": "PhiloLabs/awesome-video-agents",
+      "url": "https://github.com/PhiloLabs/awesome-video-agents",
+      "summary": "AI视频代理资源列表",
+      "highlights": [
+        "汇集了最新的AI视频编辑、制作和理解代理框架，紧跟前沿技术趋势",
+        "覆盖从视频剪辑到生产级理解的完整工具链，实用性强",
+        "适合快速查找和对比不同视频AI代理方案，节省调研时间"
+      ],
+      "target_users": "视频处理开发者、AI应用研究者、内容创作者",
+      "quick_start": "直接浏览README中的分类列表，点击链接即可了解各项目详情，无需安装"
+    },
+    {
+      "full_name": "Oswbr7/DictionaryAPI",
+      "url": "https://github.com/Oswbr7/DictionaryAPI",
+      "summary": "ASP.NET Core字典API",
+      "highlights": [
+        "基于ASP.NET Core的Web API，使用EF Core和DTO实现关系建模与数据迁移，结构清晰",
+        "代码规范，适合作为学习或参考项目，帮助开发者快速掌握.NET Core API开发模式",
+        "轻量级且功能完整，可直接用于构建字典类数据服务或集成到现有系统"
+      ],
+      "target_users": "ASP.NET Core开发者、API设计初学者、需要快速搭建数据服务的团队",
+      "quick_start": "克隆仓库后，在Visual Studio中打开解决方案，运行`dotnet restore`和`dotnet run`即可启动API并测试端点"
+    }
+  ]
+}
