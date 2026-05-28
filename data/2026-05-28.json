@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-28",
+  "picks": [
+    {
+      "full_name": "Dailiduzhou/simple-ecommerce",
+      "url": "https://github.com/Dailiduzhou/simple-ecommerce",
+      "summary": "基于Go-Kratos的电商项目",
+      "highlights": [
+        "使用Go-Kratos微服务框架，展示了企业级Go项目的标准结构，适合学习微服务架构实践",
+        "实现电商核心功能（商品、订单等），可快速搭建原型或作为业务系统基础",
+        "代码简洁规范，对Go开发者有很好的参考价值，尤其是Kratos框架的实战应用"
+      ],
+      "target_users": "Go后端开发者、微服务架构学习者、电商系统开发者",
+      "quick_start": "克隆仓库，确保安装Go和Kratos CLI，运行`go mod tidy`，然后根据README启动服务即可。"
+    },
+    {
+      "full_name": "GreasyRooster1/QCodeAI",
+      "url": "https://github.com/GreasyRooster1/QCodeAI",
+      "summary": "JavaScript代码AI辅助工具",
+      "highlights": [
+        "基于JavaScript，可能集成AI能力（如代码生成、补全），提升开发效率",
+        "轻量级，易于集成到现有前端或Node.js项目中",
+        "适合探索AI辅助编程的开发者，作为插件或CLI工具使用"
+      ],
+      "target_users": "JavaScript/TypeScript开发者、AI工具爱好者、前端工程师",
+      "quick_start": "克隆仓库，查看README安装依赖，运行示例命令体验AI辅助功能。"
+    }
+  ]
+}
