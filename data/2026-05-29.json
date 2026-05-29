@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-29",
+  "picks": [
+    {
+      "full_name": "KaEvDm/DuneBoard",
+      "url": "https://github.com/KaEvDm/DuneBoard",
+      "summary": "本地优先的AI任务图工具",
+      "highlights": [
+        "本地优先架构，数据不依赖云端，隐私安全可控，适合敏感项目或离线开发环境",
+        "结合任务图与AI代理，支持复杂工作流编排，提升自动化效率",
+        "TypeScript开发，易于集成到现代前端或Node.js项目，社区潜力大"
+      ],
+      "target_users": "AI工程师、全栈开发者、需要任务编排和自动化工作流的开发团队",
+      "quick_start": "克隆仓库后运行 npm install && npm run dev，在浏览器中打开本地地址即可创建和管理任务图"
+    },
+    {
+      "full_name": "arkenidar/zig-sdl-gui",
+      "url": "https://github.com/arkenidar/zig-sdl-gui",
+      "summary": "Zig+SDL3的即时模式GUI框架",
+      "highlights": [
+        "使用Zig语言与SDL3构建，性能极高，适合游戏工具或嵌入式UI开发",
+        "内置Lua脚本支持与热重载，可快速迭代UI逻辑，提升开发效率",
+        "支持本地运行或通过socket分离为客户端/服务器模式，适配桌面、移动端或VPS部署"
+      ],
+      "target_users": "Zig语言爱好者、游戏开发者、嵌入式系统工程师、追求极简GUI的开发者",
+      "quick_start": "安装Zig和SDL3依赖后，运行 zig build run，即可启动示例窗口并体验Lua脚本热重载"
+    }
+  ]
+}
