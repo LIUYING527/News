@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-30",
+  "picks": [
+    {
+      "full_name": "xyurt/object-pool",
+      "url": "https://github.com/xyurt/object-pool",
+      "summary": "C89固定对象池库",
+      "highlights": [
+        "使用预分配内存和O(1)复用，完全避免堆分配和碎片化，适合实时系统和嵌入式开发",
+        "兼容C89标准，可移植性强，适合老旧平台或对标准有严格要求的项目",
+        "代码极简轻量，易于集成到任何C项目中，提升内存管理效率"
+      ],
+      "target_users": "C语言开发者、嵌入式系统工程师、游戏引擎开发者、实时系统程序员",
+      "quick_start": "克隆仓库后，将object_pool.h和object_pool.c复制到你的项目中，调用pool_init()初始化池，然后使用pool_alloc()和pool_free()进行O(1)的对象分配与回收。"
+    },
+    {
+      "full_name": "makisekurisu0827/context-compactor",
+      "language": "Unknown",
+      "summary": "Claude长对话压缩技能",
+      "highlights": [
+        "自动将长对话滚动压缩为单条自更新摘要，彻底解决Claude Code上下文溢出问题",
+        "保持回答连贯性，特别适合需要持续交互的复杂任务（如代码调试、文档生成）",
+        "作为Claude Code技能（skill）直接安装使用，零配置，即装即用"
+      ],
+      "target_users": "频繁使用Claude Code的开发者、AI辅助编程重度用户、需要长上下文对话的团队",
+      "quick_start": "在Claude Code项目中安装此skill（参照项目README），然后正常进行长对话，系统会自动在上下文超限时生成摘要并继续。"
+    }
+  ]
+}
