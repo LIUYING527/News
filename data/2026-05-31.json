@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-31",
+  "picks": [
+    {
+      "full_name": "yossiehrenfeld5372/oss-maintainer-report",
+      "url": "https://github.com/yossiehrenfeld5372/oss-maintainer-report",
+      "summary": "开源仓库维护健康度审计工具",
+      "highlights": [
+        "自动检测仓库维护者活跃度、Issue/PR响应速度等关键指标",
+        "支持输出Markdown和JSON格式报告，便于集成CI/CD或生成文档",
+        "基于Python CLI，安装简单，适合开源项目管理者快速评估项目状态"
+      ],
+      "target_users": "开源项目维护者、社区经理、希望评估依赖库健康度的开发者",
+      "quick_start": "pip install oss-maintainer-report && oss-maintainer-report --repo owner/repo --format markdown"
+    },
+    {
+      "full_name": "maque114514-spec/MineProxy",
+      "url": "https://github.com/maque114514-spec/MineProxy",
+      "summary": "Minecraft协议伪装代理工具",
+      "highlights": [
+        "支持Java TCP和Bedrock/RakNet UDP双协议传输，兼容主流Minecraft版本",
+        "提供GUI客户端和Web控制面板，方便配置和管理代理规则",
+        "可用于绕过网络限制、搭建跨版本联机桥梁，技术实现参考价值高"
+      ],
+      "target_users": "Minecraft服务器运维人员、游戏联机玩家、网络协议学习开发者",
+      "quick_start": "下载Release中的GUI客户端，填写目标服务器地址和本地监听端口，点击启动即可连接"
+    }
+  ]
+}
