@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-01",
+  "picks": [
+    {
+      "full_name": "ruelalarcon/finsonar",
+      "url": "https://github.com/ruelalarcon/finsonar",
+      "summary": "本地LLM财务分析助手",
+      "highlights": [
+        "支持通过自然语言查询CSV或股票代码数据，无需第三方执行服务，所有代码在沙箱Lua解释器中本地运行，保障数据隐私。",
+        "自带API Key即可接入任意LLM，灵活适配开发者现有的模型偏好，降低使用门槛。",
+        "专注于金融数据分析场景，直接解决开发者快速从数据中获取洞察的需求，实用性强。"
+      ],
+      "target_users": "需要快速分析财务数据的开发者、量化分析师、数据科学家，以及希望用自然语言交互替代传统SQL查询的金融从业者。",
+      "quick_start": "克隆仓库后，设置自己的LLM API Key，运行主脚本并加载一个CSV文件或股票代码，在终端输入自然语言问题即可获得分析结果。"
+    },
+    {
+      "full_name": "SalimMs-tech/Inventory-Management-System-SQL",
+      "url": "https://github.com/SalimMs-tech/Inventory-Management-System-SQL",
+      "summary": "SQL库存管理系统模板",
+      "highlights": [
+        "提供完整的SQL库存管理系统设计，包含库存跟踪、报告生成等功能，可直接作为项目基础。",
+        "基于纯SQL实现，易于集成到现有后端，适合学习数据库设计或快速搭建小型企业库存应用。",
+        "代码结构清晰，适合开发者二次开发或学习SQL最佳实践。"
+      ],
+      "target_users": "需要快速构建库存管理功能的Web开发者、数据库初学者、以及希望使用SQL模板进行企业级应用开发的工程师。",
+      "quick_start": "下载SQL文件，导入到MySQL或PostgreSQL数据库，执行初始化脚本后即可通过SQL查询进行库存操作和报表生成。"
+    }
+  ]
+}
