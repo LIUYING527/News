@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-02",
+  "picks": [
+    {
+      "full_name": "Floxu1/UAC-SNI-Spoofer-Android",
+      "url": "https://github.com/Floxu1/UAC-SNI-Spoofer-Android",
+      "summary": "Android SNI欺骗VPN工具",
+      "highlights": [
+        "支持VLESS/Trojan配置运行和SNI扫描，自动选择最优延迟节点，实用性强",
+        "集成Xray、tun2socks和实时日志，技术栈完整，适合网络工具开发参考",
+        "针对Android平台优化，解决网络审查绕过需求，社区关注度高"
+      ],
+      "target_users": "Android开发者、网络安全研究人员、需要代理工具的用户",
+      "quick_start": "下载APK安装，导入VLESS/Trojan配置，启动VPN并查看实时日志即可测试SNI欺骗效果"
+    },
+    {
+      "full_name": "SpencerRaw/awesome-ai-film",
+      "url": "https://github.com/SpencerRaw/awesome-ai-film",
+      "summary": "AI与电影交叉领域资源合集",
+      "highlights": [
+        "系统梳理AI在电影制作、叙事、伦理等方面的前沿应用，内容新颖",
+        "包含论文、工具、案例等分类资源，适合快速了解行业趋势",
+        "作为awesome系列项目，易于维护和扩展，对AI+创意开发者有启发性"
+      ],
+      "target_users": "AI研究者、影视从业者、对AI创作感兴趣的开发者",
+      "quick_start": "克隆仓库后直接打开README，点击分类链接浏览精选文章和工具列表"
+    }
+  ]
+}
