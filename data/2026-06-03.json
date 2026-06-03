@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-03",
+  "picks": [
+    {
+      "full_name": "BoussariMA/Boussari-Downloader",
+      "url": "https://github.com/BoussariMA/Boussari-Downloader",
+      "summary": "Linux原生视频下载GUI工具",
+      "highlights": [
+        "基于yt-dlp，支持视频、播放列表、文件下载，多质量选择",
+        "暗色主题队列管理，支持暂停/恢复，阿拉伯语RTL布局",
+        "内置Chrome/Firefox浏览器扩展，支持Cookie提取与Flatpak分发"
+      ],
+      "target_users": "Linux桌面用户、需要批量下载视频或播放列表的开发者、阿拉伯语地区用户",
+      "quick_start": "安装Flatpak后运行flatpak install flathub com.boussari.BoussariDownloader，打开应用粘贴视频链接即可下载"
+    },
+    {
+      "full_name": "System32manager/DockerKit-336",
+      "url": "https://github.com/System32manager/DockerKit-336",
+      "summary": "Docker容器化工具与实用程序集",
+      "highlights": [
+        "提供Docker容器管理的便捷工具和脚本，简化日常操作",
+        "Python编写，易于扩展和集成到现有CI/CD流程",
+        "适合快速搭建开发环境或微服务部署场景"
+      ],
+      "target_users": "Docker用户、DevOps工程师、需要容器化工作流的全栈开发者",
+      "quick_start": "git clone后运行python main.py，根据提示选择容器管理功能（如启动、停止、日志查看）"
+    }
+  ]
+}
