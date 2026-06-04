@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-04",
+  "picks": [
+    {
+      "full_name": "icloned/MapBuilder",
+      "url": "https://github.com/icloned/MapBuilder",
+      "summary": "轻量级定向越野地图生成工具",
+      "highlights": [
+        "基于OSM数据一键生成等高线与定向地图，无需复杂GIS软件",
+        "提供交互式Web界面，支持自定义区域和导出，适合户外活动规划",
+        "纯前端实现（HTML），无需后端部署，5分钟即可本地运行"
+      ],
+      "target_users": "定向越野爱好者、户外活动组织者、地理信息初学者",
+      "quick_start": "git clone后直接用浏览器打开index.html，输入区域名称即可生成地图"
+    },
+    {
+      "full_name": "NossaGTS/wireshark-filters",
+      "url": "https://github.com/NossaGTS/wireshark-filters",
+      "summary": "应急响应专用Wireshark过滤器集",
+      "highlights": [
+        "收集了针对网络入侵检测、恶意流量分析的高效过滤规则",
+        "直接可用的实用脚本，减少手动构造Wireshark显示过滤器的时间",
+        "面向安全运维场景，提升排查效率，适合事件响应快速上手"
+      ],
+      "target_users": "安全运维工程师、渗透测试人员、网络安全学习者",
+      "quick_start": "下载项目中的过滤规则文件，在Wireshark中导入或复制粘贴至过滤器栏即可使用"
+    }
+  ]
+}
