@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-05",
+  "picks": [
+    {
+      "full_name": "home-operations/konflate",
+      "url": "https://github.com/home-operations/konflate",
+      "summary": "只读的 Flate PR 审查工具",
+      "highlights": [
+        "专注于 Pull Request 的只读审查，降低误操作风险，适合代码审阅场景",
+        "使用 Go 语言开发，性能高效，易于部署和集成到 CI/CD 流水线中",
+        "可能为 Flate（一种数据压缩格式）或相关项目提供专门的差异对比与审查能力"
+      ],
+      "target_users": "需要审查 Flate 相关项目 PR 的开发者、DevOps 工程师和代码审阅者",
+      "quick_start": "克隆仓库，运行 go build 编译，然后通过命令行指定 PR 链接或本地分支进行只读审查。"
+    },
+    {
+      "full_name": "Adaptive-EVO/AICamera",
+      "url": "https://github.com/Adaptive-EVO/AICamera",
+      "summary": "AI 相机工作站原型",
+      "highlights": [
+        "通过“vibe coding”方式快速构建，展示了 AI 与计算机视觉结合的创新应用场景",
+        "使用 Python 开发，易于扩展和集成现有的 AI 视觉模型，适合原型验证",
+        "可作为智能监控、视觉检测或交互式摄像头的起点，实用性强"
+      ],
+      "target_users": "对 AI 视觉应用感兴趣的 Python 开发者、原型设计师和计算机视觉爱好者",
+      "quick_start": "克隆仓库，安装依赖（如 OpenCV、PyTorch），运行主脚本即可启动 AI 相机预览。"
+    }
+  ]
+}
