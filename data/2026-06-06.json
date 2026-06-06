@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-06",
+  "picks": [
+    {
+      "full_name": "ateculus/ateculus-seo",
+      "url": "https://github.com/ateculus/ateculus-seo",
+      "summary": "轻量级WordPress SEO插件",
+      "highlights": [
+        "功能全面：覆盖meta标签、XML站点地图、重定向、结构化数据和数据分析集成，满足常见SEO需求",
+        "轻量设计：相比Yoast等重型插件，性能开销更小，适合追求速度的站点",
+        "PHP开发：易于二次定制，适合WordPress开发者快速集成或修改"
+      ],
+      "target_users": "WordPress站点管理员、SEO优化人员、PHP开发者",
+      "quick_start": "下载插件zip包，在WordPress后台插件管理页面上传并激活，然后前往设置页面配置meta和站点地图。"
+    },
+    {
+      "full_name": "qenev/hand-ar-tracker",
+      "url": "https://github.com/qenev/hand-ar-tracker",
+      "summary": "实时AR手部追踪系统",
+      "highlights": [
+        "基于MediaPipe和OpenCV，实现实时手部和手指追踪，技术栈成熟且易于部署",
+        "Python实现，代码简洁，适合作为AR/手势控制应用的入门参考或基础组件",
+        "实时性能好，可集成到互动展示、远程控制、无接触交互等场景"
+      ],
+      "target_users": "AR/VR开发者、计算机视觉学习者、交互应用开发者",
+      "quick_start": "安装依赖：pip install opencv-python mediapipe，然后运行python hand_ar_tracker.py，摄像头自动启动并显示手部追踪结果。"
+    }
+  ]
+}
