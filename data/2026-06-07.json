@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-07",
+  "picks": [
+    {
+      "full_name": "ElGaba/Lorecraft-Studio",
+      "url": "https://github.com/ElGaba/Lorecraft-Studio",
+      "summary": "AI辅助互动叙事游戏工作室",
+      "highlights": [
+        "专为AI代理设计的叙事游戏创作工具，支持编写、预览和导出电影式互动故事，降低游戏开发门槛",
+        "基于TypeScript开发，技术栈现代，便于二次开发和集成到现有Web工作流中",
+        "今日GitHub Trending榜首，社区关注度高，适合探索AI+游戏叙事的前沿实践"
+      ],
+      "target_users": "游戏设计师、叙事策划、AI应用开发者、希望用AI辅助创作互动故事的创作者",
+      "quick_start": "克隆仓库后，运行 npm install && npm run dev 启动本地开发服务器，在浏览器中即可开始编辑和预览互动叙事场景"
+    },
+    {
+      "full_name": "bvolpato/promptcloak",
+      "url": "https://github.com/bvolpato/promptcloak",
+      "summary": "本地AI提示词隐私保护代理",
+      "highlights": [
+        "作为本地OpenAI兼容代理运行，自动检测并脱敏提示中的密钥、令牌等敏感信息，防止数据泄露",
+        "提供Python库和独立代理两种使用方式，可无缝集成到现有AI应用或开发流程中",
+        "解决企业级AI使用中的隐私合规痛点，对使用LLM API的开发者有直接实用价值"
+      ],
+      "target_users": "AI应用开发者、安全工程师、使用OpenAI等API的团队，尤其关注数据隐私和合规的开发者",
+      "quick_start": "pip install promptcloak 后，运行 promptcloak proxy 启动本地代理，将API请求指向 http://localhost:8080 即可自动脱敏"
+    }
+  ]
+}
