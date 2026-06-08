@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-08",
+  "picks": [
+    {
+      "full_name": "abhiyan100/system-design-architect",
+      "url": "https://github.com/abhiyan100/system-design-architect",
+      "summary": "系统架构设计自动生成插件",
+      "highlights": [
+        "基于Claude Code的插件，能在编码前自动研究行业标准架构并生成可复用的决策驱动型SYSTEMDESIGN.md文档",
+        "减少人工调研和设计决策时间，提升系统设计规范性",
+        "适合快速启动复杂项目，确保设计有据可依"
+      ],
+      "target_users": "后端开发者、系统架构师、技术决策者、使用Claude Code的开发者",
+      "quick_start": "安装Claude Code后，在项目根目录运行插件命令，它会自动分析项目需求并生成SYSTEMDESIGN.md文件，5分钟内即可获得架构草案"
+    },
+    {
+      "full_name": "zakir-maswani/Pakistan-National-AI-Policy-Assistant-",
+      "url": "https://github.com/zakir-maswani/Pakistan-National-AI-Policy-Assistant-",
+      "summary": "AI政策文档问答助手",
+      "highlights": [
+        "结合FastAPI、LangChain、FAISS向量检索和Groq的LLaMA 3.1模型，实现针对特定政策文档的精准问答",
+        "展示了如何用现代AI技术栈快速构建领域专用问答系统，可复用于其他政策或技术文档",
+        "代码结构清晰，适合学习RAG（检索增强生成）实践"
+      ],
+      "target_users": "AI/ML开发者、政策研究人员、希望构建文档问答系统的技术团队",
+      "quick_start": "克隆仓库，配置API密钥，运行docker-compose或本地启动FastAPI服务，访问API端点即可用自然语言提问"
+    }
+  ]
+}
