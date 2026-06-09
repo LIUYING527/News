@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-09",
+  "picks": [
+    {
+      "full_name": "GhadeerMostafa/EEG-MRANC",
+      "url": "https://github.com/GhadeerMostafa/EEG-MRANC",
+      "summary": "深度学习去除脑电伪影",
+      "highlights": [
+        "提出物理约束的多分辨率注意力神经网络，可有效去除临床EEG中的多种伪影，提升信号质量",
+        "基于PyTorch实现，代码完整，适合学术研究和医疗AI应用",
+        "创新性地融合物理先验与深度学习，为脑电信号预处理提供新方案"
+      ],
+      "target_users": "脑科学研究者、医疗AI工程师、信号处理与深度学习交叉领域开发者",
+      "quick_start": "克隆仓库后，安装PyTorch依赖，运行示例脚本处理EEG数据即可体验去伪影效果"
+    },
+    {
+      "full_name": "tayibs1/QuantML",
+      "url": "https://github.com/tayibs1/QuantML",
+      "summary": "量化交易机器学习平台",
+      "highlights": [
+        "集成了交易信号生成、滚动回测、风险评估和RAG市场分析，形成完整量化研究流水线",
+        "面向生产环境设计，适合从研究到实盘的快速迭代",
+        "结合检索增强生成(RAG)技术，可智能分析市场文本数据，提升决策质量"
+      ],
+      "target_users": "量化交易研究员、金融科技开发者、对机器学习在金融领域应用感兴趣的工程师",
+      "quick_start": "克隆仓库后，按README配置环境，运行预置回测脚本即可查看交易信号和绩效报告"
+    }
+  ]
+}
