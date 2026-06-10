@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-10",
+  "picks": [
+    {
+      "full_name": "JORSIECHARTE/Aegis-Security-Toolkit",
+      "url": "https://github.com/JORSIECHARTE/Aegis-Security-Toolkit",
+      "summary": "教育级网络安全工具包",
+      "highlights": [
+        "集成端口扫描、横幅抓取、密码分析、日志分析等常见安全操作，功能实用",
+        "基于 Python + Streamlit 构建，界面友好，适合快速演示和学习",
+        "内置 SQLite 记录扫描历史，方便复盘和报告生成"
+      ],
+      "target_users": "网络安全初学者、CTF选手、需要快速搭建安全演示环境的开发者",
+      "quick_start": "git clone 项目后，运行 pip install -r requirements.txt 安装依赖，然后执行 streamlit run app.py 即可在浏览器中打开工具界面"
+    },
+    {
+      "full_name": "Lord1Egypt/skill-explorer",
+      "url": "https://github.com/Lord1Egypt/skill-explorer",
+      "summary": "9万+AI技能搜索引擎",
+      "highlights": [
+        "聚合 ClawHub、LobeHub、skills.sh 等多个平台的 AI Agent 技能，覆盖广泛",
+        "支持浏览和搜索，方便开发者快速找到可复用的 AI 技能模块",
+        "基于 JavaScript 开发，轻量易部署，可直接用于日常 AI 应用开发"
+      ],
+      "target_users": "AI Agent 开发者、Prompt工程师、需要快速集成现成技能的 AI 应用构建者",
+      "quick_start": "git clone 项目后，直接打开 index.html 即可在浏览器中搜索和浏览技能列表，无需额外环境配置"
+    }
+  ]
+}
