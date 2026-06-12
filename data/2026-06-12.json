@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-12",
+  "picks": [
+    {
+      "full_name": "amgadelgamal/claude-council",
+      "url": "https://github.com/amgadelgamal/claude-council",
+      "summary": "零API密钥的LLM委员会系统",
+      "highlights": [
+        "利用现有Claude订阅实现多个子代理并行辩论，无需额外API费用，极大降低使用成本",
+        "通过匿名同行评审和综合答案机制，提升输出质量与多样性，适合复杂决策场景",
+        "纯JavaScript实现，易于集成到现有工作流，对开发者友好"
+      ],
+      "target_users": "需要高质量、多角度LLM输出的开发者，尤其是依赖Claude Code进行代码审查、技术决策或创意生成的团队",
+      "quick_start": "克隆仓库，运行`npm install`，然后在Claude Code中启用委员会模式，配置子代理数量即可体验并行辩论"
+    },
+    {
+      "full_name": "Zaishanqing/obsidian-paper-radar",
+      "url": "https://github.com/Zaishanqing/obsidian-paper-radar",
+      "summary": "DeepSeek驱动的论文自动推送工具",
+      "highlights": [
+        "结合DeepSeek和arXiv/顶会论文，实现全自动每日论文推送，节省科研跟踪时间",
+        "直接集成到Obsidian笔记系统，方便记录和管理阅读笔记",
+        "Python实现，轻量易部署，支持定制化关键词过滤"
+      ],
+      "target_users": "科研人员、研究生、AI领域从业者，以及希望高效追踪最新学术论文的Obsidian用户",
+      "quick_start": "安装Obsidian社区插件或克隆仓库，配置DeepSeek API密钥和感兴趣的关键词，运行脚本即可每日自动获取摘要推送"
+    }
+  ]
+}
