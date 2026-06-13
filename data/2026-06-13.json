@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-13",
+  "picks": [
+    {
+      "full_name": "Gamma-Software/Encore",
+      "url": "https://github.com/Gamma-Software/Encore",
+      "summary": "macOS原生UI自动化测试框架",
+      "highlights": [
+        "基于无障碍(AX)树驱动，无需像素坐标，测试更稳定",
+        "支持Tauri、Electron、AppKit等主流macOS应用框架",
+        "类Maestro风格API，降低自动化测试编写门槛"
+      ],
+      "target_users": "macOS应用开发者、QA工程师、需要UI自动化测试的团队",
+      "quick_start": "npm install @gamma-software/encore && npx encore run --app /path/to/your.app"
+    },
+    {
+      "full_name": "SafeGuard-Hosting/SafeGuard-Panel-CE",
+      "url": "https://github.com/SafeGuard-Hosting/SafeGuard-Panel-CE",
+      "summary": "免费且功能完整的托管控制面板",
+      "highlights": [
+        "完全免费，无功能限制，支持无限服务器",
+        "基于PHP开发，易于部署和二次开发",
+        "适合个人或小型团队快速搭建托管服务"
+      ],
+      "target_users": "托管服务提供商、运维工程师、自建服务器的小团队",
+      "quick_start": "git clone https://github.com/SafeGuard-Hosting/SafeGuard-Panel-CE.git && cd SafeGuard-Panel-CE && cp .env.example .env && php artisan serve"
+    }
+  ]
+}
