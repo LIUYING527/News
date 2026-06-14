@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-14",
+  "picks": [
+    {
+      "full_name": "anoop-808/SentinelForge_v1",
+      "url": "https://github.com/anoop-808/SentinelForge_v1",
+      "summary": "SOC日志分析与SIEM框架",
+      "highlights": [
+        "专为安全运营中心(SOC)设计，集成Linux日志分析与SIEM可视化，可直接用于安全事件检测",
+        "支持JSON导出和仪表盘生成，便于快速搭建内部安全监控面板",
+        "使用Python实现，轻量且易于定制，适合中小团队快速部署"
+      ],
+      "target_users": "安全运维工程师、SOC分析师、对日志分析和威胁检测感兴趣的开发者",
+      "quick_start": "克隆仓库后，运行python sentinel_forge.py --help查看命令选项，使用示例日志文件执行python sentinel_forge.py -f sample_logs.txt即可生成分析报告"
+    },
+    {
+      "full_name": "macbuildssys/vulnscope",
+      "url": "https://github.com/macbuildssys/vulnscope",
+      "summary": "NVD漏洞趋势ML分析管道",
+      "highlights": [
+        "利用线性回归、逻辑回归和随机森林建模NVD供应链CVE数据（2015-2026），可预测新兴弱点类别",
+        "直接解决供应链安全痛点，输出可量化的趋势预测，辅助安全决策",
+        "Python实现，代码结构清晰，适合作为ML在安全领域应用的参考项目"
+      ],
+      "target_users": "安全研究员、数据科学家、DevSecOps工程师、关注供应链安全的开发者",
+      "quick_start": "安装依赖后，运行python vulnscope.py --train --predict，脚本会自动下载NVD数据并输出趋势图和预测结果"
+    }
+  ]
+}
