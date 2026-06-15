@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-15",
+  "picks": [
+    {
+      "full_name": "davidleonstr/intelligent-clipboard",
+      "url": "https://github.com/davidleonstr/intelligent-clipboard",
+      "summary": "AI智能剪贴板工具",
+      "highlights": [
+        "将系统剪贴板变成AI驱动的智能设备，支持自动化文本处理与增强",
+        "基于Python开发，易于扩展和集成到日常开发工作流中",
+        "实用性强，可显著提升文本复制粘贴场景下的效率"
+      ],
+      "target_users": "经常处理文本、代码或数据的开发者，以及希望利用AI提升日常工作效率的技术用户",
+      "quick_start": "克隆仓库后运行pip install -r requirements.txt安装依赖，然后执行python app.py启动应用，复制任意文本即可体验AI增强功能"
+    },
+    {
+      "full_name": "kenNethhao8/financial-prompt-localizer",
+      "url": "https://github.com/kenNethhao8/financial-prompt-localizer",
+      "summary": "金融工程Prompt本地化工具",
+      "highlights": [
+        "专为中文母语者设计，将中文金融量化需求自动转为英文结构化Prompt",
+        "直接对接Codex/GPT/Claude等主流模型，提升英文优先模型的中文金融任务执行效果",
+        "覆盖回测、因子、风控、金融机器学习等专业场景，技术价值高"
+      ],
+      "target_users": "量化研究员、金融工程师、中文母语的AI应用开发者，以及需要高效使用大模型处理金融任务的技术人员",
+      "quick_start": "克隆仓库后运行pip install -r requirements.txt，然后执行python localizer.py，在交互界面输入中文金融需求即可获得转换后的英文Prompt"
+    }
+  ]
+}
