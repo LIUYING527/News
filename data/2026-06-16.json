@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-16",
+  "picks": [
+    {
+      "full_name": "wailbentafat/glassefc",
+      "url": "https://github.com/wailbentafat/glassefc",
+      "summary": "Swift支付锁定库",
+      "highlights": [
+        "为独立开发者提供一种新颖的防跑单机制：在App交付后锁定功能，直到客户付款才解锁，适合Freelance场景。",
+        "基于Swift Package Manager，集成简单，直接嵌入iOS/macOS项目即可使用。",
+        "填补了移动端支付保障工具的空缺，实用性强，尤其适合海外自由职业开发者。"
+      ],
+      "target_users": "iOS/macOS独立开发者、自由职业者、需要在App内实现付款后解锁功能的开发者。",
+      "quick_start": "在Xcode中通过File > Add Packages搜索仓库URL，添加依赖后调用API锁定/解锁视图即可。"
+    },
+    {
+      "full_name": "trajanwomack/MLB_prediction_model",
+      "url": "https://github.com/trajanwomack/MLB_prediction_model",
+      "summary": "MLB比分预测模型",
+      "highlights": [
+        "完整的多阶段机器学习管线：包含Sagarin等级评分、球队攻防聚合、先发投手对决特征，技术架构清晰。",
+        "基于Random Forest在663场比赛×104特征上训练，MAE约2.4分，精度较高，可直接用于预测。",
+        "提供简单的调用接口：只需传入两支球队和先发投手即可预测比分，适合体育数据分析和投注参考。"
+      ],
+      "target_users": "数据科学学习者、体育数据分析师、MLB球迷开发者、希望实践端到端ML项目的开发者。",
+      "quick_start": "克隆仓库后安装依赖（pandas, scikit-learn等），运行train.py训练模型，然后调用predict_matchup(team1, team2, pitcher1, pitcher2)获取预测结果。"
+    }
+  ]
+}
