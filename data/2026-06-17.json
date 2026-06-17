@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-17",
+  "picks": [
+    {
+      "full_name": "habamax/vim-curl",
+      "url": "https://github.com/habamax/vim-curl",
+      "summary": "Vim内直接调用cURL的REST插件",
+      "highlights": [
+        "无需离开Vim即可发送HTTP请求、调试API，提升开发效率",
+        "基于Vim Script轻量实现，兼容性高，无需额外依赖",
+        "适合日常接口测试、快速验证REST端点，减少上下文切换"
+      ],
+      "target_users": "Vim/Neovim用户、后端开发者、API调试工程师",
+      "quick_start": "安装后，在Vim中执行 `:Curl GET https://api.example.com` 即可发起请求，结果直接显示在缓冲区。"
+    },
+    {
+      "full_name": "marstudio360/journal-mcp",
+      "url": "https://github.com/marstudio360/journal-mcp",
+      "summary": "Claude Code的本地项目日志MCP",
+      "highlights": [
+        "为每个项目维护一份JOURNAL.md，作为唯一真实来源，避免上下文丢失",
+        "通过CLAUDE.md规则让Claude自动维护日志，实现持久化记忆",
+        "MIT开源，免费使用，特别适合AI辅助开发的长周期项目"
+      ],
+      "target_users": "使用Claude Code的开发者、AI辅助编程重度用户、项目管理爱好者",
+      "quick_start": "克隆仓库，将`claude.md`规则文件放入项目根目录，重启Claude Code后即可自动创建与维护JOURNAL.md。"
+    }
+  ]
+}
