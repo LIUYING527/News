@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-18",
+  "picks": [
+    {
+      "full_name": "DecaGrenadier/DLL-Repair-Tool",
+      "url": "https://github.com/DecaGrenadier/DLL-Repair-Tool",
+      "summary": "一键修复Windows缺失DLL",
+      "highlights": [
+        "自动修复50+常见DLL错误（如MSVCP140.dll、d3dx9_43.dll），覆盖游戏和开发环境常见缺失场景",
+        "一键安装所有Visual C++ Redistributable、DirectX Runtime和.NET Framework，减少手动排查时间",
+        "对开发者调试老旧项目或部署Windows环境极其高效，省去逐个搜索和下载DLL的麻烦"
+      ],
+      "target_users": "Windows开发者、游戏玩家、系统管理员、需要快速修复运行环境依赖的IT运维人员",
+      "quick_start": "下载项目ZIP或clone仓库，以管理员身份运行DLL-Repair-Tool.exe，点击“一键修复”按钮即可自动扫描并修复缺失DLL"
+    },
+    {
+      "full_name": "ScorpionRouter/Runtime-Installer-AIO",
+      "url": "https://github.com/ScorpionRouter/Runtime-Installer-AIO",
+      "summary": "运行时库全合一安装器",
+      "highlights": [
+        "集成Visual C++ 2005-2022、DirectX、.NET 4.8.1和Universal CRT，解决几乎所有运行时缺失问题",
+        "一次安装覆盖多个版本，避免因版本冲突导致的应用崩溃，尤其适合CI/CD或新系统初始化",
+        "轻量级，无需联网下载多个独立安装包，节省开发环境搭建时间"
+      ],
+      "target_users": "软件开发工程师、测试人员、需要快速配置Windows开发或测试环境的DevOps",
+      "quick_start": "下载Runtime-Installer-AIO.exe，以管理员身份运行，勾选所有组件后点击“安装”，等待进度条完成即可"
+    }
+  ]
+}
