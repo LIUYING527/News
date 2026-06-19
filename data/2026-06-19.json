@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-19",
+  "picks": [
+    {
+      "full_name": "tarrrrrrrrrrrrrrrrrrr/agri-paper-topjournal-workflow",
+      "url": "https://github.com/tarrrrrrrrrrrrrrrrrrr/agri-paper-topjournal-workflow",
+      "summary": "农业论文统计与投稿工作流",
+      "highlights": [
+        "提供可复用的农业论文统计、图表绘制和稿件准备代码，减少重复劳动",
+        "包含投稿QA流程，适合学术写作场景，提升论文质量和效率",
+        "基于Python实现，易于集成到科研工作流中"
+      ],
+      "target_users": "农业、环境科学等领域的研究人员、博士生、学术写作者",
+      "quick_start": "克隆仓库后，运行 pip install -r requirements.txt 安装依赖，然后参照示例数据运行主脚本生成统计图表。"
+    },
+    {
+      "full_name": "odehjosephokanga43-del/pinionalpha-pwa",
+      "url": "https://github.com/odehjosephokanga43-del/pinionalpha-pwa",
+      "summary": "青年创业者一站式平台PWA",
+      "highlights": [
+        "集成了创业所需的资金、导师、市场、团队四大要素，一站式服务",
+        "采用PWA技术，支持离线使用和跨平台，用户体验接近原生应用",
+        "前端使用JavaScript构建，适合学习现代Web开发实践"
+      ],
+      "target_users": "年轻创业者、创业教育从业者、PWA开发者",
+      "quick_start": "在浏览器中打开部署后的PWA链接，或使用npm install && npm start在本地运行，然后通过手机或桌面添加至主屏幕体验。"
+    }
+  ]
+}
