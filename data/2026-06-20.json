@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-20",
+  "picks": [
+    {
+      "full_name": "3x-haust/nlbackend",
+      "url": "https://github.com/3x-haust/nlbackend",
+      "summary": "自然语言后端框架",
+      "highlights": [
+        "用本地LLM解析自然语言指令，自动匹配并执行预注册的Action，大幅降低后端API调用门槛",
+        "集成Zod验证与授权逻辑，确保AI生成的操作安全可控",
+        "适合快速构建原型或辅助开发，让非技术人员也能通过对话触发后端功能"
+      ],
+      "target_users": "后端开发者、AI应用开发者、希望用自然语言替代传统API调用的团队",
+      "quick_start": "克隆仓库，阅读README配置本地LLM（如Ollama），运行示例Action并发送自然语言请求测试"
+    },
+    {
+      "full_name": "jhoj/Nema.AuthManager.Core",
+      "url": "https://github.com/jhoj/Nema.AuthManager.Core",
+      "summary": "轻量认证管理库",
+      "highlights": [
+        "C#实现，提供核心认证逻辑，便于集成到.NET项目中",
+        "代码简洁，适合作为学习或定制化认证模块的起点",
+        "今日新增，可能包含新思路或简化方案，值得关注后续更新"
+      ],
+      "target_users": ".NET/C#开发者、需要快速搭建认证系统的团队、安全模块研究者",
+      "quick_start": "下载代码，在现有.NET项目中引用，调用提供的认证接口进行登录/令牌验证测试"
+    }
+  ]
+}
