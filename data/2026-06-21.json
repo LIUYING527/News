@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-21",
+  "picks": [
+    {
+      "full_name": "oavlloh-wq/cachelens",
+      "url": "https://github.com/oavlloh-wq/cachelens",
+      "summary": "LLM缓存诊断工具",
+      "highlights": [
+        "帮助开发者快速定位LLM提示缓存失效的根本原因，提升推理性能",
+        "提供可视化或分析接口，适用于大模型部署场景下的缓存优化",
+        "直接解决实际工程痛点：缓存命中率低导致高延迟和成本浪费"
+      ],
+      "target_users": "使用LLM的AI应用开发者、MLOps工程师、关注推理效率的团队",
+      "quick_start": "克隆仓库后，按照README配置API密钥，运行分析脚本即可输出缓存失效报告"
+    },
+    {
+      "full_name": "wioletowa/42Host",
+      "url": "https://github.com/wioletowa/42Host",
+      "summary": "Minecraft服务器GUI管理工具",
+      "highlights": [
+        "使用Rust + GTK4/libadwaita构建，原生Wayland支持，性能与美观兼备",
+        "提供直观的图形界面来启动、停止和管理Minecraft服务器，降低运维门槛",
+        "适合Rust开发者学习现代GUI编程实践，同时解决游戏社区的实际需求"
+      ],
+      "target_users": "Minecraft服务器管理员、Rust GUI开发者、Linux桌面用户",
+      "quick_start": "安装Rust工具链后，运行cargo build，启动程序即可通过图形界面添加并管理服务器实例"
+    }
+  ]
+}
