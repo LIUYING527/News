@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-22",
+  "picks": [
+    {
+      "full_name": "WoodyWizard/SecretStream",
+      "url": "https://github.com/WoodyWizard/SecretStream",
+      "summary": "加密直播流工具",
+      "highlights": [
+        "提供端到端的直播流加密，配合浏览器扩展解密，确保内容仅授权用户可见",
+        "适用于需要保护直播内容版权的场景，如付费课程、私密会议等",
+        "解密器以浏览器扩展形式提供，用户无需安装额外软件，使用便捷"
+      ],
+      "target_users": "需要保护直播内容隐私的开发者、内容创作者、在线教育平台运营者",
+      "quick_start": "克隆仓库，按README配置加密端，安装配套浏览器扩展，生成访问密钥分发给观众即可"
+    },
+    {
+      "full_name": "Leeksov/usbliter8-txm-patchfinder",
+      "url": "https://github.com/Leeksov/usbliter8-txm-patchfinder",
+      "summary": "iOS安全研究补丁定位工具",
+      "highlights": [
+        "针对iOS 27 A13+设备，自动化定位TXM（可信执行监控）补丁，绕过代码签名和信任缓存",
+        "支持A13至M1芯片，每设备可生成15个补丁，声称成功率100%",
+        "为iOS底层安全研究、越狱开发及逆向工程提供关键基础设施"
+      ],
+      "target_users": "iOS安全研究员、越狱开发者、系统底层逆向工程师",
+      "quick_start": "在支持的iOS设备上运行Python脚本，自动检测芯片并输出补丁位置，配合其他工具使用"
+    }
+  ]
+}
