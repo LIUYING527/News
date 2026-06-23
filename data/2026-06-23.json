@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-23",
+  "picks": [
+    {
+      "full_name": "in-rolls/savitr",
+      "url": "https://github.com/in-rolls/savitr",
+      "summary": "MLX加速的Surya OCR工具",
+      "highlights": [
+        "利用Apple Silicon的MLX框架，将Surya OCR推理速度提升约3.6倍，显著降低延迟",
+        "专为选举名册解析设计，但通用OCR能力可迁移至文档数字化、票据识别等场景",
+        "纯Python实现，对Mac开发者友好，可直接集成到现有工作流"
+      ],
+      "target_users": "使用Apple Silicon Mac的开发者、需要本地高速OCR处理的文档分析工程师、选举数据处理人员",
+      "quick_start": "克隆仓库，安装依赖后运行示例脚本，传入图片路径即可获得OCR结果，无需GPU配置"
+    },
+    {
+      "full_name": "federicobaio/XAI-tools-and-Streamlit-app-for-credit-risk",
+      "url": "https://github.com/federicobaio/XAI-tools-and-Streamlit-app-for-credit-risk",
+      "summary": "可解释的信用风险评估应用",
+      "highlights": [
+        "结合SHAP/LIME进行模型解释，并包含VIF特征筛选、成本阈值优化和公平性审计，覆盖模型可解释性全流程",
+        "提供Streamlit交互式Demo，可直接输入申请人数据查看评分和决策原因，实用性强",
+        "基于德国信用数据集，代码完整，适合作为XAI落地参考或金融风控教学案例"
+      ],
+      "target_users": "金融风控工程师、数据科学家、对模型可解释性（XAI）感兴趣的ML开发者、信用评分产品经理",
+      "quick_start": "克隆仓库，安装requirements.txt，运行streamlit run app.py，浏览器打开即可测试信用评分与解释"
+    }
+  ]
+}
