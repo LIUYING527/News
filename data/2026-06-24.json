@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-24",
+  "picks": [
+    {
+      "full_name": "The-Lup/ADUserProvisioningTool",
+      "url": "https://github.com/The-Lup/ADUserProvisioningTool",
+      "summary": "AD用户批量创建工具",
+      "highlights": [
+        "基于PowerShell自动化，可参考现有账户快速创建新用户，大幅提升IT运维效率",
+        "适合企业AD环境，减少手动配置错误，支持Windows域环境",
+        "代码简洁实用，可直接二次定制，满足不同组织命名规则和属性需求"
+      ],
+      "target_users": "IT运维工程师、系统管理员、需要批量管理AD账户的开发者",
+      "quick_start": "克隆仓库，在域控制器上以管理员身份运行PowerShell脚本，按提示输入参考账户名和要创建的用户列表即可"
+    },
+    {
+      "full_name": "gelibing8-rgb/oss-evidence-kit",
+      "url": "https://github.com/gelibing8-rgb/oss-evidence-kit",
+      "summary": "开源项目证据报告生成器",
+      "highlights": [
+        "为开源维护者生成可验证的公开证据报告，增强项目透明度和可信度",
+        "基于JavaScript，易于集成到CI/CD流程中，自动化生成审计证据",
+        "解决开源项目贡献证明和合规性验证的实际痛点"
+      ],
+      "target_users": "开源项目维护者、社区管理者、需要合规审计的开发者",
+      "quick_start": "npm安装后，在项目根目录运行命令行工具，指定仓库地址和输出格式，即可生成HTML/JSON格式的证据报告"
+    }
+  ]
+}
