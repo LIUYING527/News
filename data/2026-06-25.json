@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-25",
+  "picks": [
+    {
+      "full_name": "Wiznet/STM32F412-W6300-SoM-C",
+      "url": "https://github.com/Wiznet/STM32F412-W6300-SoM-C",
+      "summary": "STM32F412以太网固件示例",
+      "highlights": [
+        "基于STM32CubeIDE的完整固件示例，可直接编译运行，降低嵌入式以太网开发门槛",
+        "集成WIZnet W6300硬件TCP/IP协议栈，适合需要稳定网络连接的IoT设备开发",
+        "官方维护，代码规范，可作为学习STM32+以太网通信的参考实现"
+      ],
+      "target_users": "嵌入式开发者、IoT硬件工程师、使用STM32进行联网产品开发的团队",
+      "quick_start": "克隆仓库，用STM32CubeIDE打开项目，连接开发板后直接编译烧录，通过串口观察以太网通信日志"
+    },
+    {
+      "full_name": "israelortizcpsc/react-a11y-datatable",
+      "url": "https://github.com/israelortizcpsc/react-a11y-datatable",
+      "summary": "无障碍React数据表格组件",
+      "highlights": [
+        "内置排序、筛选、分页功能，开箱即用，减少重复开发工作",
+        "严格遵循WAI-ARIA无障碍标准，适合需要满足可访问性合规要求的企业级应用",
+        "TypeScript编写，类型安全，易于集成到现有React项目中"
+      ],
+      "target_users": "React前端开发者、需要构建数据表格的企业应用团队、关注无障碍体验的开发者",
+      "quick_start": "npm install后引入DataTable组件，传入数据数组和列配置，即可在页面中渲染出可交互的表格"
+    }
+  ]
+}
