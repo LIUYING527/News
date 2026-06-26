@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-26",
+  "picks": [
+    {
+      "full_name": "momenbasel/pesty",
+      "url": "https://github.com/momenbasel/pesty",
+      "summary": "macOS 开源剪贴板管理器",
+      "highlights": [
+        "原生 SwiftUI 构建，性能流畅且界面简洁，媲美付费应用 Paste",
+        "已签名并公证，可直接安装使用，无需额外配置",
+        "完全免费开源，可自定义和扩展功能"
+      ],
+      "target_users": "macOS 开发者、设计师、文案工作者及任何需要高效管理剪贴板历史的用户",
+      "quick_start": "从 Releases 下载最新 .dmg 文件，安装后启动即可自动记录剪贴板内容，按快捷键调出历史面板"
+    },
+    {
+      "full_name": "Cesarjoquin/polymarket-politics-markets-trading-bot-rust",
+      "url": "https://github.com/Cesarjoquin/polymarket-politics-markets-trading-bot-rust",
+      "summary": "Polymarket 政治市场交易机器人",
+      "highlights": [
+        "使用 Rust 编写，性能高且内存安全，适合高频交易场景",
+        "专注于政治预测市场，可自动执行策略，减少人工盯盘",
+        "代码结构清晰，适合学习 Rust 在 DeFi 领域的实战应用"
+      ],
+      "target_users": "加密货币交易者、Rust 开发者、对预测市场或政治事件套利感兴趣的技术用户",
+      "quick_start": "克隆仓库后，配置 API 密钥和交易参数，运行 `cargo run --release` 即可启动机器人进行模拟或实盘交易"
+    }
+  ]
+}
