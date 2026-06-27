@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-27",
+  "picks": [
+    {
+      "full_name": "turrz/ny-patrol-citation-system",
+      "url": "https://github.com/turrz/ny-patrol-citation-system",
+      "summary": "全栈交通罚单管理系统",
+      "highlights": [
+        "基于FastAPI+MySQL+原生JavaScript，技术栈主流且轻量",
+        "内置JWT认证和角色权限控制，适合中小型管理后台快速参考",
+        "功能完整：驾驶员/管理员双门户，可直接用于真实业务场景"
+      ],
+      "target_users": "希望学习全栈开发、构建管理后台的开发者，或需要交通罚单管理方案的团队",
+      "quick_start": "克隆仓库，配置MySQL数据库，运行后端FastAPI服务，打开前端HTML文件即可登录体验"
+    },
+    {
+      "full_name": "leifstout/dataServiceTyped",
+      "url": "https://github.com/leifstout/dataServiceTyped",
+      "summary": "Luau类型安全数据服务",
+      "highlights": [
+        "基于Luau语言，为Roblox开发提供类型安全的服务层",
+        "项目虽小但结构清晰，适合学习Luau类型系统和数据服务模式",
+        "零依赖，可直接嵌入现有Roblox项目提升代码健壮性"
+      ],
+      "target_users": "Roblox游戏开发者、Luau语言学习者，或对类型安全服务层设计感兴趣的开发者",
+      "quick_start": "克隆仓库，将源码复制到Roblox Studio中，参考示例调用数据服务即可"
+    }
+  ]
+}
