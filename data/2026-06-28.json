@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-28",
+  "picks": [
+    {
+      "full_name": "mindheadllc/adversarial-review",
+      "url": "https://github.com/mindheadllc/adversarial-review",
+      "summary": "多模型对抗性审阅工具",
+      "highlights": [
+        "集成多个领先AI模型，自动对工作成果进行对抗性测试，发现潜在漏洞和逻辑缺陷",
+        "采用精确门控机制，确保反馈质量，而非简单建议，适合严苛的代码或文档审查场景",
+        "开源且可自定义模型组合，提升开发者的防御性编程和系统健壮性"
+      ],
+      "target_users": "安全工程师、质量保证人员、追求高可靠性的后端/全栈开发者",
+      "quick_start": "克隆仓库，运行 npm install，设置 API 密钥，使用命令行或配置文件提交待审查内容，等待多模型分析报告"
+    },
+    {
+      "full_name": "MrToAster13/grc-fleet-scanner",
+      "url": "https://github.com/MrToAster13/grc-fleet-scanner",
+      "summary": "CIS合规舰队扫描审计工具",
+      "highlights": [
+        "自动发现网络主机，并利用 OpenSCAP 对 Ubuntu 系统进行 CIS Benchmark 合规审计",
+        "生成舰队级合规报告和漂移历史，便于 GRC 分析师追踪安全基线变化",
+        "Python 实现，易于集成到 CI/CD 或日常运维流程中，提升企业安全合规效率"
+      ],
+      "target_users": "GRC分析师、安全运维工程师、系统管理员、合规审计人员",
+      "quick_start": "pip install -r requirements.txt，配置目标网段，运行 python scanner.py，查看生成的合规报告和漂移历史文件"
+    }
+  ]
+}
