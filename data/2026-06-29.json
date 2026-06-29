@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-29",
+  "picks": [
+    {
+      "full_name": "celestialdust/achilles-skills",
+      "url": "https://github.com/celestialdust/achilles-skills",
+      "summary": "多智能体技能套件",
+      "highlights": [
+        "实现从想法到PR的完整自动化流程，涵盖构思、规范、计划、实现、验证、审查、交付七个阶段，大幅减少人工编码环节",
+        "支持Claude Code、Cursor、Gemini CLI等多种主流AI编码工具，即插即用，适配性极强",
+        "输出带风险分级的草稿PR，让开发者保留最终决策权，同时享受AI执行效率"
+      ],
+      "target_users": "使用AI辅助编码的软件工程师、技术团队负责人、希望提升开发效率的独立开发者",
+      "quick_start": "克隆仓库后，按照README配置你的AI编码工具（如Cursor或Claude Code），然后运行一条指令：`achilles \"写一个Python的JWT认证中间件\"`，即可观察完整流程"
+    },
+    {
+      "full_name": "samdharma/futi-pi",
+      "url": "https://github.com/samdharma/futi-pi",
+      "summary": "富途/牛牛股票API集成",
+      "highlights": [
+        "将富途/牛牛OpenAPI封装为pi编码代理的斜杠命令和技能，可直接在终端中获取市场数据、下单、筛选股票",
+        "内置缺口扫描功能，适合量化交易者快速发现交易机会",
+        "基于Python构建，易于扩展自定义策略和信号，与现有交易流程无缝衔接"
+      ],
+      "target_users": "量化交易开发者、使用富途/牛牛API的金融科技工程师、个人投资者",
+      "quick_start": "安装依赖后，在终端运行`pip install futi-pi`，然后配置API密钥，输入`/futi quote 00700`即可获取腾讯控股实时行情"
+    }
+  ]
+}
