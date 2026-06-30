@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-30",
+  "picks": [
+    {
+      "full_name": "thapawan/GeoAI-Landslide-Early-Warning-Framework",
+      "url": "https://github.com/thapawan/GeoAI-Landslide-Early-Warning-Framework",
+      "summary": "GeoAI滑坡预警框架",
+      "highlights": [
+        "结合地理空间AI与滑坡灾害建模，实现早期预警系统，技术前沿性强",
+        "可能整合遥感、地形数据与机器学习，具有实际防灾减灾应用价值",
+        "开源框架便于研究者二次开发和定制化部署"
+      ],
+      "target_users": "地理信息科学研究者、地质灾害工程师、AI在环境科学领域的开发者",
+      "quick_start": "克隆仓库，查看README中的数据集和模型说明，运行提供的Jupyter Notebook示例"
+    },
+    {
+      "full_name": "onyx766/diabetes_predictor",
+      "url": "https://github.com/onyx766/diabetes_predictor",
+      "summary": "糖尿病早期风险预测系统",
+      "highlights": [
+        "使用集成机器学习技术（如随机森林、XGBoost）提高预测准确性",
+        "针对早期风险检测设计，对医疗健康领域有直接实用价值",
+        "TypeScript实现，便于Web前端集成或部署为API服务"
+      ],
+      "target_users": "医疗健康领域的开发者、数据科学家、需要快速构建健康预测原型的团队",
+      "quick_start": "克隆仓库，安装依赖（npm install），运行主脚本或查看模型训练入口文件快速测试"
+    }
+  ]
+}
