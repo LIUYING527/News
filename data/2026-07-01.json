@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-01",
+  "picks": [
+    {
+      "full_name": "zainrock41/Among_Us_Ghost_Mode",
+      "url": "https://github.com/zainrock41/Among_Us_Ghost_Mode",
+      "summary": "Among Us透视作弊工具",
+      "highlights": [
+        "实现游戏内透视、角色身份和任务日志查看，技术涉及内存读取与渲染覆盖",
+        "支持主机和客户端双模式，兼容所有游戏模式，实用性强",
+        "Python实现，适合学习游戏外挂原理或逆向工程入门"
+      ],
+      "target_users": "游戏安全研究者、逆向工程学习者、Among Us玩家",
+      "quick_start": "克隆仓库，安装Python依赖，运行脚本并启动Among Us即可自动注入透视功能"
+    },
+    {
+      "full_name": "drogafarto-web/Cryptocurrency_Auto-Trader",
+      "url": "https://github.com/drogafarto-web/Cryptocurrency_Auto-Trader",
+      "summary": "加密货币自动交易机器人",
+      "highlights": [
+        "支持Binance、Coinbase等主流交易所的API自动交易，技术栈成熟",
+        "内置技术指标分析、自动止损、利润追踪，可降低人工盯盘成本",
+        "Python实现，模块化设计便于自定义策略，适合量化交易入门"
+      ],
+      "target_users": "加密货币投资者、量化交易开发者、金融科技爱好者",
+      "quick_start": "安装Python和ccxt库，配置交易所API密钥，运行主脚本并设置交易参数即可自动执行"
+    }
+  ]
+}
