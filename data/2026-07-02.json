@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-02",
+  "picks": [
+    {
+      "full_name": "kby-ai/Face-Recognition-Open-Source-Free-SDK",
+      "url": "https://github.com/kby-ai/Face-Recognition-Open-Source-Free-SDK",
+      "summary": "免费开源人脸识别SDK",
+      "highlights": [
+        "支持人脸检测、关键点提取、特征提取与模板匹配，功能完整",
+        "跨平台支持Windows和Linux，可直接集成到Python项目",
+        "开源免费，适合快速原型开发或嵌入现有系统"
+      ],
+      "target_users": "需要离线人脸识别功能的开发者、安全系统开发者、AI应用集成者",
+      "quick_start": "克隆仓库，安装依赖（pip install -r requirements.txt），运行示例Python脚本即可体验人脸检测与匹配。"
+    },
+    {
+      "full_name": "kellsd090/45GHz-to-90GHz-Active-Frequency-Doubler-",
+      "url": "https://github.com/kellsd090/45GHz-to-90GHz-Active-Frequency-Doubler-",
+      "summary": "45-90GHz有源倍频器设计",
+      "highlights": [
+        "覆盖45-90GHz毫米波频段，采用45nm CMOS工艺",
+        "push-push拓扑结构，适合高频射频前端设计",
+        "包含完整设计文件，可作为学术或工业高频电路参考"
+      ],
+      "target_users": "射频/毫米波IC设计工程师、高频电路研究者、半导体工艺开发者",
+      "quick_start": "下载仓库中的设计文件（如原理图、仿真结果），使用Cadence或其他EDA工具打开查看。"
+    }
+  ]
+}
