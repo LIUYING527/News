@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-03",
+  "picks": [
+    {
+      "full_name": "PlatypusCodes/platypus",
+      "url": "https://github.com/PlatypusCodes/platypus",
+      "summary": "鸭嘴兽官网项目",
+      "highlights": [
+        "使用纯CSS构建，适合学习现代CSS布局与设计技巧",
+        "代码简洁，可作为个人或小团队官网的快速启动模板",
+        "轻量级，无需复杂后端，便于部署和二次开发"
+      ],
+      "target_users": "前端开发者、设计师、需要快速搭建官网的小团队",
+      "quick_start": "克隆仓库，直接用浏览器打开index.html即可查看效果"
+    },
+    {
+      "full_name": "abhiuk00777/nextjs-boilerplate",
+      "url": "https://github.com/abhiuk00777/nextjs-boilerplate",
+      "summary": "Next.js项目启动模板",
+      "highlights": [
+        "基于TypeScript，提供类型安全的开发体验",
+        "集成了常见最佳实践，减少项目初始化配置时间",
+        "适合快速启动SSR/SSG应用，提升开发效率"
+      ],
+      "target_users": "全栈开发者、React开发者、需要快速启动Next.js项目的人员",
+      "quick_start": "克隆仓库，运行npm install && npm run dev，浏览器访问localhost:3000"
+    }
+  ]
+}
