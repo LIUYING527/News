@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-04",
+  "picks": [
+    {
+      "full_name": "alihashim786/AlgoLens",
+      "url": "https://github.com/alihashim786/AlgoLens",
+      "summary": "字符串搜索算法对比工具",
+      "highlights": [
+        "直观对比暴力搜索与KMP算法在多个文件中的性能差异",
+        "提供实时匹配位置和算法计时，适合算法教学与性能分析",
+        "基于Python/Tkinter的桌面GUI，易用且跨平台"
+      ],
+      "target_users": "算法学习者、计算机专业学生、对字符串匹配性能感兴趣的开发者",
+      "quick_start": "克隆仓库后运行 python algolens.py，选择文本文件即可开始对比搜索算法速度。"
+    },
+    {
+      "full_name": "xingzhaoo/stock-market-news-cli-tool",
+      "url": "https://github.com/xingzhaoo/stock-market-news-cli-tool",
+      "summary": "股市新闻命令行查询工具",
+      "highlights": [
+        "轻量级CLI工具，快速获取股市新闻，适合自动化脚本集成",
+        "基于JavaScript开发，易于扩展和定制数据源",
+        "对开发者日常工作有帮助，可嵌入交易或信息监控流程"
+      ],
+      "target_users": "金融科技开发者、量化交易爱好者、需要实时股市资讯的CLI用户",
+      "quick_start": "克隆仓库后执行 npm install && node index.js，即可在终端查看最新股市新闻。"
+    }
+  ]
+}
