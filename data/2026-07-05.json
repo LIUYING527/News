@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-05",
+  "picks": [
+    {
+      "full_name": "MaiMagdyZaghloul/Air-Canvas-Application-",
+      "url": "https://github.com/MaiMagdyZaghloul/Air-Canvas-Application-",
+      "summary": "基于手势的空中画板应用",
+      "highlights": [
+        "使用OpenCV和MediaPipe实现手指追踪，无需触摸即可绘画",
+        "交互方式新颖，可作为计算机视觉入门实战项目",
+        "代码简洁，易于理解和二次开发"
+      ],
+      "target_users": "对计算机视觉、手势识别感兴趣的Python开发者，以及希望学习OpenCV和MediaPipe的初学者",
+      "quick_start": "git clone项目后，安装opencv-python和mediapipe，运行主脚本即可在摄像头前用手指作画"
+    },
+    {
+      "full_name": "runbot-hq/GitHubClient",
+      "url": "https://github.com/runbot-hq/GitHubClient",
+      "summary": "轻量级Swift GitHub API客户端",
+      "highlights": [
+        "专为Swift开发者设计，封装GitHub REST API，调用简洁",
+        "轻量级，适合集成到iOS/macOS应用或工具中",
+        "便于自动化GitHub操作，如仓库管理、Issue处理等"
+      ],
+      "target_users": "iOS/macOS开发者，需要与GitHub API交互的Swift项目开发者",
+      "quick_start": "通过Swift Package Manager引入包，创建客户端实例后调用API如client.repositories.list()即可"
+    }
+  ]
+}
