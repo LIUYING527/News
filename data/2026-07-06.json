@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-06",
+  "picks": [
+    {
+      "full_name": "lgtlgt0015-code/diknow-trantool",
+      "url": "https://github.com/lgtlgt0015-code/diknow-trantool",
+      "summary": "实时翻译浏览器插件",
+      "highlights": [
+        "基于Vitor底层，修改Git破解机制，实现高实时性翻译",
+        "轻量级JavaScript插件，易于集成到日常开发工作流",
+        "适合多语言阅读场景，提升外文资料查阅效率"
+      ],
+      "target_users": "需要频繁阅读外文技术文档或网页的开发者、研究人员",
+      "quick_start": "克隆仓库，在浏览器扩展管理页面加载项目文件夹，即可在任意网页使用翻译功能。"
+    },
+    {
+      "full_name": "LFPE/web-scraping-insights",
+      "url": "https://github.com/LFPE/web-scraping-insights",
+      "summary": "房产数据爬取分析工具",
+      "highlights": [
+        "Python实现，专注房地产数据挖掘与每平米价格分析",
+        "提供完整的爬虫+数据处理+可视化流程，可快速迁移到其他垂直领域",
+        "开源且轻量，适合学习数据采集与分析的实战项目"
+      ],
+      "target_users": "数据工程师、数据分析师、房地产行业研究者、Python爬虫学习者",
+      "quick_start": "安装Python依赖（pip install -r requirements.txt），运行主脚本指定目标网站URL，即可输出价格分析报告。"
+    }
+  ]
+}
