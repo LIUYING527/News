@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-07",
+  "picks": [
+    {
+      "full_name": "thomaswillner/fable-to-opus-handover",
+      "url": "https://github.com/thomaswillner/fable-to-opus-handover",
+      "summary": "Claude模型行为迁移层",
+      "highlights": [
+        "提供了一套经过实战验证的操作层，能将Claude Fable 5的工作纪律迁移到Claude Opus 4.8，通过项目指令实现，无需修改底层模型",
+        "附带评估工具（eval harness），已完成4轮、46次artifact验证的运行，技术严谨，可复现",
+        "对使用Claude API进行复杂任务编排的开发者有直接帮助，能提升模型输出的一致性和可靠性"
+      ],
+      "target_users": "使用Claude API构建LLM应用的开发者、AI Agent开发人员、需要稳定控制模型行为的工程师",
+      "quick_start": "克隆仓库后，查看README中的项目指令文件，将其复制到你的Claude Opus项目配置中，即可在5分钟内体验行为迁移效果"
+    },
+    {
+      "full_name": "WaiguruIan/Elite-Drop",
+      "url": "https://github.com/WaiguruIan/Elite-Drop",
+      "summary": "本地高速文件传输工具",
+      "highlights": [
+        "基于Kotlin开发，专注于局域网内文件传输，支持照片、视频、大文档等，传输速度快且无需互联网",
+        "拥有美观的交互式仪表盘，支持后台无缝共享，用户体验极佳",
+        "跨平台传输：手机到PC或智能手机，适合团队协作和日常文件交换场景"
+      ],
+      "target_users": "需要快速在设备间共享文件的开发者、移动端应用爱好者、局域网协作场景下的团队",
+      "quick_start": "在Android设备上安装APK，与接收设备连接同一Wi-Fi，打开应用选择文件即可开始传输，整个过程不超过5分钟"
+    }
+  ]
+}
