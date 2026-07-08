@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-08",
+  "picks": [
+    {
+      "full_name": "LeoRoy61/r6s-overwolf-auto-launcher",
+      "url": "https://github.com/LeoRoy61/r6s-overwolf-auto-launcher",
+      "summary": "游戏外挂自动启动器",
+      "highlights": [
+        "轻量级PowerShell脚本，自动随彩虹六号启动/关闭Overwolf，避免手动操作",
+        "安全性高，仅监控进程生命周期，无额外资源占用",
+        "对游戏玩家实用性强，可提升启动效率和系统整洁度"
+      ],
+      "target_users": "彩虹六号玩家，使用Overwolf辅助工具（如R6Tracker）且希望自动化启动关闭的用户",
+      "quick_start": "下载脚本，双击运行或添加到游戏启动参数中，首次运行按提示授权即可自动工作"
+    },
+    {
+      "full_name": "Gheat1/sctui",
+      "url": "https://github.com/Gheat1/sctui",
+      "summary": "快捷项目管理终端界面",
+      "highlights": [
+        "基于Python的终端UI，快速浏览Shortcut（项目管理工具）中的故事，按状态分组展示",
+        "启动快，支持键盘+鼠标全操作，适合开发者在终端中高效管理任务",
+        "技术创新：将现代TUI（如Textual）与项目管理API结合，提升日常工作效率"
+      ],
+      "target_users": "使用Shortcut进行项目管理的开发者、技术管理者，偏好终端工作的效率控",
+      "quick_start": "克隆仓库，pip安装依赖，运行python sctui.py，按提示输入Shortcut API Token即可"
+    }
+  ]
+}
