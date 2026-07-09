@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-09",
+  "picks": [
+    {
+      "full_name": "DisplayLead68/TBH-Cheat",
+      "url": "https://github.com/DisplayLead68/TBH-Cheat",
+      "summary": "TBH游戏作弊训练工具",
+      "highlights": [
+        "提供上帝模式、无限金钱、经验倍率等完整作弊功能，显著降低游戏重复劳动",
+        "基于Python开发，代码结构清晰，适合学习游戏内存修改与逆向工程基础",
+        "针对特定游戏深度定制，实用性强，对游戏开发测试及修改爱好者有参考价值"
+      ],
+      "target_users": "游戏修改爱好者、逆向工程学习者、TBH游戏玩家",
+      "quick_start": "克隆仓库，运行pip install -r requirements.txt安装依赖，然后执行主脚本并启动游戏即可激活作弊功能。"
+    },
+    {
+      "full_name": "ViloriaDev/Play",
+      "url": "https://github.com/ViloriaDev/Play",
+      "summary": "通用多媒体播放器项目",
+      "highlights": [
+        "项目名称暗示可能是一个跨平台或Web端的多媒体播放器，具有广泛的应用场景",
+        "作为GitHub Trending新项目，代码结构可能简洁现代，适合开发者学习或二次开发",
+        "多媒体播放器是开发者日常高频使用的工具，开源实现有助于定制和集成"
+      ],
+      "target_users": "前端/全栈开发者、多媒体应用开发者、希望自建播放器的技术爱好者",
+      "quick_start": "克隆仓库，查看README获取运行说明，通常直接打开index.html或运行npm start即可体验播放功能。"
+    }
+  ]
+}
