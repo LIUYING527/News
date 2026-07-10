@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-10",
+  "picks": [
+    {
+      "full_name": "Kornelius99/cdc-pipeline-debezium-kafka",
+      "url": "https://github.com/Kornelius99/cdc-pipeline-debezium-kafka",
+      "summary": "CDC流水线：Debezium+Kafka+Spark",
+      "highlights": [
+        "完整实现了Change Data Capture经典架构，从Postgres到Kafka再到Delta Lake，技术栈前沿",
+        "全Docker化部署，一键启动即可体验实时数据同步，降低学习门槛",
+        "清晰演示了插入/更新/删除的增量处理逻辑，对数据工程实践有直接参考价值"
+      ],
+      "target_users": "数据工程师、后端开发者、对实时数据管道感兴趣的技术人员",
+      "quick_start": "克隆仓库后执行 docker-compose up，等待服务启动后即可通过Kafka消费端查看Postgres的变更事件"
+    },
+    {
+      "full_name": "dhruvilacharya/selfHealingDistributedCache",
+      "url": "https://github.com/dhruvilacharya/selfHealingDistributedCache",
+      "summary": "自愈分布式缓存系统",
+      "highlights": [
+        "实现缓存节点的自动故障检测与恢复，提升分布式系统可用性",
+        "基于Makefile构建，轻量易部署，适合学习分布式缓存原理",
+        "代码结构清晰，可作为面试或系统设计学习的实战项目"
+      ],
+      "target_users": "后端开发者、系统架构师、对分布式系统和高可用缓存感兴趣的开发者",
+      "quick_start": "克隆仓库后运行 make build 编译，然后执行 make run 启动缓存节点，模拟节点故障观察自愈行为"
+    }
+  ]
+}
