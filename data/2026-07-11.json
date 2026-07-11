@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-11",
+  "picks": [
+    {
+      "full_name": "theswerd/brainless",
+      "url": "https://github.com/theswerd/brainless",
+      "summary": "AI编程助手UI组件库",
+      "highlights": [
+        "将Claude Code、Codex、Grok等AI编码接口封装为shadcn风格的React组件，可无缝集成到现有项目中",
+        "基于TypeScript开发，类型安全，易于扩展和自定义，适合现代前端开发工作流",
+        "为开发者提供统一、可复用的AI交互界面，提升编码效率和工具链整合能力"
+      ],
+      "target_users": "前端开发者、全栈工程师、对AI辅助编程工具感兴趣的技术人员",
+      "quick_start": "克隆仓库后，在项目目录运行 npm install && npm run dev，即可在本地预览组件示例，并直接复制组件代码到自己的React+shadcn项目中"
+    },
+    {
+      "full_name": "CodeRikka/simple-node-sentinel",
+      "url": "https://github.com/CodeRikka/simple-node-sentinel",
+      "summary": "轻量级Node.js进程监控工具",
+      "highlights": [
+        "基于Python实现，可监控Node.js应用的运行状态、资源占用，并支持自定义告警规则",
+        "部署简单，无需复杂配置，适合中小型项目或微服务的快速监控",
+        "开源且轻量，可嵌入现有运维体系，帮助开发者及时发现服务异常"
+      ],
+      "target_users": "Node.js后端开发者、运维工程师、个人项目维护者",
+      "quick_start": "pip install -r requirements.txt 后，运行 python sentinel.py --target http://localhost:3000，即可开始监控本地Node服务"
+    }
+  ]
+}
