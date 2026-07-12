@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-12",
+  "picks": [
+    {
+      "full_name": "champ96k/Tokenbar",
+      "url": "https://github.com/champ96k/Tokenbar",
+      "summary": "macOS AI令牌用量监视器",
+      "highlights": [
+        "原生macOS菜单栏应用，无需打开网页即可实时查看AI提供商（如OpenAI）的Token消耗、费用和配额，显著提升日常开发效率",
+        "轻量级、零配置，安装即用，支持多AI服务聚合监控，适合高频调用AI API的开发者"
+      ],
+      "target_users": "使用AI API（如GPT、Claude）进行开发或内容生成的macOS用户，需要实时监控API用量和成本",
+      "quick_start": "克隆仓库，运行make build生成.app，或直接下载Release中的dmg安装，启动后菜单栏显示Token用量图标"
+    },
+    {
+      "full_name": "regyssilveira/horse-rbac",
+      "url": "https://github.com/regyssilveira/horse-rbac",
+      "summary": "Delphi/Lazarus RBAC权限中间件",
+      "highlights": [
+        "为Horse Web框架提供基于角色（RBAC）和范围（Scopes）的访问控制，直接复用Delphi生态，适合企业级后端开发",
+        "代码简洁、文档清晰，可快速集成到现有Horse项目中，实现细粒度权限管理，减少重复造轮子"
+      ],
+      "target_users": "使用Delphi或Lazarus开发Web服务的后端开发者，需要为API添加角色和权限控制",
+      "quick_start": "安装horse-rbac via boss install horse-rbac，在Horse路由中添加中间件，定义角色和scope即可"
+    }
+  ]
+}
