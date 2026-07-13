@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-13",
+  "picks": [
+    {
+      "full_name": "ClearRain0015/Network_sniffer",
+      "url": "https://github.com/ClearRain0015/Network_sniffer",
+      "summary": "Python网络嗅探工具",
+      "highlights": [
+        "基于Python实现，轻量易用，适合网络数据包捕获与分析",
+        "可应用于网络安全审计、协议调试和流量监控场景",
+        "代码结构清晰，适合开发者学习网络编程和底层抓包原理"
+      ],
+      "target_users": "网络安全工程师、后端开发者、网络协议学习者",
+      "quick_start": "克隆仓库后，运行 pip install -r requirements.txt 安装依赖，然后以管理员权限执行 python sniffer.py 即可开始抓包"
+    },
+    {
+      "full_name": "cutlerbenjamin1-cmd/hybrid-recall",
+      "url": "https://github.com/cutlerbenjamin1-cmd/hybrid-recall",
+      "summary": "本地混合检索系统",
+      "highlights": [
+        "结合SQLite FTS5全文搜索、Qwen3嵌入向量和RRF融合排序，实现高质量本地检索",
+        "支持MCP协议，可自托管并集成到文档、记忆和知识图谱中",
+        "可选交叉编码器重排序，提升检索精度，适合构建本地AI知识库"
+      ],
+      "target_users": "AI应用开发者、知识管理工具构建者、本地RAG系统开发者",
+      "quick_start": "克隆仓库，按照README配置依赖，运行启动脚本后通过MCP接口发送查询即可体验混合检索"
+    }
+  ]
+}
