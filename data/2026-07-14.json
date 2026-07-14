@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-14",
+  "picks": [
+    {
+      "full_name": "yadavabhi6590-crypto/job-portal-resume-analyzer",
+      "url": "https://github.com/yadavabhi6590-crypto/job-portal-resume-analyzer",
+      "summary": "AI简历分析求职门户",
+      "highlights": [
+        "集成AI自动分析简历，计算ATS评分并识别技能差距",
+        "生成个性化30天改进计划，对求职者提升竞争力有直接帮助",
+        "全栈技术栈（React+Node.js+MongoDB），适合学习完整项目架构"
+      ],
+      "target_users": "求职者、HR技术人员、全栈开发者，以及希望快速搭建AI简历分析系统的团队",
+      "quick_start": "git克隆仓库，安装前后端依赖，配置MongoDB连接，运行npm start即可体验简历上传与分析"
+    },
+    {
+      "full_name": "luancabral1/Openbank",
+      "url": "https://github.com/luancabral1/Openbank",
+      "summary": "全栈银行管理系统",
+      "highlights": [
+        "基于Java 21和Spring Boot构建，展示现代Java企业级开发最佳实践",
+        "覆盖客户管理、账户、转账、报表等完整银行业务流程，实用性强",
+        "适合作为微服务架构、REST API设计的参考项目，代码结构清晰"
+      ],
+      "target_users": "Java后端开发者、Spring Boot学习者、金融系统开发人员",
+      "quick_start": "克隆项目，配置MySQL数据库，使用Maven编译运行，通过Swagger UI测试API接口"
+    }
+  ]
+}
