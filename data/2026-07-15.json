@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-15",
+  "picks": [
+    {
+      "full_name": "DOWNEY7/it-helpdesk-deflection-agent",
+      "url": "https://github.com/DOWNEY7/it-helpdesk-deflection-agent",
+      "summary": "生产级IT支持RAG代理",
+      "highlights": [
+        "基于RAG的IT工单分流，支持置信度分级和自动升级，减少人工介入",
+        "内置15种注入攻击检测模式与PII防护，安全性高",
+        "集成Prometheus+Grafana可观测性，适合生产部署"
+      ],
+      "target_users": "构建企业IT服务台、客服系统或RAG应用的开发者，尤其关注安全与可观测性的团队",
+      "quick_start": "克隆仓库，配置Azure OpenAI与AI Search凭据，运行docker-compose启动服务，通过API发送工单测试"
+    },
+    {
+      "full_name": "vizartid/casa-knowledge-graph",
+      "url": "https://github.com/vizartid/casa-knowledge-graph",
+      "summary": "本地优先的AI知识图谱笔记",
+      "highlights": [
+        "基于Next.js 16 + React 19 + Google Gemini，技术栈前沿",
+        "Zettelkasten笔记法+实时知识图谱可视化，支持语音捕捉与AI对话",
+        "本地优先架构，数据自主可控，适合个人知识管理场景"
+      ],
+      "target_users": "知识管理爱好者、笔记应用开发者、想体验AI增强型第二大脑的个人用户",
+      "quick_start": "git clone后执行npm install && npm run dev，浏览器打开即可创建笔记并查看自动生成的知识图谱"
+    }
+  ]
+}
