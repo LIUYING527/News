@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-16",
+  "picks": [
+    {
+      "full_name": "alexafinode/claude-arbitrage-bot",
+      "url": "https://github.com/alexafinode/claude-arbitrage-bot",
+      "summary": "以太坊套利机器人",
+      "highlights": [
+        "基于Solidity智能合约和Python自动化，实现跨链套利逻辑，可直接在以太坊兼容链上运行",
+        "内置Python自动化脚本，降低手动操作门槛，适合DeFi套利策略的快速验证与部署",
+        "项目结构清晰，可作为学习区块链套利、MEV开发的参考实现"
+      ],
+      "target_users": "DeFi开发者、量化交易者、以太坊生态研究者",
+      "quick_start": "克隆仓库，安装依赖（Python + Node.js），配置RPC节点和私钥环境变量，运行自动化脚本即可启动套利监控。"
+    },
+    {
+      "full_name": "hajunho/zeli-cast",
+      "language": "JavaScript",
+      "description": "Consensus-based weather forecast: 5 APIs, majority voting. Plus news, stocks, nearby places. Clone and run - demo keys included.",
+      "highlights": [
+        "集成5个天气API并通过多数投票机制生成共识预报，提高准确性，是聚合数据与算法融合的实用案例",
+        "附带新闻、股票、附近地点查询功能，适合快速搭建多功能信息面板原型",
+        "代码完整且包含演示API密钥，克隆后即可运行，学习成本极低"
+      ],
+      "target_users": "前端开发者、数据聚合爱好者、需要快速构建信息仪表盘的开发者",
+      "quick_start": "克隆仓库，进入目录运行 npm install && npm start，浏览器打开 localhost 即可查看天气、新闻等聚合信息。"
+    }
+  ]
+}
