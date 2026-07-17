@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-17",
+  "picks": [
+    {
+      "full_name": "aaryanrwt/QuickChat",
+      "url": "https://github.com/aaryanrwt/QuickChat",
+      "summary": "安全的点对点终端聊天工具",
+      "highlights": [
+        "使用 Rust 和 QUIC 协议实现，零配置即可在局域网内发现并通信，性能高且安全",
+        "内置端到端加密，无需服务器中转，适合对隐私要求高的内部通信场景",
+        "纯终端界面，轻量无依赖，可集成到开发工作流或运维脚本中"
+      ],
+      "target_users": "需要快速搭建安全聊天通道的开发者、运维人员、安全研究人员",
+      "quick_start": "克隆仓库后运行 cargo build --release，然后在两台机器上分别执行 ./quickchat（自动发现局域网对端），输入消息即可通信。"
+    },
+    {
+      "full_name": "ricbit/elite",
+      "url": "https://github.com/ricbit/elite",
+      "summary": "MSX游戏《精英》完整反汇编",
+      "highlights": [
+        "完整反汇编了经典游戏 Elite 的 MSX 版本，代码注释详尽，适合学习8位游戏逆向工程",
+        "使用汇编语言呈现，对理解早期游戏引擎、内存管理、图形渲染有极高教学价值",
+        "项目结构清晰，配有文档，可作为复古游戏开发或逆向分析的学习范例"
+      ],
+      "target_users": "汇编语言爱好者、游戏逆向工程师、复古游戏开发者、计算机历史研究者",
+      "quick_start": "直接查看 GitHub 仓库中的 .asm 文件，配合模拟器（如 openMSX）加载原始 ROM 对比运行结果，即可逐步跟踪代码执行。"
+    }
+  ]
+}
