@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-18",
+  "picks": [
+    {
+      "full_name": "Chillwind132/mssql-mcp-server",
+      "url": "https://github.com/Chillwind132/mssql-mcp-server",
+      "summary": "MSSQL MCP 服务器",
+      "highlights": [
+        "为 AI 助手提供对 Microsoft SQL Server 的查询、检查和故障排除能力，打通 LLM 与数据库的桥梁",
+        "基于 MCP 协议，可无缝集成到支持 MCP 的 AI 工具（如 Claude、Copilot）中，实现自然语言操作数据库",
+        "使用 Python 开发，易于扩展和定制，适合需要为 AI Agent 赋予数据库访问能力的场景"
+      ],
+      "target_users": "后端开发者、DBA、AI 应用开发者，希望让 AI 助手直接查询和管理 SQL Server 数据库的团队",
+      "quick_start": "克隆仓库，安装依赖（pip install -r requirements.txt），配置连接字符串，运行 mcp server，然后在支持 MCP 的客户端中连接即可"
+    },
+    {
+      "full_name": "techsteph1/ai-soc-analyst",
+      "url": "https://github.com/techsteph1/ai-soc-analyst",
+      "summary": "AI 安全分析师工作流",
+      "highlights": [
+        "自动化安全日志分析、事件摘要、严重性分级和邮件告警，大幅提升 SOC 效率",
+        "自动生成事件 ID、置信度评分，并映射 MITRE ATT&CK 技术，便于溯源和响应",
+        "每个事件自动保存到 Google Sheets，方便团队协作和审计"
+      ],
+      "target_users": "安全运维工程师、SOC 分析师、DevSecOps 团队，需要快速自动化安全事件处理的人员",
+      "quick_start": "克隆仓库，配置 Google Sheets API 凭证，设置日志源（如 Syslog、SIEM），运行主脚本，即可开始自动分析并收到告警"
+    }
+  ]
+}
