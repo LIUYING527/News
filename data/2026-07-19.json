@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-19",
+  "picks": [
+    {
+      "full_name": "npy2018/AutoGuard-Autonomous-Vehicle-Anomaly-Diagnosis-Toolkit",
+      "url": "https://github.com/npy2018/AutoGuard-Autonomous-Vehicle-Anomaly-Diagnosis-Toolkit",
+      "summary": "自动驾驶异常诊断工具包",
+      "highlights": [
+        "专注于自动驾驶场景的异常检测与诊断，覆盖传感器、控制、通信等关键模块",
+        "提供即用型Python工具，可快速集成到现有自动驾驶测试或仿真流程中",
+        "开源且文档清晰，适合作为自动驾驶安全工程的参考实现或二次开发基础"
+      ],
+      "target_users": "自动驾驶工程师、系统安全测试人员、机器人研究者、AI安全方向开发者",
+      "quick_start": "克隆仓库，运行示例脚本（如 anomaly_detection_demo.py），传入车辆传感器日志即可输出诊断报告"
+    },
+    {
+      "full_name": "CN-sleep/glm-plan-selector-userscript",
+      "url": "https://github.com/CN-sleep/glm-plan-selector-userscript",
+      "summary": "GLM套餐选择Tampermonkey脚本",
+      "highlights": [
+        "专为GLM Coding Plan用户设计，自动化套餐选择与监控，减少手动操作",
+        "基于Tampermonkey，安装即用，无需额外环境配置",
+        "开源脚本，可自由定制规则，适合经常管理多个GLM套餐的开发者"
+      ],
+      "target_users": "使用GLM模型套餐的开发者、AI服务运维人员、需要批量管理云资源的用户",
+      "quick_start": "安装Tampermonkey扩展，将脚本文件导入，访问GLM套餐页面即可自动激活选择功能"
+    }
+  ]
+}
