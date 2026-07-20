@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-20",
+  "picks": [
+    {
+      "full_name": "spydirbyte/spy-xray",
+      "url": "https://github.com/spydirbyte/spy-xray",
+      "summary": "Cloudflare源IP探测工具",
+      "highlights": [
+        "通过子域名、证书透明度日志和SPF记录自动发现Cloudflare背后真实服务器IP",
+        "内置验证机制确保候选IP确实服务于目标站点，避免误报",
+        "提供本地仪表盘，包含网络拓扑图、暴露评分和地理定位，直观展示风险"
+      ],
+      "target_users": "安全研究员、渗透测试工程师、运维工程师、关心网站真实IP泄露的开发者",
+      "quick_start": "git clone 项目后，运行 pip install -r requirements.txt 安装依赖，然后执行 python spy_xray.py -d example.com 即可开始扫描指定域名。"
+    },
+    {
+      "full_name": "ZacharyZcR/battlefield-1937",
+      "url": "https://github.com/ZacharyZcR/battlefield-1937",
+      "summary": "单机抗日战争FPS原型",
+      "highlights": [
+        "基于Three.js构建，纯前端可运行，无需后端或复杂环境",
+        "聚焦抗日战争历史题材，提供第一人称战场体验，具有教育意义",
+        "作为游戏原型，代码结构清晰，适合学习Three.js游戏开发"
+      ],
+      "target_users": "游戏开发者、Three.js学习者、历史题材爱好者、独立游戏制作人",
+      "quick_start": "克隆仓库后，直接在浏览器打开项目中的 index.html 文件（或通过本地静态服务器如 npx serve . 启动），即可进入游戏试玩。"
+    }
+  ]
+}
