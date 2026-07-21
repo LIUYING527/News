@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-21",
+  "picks": [
+    {
+      "full_name": "sayandeepdas02/reddit-scraper",
+      "url": "https://github.com/sayandeepdas02/reddit-scraper",
+      "summary": "开源Reddit数据爬虫",
+      "highlights": [
+        "支持提取子版块帖子、嵌套评论和用户历史，数据完整度高",
+        "内置请求频率限制和自动分页，避免被封禁",
+        "使用TypeScript编写，类型安全且易于集成到Node.js项目"
+      ],
+      "target_users": "数据科学家、社交媒体分析师、需要Reddit语料进行NLP训练的开发者",
+      "quick_start": "git clone后运行npm install，然后调用API传入subreddit名称即可获取帖子数据"
+    },
+    {
+      "full_name": "toastylol/MacOS-PowerMenu",
+      "url": "https://github.com/toastylol/MacOS-PowerMenu",
+      "summary": "全局电源菜单增强工具",
+      "highlights": [
+        "为macOS全局添加缺失的电源操作菜单（关机、重启、睡眠等）",
+        "轻量级Shell脚本实现，无需安装额外依赖",
+        "解决macOS用户频繁通过终端或系统设置操作电源的痛点"
+      ],
+      "target_users": "macOS日常用户、追求效率的开发者、系统管理员",
+      "quick_start": "下载脚本后运行chmod +x && ./PowerMenu.sh，即可在菜单栏看到电源选项"
+    }
+  ]
+}
