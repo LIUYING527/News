@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-22",
+  "picks": [
+    {
+      "full_name": "squaduplabs/agent-android",
+      "url": "https://github.com/squaduplabs/agent-android",
+      "summary": "AI驱动Android模拟器CLI工具",
+      "highlights": [
+        "通过CLI控制Android模拟器，支持点击、滑动、输入等操作，专为AI编码代理设计",
+        "提供无障碍快照与元素引用，可精准定位UI组件，适合自动化测试与AI交互",
+        "轻量级Swift实现，易于集成到CI/CD或AI工作流中"
+      ],
+      "target_users": "AI代理开发者、Android自动化测试工程师、需要无头模拟器控制的DevOps团队",
+      "quick_start": "克隆仓库后运行`swift run`，连接已启动的Android模拟器，使用`tap`、`type`等命令操作"
+    },
+    {
+      "full_name": "FSB-scanner/homay",
+      "url": "https://github.com/FSB-scanner/homay",
+      "summary": "多CDN纯净IP扫描器",
+      "highlights": [
+        "支持Cloudflare、Fastly、Gcore等主流CDN的IP扫描，快速筛选可用纯净IP",
+        "Go语言编写，单文件无依赖，跨平台编译后可直接运行，性能高效",
+        "适用于网络优化、CDN加速、绕过区域限制等场景，实用性强"
+      ],
+      "target_users": "网络运维工程师、CDN优化开发者、需要稳定低延迟IP的爬虫或代理工具使用者",
+      "quick_start": "下载预编译二进制或`go build`，运行`./homay -cdn cloudflare`，输出可用IP列表"
+    }
+  ]
+}
