@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-23",
+  "picks": [
+    {
+      "full_name": "generalrodolfao/pentest-squad",
+      "url": "https://github.com/generalrodolfao/pentest-squad",
+      "summary": "多智能体Web渗透测试框架",
+      "highlights": [
+        "基于OWASP WSTG和PTES标准，覆盖主流Web安全测试场景",
+        "多智能体协作架构，可自动化执行渗透测试流程，提升效率",
+        "包含LGPD/GDPR合规检查，适合安全教学与实战演练"
+      ],
+      "target_users": "安全工程师、渗透测试人员、网络安全课程教师与学生",
+      "quick_start": "git clone https://github.com/generalrodolfao/pentest-squad.git，按README安装依赖并运行主脚本对目标URL进行扫描"
+    },
+    {
+      "full_name": "FineComputer14451/GrokTerm",
+      "url": "https://github.com/FineComputer14451/GrokTerm",
+      "summary": "Android端Grok终端环境",
+      "highlights": [
+        "为xAI Grok CLI优化，提供原生aarch64支持，性能高效",
+        "一键配置DNS和终端环境，降低使用门槛",
+        "集成SuperGrok/Grok Imagine功能，适合AI开发者移动办公"
+      ],
+      "target_users": "AI开发者、xAI Grok用户、Android终端爱好者",
+      "quick_start": "在Android设备上克隆仓库，运行一键安装脚本即可获得带Grok CLI的Termux环境"
+    }
+  ]
+}
