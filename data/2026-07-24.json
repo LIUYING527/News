@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-24",
+  "picks": [
+    {
+      "full_name": "IKauedev/springboot-docker-template",
+      "url": "https://github.com/IKauedev/springboot-docker-template",
+      "summary": "Spring Boot Docker 部署模板",
+      "highlights": [
+        "提供多阶段 Maven/JRE 构建的 Dockerfile，显著减小镜像体积",
+        "集成 docker-compose 配置 PostgreSQL 数据库，开箱即用",
+        "包含 CI 示例，适合快速搭建生产级 Spring Boot 容器化工作流"
+      ],
+      "target_users": "Java/Spring Boot 开发者、DevOps 工程师、需要容器化部署微服务的团队",
+      "quick_start": "克隆仓库后，运行 docker-compose up -d 即可启动 Spring Boot 应用 + PostgreSQL 数据库"
+    },
+    {
+      "full_name": "nirajneupane17/VaR-Backtesting-SR11-7",
+      "url": "https://github.com/nirajneupane17/VaR-Backtesting-SR11-7",
+      "summary": "VaR 模型回测与监管合规工具",
+      "highlights": [
+        "完整实现历史模拟、参数法、Student-t 三种 VaR 模型回测",
+        "包含 Kupiec、Christoffersen 和 Basel 交通灯测试，符合 SR 11-7 监管要求",
+        "基于 S&P 500 真实数据（2018-2024），结果可直接复现用于金融风控研究"
+      ],
+      "target_users": "量化分析师、金融风控工程师、金融监管合规开发者、数据科学学生",
+      "quick_start": "克隆后打开 Jupyter Notebook，运行所有单元格即可看到 VaR 回测结果与监管测试报告"
+    }
+  ]
+}
