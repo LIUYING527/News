@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-27",
+  "picks": [
+    {
+      "full_name": "fxd20060117/aidanmu",
+      "url": "https://github.com/fxd20060117/aidanmu",
+      "summary": "AI桌面直播弹幕姬",
+      "highlights": [
+        "利用AI实时分析屏幕内容，自动生成类似直播弹幕的吐槽，增强互动趣味性",
+        "基于Python开发，易于二次定制和扩展，可接入不同AI模型",
+        "提供桌面端实时交互体验，适合直播、录屏、演示等场景"
+      ],
+      "target_users": "直播主播、内容创作者、AI应用开发者、桌面工具爱好者",
+      "quick_start": "克隆仓库后，安装依赖（pip install -r requirements.txt），配置AI接口密钥，运行主脚本并指定屏幕区域即可开始接收AI弹幕"
+    },
+    {
+      "full_name": "HigHollows/Sniply",
+      "url": "https://github.com/HigHollows/Sniply",
+      "summary": "轻量隐私截图工具",
+      "highlights": [
+        "完全本地运行，无账户、无云、无广告、无遥测，保护用户隐私",
+        "支持区域/窗口/全屏截图、OCR识别、区域保存、元数据移除、剪贴板保护等实用功能",
+        "专为Windows 11设计，性能轻快，支持后台快捷键操作"
+      ],
+      "target_users": "注重隐私的日常用户、办公人员、需要快速截图并处理敏感信息的开发者",
+      "quick_start": "下载最新Release中的安装包，运行后通过默认快捷键（如Win+Shift+S）即可截图，截图后自动弹出编辑和保存选项"
+    }
+  ]
+}
