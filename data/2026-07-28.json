@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-28",
+  "picks": [
+    {
+      "full_name": "toomykins/raynegard-web",
+      "url": "https://github.com/toomykins/raynegard-web",
+      "summary": "2001游戏网页版重编译",
+      "highlights": [
+        "将20年前的x86游戏静态重编译为WebAssembly，可直接在浏览器运行，技术难度高",
+        "保留原始客户端完整功能，对复古游戏和逆向工程开发者有学习价值",
+        "无需安装任何软件，打开网页即可体验，传播门槛极低"
+      ],
+      "target_users": "游戏怀旧爱好者、WebAssembly逆向工程学习者、前端与编译技术开发者",
+      "quick_start": "直接访问项目GitHub Pages链接或克隆仓库后，用本地HTTP服务器打开index.html即可在浏览器游玩"
+    },
+    {
+      "full_name": "mamonet/take-rate-controller",
+      "url": "https://github.com/mamonet/take-rate-controller",
+      "summary": "确定性市场佣金比例控制器",
+      "highlights": [
+        "基于PI控制算法实现聚合佣金率目标收敛，数学严谨且工程实用",
+        "支持整数金额、硬边界约束和故障回退机制，适合金融级生产环境",
+        "Go语言编写，性能高、部署简单，可直接嵌入微服务架构"
+      ],
+      "target_users": "电商平台后端工程师、金融科技开发者、交易系统架构师",
+      "quick_start": "克隆仓库后运行`go run main.go`，修改config.json中的目标佣金率即可测试控制效果"
+    }
+  ]
+}
