@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-29",
+  "picks": [
+    {
+      "full_name": "NewLifeX/RainbowBridge",
+      "url": "https://github.com/NewLifeX/RainbowBridge",
+      "summary": "通用软路由系统",
+      "highlights": [
+        "提供多WAN负载均衡、DHCP/DNS管控、防火墙、VPN等全场景网络管理功能，实用性强",
+        "基于C#开发，适合.NET生态开发者定制和集成",
+        "社区活跃（NewLifeX系列），代码质量可靠，可快速部署到企业或家庭网络环境"
+      ],
+      "target_users": "网络管理员、嵌入式开发者、需要软路由解决方案的运维人员",
+      "quick_start": "克隆仓库，阅读README中的部署指南，在Windows或Linux上运行编译后的可执行文件即可体验基础路由功能"
+    },
+    {
+      "full_name": "m1xian/adcs-tool",
+      "url": "https://github.com/m1xian/adcs-tool",
+      "summary": "ADCS安全检测工具",
+      "highlights": [
+        "针对Active Directory证书服务（ADCS）的安全审计，挖掘常见攻击路径（如ESC系列漏洞）",
+        "Python编写，易于扩展和集成到安全测试流程",
+        "对渗透测试和红队工作有直接帮助，可快速发现企业ADCS配置风险"
+      ],
+      "target_users": "安全研究员、渗透测试工程师、AD域管理员",
+      "quick_start": "安装Python依赖后，运行脚本并指定目标域控制器地址，即可扫描ADCS漏洞"
+    }
+  ]
+}
