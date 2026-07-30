@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-30",
+  "picks": [
+    {
+      "full_name": "6t9xstar/Open-Cold-Dialer",
+      "url": "https://github.com/6t9xstar/Open-Cold-Dialer",
+      "summary": "开源外呼CRM与SIP软电话",
+      "highlights": [
+        "集成SIP软电话、客户管理、营销活动、通话脚本和分析功能，开箱即用",
+        "支持SignalWire、Twilio、Telnyx等主流SIP提供商，并提供REST API和Docker部署",
+        "可自托管，完全控制数据，适合隐私敏感或定制化需求的外呼团队"
+      ],
+      "target_users": "需要搭建外呼系统的销售团队、CRM开发者、自托管电话营销平台运维人员",
+      "quick_start": "git clone仓库后，运行docker-compose up启动，配置SIP提供商凭据即可开始外呼"
+    },
+    {
+      "full_name": "Mizuna737/rubix",
+      "url": "https://github.com/Mizuna737/rubix",
+      "summary": "基于魔方模型的Wayland合成器",
+      "highlights": [
+        "用Rust和Smithay从零实现Wayland合成器，技术创新性强",
+        "独创魔方空间窗口模型：监视器为2D网格，窗口组可独立滚动和缩放，交互新颖",
+        "为Rust系统编程和Wayland生态贡献了可参考的实现范例"
+      ],
+      "target_users": "Rust系统开发者、Wayland合成器研究者、对窗口管理创新感兴趣的极客",
+      "quick_start": "克隆仓库，安装Rust工具链，运行cargo build && cargo run启动，在Wayland环境下体验魔方窗口布局"
+    }
+  ]
+}
