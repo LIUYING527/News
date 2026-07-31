@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-31",
+  "picks": [
+    {
+      "full_name": "liuhuanyong/FDEGreenBook",
+      "url": "https://github.com/liuhuanyong/FDEGreenBook",
+      "summary": "FDE全栈交互学习手册",
+      "highlights": [
+        "通过教程+游戏+画像测试三合一形式，系统讲解FDE（前线部署工程师）角色与技能，降低学习门槛",
+        "自包含HTML网站，无需服务器即可本地运行，适合快速体验和分享",
+        "对开发者了解前沿工程岗位、提升全栈与客户协作能力有直接参考价值"
+      ],
+      "target_users": "想转型或了解FDE岗位的开发者、全栈工程师、对技术产品化感兴趣的技术人员",
+      "quick_start": "git clone 项目后，直接用浏览器打开 index.html 即可开始交互式学习"
+    },
+    {
+      "full_name": "p7z4rqmx2vk8la/Akamai-Sensor-Data-v3",
+      "url": "https://github.com/p7z4rqmx2vk8la/Akamai-Sensor-Data-v3",
+      "summary": "Akamai反爬脚本完全逆向",
+      "highlights": [
+        "完全逆向并去混淆了Akamai Sensor Data v3挑战脚本（2026版），对研究Web安全与反爬机制有极高技术价值",
+        "公开了底层传感器数据生成逻辑，可帮助开发者理解主流CDN的浏览器指纹采集与验证流程",
+        "适合用于爬虫对抗、自动化测试、安全审计等实际场景，代码为JavaScript可直接分析或复用"
+      ],
+      "target_users": "Web安全研究者、反爬虫工程师、爬虫开发者、浏览器指纹技术爱好者",
+      "quick_start": "克隆仓库后，用Node.js运行主JS文件，或直接在浏览器开发者工具中加载分析脚本逻辑"
+    }
+  ]
+}
