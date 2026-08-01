@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-01",
+  "picks": [
+    {
+      "full_name": "danielmillersr2593/3d-print-tools-editor",
+      "url": "https://github.com/danielmillersr2593/3d-print-tools-editor",
+      "summary": "浏览器端3D打印文件编辑工具",
+      "highlights": [
+        "纯客户端运行，无需后端，支持STL/OBJ等常见3D打印格式的查看、编辑和检查",
+        "内置支撑生成和刀路可视化功能，对3D打印前期准备效率提升明显",
+        "可直接使用在线版本或本地部署，零配置，适合快速集成到现有工作流"
+      ],
+      "target_users": "3D打印爱好者、创客、机械工程师，以及需要快速预览和修复打印文件的开发者",
+      "quick_start": "直接访问项目主页提供的托管版本，上传STL或OBJ文件即可开始查看和编辑，无需安装任何软件"
+    },
+    {
+      "full_name": "vis-nlp/VIS-GEN",
+      "url": "https://github.com/vis-nlp/VIS-GEN",
+      "summary": "可视化生成基准测试集",
+      "highlights": [
+        "来自vis-nlp组织，该组织近期密集发布多个基准测试项目（ChartBiasBench、DSAgentBench、VisEditBench），技术方向聚焦于视觉语言模型评估",
+        "VIS-GEN专注于可视化内容生成任务的评测，为多模态模型研究和开发提供标准化测试框架",
+        "虽当前star数低，但属于前沿研究型项目，对AI/ML领域开发者有很高的参考价值和潜在合作机会"
+      ],
+      "target_users": "多模态大模型研究者、AI评估工程师、数据科学团队，以及关注可视化生成技术的开发者",
+      "quick_start": "克隆仓库后查看README，按照说明下载评测数据并运行提供的评估脚本，即可在标准数据集上测试模型生成能力"
+    }
+  ]
+}
