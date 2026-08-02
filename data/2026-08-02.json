@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-02",
+  "picks": [
+    {
+      "full_name": "Anil-matcha/seedance2.5-comfyui",
+      "url": "https://github.com/Anil-matcha/seedance2.5-comfyui",
+      "summary": "ComfyUI的Seedance2.5视频生成节点",
+      "highlights": [
+        "让开发者直接在ComfyUI中调用Seedance2.5视频生成模型，无需复杂环境配置",
+        "Python实现，易于扩展和集成到现有AI工作流",
+        "紧跟最新视频生成技术，适合快速原型验证"
+      ],
+      "target_users": [
+        "AI视频生成研究者",
+        "ComfyUI重度用户",
+        "对视频生成感兴趣的开发者"
+      ],
+      "quick_start": "克隆仓库，将节点目录放入ComfyUI的custom_nodes文件夹，重启ComfyUI后在节点列表中找到Seedance2.5相关节点即可使用"
+    },
+    {
+      "full_name": "krssroot/Metamask-core",
+      "url": "https://github.com/krssroot/Metamask-core",
+      "summary": "MetaMask核心包Monorepo",
+      "highlights": [
+        "官方MetaMask客户端核心代码库，涵盖钱包、账户、交易等核心模块",
+        "TypeScript编写，架构清晰，适合学习高质量区块链前端工程实践",
+        "可作为开发自定义钱包或DApp交互层的基础框架"
+      ],
+      "target_users": [
+        "区块链钱包开发者",
+        "Web3前端工程师",
+        "对MetaMask内部机制感兴趣的技术人员"
+      ],
+      "quick_start": "克隆仓库，运行npm install，然后npm run build，即可在本地构建核心包并查看各包依赖关系"
+    }
+  ]
+}
