@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-03",
+  "picks": [
+    {
+      "full_name": "MasterLocksmithTrim/BoosterX-PRO-Crack",
+      "url": "https://github.com/MasterLocksmithTrim/BoosterX-PRO-Crack",
+      "summary": "Windows系统优化与游戏加速工具",
+      "highlights": [
+        "提供FPS提升、延迟降低、启动项管理和隐私控制等全套系统优化功能",
+        "包含备份与恢复机制，适合对系统性能有极致要求的用户",
+        "C++编写，性能开销低，可直接编译使用"
+      ],
+      "target_users": "游戏玩家、系统管理员、追求极致PC性能的开发者",
+      "quick_start": "克隆仓库后用Visual Studio打开源码编译，或直接运行预编译的exe，按界面提示一键应用优化模板（需注意该仓库名为Crack，可能涉及版权风险，建议仅用于学习研究）"
+    },
+    {
+      "full_name": "orlowdev/tree-sitter-cflang",
+      "url": "https://github.com/orlowdev/tree-sitter-cflang",
+      "summary": "C!编程语言的语法解析器",
+      "highlights": [
+        "基于tree-sitter框架，支持增量解析，适合编辑器插件和语法高亮",
+        "为小众语言C!提供现代解析工具，填补生态空白",
+        "C语言实现，可嵌入多种宿主环境（Neovim、VS Code等）"
+      ],
+      "target_users": "语言设计师、编辑器插件开发者、对编译原理感兴趣的工程师",
+      "quick_start": "git clone后运行`make`生成parser，再通过tree-sitter CLI执行`tree-sitter parse example.c!`测试解析效果"
+    }
+  ]
+}
