@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-04",
+  "picks": [
+    {
+      "full_name": "livid/exe",
+      "url": "https://github.com/livid/exe",
+      "summary": "macOS个人虚拟机云平台",
+      "highlights": [
+        "一个Go二进制文件集成Virtualization.framework、Ollama AI编程代理和Cloudflare Tunnel，实现从本地VM到公网访问的全链路自动化",
+        "轻量级个人云方案，适合开发者快速搭建隔离开发环境或AI实验沙箱，无需额外云服务费用"
+      ],
+      "target_users": "macOS开发者、喜欢本地虚拟化与AI编程结合的技术爱好者、需要临时公网演示环境的前后端工程师",
+      "quick_start": "git clone后执行go build生成单文件，运行并配置Cloudflare Tunnel token，即可通过浏览器访问VM实例"
+    },
+    {
+      "full_name": "gokern/null",
+      "url": "https://github.com/gokern/null",
+      "summary": "Go无编解码可空值类型",
+      "highlights": [
+        "设计上彻底避免序列化，仅用两个状态表示空值，保持值语义，解决Go中nil与零值混用问题",
+        "零依赖、极简API，适合数据库操作或API响应中需要明确区分'未设置'与'零值'的场景"
+      ],
+      "target_users": "Go后端工程师、ORM库开发者、需要精确控制数据语义的系统架构师",
+      "quick_start": "go get github.com/gokern/null，用null.Int{}替代int，直接读写字段即可"
+    }
+  ]
+}
