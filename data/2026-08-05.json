@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-05",
+  "picks": [
+    {
+      "full_name": "Bottomsuclimb/image-metadata-stripper",
+      "url": "https://github.com/Bottomsuclimb/image-metadata-stripper",
+      "summary": "浏览器内去除图片元数据",
+      "highlights": [
+        "纯前端处理，图片不上传，隐私安全有保障",
+        "自动去除EXIF、GPS等敏感信息，适合社交分享前净化",
+        "使用简单，拖拽即可完成，无需安装任何软件"
+      ],
+      "target_users": "注重隐私的普通用户、摄影爱好者、需要处理图片的开发者",
+      "quick_start": "打开项目页面，拖入一张照片，浏览器自动重新编码并去除元数据，点击下载即可获得干净图片，全程无需上传。"
+    },
+    {
+      "full_name": "Sparkfetch/sparkfetch",
+      "url": "https://github.com/Sparkfetch/sparkfetch",
+      "summary": "任意URL转LLM友好内容",
+      "highlights": [
+        "将网页内容自动提取为结构化、干净的文本，适配LLM输入",
+        "提供API接口，可集成到AI工作流中，替代手动复制粘贴",
+        "TypeScript编写，开源可自部署，数据可控"
+      ],
+      "target_users": "AI应用开发者、RAG系统构建者、需要批量抓取网页数据的后端工程师",
+      "quick_start": "克隆仓库后运行npm install && npm start，通过API发送URL请求，即可返回提取后的Markdown或JSON格式内容。"
+    }
+  ]
+}
