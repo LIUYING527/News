@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-06",
+  "picks": [
+    {
+      "full_name": "joshhhhhan/VISTA",
+      "url": "https://github.com/joshhhhhan/VISTA",
+      "summary": "未知项目，信息暂缺",
+      "highlights": [
+        "GitHub Trending 新上榜项目，值得关注其后续发展",
+        "可能涉及视觉或智能领域（VISTA 命名暗示）",
+        "当前 star 数极低，有早期参与机会"
+      ],
+      "target_users": "对早期开源项目感兴趣、喜欢探索新工具的开发者",
+      "quick_start": "项目信息缺失，建议先访问链接查看 README，若为空则等待作者补充"
+    },
+    {
+      "full_name": "Ki4nb/VSphereRansomwareRecovery",
+      "url": "https://github.com/Ki4nb/VSphereRansomwareRecovery",
+      "summary": "VMware ESXi 勒索病毒恢复工具",
+      "highlights": [
+        "针对 Babuk 勒索病毒，可恢复被破坏的虚拟磁盘（99%+ 数据为明文）",
+        "提供完整的分析、IOC、工具链和恢复手册，实战价值极高",
+        "Python 实现，可直接用于企业级灾备场景"
+      ],
+      "target_users": "VMware 管理员、安全应急响应人员、虚拟化运维工程师",
+      "quick_start": "克隆仓库后运行工具，按 README 中的 runbook 对受感染磁盘执行恢复脚本"
+    }
+  ]
+}
