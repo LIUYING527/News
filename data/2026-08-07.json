@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-07",
+  "picks": [
+    {
+      "full_name": "FormidableCare/OpenMed",
+      "url": "https://github.com/FormidableCare/OpenMed",
+      "summary": "医疗术语互操作服务",
+      "highlights": [
+        "解决医院系统、药房目录与SNOMED CT、ATC等标准术语之间的映射问题，是医疗信息化领域的刚需",
+        "基于AI的映射能力，相比传统规则引擎更灵活，能处理复杂术语关系",
+        "对医疗开发者而言，可大幅降低集成成本，提升数据交换的标准化程度"
+      ],
+      "target_users": "医疗信息化工程师、医院系统集成开发者、健康数据平台开发者",
+      "quick_start": "克隆仓库后，查看README中的API文档，使用Docker启动本地服务，向/terminology/map端点发送一个药品名称测试映射结果。"
+    },
+    {
+      "full_name": "SunPark90/frameseek",
+      "url": "https://github.com/SunPark90/frameseek",
+      "summary": "带时间戳引用的视频深度研究工具",
+      "highlights": [
+        "基于证据的视频研究，每条结论都附带精确的时间戳引用，极大提升视频内容分析的可靠性",
+        "结合了深度研究（deep research）与视频理解，适用于法律、新闻、教育等需要可追溯证据的场景",
+        "Python实现，方便集成到现有数据分析或内容审核工作流中"
+      ],
+      "target_users": "视频内容研究者、媒体审核员、教育工作者、AI应用开发者",
+      "quick_start": "pip安装依赖后，运行CLI命令传入一个视频URL，工具会自动抽取关键帧并生成带时间戳的摘要报告。"
+    }
+  ]
+}
