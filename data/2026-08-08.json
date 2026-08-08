@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-08",
+  "picks": [
+    {
+      "full_name": "hamodywe/alwayspass",
+      "url": "https://github.com/hamodywe/alwayspass",
+      "summary": "绕过LLM评估的模型评分工具",
+      "highlights": [
+        "揭示LLM评估套件中阈值缺失的漏洞，当评估器打0分时仍记录为通过",
+        "对AI评估体系的安全性有重要警示意义，帮助开发者识别和修复评估逻辑缺陷",
+        "技术新颖，针对当前AI模型评测的盲区，具有研究和实用双重价值"
+      ],
+      "target_users": "AI/ML工程师、负责LLM评测系统设计与安全审计的开发者、关注模型评估可靠性研究者",
+      "quick_start": "克隆仓库，运行示例脚本接入你自己的LLM评估套件，观察模型打0分时的通过判定行为"
+    },
+    {
+      "full_name": "Trishit1234/Student-Result-Management-System",
+      "url": "https://github.com/Trishit1234/Student-Result-Management-System",
+      "summary": "基于Flask的学生成绩管理系统",
+      "highlights": [
+        "完整的前后端技术栈（Python Flask + SQLite + HTML），适合学习Web开发全流程",
+        "功能明确：学生成绩录入、查询、管理，可直接用于学校或培训机构",
+        "代码结构清晰，是快速理解Flask+SQLite集成的最佳实践示例"
+      ],
+      "target_users": "Web开发初学者、需要搭建轻量级成绩管理系统的教育工作者、Flask框架学习者",
+      "quick_start": "克隆仓库，安装Flask依赖，运行python app.py，浏览器访问localhost:5000即可使用"
+    }
+  ]
+}
