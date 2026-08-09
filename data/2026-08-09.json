@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-09",
+  "picks": [
+    {
+      "full_name": "meddadaek/agentic_rag",
+      "url": "https://github.com/meddadaek/agentic_rag",
+      "summary": "智能多步推理RAG框架",
+      "highlights": [
+        "支持多步推理和动态上下文检索，显著提升复杂问答准确性",
+        "Python实现，模块化设计，易于集成到现有AI工作流",
+        "针对精准查询场景优化，适合构建企业级知识库助手"
+      ],
+      "target_users": "AI工程师、RAG应用开发者、需要构建智能问答系统的团队",
+      "quick_start": "git clone后pip install -r requirements.txt，运行示例脚本demo.py，输入问题即可体验多步检索问答"
+    },
+    {
+      "full_name": "dzmitryj/lorelens",
+      "url": "https://github.com/dzmitryj/lorelens",
+      "summary": "JetBrains IDE版本控制插件",
+      "highlights": [
+        "提供GitLens风格的分支图、历史、 blame、合并和资产锁定功能",
+        "无需CLI，纯IDE内操作，提升开发效率",
+        "Kotlin开发，兼容JetBrains全家桶（IntelliJ、PyCharm等）"
+      ],
+      "target_users": "JetBrains IDE重度用户、需要可视化版本控制的开发者",
+      "quick_start": "下载插件zip，在IDE中Settings→Plugins→Install from Disk，重启后侧边栏出现Lore工具窗口"
+    }
+  ]
+}
