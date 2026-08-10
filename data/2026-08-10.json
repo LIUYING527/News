@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-10",
+  "picks": [
+    {
+      "full_name": "Clyra-AI/vetryn",
+      "url": "https://github.com/Clyra-AI/vetryn",
+      "summary": "AI模型依赖的自动升级工具",
+      "highlights": [
+        "为AI模型依赖提供类似Dependabot的自动化PR，基于证据评估升级影响，降低模型漂移风险",
+        "支持模型版本对比、回归测试验证和变更日志生成，提升ML运维效率",
+        "TypeScript编写，易于集成到现有CI/CD流程"
+      ],
+      "target_users": "ML工程师、MLOps团队、使用模型版本管理的开发者",
+      "quick_start": "克隆仓库，运行npm install，配置模型仓库信息后执行npm run check生成升级PR"
+    },
+    {
+      "full_name": "ios-saas-dev/lifeinsidebaby-superapp",
+      "url": "https://github.com/ios-saas-dev/lifeinsidebaby-superapp",
+      "summary": "AI驱动的孕期育儿超级应用",
+      "highlights": [
+        "结合SwiftUI、ARKit和OpenAI，提供3D胎儿可视化、产后健康追踪和AI母婴指导",
+        "展示苹果生态内AI+AR技术的深度融合实践，适合作为iOS高级开发参考",
+        "开源架构清晰，可作为健康类SaaS应用的起点模板"
+      ],
+      "target_users": "iOS开发者、母婴健康应用创业者、对AR+AI应用感兴趣的开发者",
+      "quick_start": "克隆仓库，用Xcode打开项目，配置OpenAI API密钥后运行iOS模拟器体验基础功能"
+    }
+  ]
+}
