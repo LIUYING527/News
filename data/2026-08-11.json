@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-11",
+  "picks": [
+    {
+      "full_name": "forcequitOS/bad_query",
+      "url": "https://github.com/forcequitOS/bad_query",
+      "summary": "iOS 26/27 沙箱逃逸 PoC",
+      "highlights": [
+        "针对最新 iOS 系统的安全研究示例，展示沙箱逃逸攻击路径，对移动安全研究员有高参考价值",
+        "C 语言实现，代码精简，适合作为漏洞利用开发的学习样本",
+        "项目虽小但主题前沿，直接关联系统安全边界，能启发防御思路"
+      ],
+      "target_users": "iOS 安全研究员、漏洞猎人、移动安全工程师、对系统内核攻防感兴趣的开发者",
+      "quick_start": "克隆仓库后阅读 README 了解利用原理，在越狱设备或模拟器上编译运行，观察沙箱逃逸行为（需有安全测试环境）"
+    },
+    {
+      "full_name": "venkatkoushik22/networkops-ai",
+      "url": "https://github.com/venkatkoushik22/networkops-ai",
+      "summary": "AI 辅助电信网络运维平台",
+      "highlights": [
+        "整合 Vertex AI、BigQuery、FastAPI、Streamlit 与 Google Workspace，技术栈完整，体现 AI 与运维结合的最佳实践",
+        "针对电信网络运营场景，提供 AI 辅助决策和自动化能力，实用性强，可直接作为企业级平台开发蓝本",
+        "Python 全栈实现，前后端分离，易于二次开发和扩展"
+      ],
+      "target_users": "电信行业开发者、网络运维工程师、AI 应用开发者、希望将大模型引入传统运维场景的技术团队",
+      "quick_start": "克隆仓库后，按 README 配置 Google Cloud 凭证，使用 Docker Compose 启动 FastAPI 后端和 Streamlit 前端，加载示例数据即可体验 AI 运维分析流程"
+    }
+  ]
+}
