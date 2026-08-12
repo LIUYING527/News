@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-12",
+  "picks": [
+    {
+      "full_name": "greengsl/agent-surface-auditor",
+      "url": "https://github.com/greengsl/agent-surface-auditor",
+      "summary": "AI代理仓库攻击面扫描器",
+      "highlights": [
+        "专为AI Agent仓库设计的安全审计CLI工具，能自动识别潜在攻击面（如提示注入、工具滥用、敏感信息泄露等）",
+        "Python实现，轻量易集成，可嵌入CI/CD流程，为AI应用安全提供自动化保障",
+        "填补了Agent安全审计工具的空白，对当前AI应用爆发式增长有很强的实用价值"
+      ],
+      "target_users": "AI应用开发者、安全工程师、DevSecOps团队",
+      "quick_start": "pip install agent-surface-auditor && agent-surface-auditor scan /path/to/your/agent/repo"
+    },
+    {
+      "full_name": "thisismuhammadessa/Wanderlust-DevSecOps-GitOps-project",
+      "url": "https://github.com/thisismuhammadessa/Wanderlust-DevSecOps-GitOps-project",
+      "summary": "端到端DevSecOps/GitOps实战项目",
+      "highlights": [
+        "完整的DevSecOps流水线示例：Jenkins CI/CD + Docker + Kubernetes + Terraform + Trivy + SonarQube，覆盖构建、部署、安全扫描全流程",
+        "GitOps实践落地，展示基础设施即代码和自动化部署最佳实践，适合学习或作为模板复用",
+        "技术栈主流且组合典型，是理解现代云原生DevOps流程的极佳参考"
+      ],
+      "target_users": "DevOps工程师、平台工程师、希望转型云原生的开发者",
+      "quick_start": "git clone 项目仓库，按README中的docker-compose或kubectl命令启动演示环境"
+    }
+  ]
+}
