@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-13",
+  "picks": [
+    {
+      "full_name": "slxca/a11y",
+      "url": "https://github.com/slxca/a11y",
+      "summary": "自动无障碍审计工具",
+      "highlights": [
+        "覆盖 WCAG 2.2 标准，自动映射每个问题对应的规范条款，方便开发者快速定位和修复",
+        "支持 JSON/CSV 导出，可直接集成到 CI/CD 流程或生成无障碍合规报告",
+        "面向公开网站，无需登录即可扫描，适合快速评估项目无障碍水平"
+      ],
+      "target_users": "前端开发者、QA工程师、需要满足无障碍合规要求的团队",
+      "quick_start": "克隆仓库后运行 npm install && npm start，输入任意公开网站URL，等待扫描完成即可查看审计结果并导出报告"
+    },
+    {
+      "full_name": "devlesss/WorkCanvas_Studio",
+      "url": "https://github.com/devlesss/WorkCanvas_Studio",
+      "summary": "浏览器自动化工作流示例集",
+      "highlights": [
+        "框架中立，不绑定特定自动化工具，提供多种浏览器自动化与AI代理的通用工作流范式",
+        "TypeScript编写，类型安全，方便直接复用或改造到现有项目中",
+        "示例覆盖常见业务场景（如数据抓取、表单填写、AI辅助操作），能显著降低自动化开发门槛"
+      ],
+      "target_users": "RPA开发者、AI Agent构建者、需要快速实现浏览器自动化的后端/全栈工程师",
+      "quick_start": "克隆仓库后，查看 examples 目录，选择最接近你需求的示例，复制其核心逻辑到你的项目中，按需调整选择器和API调用即可"
+    }
+  ]
+}
