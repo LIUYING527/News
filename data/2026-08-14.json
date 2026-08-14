@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-14",
+  "picks": [
+    {
+      "full_name": "basset-org/basset-ios",
+      "url": "https://github.com/basset-org/basset-ios",
+      "summary": "iOS端埋点采集SDK",
+      "highlights": [
+        "提供iOS原生数据采集能力，是移动端数据分析的基础组件",
+        "面向开发者设计的轻量级SDK，可快速集成到现有App中",
+        "作为basset生态的iOS入口，适合需要统一数据管线的团队"
+      ],
+      "target_users": "iOS开发工程师、移动端数据分析团队、需要接入用户行为追踪的App开发者",
+      "quick_start": "在Xcode中新建项目，通过CocoaPods或Swift Package Manager引入basset-ios，调用初始化方法并设置采集事件即可在5分钟内完成基础埋点"
+    },
+    {
+      "full_name": "s1d9e/chronos",
+      "url": "https://github.com/s1d9e/chronos",
+      "summary": "恶意软件动态分析沙箱",
+      "highlights": [
+        "面向蓝队和DFIR的私有动态分析引擎，支持隔离运行可疑样本",
+        "仅观察不干预的设计，适合安全研究人员分析恶意行为而不影响主机",
+        "轻量级Python实现，可快速部署在本地安全实验室"
+      ],
+      "target_users": "安全研究员、蓝队成员、恶意软件分析师、DFIR取证人员",
+      "quick_start": "克隆仓库后，使用Docker或本地Python环境启动沙箱，将待分析样本放入指定目录，运行分析脚本即可在5分钟内获得行为报告"
+    }
+  ]
+}
