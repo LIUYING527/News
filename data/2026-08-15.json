@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-15",
+  "picks": [
+    {
+      "full_name": "Ramesh-Murala/Structured-Output-Agent",
+      "url": "https://github.com/Ramesh-Murala/Structured-Output-Agent",
+      "summary": "LLM结构化输出可靠性层",
+      "highlights": [
+        "强制Pydantic模式，确保LLM输出严格符合schema，避免脏数据进入下游系统",
+        "内置自动重试与验证错误日志，显著提升生产环境中LLM调用的稳定性",
+        "通用性强，可无缝集成到现有基于Python的LLM应用（如LangChain、OpenAI SDK）中"
+      ],
+      "target_users": "使用LLM构建生产级应用的Python开发者，尤其是需要严格JSON/结构化输出的后端或数据管道工程师",
+      "quick_start": "pip install structured-output-agent；在代码中用StructuredAgent包装你的LLM调用，传入Pydantic模型，即可获得校验和重试能力。"
+    },
+    {
+      "full_name": "DavidValin/aloo",
+      "url": "https://github.com/DavidValin/aloo",
+      "summary": "安全终端语音/聊天/文件传输工具",
+      "highlights": [
+        "基于Rust实现，内存安全且性能高，适合低资源环境下的实时通信",
+        "支持公/私频道与私信，内置加密，满足安全敏感场景（如团队运维、渗透测试协作）",
+        "纯终端交互，无需图形界面，可集成到SSH工作流中，作为安全协作的轻量替代"
+      ],
+      "target_users": "安全工程师、运维团队、极客开发者，需要在命令行环境下进行加密通信或文件交换的用户",
+      "quick_start": "cargo install aloo；运行 aloo join public 进入公共频道，或 aloo dm <user> 发起私聊，即可开始使用。"
+    }
+  ]
+}
