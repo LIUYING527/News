@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-16",
+  "picks": [
+    {
+      "full_name": "pyinstance/CIpheraLinux",
+      "url": "https://github.com/pyinstance/CIpheraLinux",
+      "summary": "本地优先的Linux命令行密码管理器",
+      "highlights": [
+        "使用XChaCha20-Poly1305认证加密和Argon2id密钥派生，安全性高",
+        "支持密钥文件保护、加密备份、密码健康检查和自动剪贴板清除，功能全面",
+        "纯Rust实现，适合安全敏感和追求极简键盘操作的用户"
+      ],
+      "target_users": "Linux开发者、安全爱好者、命令行重度用户、需要本地密码管理的IT人员",
+      "quick_start": "克隆仓库后，使用cargo build --release编译，运行二进制文件，按提示初始化主密码即可创建本地加密保险库"
+    },
+    {
+      "full_name": "SikeFix/deepseek-cute-desktop",
+      "url": "https://github.com/SikeFix/deepseek-cute-desktop",
+      "summary": "可爱主题的本地DeepSeek桌面客户端",
+      "highlights": [
+        "macOS和Windows双平台支持，提供即下即用的桌面体验",
+        "内置可爱主题和桌面宠物交互，提升日常使用趣味性",
+        "本地运行DeepSeek模型，数据不出设备，隐私保护强"
+      ],
+      "target_users": "DeepSeek模型使用者、桌面应用开发者、喜欢个性化工具和注重隐私的AI爱好者",
+      "quick_start": "从Releases页面下载对应平台的安装包，安装后启动应用，按提示加载本地DeepSeek模型权重即可开始对话"
+    }
+  ]
+}
