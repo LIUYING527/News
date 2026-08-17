@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-17",
+  "picks": [
+    {
+      "full_name": "Velocity07/OniraRAG",
+      "url": "https://github.com/Velocity07/OniraRAG",
+      "summary": "本地离线智能RAG引擎",
+      "highlights": [
+        "完全本地、气隙环境可运行的Agentic RAG，使用LangGraph循环编排，支持混合检索（ChromaDB+BM25）和FlashRank神经重排，技术栈前沿",
+        "集成Moondream多模态PDF视觉解析和实时网页回退，适合处理复杂文档问答场景，工程完整度高",
+        "对数据隐私敏感的企业或研究机构极具价值，无需外部API即可构建知识库问答系统"
+      ],
+      "target_users": "需要私有化部署RAG系统的开发者、数据工程师、AI应用架构师，尤其关注数据安全和离线场景",
+      "quick_start": "克隆仓库后，按README安装依赖（需Python 3.10+），运行示例脚本加载本地PDF并启动问答交互，5分钟内可体验核心检索流程"
+    },
+    {
+      "full_name": "tim-stubbe/homelab-hub",
+      "url": "https://github.com/tim-stubbe/homelab-hub",
+      "summary": "自托管家庭实验室仪表盘",
+      "highlights": [
+        "专为TrueNAS设计，提供统一的Web界面管理家庭实验室资源，直观展示存储、服务状态，实用性强",
+        "基于JavaScript，轻量易部署，适合快速集成到现有homelab环境，降低运维复杂度",
+        "社区活跃度虽不高，但定位精准，解决自托管用户的真实痛点，未来有扩展潜力"
+      ],
+      "target_users": "自托管爱好者、TrueNAS用户、家庭实验室管理者，希望用单一面板监控多服务",
+      "quick_start": "克隆仓库，配置TrueNAS API密钥，使用Docker或Node.js启动服务，浏览器打开仪表盘即可看到存储与系统状态"
+    }
+  ]
+}
