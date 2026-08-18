@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-18",
+  "picks": [
+    {
+      "full_name": "AlbertoEJ/llm-swarm-loadtest",
+      "url": "https://github.com/AlbertoEJ/llm-swarm-loadtest",
+      "summary": "LLM端点并发压测与实时监控",
+      "highlights": [
+        "支持OpenAI兼容端点的真实并发负载测试，通过N个并行代理模拟真实工作负载",
+        "内置代理测量关键指标：TTFT（首令牌延迟）、吞吐量（tok/s）、429限流、缓存命中率",
+        "提供实时仪表盘，让开发者直观了解服务容量和瓶颈"
+      ],
+      "target_users": "后端工程师、SRE、LLM应用开发者，需要验证自家或第三方LLM服务的性能与稳定性",
+      "quick_start": "克隆仓库后，按README配置目标endpoint和并发数，运行npm install && npm start，浏览器打开本地仪表盘即可看到实时压测数据"
+    },
+    {
+      "full_name": "Yakhyobek1997/LLM-Model-Comparison",
+      "url": "https://github.com/Yakhyobek1997/LLM-Model-Comparison",
+      "summary": "多LLM模型参数对比分析工具",
+      "highlights": [
+        "对Solar-Open-100B、GLM-4.5-Air、Phi-3.5-MoE-instruct进行多维度相似度评估",
+        "基于多指标（如余弦相似度、语义距离等）的量化对比，帮助选型",
+        "Python实现，代码简洁，便于扩展新模型或新指标"
+      ],
+      "target_users": "AI研究员、模型选型工程师、对LLM内部表征差异感兴趣的开发者",
+      "quick_start": "克隆项目，安装requirements.txt，运行主脚本并传入待比较的模型名称，即可输出对比报告"
+    }
+  ]
+}
