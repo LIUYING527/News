@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-19",
+  "picks": [
+    {
+      "full_name": "hideptr/anylang",
+      "url": "https://github.com/hideptr/anylang",
+      "summary": "AI翻译视觉小说和RPG游戏",
+      "highlights": [
+        "支持Ren'Py、RPG Maker、Unity等主流游戏引擎，可直接翻译游戏文本",
+        "基于Rust编写，性能高效，可本地运行或集成到工作流中",
+        "AI驱动，能处理多语言翻译，适合游戏本地化场景"
+      ],
+      "target_users": "游戏开发者、本地化翻译人员、视觉小说/RPG爱好者",
+      "quick_start": "克隆仓库后，按README安装依赖，用命令行指定游戏目录和目标语言，即可自动提取并翻译文本，5分钟内可完成一个简单Demo的翻译。"
+    },
+    {
+      "full_name": "NiLabs-Models/ladder",
+      "url": "https://github.com/NiLabs-Models/ladder",
+      "summary": "竞赛编程专用小型微调模型",
+      "highlights": [
+        "使用QLoRA训练，模型体积小，可在免费Kaggle/Colab GPU上运行",
+        "专注于竞赛编程，提供可验证的评估脚本，方便测试模型能力",
+        "开源且训练成本低，适合个人开发者或研究团队复现和扩展"
+      ],
+      "target_users": "AI研究员、竞赛编程爱好者、需要代码生成模型的开发者",
+      "quick_start": "克隆仓库，在Colab中打开训练或推理Notebook，加载预训练权重，输入一道算法题描述即可生成解题代码，整个过程约5分钟。"
+    }
+  ]
+}
