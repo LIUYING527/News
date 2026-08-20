@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-20",
+  "picks": [
+    {
+      "full_name": "Dicklesworthstone/frankengit",
+      "url": "https://github.com/Dicklesworthstone/frankengit",
+      "summary": "Git兼容的自托管代码托管平台",
+      "highlights": [
+        "Agent-native设计，专为AI代理操作优化，支持自动修复仓库问题",
+        "完全自托管，可作为GitHub替代品，数据自主可控",
+        "兼容Git协议，现有工具链无缝迁移",
+        "当前Star数低但定位独特，适合早期技术验证"
+      ],
+      "target_users": "需要自建代码托管平台的企业、AI代理开发人员、关注数据隐私的团队",
+      "quick_start": "克隆仓库后运行install.sh，5分钟内即可在本地启动一个Git兼容的代码托管服务，用git clone测试基本功能"
+    },
+    {
+      "full_name": "Albertoolci/trajanOS",
+      "url": "https://github.com/Albertoolci/trajanOS",
+      "summary": "从零实现的教学型32位操作系统",
+      "highlights": [
+        "完整实现x86/IA-32架构内核，覆盖中断、内存管理、进程调度等核心机制",
+        "纯学习导向，代码结构清晰，适合系统编程深度研究",
+        "C语言编写，可在QEMU中快速验证，无需真实硬件"
+      ],
+      "target_users": "操作系统课程学生、内核开发新手、对底层原理感兴趣的工程师",
+      "quick_start": "克隆后运行make && qemu-system-i386 -kernel kernel.bin，即可在虚拟机中启动并观察系统运行日志"
+    }
+  ]
+}
