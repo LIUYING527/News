@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-21",
+  "picks": [
+    {
+      "full_name": "Leutenegger/vanity-eth",
+      "url": "https://github.com/Leutenegger/vanity-eth",
+      "summary": "比特币以太坊离线靓号生成器",
+      "highlights": [
+        "支持BTC全部地址类型（Legacy/SegWit/Taproot）及ETH（EIP-55）",
+        "CPU多进程并行搜索，交互式CLI菜单，完全离线保证私钥安全",
+        "Python实现，跨平台易用，适合快速生成自定义前缀/后缀地址"
+      ],
+      "target_users": "加密货币开发者、区块链安全研究者、需要品牌地址的Web3项目方",
+      "quick_start": "git clone后运行 python vanity-eth.py，按提示选择链类型和前缀，等待生成即可"
+    },
+    {
+      "full_name": "Capveon/open-strategies",
+      "url": "https://github.com/Capveon/open-strategies",
+      "summary": "LLM策略隔离对比测试工具",
+      "highlights": [
+        "支持在同一环境下隔离运行不同LLM策略，避免上下文污染",
+        "自动生成统计分析报告，量化比较各策略效果",
+        "TypeScript编写，可集成到现有评估流水线"
+      ],
+      "target_users": "LLM应用开发者、Prompt工程师、AI Agent测试人员",
+      "quick_start": "npm install后配置策略文件，运行对比命令即可输出统计报告"
+    }
+  ]
+}
