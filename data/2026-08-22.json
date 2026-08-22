@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-22",
+  "picks": [
+    {
+      "full_name": "miguelconfuso/pathpulse",
+      "url": "https://github.com/miguelconfuso/pathpulse",
+      "summary": "终端实时寻路可视化实验室",
+      "highlights": [
+        "在终端中实时可视化A*、Dijkstra等寻路算法，支持交互式调整障碍物和起点终点，直观展示算法执行过程，对教学和调试极有价值。",
+        "基于TypeScript开发，轻量且跨平台，无需图形界面即可运行，适合SSH远程环境或低资源开发机使用。",
+        "可扩展算法插件架构，开发者可轻松添加自定义寻路算法进行对比测试。"
+      ],
+      "target_users": "算法学习者、游戏开发者、机器人路径规划工程师、终端爱好者",
+      "quick_start": "克隆仓库后运行 npm install && npm start，直接在终端中看到寻路演示，按提示按键添加/移除障碍物并观察路径变化。"
+    },
+    {
+      "full_name": "XinweiJu/CLiMB-T2M_PRISM",
+      "url": "https://github.com/XinweiJu/CLiMB-T2M_PRISM",
+      "summary": "MICCAI 2026文本到运动生成源码",
+      "highlights": [
+        "面向医学影像与计算辅助干预顶会MICCAI 2026挑战赛，提供完整的文本到人体运动生成（T2M）解决方案，学术前沿性强。",
+        "基于Python实现，包含完整的训练/推理pipeline，可直接用于复现比赛结果，适合科研人员快速起步。",
+        "代码结构清晰，模块化设计，方便针对不同动作数据集进行微调，对动作生成、具身智能领域有参考价值。"
+      ],
+      "target_users": "计算机视觉/图形学研究者、动作生成方向研究生、MICCAI参赛者、具身智能开发者",
+      "quick_start": "下载代码后，安装requirements.txt，运行预训练模型推理脚本（如python demo.py --text \"走路\"），即可生成3D运动序列并可视化。"
+    }
+  ]
+}
