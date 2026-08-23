@@ -1,0 +1,28 @@
+{
+  "date": "2026-08-23",
+  "picks": [
+    {
+      "full_name": "RunzeWater/CoursePath",
+      "url": "https://github.com/RunzeWater/CoursePath",
+      "summary": "课程路径规划工具",
+      "highlights": [
+        "可能是可视化学习路线或课程依赖图，帮助开发者规划学习顺序",
+        "今日热门榜首位，虽星数低但可能刚发布或推广中，有潜力"
+      ],
+      "target_users": "希望系统化学习某一技术栈或课程的开发者",
+      "quick_start": "打开仓库查看README，如果包含demo或截图可快速了解功能；或clone到本地运行查看效果"
+    },
+    {
+      "full_name": "bedylsebub/NoOtPad",
+      "url": "https://github.com/bedylsebub/NoOtPad",
+      "summary": "可视化头脑风暴笔记应用",
+      "highlights": [
+        "Python实现，适合快速二次开发或学习桌面应用开发",
+        "专注视觉化笔记，适合项目管理、创意整理场景",
+        "今日热门榜中少数有明确功能描述的项目，实用性较强"
+      ],
+      "target_users": "需要视觉化整理思路的产品经理、设计师、开发者",
+      "quick_start": "克隆仓库，按README安装Python依赖（如tkinter或pyqt），运行主脚本即可打开应用"
+    }
+  ]
+}
