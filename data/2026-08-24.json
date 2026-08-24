@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-24",
+  "picks": [
+    {
+      "full_name": "jiakanglee/OPCD-Weak_critiques_strong",
+      "url": "https://github.com/jiakanglee/OPCD-Weak_critiques_strong",
+      "summary": "弱批评蒸馏实现可扩展AI监督",
+      "highlights": [
+        "提出On-Policy Critique Distillation方法，解决LLM对齐中批评者能力不足的问题",
+        "论文代码开源，适合复现和二次开发，紧跟大模型对齐前沿方向",
+        "Python实现，结构清晰，便于研究者和工程师快速理解核心算法"
+      ],
+      "target_users": "LLM对齐研究员、强化学习开发者、对大模型可扩展监督感兴趣的技术人员",
+      "quick_start": "克隆仓库，查看README获取依赖安装命令，运行示例脚本（如python train.py --config config.yaml）观察蒸馏训练流程"
+    },
+    {
+      "full_name": "SirMrGary/AutoClickflow",
+      "url": "https://github.com/SirMrGary/AutoClickflow",
+      "summary": "录制鼠标键盘流自动化办公操作",
+      "highlights": [
+        "解决跨系统数据录入痛点（如从Excel批量更新AD/CRM员工信息）",
+        "纯PowerShell实现，无需额外运行时，Windows环境开箱即用",
+        "支持录制和回放，大幅减少重复性手动操作，提升运维效率"
+      ],
+      "target_users": "IT运维人员、系统管理员、需要批量数据录入的办公自动化用户",
+      "quick_start": "克隆仓库后，以管理员身份运行PowerShell，执行录制脚本生成操作流文件，再运行回放脚本即可自动执行"
+    }
+  ]
+}
