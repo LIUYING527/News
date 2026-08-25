@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-25",
+  "picks": [
+    {
+      "full_name": "pokemon225/ax-platform-mcp",
+      "url": "https://github.com/pokemon225/ax-platform-mcp",
+      "summary": "长时运行代理的协作网络",
+      "highlights": [
+        "为长时间运行的AI代理提供远程MCP服务器，支持消息传递、任务管理、共享上下文和搜索，解决代理间协作与状态持久化问题",
+        "基于MCP（Model Context Protocol）标准，可无缝集成到现有AI工具链中，扩展代理的跨会话协作能力",
+        "支持MCP Apps，允许开发者构建和分发针对代理协作场景的专用应用，生态潜力大"
+      ],
+      "target_users": "AI代理开发者、多代理系统架构师、需要跨会话状态管理的LLM应用开发者",
+      "quick_start": "克隆仓库后，按README启动MCP服务器，使用MCP客户端（如Claude Desktop）连接，即可体验消息发送与共享上下文功能"
+    },
+    {
+      "full_name": "zackiles/nr-sib1",
+      "url": "https://github.com/zackiles/nr-sib1",
+      "summary": "Rust解码5G广播信号",
+      "highlights": [
+        "纯Rust实现5G NR SIB1解码全流程，覆盖PSS/SSS同步、PBCH极化解码、PDCCH/PDSCH接收及ASN.1解析，技术栈完整",
+        "针对地面FR1频段设计，非UE物理层实现，适合软件定义无线电（SDR）和网络分析场景，是学习5G物理层的绝佳参考",
+        "从IQ采样到CRC校验的完整链路，代码结构清晰，为Rust在通信领域的应用提供了高质量范例"
+      ],
+      "target_users": "5G协议研究者、SDR爱好者、Rust系统开发者、电信网络测试工程师",
+      "quick_start": "准备一个5G FR1的IQ采样文件（如从USRP采集），运行cargo run --release -- -i sample.iq，即可看到解码出的SIB1广播信息"
+    }
+  ]
+}
