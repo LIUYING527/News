@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-26",
+  "picks": [
+    {
+      "full_name": "Sly611/ng-address-toolkit",
+      "url": "https://github.com/Sly611/ng-address-toolkit",
+      "summary": "尼日利亚地址数据离线Python包",
+      "highlights": [
+        "提供尼日利亚完整的州、地方政府区、选区和城镇数据，无需API调用和网络，适合离线使用",
+        "纯Python实现，轻量级，可直接集成到数据处理、表单验证或地理信息相关项目中",
+        "对非洲市场开发者友好，填补了尼日利亚行政区划数据在开源生态中的空白"
+      ],
+      "target_users": "需要在尼日利亚市场构建应用的后端开发者、数据工程师、地理信息处理人员",
+      "quick_start": "pip install ng-address-toolkit，然后运行 'from ng_address_toolkit import get_states' 获取州列表，即可开始使用"
+    },
+    {
+      "full_name": "Fade78/pasteberth",
+      "url": "https://github.com/Fade78/pasteberth",
+      "summary": "浏览器到文件系统的剪贴板桥接工具",
+      "highlights": [
+        "允许用户从浏览器直接粘贴截图到项目目录，并自动复制图片路径，极大简化CLI/TUI环境下的工作流",
+        "解决终端用户频繁在浏览器和命令行之间切换的痛点，提升开发效率",
+        "纯Python实现，易于扩展和定制，适合自动化脚本集成"
+      ],
+      "target_users": "频繁使用CLI/TUI的开发者、运维人员、喜欢终端工作流的效率爱好者",
+      "quick_start": "pip install pasteberth，启动服务后，在浏览器中复制图片，终端中运行 'pasteberth paste' 即可将图片保存到当前目录并输出路径"
+    }
+  ]
+}
