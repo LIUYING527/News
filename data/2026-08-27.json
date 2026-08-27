@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-27",
+  "picks": [
+    {
+      "full_name": "jiff3/KinetiQC",
+      "url": "https://github.com/jiff3/KinetiQC",
+      "summary": "动态PET定量分析框架",
+      "highlights": [
+        "CPU优先的设计，无需GPU即可处理动态PET数据，降低医学影像分析门槛",
+        "覆盖时间恢复、动力学连接性和影像组学，提供协议鲁棒的多维度定量分析",
+        "对医学影像处理开发者有明确的技术复用价值，适合神经科学和肿瘤学定量研究"
+      ],
+      "target_users": "医学影像研究者、PET数据分析师、生物医学工程开发者",
+      "quick_start": "克隆仓库后，查看README中的示例数据运行脚本，使用Python环境直接导入模块处理示例PET序列，5分钟内可生成基础动力学参数图。"
+    },
+    {
+      "full_name": "DeflateAwning/daplot",
+      "url": "https://github.com/DeflateAwning/daplot",
+      "summary": "Rust编写的CSV绘图GUI工具",
+      "highlights": [
+        "纯Rust实现，轻量快速，无需浏览器或Electron，启动即用",
+        "直接支持CSV和Parquet格式，适合数据工程师快速可视化日常数据文件",
+        "GUI操作直观，简化了命令行绘图的学习成本，提升数据探索效率"
+      ],
+      "target_users": "数据工程师、数据分析师、Rust开发者、需要快速查看表格数据的开发者",
+      "quick_start": "下载release二进制或cargo install，运行后拖入一个CSV文件，选择两列即可自动生成散点图/线图，整个过程不超过2分钟。"
+    }
+  ]
+}
