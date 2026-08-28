@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-28",
+  "picks": [
+    {
+      "full_name": "Aleks-Levet/starfield-xp-screensaver",
+      "url": "https://github.com/Aleks-Levet/starfield-xp-screensaver",
+      "summary": "Python重制WinXP星空屏保",
+      "highlights": [
+        "用Python/Pygame实现经典Windows XP星空屏保，代码简洁易读，适合学习游戏编程基础",
+        "在原始效果基础上增加了增强功能，可作为图形渲染和粒子系统的教学示例",
+        "轻量级项目，依赖少，运行即所得，适合快速体验和二次开发"
+      ],
+      "target_users": "Python初学者、游戏开发爱好者、怀旧复古风格爱好者",
+      "quick_start": "克隆仓库后，安装pygame依赖，运行主Python文件即可看到星空屏保效果，5分钟内可完成体验"
+    },
+    {
+      "full_name": "MalikDjaferi/Oxide",
+      "url": "https://github.com/MalikDjaferi/Oxide",
+      "summary": "Rust语言从零写操作系统",
+      "highlights": [
+        "完全用Rust从零开始构建操作系统，是学习OS内核和Rust系统编程的极佳参考",
+        "开源项目处于早期阶段，社区参与度高，适合贡献代码或跟踪最新进展",
+        "Rust语言的内存安全和并发优势在操作系统开发中体现明显，具有很高的技术学习价值"
+      ],
+      "target_users": "操作系统爱好者、Rust系统级开发者、计算机科学专业学生",
+      "quick_start": "查看GitHub仓库的README，按照说明配置Rust编译环境，尝试编译并在模拟器（如QEMU）中运行，5分钟内可体验引导过程"
+    }
+  ]
+}
