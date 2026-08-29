@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-29",
+  "picks": [
+    {
+      "full_name": "Zulwatha/content-parity",
+      "url": "https://github.com/Zulwatha/content-parity",
+      "summary": "测量网站对机器读者的内容差异",
+      "highlights": [
+        "以多种身份（包括加密签名代理）抓取同一页面，对比各身份实际收到的内容，可用于检测网站对爬虫和AI代理的内容伪装或差异化服务",
+        "Go语言实现，轻量且易于部署，适合作为内容审计、SEO分析或合规监控工具",
+        "签名代理身份的设计具有创新性，为验证内容完整性和来源可信度提供了新思路"
+      ],
+      "target_users": "前端开发者、SEO专家、内容合规审计人员、爬虫开发者",
+      "quick_start": "克隆仓库后运行 go run . <目标URL>，它会自动以不同身份抓取页面并输出对比报告，5分钟内即可看到结果"
+    },
+    {
+      "full_name": "rajshah4/agent-canvas-conversation-search",
+      "url": "https://github.com/rajshah4/agent-canvas-conversation-search",
+      "summary": "本地Agent Canvas对话全文搜索工具",
+      "highlights": [
+        "为Agent Canvas（AI代理开发工具）提供本地对话历史的全文搜索和逆时间浏览功能，极大提升调试和回溯效率",
+        "纯JavaScript实现，无外部依赖，可直接集成到现有工作流，支持本地数据隐私保护",
+        "解决了AI开发中对话记录难以检索的痛点，对使用Agent Canvas的开发者有直接实用价值"
+      ],
+      "target_users": "使用Agent Canvas的AI应用开发者、LLM调试工程师、本地数据隐私敏感的用户",
+      "quick_start": "npm install后运行node index.js，指定Agent Canvas的对话存储目录，即可在浏览器中搜索历史对话，5分钟内完成部署"
+    }
+  ]
+}
