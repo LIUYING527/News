@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-30",
+  "picks": [
+    {
+      "full_name": "meddadaek/rased",
+      "url": "https://github.com/meddadaek/rased",
+      "summary": "阿尔及利亚山火预警与救援协调系统",
+      "highlights": [
+        "集成实时卫星火点追踪与加拿大FWI火灾危险指数预测，技术栈实用",
+        "提供验证过的救援数据协调，对防灾减灾有直接社会价值",
+        "针对特定地区（阿尔及利亚）的垂直应用，但架构可复用到其他区域"
+      ],
+      "target_users": "关注灾害预警、地理信息系统的开发者，以及从事应急管理或环境监测的技术人员",
+      "quick_start": "克隆仓库后，查看README中的API接入说明，配置卫星数据源（如NASA FIRMS）和FWI计算依赖，本地运行即可获得火点可视化与预警输出"
+    },
+    {
+      "full_name": "HallViceThaw/Fix-Telegram",
+      "url": "https://github.com/HallViceThaw/Fix-Telegram",
+      "summary": "Windows本地MTProto代理加速Telegram",
+      "highlights": [
+        "通过TLS加密的WebSocket连接优化Telegram访问，解决网络延迟问题",
+        "纯本地代理，无需第三方服务器，隐私安全",
+        "对网络受限地区的开发者非常实用，部署简单"
+      ],
+      "target_users": "Telegram重度用户、开发者在网络受限环境下的工具链优化，以及需要稳定即时通讯的远程工作者",
+      "quick_start": "下载仓库中的可执行文件或脚本，以管理员身份运行，设置Telegram代理为本地端口（默认1080），重启Telegram即可生效"
+    }
+  ]
+}
