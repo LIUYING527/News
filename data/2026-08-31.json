@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-31",
+  "picks": [
+    {
+      "full_name": "ngthluu/loopq",
+      "url": "https://github.com/ngthluu/loopq",
+      "summary": "可确定性仓库质量检查工具",
+      "highlights": [
+        "声明式定义仓库启动与行为规范，支持本地和CI重复运行QC套件，实现确定性质量验证",
+        "Go语言编写，自托管无外部依赖，适合任何技术栈，解决传统测试不稳定问题",
+        "将质量检查代码化、版本化，便于团队协作和自动化流水线集成"
+      ],
+      "target_users": "DevOps工程师、SRE、追求高可靠性交付的软件团队",
+      "quick_start": "克隆仓库后，按README编写loopq.yaml声明期望行为，执行`loopq run`即可在本地运行QC套件，5分钟内体验核心流程"
+    },
+    {
+      "full_name": "XProger/AA-decomp-port",
+      "url": "https://github.com/XProger/AA-decomp-port",
+      "summary": "AI辅助PSX游戏逆向移植",
+      "highlights": [
+        "利用Codex AI自动进行Agent Armstrong(PSX)反编译，展示LLM在逆向工程中的创新应用",
+        "为复古游戏移植和代码重建提供新范式，大幅降低人工逆向成本",
+        "项目本身是技术实验，对游戏开发和逆向工程社区有启发价值"
+      ],
+      "target_users": "逆向工程师、游戏开发者、对AI辅助编程感兴趣的极客",
+      "quick_start": "访问仓库查看反编译进度和代码结构，可对比原版游戏逻辑，体验AI生成的可编译代码"
+    }
+  ]
+}
