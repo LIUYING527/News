@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-01",
+  "picks": [
+    {
+      "full_name": "Ace-codes-swift/ReScripted",
+      "url": "https://github.com/Ace-codes-swift/ReScripted",
+      "summary": "C++17嵌入式脚本语言库",
+      "highlights": [
+        "Header-only，零依赖，直接嵌入C++17项目，无需编译步骤，极大降低集成成本",
+        "支持将JSON格式的语言定义编译进应用，运行时动态加载/卸载脚本，适合做插件系统或游戏Mod引擎",
+        "提供宿主自定义函数、类型和装饰器，LGPL-3.0许可，兼顾商用与开源灵活性"
+      ],
+      "target_users": "需要为C++应用添加脚本扩展能力的游戏开发者、插件系统架构师、嵌入式软件工程师",
+      "quick_start": "克隆仓库，将include目录加入编译路径，在C++17代码中#include 'ReScripted.hpp'，按README示例定义JSON语言并执行一段简单脚本，5分钟内可跑通基础流程"
+    },
+    {
+      "full_name": "CyberXpert607/stellar_wallet_kit",
+      "url": "https://github.com/CyberXpert607/stellar_wallet_kit",
+      "summary": "Flutter的Stellar钱包集成套件",
+      "highlights": [
+        "提供开箱即用的Drop-in Widget，快速实现钱包连接、余额展示、网络切换和交易签名，节省大量UI开发时间",
+        "支持Freighter/SEP-0007标准，兼容Stellar生态主流钱包，降低接入复杂度",
+        "基于Dart/Flutter，跨平台运行，适合移动端和桌面端DApp快速迭代"
+      ],
+      "target_users": "在Flutter中构建Stellar区块链DApp的开发者、钱包应用开发者、Web3移动端团队",
+      "quick_start": "在Flutter项目pubspec.yaml添加依赖，运行flutter pub get，按README示例将StellarWalletKit组件嵌入页面，配置网络和测试账户即可连接钱包并显示余额"
+    }
+  ]
+}
