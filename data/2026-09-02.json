@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-02",
+  "picks": [
+    {
+      "full_name": "hasan-ismail/themachine",
+      "url": "https://github.com/hasan-ismail/themachine",
+      "summary": "全离线安卓语音助手",
+      "highlights": [
+        "完全离线运行，使用Whisper语音识别、Gemma语言模型和Piper语音合成，无需网络连接，保护隐私且无遥测",
+        "支持闹钟、计时器、提醒和任务管理，功能覆盖日常高频场景，Kotlin开发，适合移动端AI集成参考",
+        "模型全在设备端，展示了端侧AI完整技术栈，对离线语音交互开发者极具启发性"
+      ],
+      "target_users": "安卓开发者、隐私敏感用户、离线语音助手技术爱好者",
+      "quick_start": "克隆仓库后，在Android Studio中打开项目，构建并安装到Android设备（需支持Whisper/Gemma模型运行），首次启动即可通过语音交互测试闹钟和提醒功能"
+    },
+    {
+      "full_name": "ahmetb/kubectl-labels",
+      "url": "https://github.com/ahmetb/kubectl-labels",
+      "summary": "kubectl标签探索插件",
+      "highlights": [
+        "提供标签覆盖率、基数和值分布统计，帮助快速了解集群资源标签使用情况，优化标签策略",
+        "交互式浏览器模式，可直观浏览标签密集型资源，极大提升Kubernetes运维和排障效率",
+        "由知名kubectl插件作者（ahmetb）开发，Go语言编写，质量可靠，易于扩展"
+      ],
+      "target_users": "Kubernetes运维工程师、平台工程师、SRE",
+      "quick_start": "安装kubectl插件（kubectl krew install labels），运行kubectl labels --help查看用法，对任意命名空间执行kubectl labels coverage -n your-namespace即可快速分析标签覆盖度"
+    }
+  ]
+}
