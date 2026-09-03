@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-03",
+  "picks": [
+    {
+      "full_name": "ovicide/notepad-rich-presence",
+      "url": "https://github.com/ovicide/notepad-rich-presence",
+      "summary": "Discord显示记事本进度状态",
+      "highlights": [
+        "自动检测Windows记事本和Notepad++的当前打开文件及编辑状态",
+        "轻量Python实现，无需复杂配置，直接运行即可",
+        "提升开发者在Discord社区中的协作透明度，方便展示工作进度"
+      ],
+      "target_users": "使用Discord沟通且常写笔记/代码的开发者、学生、远程办公者",
+      "quick_start": "克隆仓库，安装Python依赖（pip install -r requirements.txt），运行main.py，在Discord设置中启用Rich Presence即可看到状态。"
+    },
+    {
+      "full_name": "breynard0/pong-os",
+      "url": "https://github.com/breynard0/pong-os",
+      "summary": "只玩Pong游戏的迷你操作系统",
+      "highlights": [
+        "用C语言从零实现一个极简操作系统，仅运行Pong游戏，极具教育意义",
+        "展示底层硬件交互、中断处理和图形渲染的核心原理",
+        "代码量小且结构清晰，是学习OS开发和C底层编程的绝佳实战案例"
+      ],
+      "target_users": "对操作系统原理、嵌入式开发或底层编程感兴趣的开发者、计算机专业学生",
+      "quick_start": "克隆仓库，查看README中的构建说明（需要GCC和QEMU），编译后用QEMU启动即可看到Pong游戏界面。"
+    }
+  ]
+}
