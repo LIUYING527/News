@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-04",
+  "picks": [
+    {
+      "full_name": "R44VC0RP/openmock",
+      "url": "https://github.com/R44VC0RP/openmock",
+      "summary": "本地设备模型模拟工具",
+      "highlights": [
+        "支持CLI和MCP协议，可集成到AI工作流，帮助快速生成设备截图或原型预览",
+        "浏览器渲染真实设备外观，适合做产品演示、UI验证或文档配图"
+      ],
+      "target_users": "前端开发者、产品经理、UI设计师，需要快速生成设备模型图的开发者和AI工具链使用者",
+      "quick_start": "克隆仓库后，运行CLI命令并指定一个本地HTML文件，即可在浏览器中预览手机/平板模型效果"
+    },
+    {
+      "full_name": "blackwolffdev/cortex",
+      "url": "https://github.com/blackwolffdev/cortex",
+      "summary": "AI代理可读的Obsidian式仓库",
+      "highlights": [
+        "设计思路新颖：让廉价模型负责写作，昂贵模型只做审核，大幅降低AI Agent运行成本",
+        "将知识库结构化供AI读取，适合构建个人AI助手或自动化文档处理系统"
+      ],
+      "target_users": "AI应用开发者、LLM爱好者、需要构建知识库驱动型AI Agent的技术人员",
+      "quick_start": "安装后创建一个vault目录，放入Markdown文件，启动orchestrator即可体验双模型协作流程"
+    }
+  ]
+}
