@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-05",
+  "picks": [
+    {
+      "full_name": "Alpha-Park/genpark-inverse-kinematics-joint-limit-solver-skill",
+      "url": "https://github.com/Alpha-Park/genpark-inverse-kinematics-joint-limit-solver-skill",
+      "summary": "六轴机械臂逆运动学求解器",
+      "highlights": [
+        "直接支持UR5和Franka Emika两款主流机械臂，提供从末端位姿到关节角度的完整解算逻辑",
+        "代码结构清晰，可扩展至其他6-DOF机械臂，适合作为机器人运动学模块的基础库",
+        "配合仿真环境（如Isaac Sim）可快速验证算法，降低机器人开发调试门槛"
+      ],
+      "target_users": "从事机械臂控制、运动规划或机器人仿真开发的工程师与研究者",
+      "quick_start": "克隆仓库后，在Python环境中导入核心求解模块，输入目标末端位姿矩阵，运行示例脚本即可输出各关节角度；若使用UR5或Franka，可直接调用预置的DH参数进行测试。"
+    },
+    {
+      "full_name": "SonaliDuvesh/ScreenSheet-OCR",
+      "url": "https://github.com/SonaliDuvesh/ScreenSheet-OCR",
+      "summary": "截图实时转Excel表格工具",
+      "highlights": [
+        "利用OCR技术将屏幕截图中的表格数据自动结构化，并实时导出为电子表格，极大提升数据录入效率",
+        "适用于财务报表、网页数据抓取、会议记录等多种日常办公场景，减少手动复制粘贴",
+        "Python实现，易于集成到自动化工作流中，可定制识别规则和输出格式"
+      ],
+      "target_users": "需要频繁处理表格数据的办公人员、数据分析师及RPA自动化开发者",
+      "quick_start": "安装依赖后运行主脚本，截取包含表格的屏幕区域，程序将自动识别并生成CSV/Excel文件，全程不到5分钟即可完成一次数据转换。"
+    }
+  ]
+}
