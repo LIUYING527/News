@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-06",
+  "picks": [
+    {
+      "full_name": "JST256/etc-qa-agent",
+      "url": "https://github.com/JST256/etc-qa-agent",
+      "summary": "ETC客服智能问答体",
+      "highlights": [
+        "融合RAG、语音输入和情绪识别，技术栈完整，实用性强",
+        "流程编排设计，可直接用于客服系统二次开发或学习",
+        "JavaScript实现，上手门槛低，便于快速定制"
+      ],
+      "target_users": "需要构建客服机器人或智能问答系统的开发者、ETC相关业务人员",
+      "quick_start": "克隆仓库后，查看README，按说明配置RAG知识库和语音模块，本地运行Node.js服务即可在5分钟内启动基础对话测试"
+    },
+    {
+      "full_name": "da03/astra-plays-gta",
+      "url": "https://github.com/da03/astra-plays-gta",
+      "summary": "GPT-6Astra玩GTA游戏",
+      "highlights": [
+        "展示多模态大模型控制真实游戏环境，极具技术前沿性和实验价值",
+        "提供完整prompt和截图/键盘辅助代码，方便复现和改造",
+        "Swift实现，适合Mac平台AI游戏交互研究"
+      ],
+      "target_users": "AI研究者、游戏自动化开发者、对大模型具身智能感兴趣的极客",
+      "quick_start": "在Mac上安装GTA Vice City，克隆仓库，按README配置GPT-6Astra API密钥，运行Swift辅助脚本即可开始游戏演示"
+    }
+  ]
+}
