@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-07",
+  "picks": [
+    {
+      "full_name": "QianJinGuo/prompt-boost",
+      "url": "https://github.com/QianJinGuo/prompt-boost",
+      "summary": "一键提示词增强引擎",
+      "highlights": [
+        "零依赖、离线可用，支持CLI、MCP服务器和Playground三种使用方式，可无缝集成到现有AI工作流中",
+        "BYOK（自带密钥）设计，隐私安全，适合对数据敏感的开发场景",
+        "能将模糊想法自动转化为结构化任务规范，显著提升与AI交互的效率和质量"
+      ],
+      "target_users": "日常使用ChatGPT、Claude等AI工具的开发者，以及需要批量优化提示词提示词的团队",
+      "quick_start": "npm install -g prompt-boost && prompt-boost '写一个Python脚本'，5分钟内即可在终端体验提示词增强效果"
+    },
+    {
+      "full_name": "jeffersongoncalves/laravel-g2",
+      "url": "https://github.com/jeffersongoncalves/laravel-g2",
+      "summary": "Laravel的G2 API客户端",
+      "highlights": [
+        "为Laravel框架提供官方G2 API（评论、产品、报告、竞品分析等）的完整封装，省去手写HTTP请求的麻烦",
+        "支持竞品监控和产品报告等核心功能，可直接用于商业情报收集和客户反馈分析",
+        "遵循Laravel惯例，可快速集成到现有项目中，适合需要追踪SaaS产品评价的团队"
+      ],
+      "target_users": "使用Laravel构建SaaS产品、需要集成G2平台数据（评论、竞品分析）的PHP开发者",
+      "quick_start": "composer require jeffersongoncalves/laravel-g2，然后在config/services.php中配置G2 API密钥，调用G2::reviews()即可获取数据"
+    }
+  ]
+}
