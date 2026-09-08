@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-08",
+  "picks": [
+    {
+      "full_name": "rsamwilson2323-cloud/train-track-builder",
+      "url": "https://github.com/rsamwilson2323-cloud/train-track-builder",
+      "summary": "浏览器3D铁路建造模拟器",
+      "highlights": [
+        "基于Three.js WebGPU实现电影级3D渲染，技术栈新颖",
+        "支持轨道自动连接吸附、桥梁、坡度、火车动画等完整交互",
+        "实时材质控制，适合学习WebGPU和3D场景开发"
+      ],
+      "target_users": "3D前端开发者、Three.js学习者、对WebGPU技术感兴趣的工程师",
+      "quick_start": "克隆仓库后，用npm install安装依赖，运行npm run dev启动开发服务器，在浏览器中打开localhost:3000即可开始建造轨道。"
+    },
+    {
+      "full_name": "jeffersongoncalves/laravel-segment",
+      "url": "https://github.com/jeffersongoncalves/laravel-segment",
+      "summary": "Laravel的Segment API客户端",
+      "highlights": [
+        "提供完整的Segment HTTP API封装，覆盖事件追踪、用户识别、页面浏览等核心功能",
+        "支持批量发送和Personas画像数据读取，适合数据驱动型应用",
+        "与Laravel生态深度集成，安装配置简单，提升产品分析效率"
+      ],
+      "target_users": "Laravel开发者、需要接入数据分析的产品团队、构建用户行为追踪系统的工程师",
+      "quick_start": "通过composer require jeffersongoncalves/laravel-segment安装，发布配置文件并设置SEGMENT_WRITE_KEY环境变量，即可在控制器中调用Segment::track()发送事件。"
+    }
+  ]
+}
