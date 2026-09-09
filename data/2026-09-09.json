@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-09",
+  "picks": [
+    {
+      "full_name": "smorel/windmate",
+      "url": "https://github.com/smorel/windmate",
+      "summary": "匹配最佳风况的天气工具",
+      "highlights": [
+        "基于地理位置和实时气象数据，为帆船、风筝冲浪等风依赖运动提供个性化风况推荐",
+        "JavaScript实现，轻量级，可快速集成到现有天气或运动类应用中",
+        "对户外运动爱好者和依赖风力条件的开发者有直接实用价值"
+      ],
+      "target_users": "户外运动开发者、帆船/冲浪爱好者、天气类应用开发者",
+      "quick_start": "克隆仓库后，在本地运行npm install && npm start，输入当前位置即可查看推荐风况。"
+    },
+    {
+      "full_name": "danilofalcao/owa-bridge",
+      "url": "https://github.com/danilofalcao/owa-bridge",
+      "summary": "将Outlook邮件日历接入Thunderbird",
+      "highlights": [
+        "解决Thunderbird原生不支持Exchange/Outlook的痛点，提供桥接层实现邮件与日历同步",
+        "基于JavaScript，架构清晰，适合需要统一邮件客户端的混合办公环境",
+        "对于依赖Microsoft生态但偏好开源邮件客户端的开发者是刚需工具"
+      ],
+      "target_users": "使用Thunderbird且需要访问Outlook/Exchange的开发者、企业IT人员",
+      "quick_start": "按照README配置OWA服务器地址和账号，在Thunderbird中添加该桥接账户即可同步。"
+    }
+  ]
+}
