@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-10",
+  "picks": [
+    {
+      "full_name": "sl080/Alevel-9708-Revision",
+      "url": "https://github.com/sl080/Alevel-9708-Revision",
+      "summary": "单文件离线A-Level经济复习平台",
+      "highlights": [
+        "将 CIE 9708 经济全部复习内容（分章节复习、选择题刷题、DR与8-12分题技巧、练习评分、成绩表）打包进单个 HTML 文件，无需服务器或联网即可使用",
+        "对教育类开发者有参考价值：展示了如何用纯前端技术实现完整的题库、评分与成绩追踪系统，可作为离线学习工具的架构范本",
+        "面向 2026-2028 新考纲，内容更新及时，对备考学生和做教育工具二次开发的人都有直接用途"
+      ],
+      "target_users": "A-Level 经济考生、教育类 Web 开发者、需要离线学习工具的学生与教师",
+      "quick_start": "打开仓库，下载 HTML 文件到本地，双击用浏览器打开即可开始按章节复习或刷选择题，无需任何安装配置"
+    },
+    {
+      "full_name": "dougchansan/mk8-recomp",
+      "url": "https://github.com/dougchansan/mk8-recomp",
+      "summary": "用 suyu 静态重编译马里奥赛车8",
+      "highlights": [
+        "基于 suyu（Switch 模拟器项目）对《马里奥赛车8》进行静态重编译（static recompilation），属于逆向工程与模拟器领域的高难度技术实践",
+        "静态重编译是当前游戏保存（game preservation）和性能优化的重要方向，对研究二进制翻译、CPU 指令转换的开发者有学习价值",
+        "虽然项目小众，但涉及 PowerShell 脚本、底层重编译流程，适合作为研究模拟器与重编译技术的入口案例"
+      ],
+      "target_users": "模拟器开发者、逆向工程爱好者、游戏保存研究者、对静态重编译技术感兴趣的底层开发者",
+      "quick_start": "克隆仓库，阅读 README 了解依赖（suyu 相关工具链），在 Windows 环境下运行 PowerShell 脚本，按文档说明准备游戏 ROM 并执行重编译流程"
+    }
+  ]
+}
