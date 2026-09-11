@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-11",
+  "picks": [
+    {
+      "full_name": "RizN91/jarvis",
+      "url": "https://github.com/RizN91/jarvis",
+      "summary": "开源Windows语音助手与听写工具",
+      "highlights": [
+        "按住按键说话即可将语音实时输入到任意应用，兼容所有Windows程序，无需切换窗口",
+        "支持本地唤醒词与15种语言，隐私友好；使用自备OpenAI Key成本低至$0.0045/分钟",
+        "同时具备语音助手与全局听写两种模式，可替代系统自带语音输入，适合开发者和重度键盘用户"
+      ],
+      "target_users": "Windows开发者、程序员、内容创作者、需要高效文字输入或无障碍辅助的用户",
+      "quick_start": "克隆仓库后按README安装Python依赖，配置OPENAI_API_KEY环境变量，运行主程序并设置唤醒词，按住热键说话即可在任意应用中输入文字"
+    },
+    {
+      "full_name": "xx4syl/sigil",
+      "url": "https://github.com/xx4syl/sigil",
+      "summary": "手写可嵌入脚本语言解释器",
+      "highlights": [
+        "用C语言从零实现的可嵌入脚本解释器，代码量小、依赖少，适合学习编译原理与语言实现",
+        "可作为宿主程序（游戏引擎、编辑器、工具软件）的嵌入式脚本层，替代Lua等重型方案",
+        "MIT/开源风格的小型项目，便于二次开发与定制语法，是研究词法/语法/求值流程的优秀教学案例"
+      ],
+      "target_users": "对编程语言实现感兴趣的C开发者、需要轻量嵌入式脚本引擎的工程师、编译原理学习者",
+      "quick_start": "git clone仓库后执行make编译，运行生成的解释器二进制并输入REPL或示例.sigil脚本文件即可体验语法"
+    }
+  ]
+}
