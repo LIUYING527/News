@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-12",
+  "picks": [
+    {
+      "full_name": "giuliomaffei90/audio-splitter",
+      "url": "https://github.com/giuliomaffei90/audio-splitter",
+      "summary": "macOS 按静音自动切分音频的工具",
+      "highlights": [
+        "基于静音检测自动切分音频文件，省去手动剪辑的繁琐，适合播客、配音、采访等场景",
+        "提供原生 macOS 体验，支持拖入音频、试听片段、保留想要的片段并导出 WAV，工作流完整",
+        "使用 Swift 编写，代码轻量，易于二次开发或集成到现有音频处理流程中"
+      ],
+      "target_users": "播客创作者、视频剪辑师、配音工作者、音频后期处理开发者",
+      "quick_start": "1) 克隆仓库并打开 Xcode 项目；2) 编译运行 macOS 应用；3) 将音频文件拖入窗口；4) 试听自动切分的片段，保留需要的部分；5) 导出为 WAV 即可"
+    },
+    {
+      "full_name": "natanaelvica-bit/MicrosleepDetection",
+      "url": "https://github.com/natanaelvica-bit/MicrosleepDetection",
+      "summary": "实时微睡眠检测系统",
+      "highlights": [
+        "结合计算机视觉与深度学习，实时检测微睡眠状态，可用于驾驶安全、远程办公健康监控等场景",
+        "Python 实现，便于研究和二次开发，适合作为 CV/深度学习入门到实战的参考项目",
+        "微睡眠检测属于安全与健康交叉领域，具有明确的应用价值和扩展空间"
+      ],
+      "target_users": "计算机视觉开发者、深度学习研究者、驾驶安全/健康监测领域从业者、学生项目开发者",
+      "quick_start": "1) 克隆仓库并安装依赖（如 OpenCV、PyTorch/TensorFlow）；2) 准备摄像头或测试视频；3) 运行主检测脚本；4) 观察实时输出或日志中的微睡眠判定结果"
+    }
+  ]
+}
