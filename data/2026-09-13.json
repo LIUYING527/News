@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-13",
+  "picks": [
+    {
+      "full_name": "zorrobyte/asset-studio",
+      "url": "https://github.com/zorrobyte/asset-studio",
+      "summary": "全本地文本生成3D游戏资产流水线",
+      "highlights": [
+        "完全本地运行，无需依赖云端API，保护隐私且无调用成本，适合独立游戏开发者快速产出原型资产",
+        "整合Qwen-Image-2512、Pixal3D (TRELLIS.2)、Blender/meshoptimizer，形成从文本到可用3D网格的完整链路",
+        "提供FastAPI + CLI + MCP三种调用方式，可被AI Agent直接调用，便于集成到自动化工作流中"
+      ],
+      "target_users": "独立游戏开发者、3D内容创作者、AI Agent工具链开发者、需要批量生成3D资产的技术团队",
+      "quick_start": "克隆仓库后使用Docker Desktop一键启动（需NVIDIA RTX 5090等支持CUDA的显卡），通过提供的CLI输入一段文本提示词，即可在本地生成3D模型并导出至Blender可用的格式"
+    },
+    {
+      "full_name": "Aryadeepta/cascadekv-fpga",
+      "url": "https://github.com/Aryadeepta/cascadekv-fpga",
+      "summary": "FPGA加速LLM推理的多分辨率量化注意力",
+      "highlights": [
+        "提出渐进式多分辨率量化注意力机制，针对KV Cache做分层压缩，在FPGA上实现LLM推理加速",
+        "结合硬件与算法协同设计，对边缘端/嵌入式LLM部署场景有较高参考价值",
+        "Python实现便于研究者快速复现与实验，适合作为FPGA+LLM方向的入门研究项目"
+      ],
+      "target_users": "FPGA工程师、边缘AI推理研究者、LLM硬件加速方向的学生与科研人员",
+      "quick_start": "git clone仓库后阅读README中的依赖说明，安装Python环境与相关量化库，运行示例脚本即可查看多分辨率量化注意力的推理流程与性能数据"
+    }
+  ]
+}
