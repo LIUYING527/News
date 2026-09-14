@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-14",
+  "picks": [
+    {
+      "full_name": "terryrogers/NppHistory-Plugin",
+      "url": "https://github.com/terryrogers/NppHistory-Plugin",
+      "summary": "Notepad++ 原生本地版本历史与自动保存插件",
+      "highlights": [
+        "为 Notepad++ 提供原生 C++ 插件，实现可配置的自动保存与本地修订历史，弥补了这款经典编辑器长期缺失的版本追踪能力",
+        "采用本地存储方案，不依赖云端或外部服务，适合处理敏感代码或离线场景，隐私与响应速度兼具",
+        "对 Windows 开发者日常编辑配置、脚本、日志等高频场景有直接实用性，可避免误删或改错后无法回溯的问题"
+      ],
+      "target_users": "Windows 平台 Notepad++ 重度用户、运维与脚本编写人员、需要轻量本地版本管理的开发者",
+      "quick_start": "1) 打开 GitHub 仓库下载 Release 中的 .dll 插件文件；2) 将 dll 放入 Notepad++ 安装目录下的 plugins 文件夹并重启；3) 在插件菜单中启用 NppHistory，设置自动保存间隔与历史保留数量即可体验"
+    },
+    {
+      "full_name": "ninjamar/vivado-mac",
+      "url": "https://github.com/ninjamar/vivado-mac",
+      "summary": "在 macOS 上运行 Xilinx Vivado 的兼容层方案",
+      "highlights": [
+        "针对 FPGA/硬件开发者长期痛点：Vivado 官方仅支持 Windows/Linux，该项目尝试通过 C 语言实现的兼容方案让 macOS 用户也能使用",
+        "对 Apple Silicon 与 Intel Mac 的 EDA 工具链生态有探索价值，可减少为跑 Vivado 而额外配置虚拟机或双系统的成本",
+        "项目虽小但方向明确，适合关注跨平台 EDA 工具、Wine/兼容层技术的开发者参考与贡献"
+      ],
+      "target_users": "使用 macOS 的 FPGA/数字电路开发者、硬件工程学生、对 EDA 工具跨平台方案感兴趣的技术人员",
+      "quick_start": "1) 克隆仓库并阅读 README 中的依赖说明；2) 按文档安装必要的兼容层与 Xilinx 安装包；3) 运行提供的脚本启动 Vivado，首次配置后即可在 Mac 上打开工程进行综合与仿真"
+    }
+  ]
+}
