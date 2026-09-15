@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-15",
+  "picks": [
+    {
+      "full_name": "Hammyyy21/instacart-market-basket-pipeline",
+      "url": "https://github.com/Hammyyy21/instacart-market-basket-pipeline",
+      "summary": "基于Kafka与dbt的零售数据工程全链路示例",
+      "highlights": [
+        "完整覆盖数据工程全栈：PostgreSQL、Kafka/MSK、EC2、S3、dbt、Airflow、Power BI，是学习现代数据管道架构的稀缺端到端参考",
+        "以真实Instacart数据集为背景，包含流式处理、数据转换、调度编排与可视化，可直接作为生产级ETL/ELT项目的模板",
+        "技术选型贴近工业界主流（云原生+数据栈），对准备数据工程面试或搭建公司数据平台有直接借鉴意义"
+      ],
+      "target_users": "数据工程师、数据平台开发者、准备转行数据领域的后端工程师、学习现代数据栈的学生",
+      "quick_start": "1) git clone 仓库；2) 阅读 README 中的架构图与依赖清单；3) 用 docker-compose 或本地脚本启动 PostgreSQL 与 Kafka；4) 运行 Airflow DAG 触发示例管道；5) 在 Power BI 中打开附带报表查看结果。"
+    },
+    {
+      "full_name": "elizabettgoodman-art/weiwan-campus",
+      "url": "https://github.com/elizabettgoodman-art/weiwan-campus",
+      "summary": "带AI生图Agent的互动叙事Demo",
+      "highlights": [
+        "将互动叙事与AI剧情生图Agent结合，前端+Python后端+Node部署代码齐全，是LLM应用落地的完整小案例",
+        "包含预埋插画与剧情生成逻辑，展示了如何把生成式AI嵌入到实际产品体验中，而非停留在Demo脚本层面",
+        "代码结构清晰，适合作为AI应用原型开发的参考骨架，可快速改造成游戏、教育或营销类互动产品"
+      ],
+      "target_users": "AI应用开发者、独立游戏/互动叙事创作者、想学习LLM集成的前端与全栈工程师",
+      "quick_start": "1) git clone 仓库；2) 按 README 安装 Python 与 Node 依赖；3) 配置生图Agent所需的API Key；4) 启动后端与前端服务；5) 浏览器访问本地端口体验剧情互动与AI生图。"
+    }
+  ]
+}
