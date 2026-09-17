@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-17",
+  "picks": [
+    {
+      "full_name": "robberx2/SEP-Robot-Arm-MK2",
+      "url": "https://github.com/robberx2/SEP-Robot-Arm-MK2",
+      "summary": "高中生的逆运动学机械臂项目",
+      "highlights": [
+        "实现了逆运动学（IK）矩阵求解，属于机器人学中较硬核的技术点，对学习机械臂控制有较高参考价值",
+        "作为高中生工程实践项目（Sophomore high school engineering project），代码结构清晰，适合作为入门机器人学的教学案例",
+        "使用 Python 编写，依赖少、易复现，可结合树莓派或 Arduino 快速搭建实体原型"
+      ],
+      "target_users": "机器人爱好者、机器人学入门学生、STEM 教师、想了解逆运动学实现的开发者",
+      "quick_start": "克隆仓库后查看主 Python 脚本，安装 numpy 等依赖，运行仿真或按 README 接线驱动舵机即可观察机械臂运动"
+    },
+    {
+      "full_name": "ESHAYAT102/omarchy-clouds-theme",
+      "url": "https://github.com/ESHAYAT102/omarchy-clouds-theme",
+      "summary": "基于云朵照片的 Omarchy 金色主题",
+      "highlights": [
+        "为 Omarchy（基于 Hyprland 的 Arch 桌面配置）提供完整主题，覆盖配色、窗口装饰等，开箱即用",
+        "配色灵感来自真实云朵照片，形成独特的暖金色调，适合追求个性化桌面的用户",
+        "Lua 编写，结构简单，是学习 Omarchy/Hyprland 主题定制机制的轻量范例"
+      ],
+      "target_users": "Arch Linux / Hyprland 用户、Omarchy 使用者、喜欢折腾桌面美化的 Linux 玩家",
+      "quick_start": "克隆仓库到 Omarchy 主题目录，在主题配置中切换到 clouds 主题并重载 Hyprland 即可生效"
+    }
+  ]
+}
