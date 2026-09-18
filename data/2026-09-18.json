@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-18",
+  "picks": [
+    {
+      "full_name": "blue962/c-thread-pool",
+      "url": "https://github.com/blue962/c-thread-pool",
+      "summary": "纯C实现的轻量级线程池库",
+      "highlights": [
+        "用纯C实现线程池，无第三方依赖，适合嵌入到系统级项目或学习线程池底层原理",
+        "C语言线程池是网络服务器、数据库、嵌入式中间件的常见基础设施，实用价值高",
+        "代码量通常较小，便于阅读、二次开发和移植到不同平台"
+      ],
+      "target_users": "C/C++后端开发者、系统编程学习者、嵌入式工程师、想深入理解并发模型的学生",
+      "quick_start": "git clone 仓库后，查看源码中 thread_pool.h / thread_pool.c，编译示例程序（通常 make 或 gcc 直接编译），运行 demo 观察任务提交与线程调度过程"
+    },
+    {
+      "full_name": "xez65/ayaka-map-router",
+      "url": "https://github.com/xez65/ayaka-map-router",
+      "summary": "为Claude Code/Qoder构建技能路由地图",
+      "highlights": [
+        "面向 AI 编程助手（Claude Code、Qoder）的技能路由方案，解决多技能场景下『该用哪个 skill』的选择问题",
+        "自动扫描已安装技能并生成路由地图，帮助开发者在复杂工作流中快速定位合适工具",
+        "紧跟 AI Agent 生态趋势，对构建可扩展的 AI 辅助开发工作流有直接参考价值"
+      ],
+      "target_users": "使用 Claude Code / Qoder 等 AI 编程工具的开发者、AI Agent 工作流搭建者、Prompt/Skill 工程实践者",
+      "quick_start": "克隆仓库后，按 README 将 skill 安装到 Claude Code/Qoder 的技能目录，运行扫描命令生成路由地图，然后在对话中让它推荐应使用的 skill"
+    }
+  ]
+}
