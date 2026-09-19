@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-19",
+  "picks": [
+    {
+      "full_name": "mpandudc/notebooklm-fastmcp",
+      "url": "https://github.com/mpandudc/notebooklm-fastmcp",
+      "summary": "NotebookLM 的轻量 MCP 服务器，可同步 Obsidian",
+      "highlights": [
+        "基于 FastMCP 构建，把 Google NotebookLM 的能力以 MCP 协议暴露给 Claude、Cursor 等支持 MCP 的 AI 客户端，让 AI 助手能直接检索你的 NotebookLM 笔记内容。",
+        "支持与 Obsidian 第二大脑同步，适合知识管理重度用户将本地笔记库与云端 NotebookLM 打通，形成可被 AI 调用的个人知识库。",
+        "支持 Google Master Token 认证，绕过部分登录限制，方便自动化场景下稳定调用。"
+      ],
+      "target_users": "使用 Obsidian 做知识管理、同时使用 Claude/Cursor 等 MCP 客户端的开发者与知识工作者",
+      "quick_start": "1) git clone 仓库并进入目录；2) 用 uv 或 pip 安装依赖（参考 pyproject.toml）；3) 按 README 配置 Google Master Token 与 Obsidian 笔记路径；4) 在 Claude Desktop 或 Cursor 的 MCP 配置中注册该 server；5) 重启客户端后即可在对话中调用 NotebookLM 检索。"
+    },
+    {
+      "full_name": "thejhonasir/procfind",
+      "url": "https://github.com/thejhonasir/procfind",
+      "summary": "用 C 语言探索 Windows 进程与模块枚举",
+      "highlights": [
+        "以纯 C 语言实现 Windows 进程/模块枚举，代码量小、依赖少，是学习 Windows 底层 API（如 CreateToolhelp32Snapshot、Module32First 等）的优质教学素材。",
+        "对安全研究、逆向工程、EDR/杀软开发者有直接参考价值，可作为自研进程监控、模块扫描工具的最小可用原型。",
+        "相比动辄上万行的开源安全项目，此项目结构清晰，便于快速理解并二次开发。"
+      ],
+      "target_users": "Windows 安全研究员、逆向工程师、C 语言底层开发者、想入门 Windows API 编程的学生",
+      "quick_start": "1) git clone 仓库；2) 用 Visual Studio 或 MinGW 打开工程/编译源码；3) 运行生成的 exe，即可看到当前系统进程与模块列表输出；4) 阅读源码中调用 Toolhelp32 API 的部分，按需修改过滤条件。"
+    }
+  ]
+}
