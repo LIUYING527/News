@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-20",
+  "picks": [
+    {
+      "full_name": "cv/laya-plays-smb3",
+      "url": "https://github.com/cv/laya-plays-smb3",
+      "summary": "AI 决策模型实时通关《超级马力欧兄弟3》",
+      "highlights": [
+        "将决策模型与真实 NES 模拟器结合，在 NVIDIA DGX Spark 上运行，展示了 AI 与经典游戏环境的完整闭环，对强化学习和具身智能研究有参考价值。",
+        "强调 'replay-verified decisions'（可回放验证的决策）和视觉审计，意味着每一步操作都可追溯，适合研究可解释性 AI 和调试决策系统。",
+        "使用 Python 编写，便于开发者复现、修改模型或接入其他游戏环境，是学习 AI 游戏 agent 的轻量级案例。"
+      ],
+      "target_users": "强化学习研究者、AI 游戏 agent 开发者、对可解释 AI 和经典游戏模拟感兴趣的工程师",
+      "quick_start": "克隆仓库后按 README 安装 Python 依赖，准备 NES ROM 与模拟器环境，运行主脚本即可观看 AI 实时游玩并查看决策回放。"
+    },
+    {
+      "full_name": "jsonmaster555-ai/openflows",
+      "url": "https://github.com/jsonmaster555-ai/openflows",
+      "summary": "社区共建的 Mobbin 风格 UI 流程库",
+      "highlights": [
+        "定位为免费、社区驱动的 UI 界面与流程参考库，类似 Mobbin 但完全开放，解决设计师和开发者寻找真实产品交互案例的痛点。",
+        "由社区共同维护，任何人都能贡献截图和流程，随着参与度提升可形成覆盖多产品、多场景的交互设计素材库。",
+        "对独立开发者和小团队尤其友好，无需付费订阅即可获取竞品或优秀产品的 UI 流程参考，加速原型和产品设计。"
+      ],
+      "target_users": "UI/UX 设计师、独立开发者、产品经理、前端工程师",
+      "quick_start": "访问 GitHub 仓库，浏览已收录的 UI 截图与流程分类；如需贡献，按 README 指引提交 PR 上传自己的截图或流程。"
+    }
+  ]
+}
