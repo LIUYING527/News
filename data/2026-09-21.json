@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-21",
+  "picks": [
+    {
+      "full_name": "kyegomez/open-jev",
+      "url": "https://github.com/kyegomez/open-jev",
+      "summary": "PyTorch复现TypeSafe AI的Jev类型化决策模型",
+      "highlights": [
+        "从第一性原理重建 Jev 的核心思想，用纯 PyTorch 实现，便于研究者理解和二次开发",
+        "探索'类型化决策'（typed decisions）这一新兴范式，将类型系统与神经网络推理结合，为可验证AI提供新思路",
+        "由知名开源作者 kyegomez 维护，其项目通常迭代活跃、文档相对完善，适合作为研究起点"
+      ],
+      "target_users": "对神经符号AI、类型化推理、可验证AI方向感兴趣的机器学习研究者与工程师",
+      "quick_start": "git clone https://github.com/kyegomez/open-jev && cd open-jev && pip install -r requirements.txt，然后运行仓库中的示例脚本或 notebook 观察模型的前向推理过程"
+    },
+    {
+      "full_name": "danielamitay/swev",
+      "url": "https://github.com/danielamitay/swev",
+      "summary": "Swift本地端Core ML实现Jev风格类型化决策",
+      "highlights": [
+        "将 Jev 式的类型化决策能力带到 Swift + Core ML，实现端侧本地推理，隐私友好、无需联网",
+        "面向 Apple 生态开发者，可直接集成进 iOS/macOS 应用，为 App 增加结构化、可解释的决策能力",
+        "与 open-jev 形成'研究+落地'的互补组合，是少数把前沿决策范式工程化到移动端的尝试"
+      ],
+      "target_users": "iOS/macOS 开发者、希望在端侧集成结构化AI决策能力的 Apple 平台工程师",
+      "quick_start": "git clone https://github.com/danielamitay/swev，用 Xcode 打开项目，在模拟器中运行示例即可体验本地 Core ML 推理效果"
+    }
+  ]
+}
