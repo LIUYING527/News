@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-22",
+  "picks": [
+    {
+      "full_name": "vikasrrjj/Seam",
+      "url": "https://github.com/vikasrrjj/Seam",
+      "summary": "在线回填Postgres历史数据的安全工具",
+      "highlights": [
+        "解决数据库迁移中的经典难题：在不停止写入的前提下回填历史数据，避免锁表或数据不一致",
+        "用Go编写，性能好、部署简单，适合高并发生产环境",
+        "对做数据迁移、架构升级、分库分表的后端团队有直接实用价值"
+      ],
+      "target_users": "后端工程师、DBA、数据平台开发者，尤其是需要做Postgres数据迁移或历史数据补全的团队",
+      "quick_start": "1) git clone 仓库并进入目录；2) 安装Go 1.20+，运行 go build；3) 配置源库/目标库连接串；4) 按README示例定义回填任务并执行，观察日志确认回填进度"
+    },
+    {
+      "full_name": "martialzinsou/Nstrike",
+      "url": "https://github.com/martialzinsou/Nstrike",
+      "summary": "纯C++17从零实现的以太坊式区块链",
+      "highlights": [
+        "完全不依赖OpenSSL/Boost/secp256k1等外部库，自实现密码学、PoW共识、账户与代币逻辑，技术含量高",
+        "现代C++17编写，是学习区块链底层原理（哈希、椭圆曲线、VM、共识）的优质教学与实验项目",
+        "适合作为技术深度展示或二次开发基础，可扩展成自定义链或教学演示"
+      ],
+      "target_users": "区块链学习者、C++开发者、想深入理解以太坊内部机制的研究者与工程师",
+      "quick_start": "1) git clone 仓库；2) 用支持C++17的编译器（如g++ 9+或clang）执行 make 或 cmake 构建；3) 运行生成的节点程序，按README启动本地链；4) 通过内置CLI创建账户、发起交易、挖矿，观察链上状态变化"
+    }
+  ]
+}
