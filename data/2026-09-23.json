@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-23",
+  "picks": [
+    {
+      "full_name": "muhammadokashapak/Offline-AI-Video-Translator",
+      "url": "https://github.com/muhammadokashapak/Offline-AI-Video-Translator",
+      "summary": "端侧离线AI视频语音翻译安卓应用",
+      "highlights": [
+        "完全离线运行，基于 Whisper + ONNX Runtime 在设备本地完成语音识别与翻译，无需联网，隐私友好",
+        "面向 Android 的 Kotlin 实现，可作为移动端集成 AI 推理（ASR/翻译）的工程参考模板",
+        "视频+语音翻译一体化，适合字幕生成、跨语言内容消费等实际场景，技术栈轻量易移植"
+      ],
+      "target_users": "Android 开发者、端侧 AI/语音处理工程师、注重隐私的翻译工具用户",
+      "quick_start": "克隆仓库后用 Android Studio 打开，Gradle 同步依赖；连接真机或模拟器运行，首次启动会自动下载/加载 ONNX 模型，选择本地视频即可体验离线翻译"
+    },
+    {
+      "full_name": "Sherry1303/ai-log-analyzer",
+      "url": "https://github.com/Sherry1303/ai-log-analyzer",
+      "summary": "基于LLM的日志聚合与异常定位平台",
+      "highlights": [
+        "用 LLM 对海量日志做智能聚合与异常根因定位，替代传统正则/关键词告警，降低误报",
+        "Python 实现，便于接入现有 ELK/日志管道，可快速二次开发成内部 SRE 工具",
+        "对运维/后端团队有直接价值，能显著缩短故障排查时间，属于高实用性方向"
+      ],
+      "target_users": "SRE/运维工程师、后端开发者、需要日志智能分析的平台团队",
+      "quick_start": "克隆仓库并安装 requirements.txt 依赖，配置 LLM API Key（OpenAI 或兼容接口），将示例日志文件放入指定目录后运行主程序，即可看到聚合后的异常分析结果"
+    }
+  ]
+}
