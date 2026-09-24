@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-24",
+  "picks": [
+    {
+      "full_name": "LiStudioorg/linuxandroid",
+      "url": "https://github.com/LiStudioorg/linuxandroid",
+      "summary": "免Root在安卓上跑Linux命令行发行版",
+      "highlights": [
+        "无需Root即可在Android设备上运行Debian、Ubuntu、Alpine等主流Linux发行版，纯命令行模式，绕过系统权限限制，极大降低了移动端Linux环境搭建的门槛。",
+        "对于需要在手机或平板上进行应急脚本编写、SSH远程管理、学习Linux命令的开发者来说，这是一个轻量且便携的方案，无需携带笔记本电脑。",
+        "纯命令行设计意味着资源占用低，适合老旧安卓设备复用为小型服务器或开发测试环境。"
+      ],
+      "target_users": "需要在移动设备上使用Linux环境的开发者、运维人员、Linux学习者，以及想将旧手机改造为便携Linux终端的极客。",
+      "quick_start": "1) 从GitHub Release下载APK或按README安装脚本；2) 在Android上安装Termux或类似终端App；3) 按文档执行一键安装脚本选择发行版（如Ubuntu）；4) 启动后即可进入Linux shell，执行apt update等命令体验。"
+    },
+    {
+      "full_name": "majidmanzarpour/blender-game-skills",
+      "url": "https://github.com/majidmanzarpour/blender-game-skills",
+      "summary": "Claude Code技能：概念图转Blender游戏资产",
+      "highlights": [
+        "将Claude Code的Agent能力与Blender深度结合，通过AI自动把概念图转化为带骨骼绑定、可直接用于游戏引擎的3D资产，显著缩短美术到可玩资产的管线时间。",
+        "项目以'技能（skills）'形式组织，可复用、可扩展，开发者能基于此构建自己的AI辅助3D建模工作流，是AI+游戏开发交叉领域的创新尝试。",
+        "针对独立游戏开发者和小团队，降低了3D资产制作的技术门槛，让程序员或策划也能快速产出原型级美术资源。"
+      ],
+      "target_users": "独立游戏开发者、Blender用户、AI辅助创作爱好者、需要快速产出3D原型的游戏团队，以及探索Agent+3D工具链的技术研究者。",
+      "quick_start": "1) 克隆仓库并阅读README；2) 安装Blender及对应Python依赖；3) 配置Claude Code环境并加载该skills目录；4) 准备一张概念图，按示例提示词调用Agent生成Blender脚本；5) 在Blender中运行生成的脚本即可看到绑定好的3D资产。"
+    }
+  ]
+}
