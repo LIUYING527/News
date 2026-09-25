@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-25",
+  "picks": [
+    {
+      "full_name": "hasancrty/route-optimization",
+      "url": "https://github.com/hasancrty/route-optimization",
+      "summary": "Python路径优化工具箱，支持TSP与CVRP",
+      "highlights": [
+        "集成了多种经典与启发式算法：最近邻、2-opt、模拟退火、遗传算法、Dijkstra/A*、Clarke-Wright节约算法，覆盖从精确解到近似解的主流求解思路，方便对比不同策略的效果",
+        "同时支持TSP（旅行商）和CVRP（带容量约束的车辆路径）两类经典问题，配有CLI命令行入口和可视化输出，可快速验证算法在真实场景中的表现",
+        "对物流配送、外卖调度、巡检路线等实际业务场景有直接参考价值，也可作为学习组合优化算法的教学示例代码"
+      ],
+      "target_users": "运筹优化方向的学生与研究者、物流/配送系统开发者、需要路径规划能力的后端工程师",
+      "quick_start": "git clone 仓库后进入目录，pip install 依赖，运行 CLI 命令（如 python -m route_optimization --problem tsp --algo 2opt）并查看生成的可视化路径图"
+    },
+    {
+      "full_name": "bayramsoltan/tinyagent",
+      "url": "https://github.com/bayramsoltan/tinyagent",
+      "summary": "150行实现完整工具调用AI Agent",
+      "highlights": [
+        "用不到150行代码从零实现完整的 Agent 工具调用循环（模型→工具调用→结果回传→模型），没有依赖 LangChain 等重型框架，非常适合理解 Agent 底层原理",
+        "基于 Next.js + Gemini 构建，同时提供终端 REPL 和聊天 UI 两种交互方式，兼顾开发调试与演示体验",
+        "代码极简透明，便于开发者按需扩展自己的工具集，是学习 Agent 架构、快速搭建原型的高性价比起点"
+      ],
+      "target_users": "想深入理解 AI Agent 原理的开发者、希望快速搭建 Agent 原型的全栈工程师、对 LLM 工具调用机制感兴趣的学习者",
+      "quick_start": "git clone 仓库，npm install，配置 GEMINI_API_KEY 环境变量，运行 npm run dev 打开聊天界面，或直接启动终端 REPL 体验工具调用流程"
+    }
+  ]
+}
