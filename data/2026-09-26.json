@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-26",
+  "picks": [
+    {
+      "full_name": "PuntoyComaTech/hermes-agent-squads",
+      "url": "https://github.com/PuntoyComaTech/hermes-agent-squads",
+      "summary": "开箱即用的多智能体团队编排方案",
+      "highlights": [
+        "提供营销团队、求职团队等预置 AI 智能体小队，编排器通过 Telegram/Discord/WhatsApp 主动汇报，专家智能体独立工作，只在你需要决策时才打扰你，降低了多智能体协作的使用门槛。",
+        "基于 Markdown 计划文件驱动，配置轻量、可个性化定制，适合在普通电脑上本地运行，开源可审计，便于二次开发。",
+        "解决了单人开发者或小团队缺乏专职助手的问题，用消息平台作为交互入口，无需搭建复杂前端即可获得'虚拟团队'体验。"
+      ],
+      "target_users": "独立开发者、创业者、小团队负责人，以及希望用 AI 智能体自动化处理营销、求职、运营等重复性事务的效率工具爱好者。",
+      "quick_start": "克隆仓库后阅读 README 中的安装说明，选择所需的 agent squad 模板（如营销或求职），配置 Telegram/Discord/WhatsApp 的 bot token，运行编排器脚本即可通过聊天窗口接收任务汇报并下达指令。"
+    },
+    {
+      "full_name": "tinyblinker/lisp_rs",
+      "url": "https://github.com/tinyblinker/lisp_rs",
+      "summary": "用 Rust 实现的 Lisp 解释器玩具项目",
+      "highlights": [
+        "完整实现了 Lisp 解释器的核心环节（词法分析、语法解析、求值、环境管理），是学习编程语言实现原理和 Rust 所有权模型的优质教学范本。",
+        "代码规模小、结构清晰，适合作为编译原理或解释器课程的实战练习基础，可在此基础上扩展宏系统、尾调用优化等特性。",
+        "Rust 生态中此类小型语言实现项目较少，对想用 Rust 写 DSL、配置语言或嵌入式脚本引擎的开发者有直接参考价值。"
+      ],
+      "target_users": "学习编译原理/解释器实现的学生、想用 Rust 写 DSL 或脚本引擎的开发者、对 Lisp 与函数式编程感兴趣的工程师。",
+      "quick_start": "git clone 仓库后执行 cargo run 启动 REPL，输入 (+ 1 2) 等 S-表达式即可验证解释器；阅读 src 目录下的 parser 与 eval 模块了解实现细节，按需修改扩展。"
+    }
+  ]
+}
