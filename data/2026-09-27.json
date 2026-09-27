@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-27",
+  "picks": [
+    {
+      "full_name": "Natsummerance/rust-ReadMD",
+      "url": "https://github.com/Natsummerance/rust-ReadMD",
+      "summary": "纯Rust实现的本地Markdown阅读编辑器",
+      "highlights": [
+        "100%纯Rust原生实现，零Python依赖，启动快、体积小、跨平台一致性好",
+        "本地优先（local-first）设计，适合处理敏感文档，无需联网或云端同步",
+        "对Rust生态开发者是很好的参考示例，展示如何用Rust构建轻量GUI/文本编辑器"
+      ],
+      "target_users": "Rust开发者、注重隐私与离线体验的技术写作者、需要轻量Markdown工具的程序员",
+      "quick_start": "克隆仓库后执行 `cargo run --release`（或下载release二进制），打开本地.md文件即可实时预览与编辑；也可 `cargo build` 后运行生成的二进制。"
+    },
+    {
+      "full_name": "Targetboy7/desktop-ai-agent",
+      "url": "https://github.com/Targetboy7/desktop-ai-agent",
+      "summary": "基于Claude API的桌面悬浮AI助手",
+      "highlights": [
+        "以悬浮窗形式常驻桌面，随手问答/分享内容，减少切换应用的摩擦，提升日常工作效率",
+        "接入Claude API，可直接复用Anthropic模型能力，适合快速验证AI Agent产品形态",
+        "JavaScript实现，代码门槛低，便于前端/全栈开发者二次改造与集成自有工作流"
+      ],
+      "target_users": "想快速搭建AI桌面助手的全栈/前端开发者、日常依赖Claude处理工作的知识工作者、AI Agent原型验证者",
+      "quick_start": "克隆仓库 → `npm install` → 在配置中填入自己的 Anthropic Claude API Key → `npm start` 启动，桌面出现悬浮窗即可提问与分享内容。"
+    }
+  ]
+}
