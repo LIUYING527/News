@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-28",
+  "picks": [
+    {
+      "full_name": "52liulian/EduToolbox",
+      "url": "https://github.com/52liulian/EduToolbox",
+      "summary": "1000+教育工具导航与85个本地小工具",
+      "highlights": [
+        "内置85个纯浏览器本地运行的自研小工具，涵盖评语生成、点名、倒计时、抽题、奖状制作等教师高频场景，无需后端和登录即可使用，隐私友好",
+        "聚合1000+免费教育工具导航，形成一站式教师工具箱入口，省去老师四处搜索工具的时间成本",
+        "纯前端JavaScript实现，部署简单（可直接托管到GitHub Pages或任意静态服务器），二次开发和定制门槛低"
+      ],
+      "target_users": "中小学教师、教育工作者、班主任、教育类产品开发者、想自建内部工具集的学校IT人员",
+      "quick_start": "1) git clone https://github.com/52liulian/EduToolbox；2) 用浏览器直接打开 index.html 或运行任意静态服务器（如 npx serve）；3) 在页面中选择需要的工具（如评语生成、抽题）即可离线使用。"
+    },
+    {
+      "full_name": "neo-jack/webMonitor",
+      "url": "https://github.com/neo-jack/webMonitor",
+      "summary": "前端监控SDK+事件接收+管理台",
+      "highlights": [
+        "提供从前端埋点SDK、事件接收服务到可视化监控管理台的完整链路，开发者可一站式搭建自有前端监控体系，替代商业SaaS方案",
+        "覆盖错误捕获、性能指标、用户行为等常见前端监控场景，适合快速定位线上问题和分析用户体验",
+        "JavaScript实现，便于前端团队阅读源码、按业务需求裁剪和私有化部署，数据完全自主可控"
+      ],
+      "target_users": "前端工程师、Web性能优化工程师、负责前端稳定性/SRE的团队、需要私有化监控方案的中小团队",
+      "quick_start": "1) git clone https://github.com/neo-jack/webMonitor；2) 按README启动接收服务（通常为Node服务，npm install && npm start）；3) 在示例页面中引入SDK并配置上报地址，打开管理台即可查看采集到的事件与错误数据。"
+    }
+  ]
+}
