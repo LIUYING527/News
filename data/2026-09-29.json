@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-29",
+  "picks": [
+    {
+      "full_name": "Alpha-Park/genpark-agent-rate-limit-token-bucket-regulator-skill",
+      "url": "https://github.com/Alpha-Park/genpark-agent-rate-limit-token-bucket-regulator-skill",
+      "summary": "多供应商LLM API限流调节器",
+      "highlights": [
+        "针对LLM API场景专门设计，同时支持token-bucket令牌桶和sliding-window滑动窗口两种限流算法，能有效防止TPM（每分钟token数）和RPM（每分钟请求数）被节流",
+        "内置预测性token消耗预算（predictive token consumption budgeting），可提前估算请求token开销，避免因超限导致请求失败或排队",
+        "支持多供应商（OpenAI、Anthropic等）统一管理，适合构建跨模型Agent应用的开发者，是LLM工程化中稀缺的基础设施型组件"
+      ],
+      "target_users": "构建LLM Agent/多模型应用的AI工程师、需要稳定调用多家LLM API的后端开发者、AI基础设施团队",
+      "quick_start": "1) git clone 该仓库；2) pip install -r requirements.txt；3) 参考README中的示例，配置你的API供应商和TPM/RPM阈值；4) 在调用LLM的代码外层包一层限流器即可，5分钟内可跑通一个最小demo"
+    },
+    {
+      "full_name": "andronaft/Logbeam",
+      "url": "https://github.com/andronaft/Logbeam",
+      "summary": "开发者友好的本地日志浏览器插件",
+      "highlights": [
+        "Chrome扩展形式，无需部署服务，安装即用；自动将JSON、JWT、Base64、时间戳等格式化可读，并强制暗色模式，提升日志阅读体验",
+        "100%本地运行，数据不出浏览器，对处理敏感日志（如生产环境token、用户数据）的开发者非常友好",
+        "面向开发者与平台工程师的日常痛点——在浏览器里查看API响应、日志流时快速解码和格式化，一键工具集成度高"
+      ],
+      "target_users": "前端/全栈开发者、平台工程师、SRE、需要频繁调试API响应和日志的工程师",
+      "quick_start": "1) 打开Chrome网上应用店搜索Logbeam或从仓库README获取安装链接；2) 点击“添加到Chrome”完成安装；3) 打开任意含JSON/JWT/Base64的页面或日志输出，点击扩展图标即可看到格式化结果，全程不到1分钟"
+    }
+  ]
+}
