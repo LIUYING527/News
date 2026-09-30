@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-30",
+  "picks": [
+    {
+      "full_name": "YeetingWaterbottle/gradescope-mcp",
+      "url": "https://github.com/YeetingWaterbottle/gradescope-mcp",
+      "summary": "只读的 Gradescope MCP 服务",
+      "highlights": [
+        "基于 MCP（Model Context Protocol）协议，可让 Claude、Cursor 等 AI 助手直接读取 Gradescope 上的课程、截止日期、提交记录和上传文件，把学习管理系统接入 AI 工作流",
+        "轻量级设计，Python 实现，只读权限保证账号安全，不会误改数据",
+        "面向学生和开发者，把学术数据与 AI Agent 打通，是 MCP 生态在教育场景的实用范例"
+      ],
+      "target_users": "使用 Gradescope 的学生、想用 AI 管理学习任务的开发者、研究 MCP 协议集成的工程师",
+      "quick_start": "克隆仓库后按 README 配置 Python 环境，安装依赖，在 Claude Desktop 或 Cursor 的 MCP 配置文件中添加该服务并填入 Gradescope 登录凭据，重启客户端即可让 AI 查询课程与作业信息"
+    },
+    {
+      "full_name": "lucunix/Open-Moxdash",
+      "url": "https://github.com/lucunix/Open-Moxdash",
+      "summary": "易读可定制的 Proxmox 监控面板",
+      "highlights": [
+        "专为 Proxmox VE 设计的开源监控仪表盘，界面简洁易读，支持内外网双模式部署，兼顾家庭实验室和公开访问场景",
+        "完全可定制，开发者可以按需调整展示的节点、虚拟机和容器指标，弥补 Proxmox 原生界面监控维度的不足",
+        "对自建服务器、Homelab 用户非常友好，是轻量级替代商业监控方案的选择"
+      ],
+      "target_users": "Proxmox 用户、Homelab 爱好者、自建服务器运维人员、中小型基础设施管理员",
+      "quick_start": "克隆仓库，按 README 安装依赖并配置 Proxmox API 地址与凭证，启动服务后浏览器访问本地端口即可看到监控面板，按需修改配置文件定制展示内容"
+    }
+  ]
+}
