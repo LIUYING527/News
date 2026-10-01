@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-01",
+  "picks": [
+    {
+      "full_name": "WatheqAlmurisi/Pixel_Studio",
+      "url": "https://github.com/WatheqAlmurisi/Pixel_Studio",
+      "summary": "基于FastAPI与OpenCV的在线图像编辑器",
+      "highlights": [
+        "技术栈实用且现代：使用 FastAPI 提供后端 API，Pillow + OpenCV + NumPy 处理图像，前端用原生 HTML/CSS/JS，是学习全栈图像处理的良好范例",
+        "可直接部署运行：提供了完整的图像编辑功能（裁剪、滤镜、格式转换等），适合作为二次开发的基础模板，快速搭建自己的图像处理服务",
+        "轻量级无重型依赖：相比 Photoshop 类应用，纯 Python + Web 技术栈，易于理解、修改和集成到其他项目中"
+      ],
+      "target_users": "Python 后端开发者、图像处理初学者、需要快速搭建在线图片编辑工具的全栈工程师",
+      "quick_start": "1) git clone 仓库并进入目录；2) pip install fastapi pillow opencv-python numpy uvicorn；3) 运行 uvicorn main:app --reload；4) 浏览器打开 http://localhost:8000 即可上传图片并试用编辑功能"
+    },
+    {
+      "full_name": "nikatose/multi-chain-gas-tracker",
+      "url": "https://github.com/nikatose/multi-chain-gas-tracker",
+      "summary": "多链EVM实时Gas费追踪工具",
+      "highlights": [
+        "实用性强：实时监控以太坊及主流 EVM 链的 Gas 价格，帮助开发者和用户选择最优交易时机，降低链上交互成本",
+        "多链支持：不局限于以太坊主网，覆盖多个 EVM 兼容网络，适合跨链 DApp 开发者统一监控 Gas 状况",
+        "轻量前端实现：纯 JavaScript 实现，易于嵌入现有 DApp 或作为独立面板使用，也可作为学习 Web3 数据获取的入门示例"
+      ],
+      "target_users": "Web3 开发者、DeFi 用户、需要监控多链 Gas 成本的 DApp 团队",
+      "quick_start": "1) git clone 仓库；2) 用浏览器直接打开 index.html 或通过简单静态服务器（如 python -m http.server）托管；3) 页面会自动拉取各链 Gas 数据并实时展示；4) 可按需修改 RPC 节点配置以接入自建节点"
+    }
+  ]
+}
