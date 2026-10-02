@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-02",
+  "picks": [
+    {
+      "full_name": "Acarfilms/vitrine",
+      "url": "https://github.com/Acarfilms/vitrine",
+      "summary": "为 GitHub 主页 README 生成液态玻璃卡片",
+      "highlights": [
+        "通过 GitHub Action 自动渲染，无需手动维护图片或 SVG，README 上的展示卡片会随仓库数据实时更新",
+        "视觉风格采用 Liquid Glass 质感，比传统 shields.io 徽章更具设计感和辨识度，适合打造个性化开发者主页",
+        "完全运行在用户自己的仓库中，无需依赖第三方托管服务，隐私与可控性更好"
+      ],
+      "target_users": "希望美化 GitHub Profile 的开发者、开源项目维护者、注重个人品牌的前端/全栈工程师",
+      "quick_start": "Fork 该仓库，参照 README 中的 Action 配置示例，将 workflow 文件复制到自己的 profile 仓库，提交后即可在主页 README 中通过 Markdown 引用生成的卡片图片"
+    },
+    {
+      "full_name": "Magmathroughcabin/DiscordZapret",
+      "url": "https://github.com/Magmathroughcabin/DiscordZapret",
+      "summary": "一键恢复 Discord/YouTube 访问的脚本集",
+      "highlights": [
+        "基于 Zapret 的现成脚本封装，无需 VPN 或复杂手动配置即可绕过 DPI 限制，对网络受限地区的开发者非常实用",
+        "使用 Batchfile 编写，Windows 用户双击即可运行，降低了工具链门槛",
+        "覆盖 Discord 和 YouTube 两个高频访问服务，适合需要稳定访问技术社区和视频教程的场景"
+      ],
+      "target_users": "网络受限地区需要访问 Discord/YouTube 的开发者、运维人员、技术学习者",
+      "quick_start": "克隆仓库，以管理员身份运行其中的 .bat 脚本，按提示完成安装，随后重启 Discord/浏览器即可测试访问"
+    }
+  ]
+}
