@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-03",
+  "picks": [
+    {
+      "full_name": "zekierman/herdr-council",
+      "url": "https://github.com/zekierman/herdr-council",
+      "summary": "让多个编码 Agent 盲评同一问题",
+      "highlights": [
+        "多 Agent 交叉验证：把同一个问题同时抛给多个编码 Agent，再由裁判盲评打分，减少单一模型的偏见和幻觉",
+        "插件化设计：作为 herdr 插件运行，Go 语言实现，易于集成到现有 Agent 工作流中",
+        "适用于代码审查、方案选型等需要多视角判断的场景，比单模型自问自答更可靠"
+      ],
+      "target_users": "使用多个 LLM/编码 Agent 的开发者、AI 工具链构建者、需要交叉验证 AI 输出的团队",
+      "quick_start": "克隆仓库后按 README 安装 herdr 插件，配置各 Agent 的 API key，运行一条命令即可对同一问题发起多 Agent 投票与盲评"
+    },
+    {
+      "full_name": "renatogroffe/arquitetura-ia-mcps-apis-aigateway_2026-10",
+      "url": "https://github.com/renatogroffe/arquitetura-ia-mcps-apis-aigateway_2026-10",
+      "summary": "MCP+API 网关的 AI 参考架构",
+      "highlights": [
+        "整合 MCP、Azure APIM、APISIX、Grafana、Kubernetes 与生成式 AI，提供端到端的企业级 AI 架构蓝图",
+        "聚焦 API 网关层的 AI 流量治理与可观测性，解决多模型、多 MCP 服务接入的统一管理问题",
+        "由知名 .NET/Azure 布道者 renatogroffe 维护，参考价值高，可直接作为团队架构设计起点"
+      ],
+      "target_users": "云架构师、平台工程师、正在落地企业级 AI 网关与 MCP 集成的后端团队",
+      "quick_start": "打开仓库阅读架构图与 README 说明，按文档中的组件清单在本地或云端搭建最小验证环境，参考示例配置接入一个 MCP 服务"
+    }
+  ]
+}
