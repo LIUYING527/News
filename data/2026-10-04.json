@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-04",
+  "picks": [
+    {
+      "full_name": "masaok/bomb-appetit",
+      "url": "https://github.com/masaok/bomb-appetit",
+      "summary": "浏览器多人合作拆弹游戏",
+      "highlights": [
+        "基于 WebRTC/实时通信的非对称多人协作玩法，一人看炸弹、其他人看说明书，必须通过语音沟通才能通关，是研究实时协作架构的优秀参考案例",
+        "TypeScript 编写，前端工程化完整，可直接作为学习实时多人网页游戏（状态同步、房间管理、计时器逻辑）的入门项目",
+        "开箱即玩的浏览器游戏，无需安装，适合快速体验和二次开发（如自定义关卡、谜题）"
+      ],
+      "target_users": "前端/全栈开发者、实时通信与多人游戏方向的学习者、喜欢合作类游戏的玩家、想找副项目练手的工程师",
+      "quick_start": "克隆仓库后运行 npm install && npm run dev，打开浏览器访问本地端口，邀请一位朋友（或开两个标签页）分别扮演拆弹者和读说明书者，即可开始游戏"
+    },
+    {
+      "full_name": "codejunkie99/claude-code-file-explorer",
+      "url": "https://github.com/codejunkie99/claude-code-file-explorer",
+      "summary": "Claude Code 的文件管理侧边栏插件",
+      "highlights": [
+        "为 Claude Code 补齐了缺失的文件浏览能力：彩色目录树、可直接编辑代码、Git 与 PR diff 查看、全文搜索，显著提升 AI 结对编程时的上下文切换效率",
+        "TypeScript 实现，作为 Claude Code 的 mod 插件，是研究如何扩展 AI 编码工具生态、构建 IDE 式交互界面的实用范例",
+        "针对日常使用 Claude Code 的开发者痛点（频繁在终端和编辑器间切换）提供一体化解决方案"
+      ],
+      "target_users": "日常使用 Claude Code 的开发者、AI 辅助编程工具爱好者、想扩展 AI 编码工具链的插件开发者",
+      "quick_start": "访问仓库 README 按说明安装为 Claude Code mod（通常为克隆到指定插件目录并在 Claude Code 中启用），重启 Claude Code 后即可看到文件管理侧边栏"
+    }
+  ]
+}
