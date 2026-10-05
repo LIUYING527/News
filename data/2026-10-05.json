@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-05",
+  "picks": [
+    {
+      "full_name": "lukeyeh/http-fiber",
+      "url": "https://github.com/lukeyeh/http-fiber",
+      "summary": "基于协程纤程的轻量HTTP/1.1服务器",
+      "highlights": [
+        "使用 Gloop 纤程（fiber）模型处理每个连接，展示了一种比传统线程池更轻量的高并发网络编程思路，适合学习现代 C++ 异步/协程网络架构。",
+        "代码规模小、聚焦单一功能（HTTP/1.1 服务），是研究服务器底层实现、连接调度与资源管理的优质教学样本。",
+        "对于想用 C++ 构建高性能网络服务、又不想直接啃大型框架（如 Boost.Asio 全量）的开发者，是很好的入门切入点。"
+      ],
+      "target_users": "C++ 后端开发者、网络编程学习者、对协程/纤程模型感兴趣的研究者",
+      "quick_start": "git clone https://github.com/lukeyeh/http-fiber && cd http-fiber，按 README 编译（通常需 CMake + Gloop 依赖），运行生成的服务器二进制，用 curl http://localhost:端口 验证响应。"
+    },
+    {
+      "full_name": "HunterTrowel/FixDiscord",
+      "url": "https://github.com/HunterTrowel/FixDiscord",
+      "summary": "Windows 下 Discord/YouTube 网络优化脚本",
+      "highlights": [
+        "基于 Zapret 的即用型配置，针对 Discord 语音、通话、消息与媒体加载做了预设调优，Windows 用户双击即可完成部署，实用性强。",
+        "解决了特定网络环境下 Discord 语音卡顿、连接不稳定的常见痛点，对受网络限制困扰的用户有直接帮助。",
+        "同类项目（DiscordFix、ZapretDiscord）同日上榜，说明该需求场景真实且活跃，可对比选用更稳定的方案。"
+      ],
+      "target_users": "Windows 用户、Discord/YouTube 重度使用者、需要网络连接优化的普通用户",
+      "quick_start": "下载仓库 ZIP 或 git clone，进入目录后以管理员身份运行批处理脚本（.bat），按提示自动配置，重启 Discord 后即可体验。"
+    }
+  ]
+}
