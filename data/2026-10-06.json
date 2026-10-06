@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-06",
+  "picks": [
+    {
+      "full_name": "philipplinux/simple-media-rater",
+      "url": "https://github.com/philipplinux/simple-media-rater",
+      "summary": "纯 Python 标准库的本地媒体评分小工具",
+      "highlights": [
+        "零依赖：仅使用 Python 标准库，无需安装 Flask/Django 等框架，克隆即用",
+        "实用场景明确：一次只评分一张图片或一首音乐，适合整理个人素材库、训练数据集打标、音乐收藏评级",
+        "本地运行、隐私友好：所有数据保存在本机，不上传云端，适合处理私人照片或未公开素材"
+      ],
+      "target_users": "需要整理本地图片/音乐素材的开发者、数据标注人员、摄影或音乐爱好者",
+      "quick_start": "git clone 仓库后 cd 进入目录，运行 python app.py（或主入口脚本），浏览器打开 http://localhost:8000 即可开始逐文件评分"
+    },
+    {
+      "full_name": "Marilyn2004/fashion-search-engine",
+      "url": "https://github.com/Marilyn2004/fashion-search-engine",
+      "summary": "AI 驱动的语义时尚商品搜索引擎",
+      "highlights": [
+        "技术组合前沿：语义检索 + 结构化过滤 + 真实商品数据导入，是学习 RAG/向量搜索落地的完整案例",
+        "业务价值高：电商领域典型需求，可复用于服装、家居、二手交易等垂直搜索场景",
+        "Java 技术栈：对 JVM 生态开发者友好，可借鉴其检索架构与商品数据建模方式"
+      ],
+      "target_users": "电商/搜索方向的后端工程师、想学习语义检索落地的 Java 开发者、AI 应用创业者",
+      "quick_start": "克隆仓库，按 README 配置好数据库与向量索引（如 Elasticsearch/FAISS），导入示例商品数据，启动 Spring Boot 服务后访问搜索页面输入自然语言描述即可体验"
+    }
+  ]
+}
