@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "picks": [
+    {
+      "full_name": "TekRantGaming/earthworm-jim-hd-recompiled",
+      "url": "https://github.com/TekRantGaming/earthworm-jim-hd-recompiled",
+      "summary": "通过静态重编译将Xbox游戏移植到PC",
+      "highlights": [
+        "展示了静态重编译（static recompilation）技术的实际应用，将Xbox Live Arcade的《Earthworm Jim HD》原生移植到PC平台，是逆向工程与二进制翻译领域的高难度实践案例。",
+        "对于研究游戏移植、二进制反编译、CPU架构转换（PowerPC到x86）的开发者具有很高的技术参考价值。",
+        "附带TRG启动器，提供了完整的可运行方案，而非仅仅停留在理论层面。"
+      ],
+      "target_users": "逆向工程爱好者、游戏移植开发者、对静态重编译和二进制翻译技术感兴趣的系统程序员",
+      "quick_start": "克隆仓库后查看README中的构建说明，安装依赖（CMake、C++编译器），运行TRG启动器加载游戏ROM即可体验。"
+    },
+    {
+      "full_name": "SamuelCatone/BotPromo",
+      "url": "https://github.com/SamuelCatone/BotPromo",
+      "summary": "基于N8N和Supabase的WhatsApp促销机器人",
+      "highlights": [
+        "结合N8N（低代码自动化平台）和Supabase（开源Firebase替代），构建了一个可实际运行的WhatsApp促销消息机器人，架构清晰、可扩展。",
+        "对于想学习如何将低代码工作流与即时通讯API集成的开发者来说，是一个实用的参考项目。",
+        "使用JavaScript编写，技术栈现代且社区资源丰富，方便二次开发和定制。"
+      ],
+      "target_users": "对自动化工作流、聊天机器人开发感兴趣的开发者，尤其是想用N8N+Supabase搭建业务自动化的人",
+      "quick_start": "克隆仓库，按照README配置N8N工作流和Supabase数据库连接，设置WhatsApp API凭证后即可启动机器人发送促销消息。"
+    }
+  ]
+}
