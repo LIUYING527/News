@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-08",
+  "picks": [
+    {
+      "full_name": "quezadasebastian/bpmn-mcp-server",
+      "url": "https://github.com/quezadasebastian/bpmn-mcp-server",
+      "summary": "让AI代理生成BPMN流程图的MCP服务器",
+      "highlights": [
+        "结合了当下热门的 MCP（Model Context Protocol）协议与 BPMN 2.0 业务流程建模，让 Claude、Cursor 等 AI 客户端可以直接生成可用的业务流程图，打通了 AI 与 BPM 工具的链路。",
+        "支持原生自动布局，生成的 BPMN 文件可在 Bizagi Modeler 及主流 BPMN 引擎中直接打开和互换，避免手工拖拽排版的繁琐。",
+        "使用 TypeScript 编写，结构清晰，便于开发者基于 MCP 协议扩展其他领域（如 UML、流程图、架构图）的 AI 生成能力。"
+      ],
+      "target_users": "流程自动化开发者、BPM/工作流工程师、使用 Claude/Cursor 等 AI 工具的架构师，以及希望让 AI 直接产出标准业务建模文件的团队。",
+      "quick_start": "1) 克隆仓库并执行 npm install；2) 阅读 README 中的 MCP 配置示例，将 server 添加到 Claude Desktop 或 Cursor 的 MCP 配置中；3) 在 AI 对话框中用自然语言描述流程（如“客户下单到发货的审批流程”），即可获得可导入 Bizagi 的 BPMN 文件。"
+    },
+    {
+      "full_name": "moexblade/litefy-spotify-player",
+      "url": "https://github.com/moexblade/litefy-spotify-player",
+      "summary": "终端里用的轻量 Spotify 播放器",
+      "highlights": [
+        "把 Spotify 播放能力搬进终端，基于 spotifyd 做后台播放，Python 编写，适合喜欢命令行工作流的开发者边写代码边听歌。",
+        "支持搜索曲目/艺人、浏览艺人作品、控制播放等核心功能，交互轻量，无需打开浏览器或桌面客户端，节省系统资源。",
+        "代码结构简单、依赖清晰，是学习 Python 调用 Spotify API 与 spotifyd 集成的一个不错的小型实战项目。"
+      ],
+      "target_users": "重度终端用户、Linux/服务器开发者、喜欢极简工具的 Spotify 订阅用户，以及想学习 Python + Spotify API 集成的开发者。",
+      "quick_start": "1) 安装 spotifyd 并登录 Spotify Premium 账号；2) 克隆仓库，pip 安装依赖；3) 运行主脚本，在终端中搜索歌曲名即可开始播放。"
+    }
+  ]
+}
