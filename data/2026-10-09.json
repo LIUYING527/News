@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-09",
+  "picks": [
+    {
+      "full_name": "fairdataihub/bunny-s3-r2-backup",
+      "url": "https://github.com/fairdataihub/bunny-s3-r2-backup",
+      "summary": "自动备份 Bunny S3 到 AWS/R2",
+      "highlights": [
+        "解决多云存储冗余问题：可将 Bunny CDN 兼容 S3 存储桶的数据自动同步至 AWS S3 或 Cloudflare R2，实现异地容灾备份。",
+        "基于 TypeScript 编写，易于集成到 CI/CD 或定时任务中，适合作为轻量级备份工具替代昂贵的商业备份方案。",
+        "对使用 Bunny 作为主存储的开发者有实际价值，可低成本实现跨云厂商的数据冗余策略。"
+      ],
+      "target_users": "使用 Bunny CDN/S3 的开发者、运维工程师、需要跨云备份方案的小型团队",
+      "quick_start": "1) git clone 仓库并 npm install；2) 配置 .env 填入 Bunny、AWS/R2 的访问密钥和桶信息；3) 运行 npm start 或通过 cron 定时执行即可完成一次备份。"
+    },
+    {
+      "full_name": "kehao95/zenodo-cli",
+      "url": "https://github.com/kehao95/zenodo-cli",
+      "summary": "Zenodo 学术数据命令行工具",
+      "highlights": [
+        "为科研数据管理提供 CLI 交互方式，可在终端完成 Zenodo 上数据集的上传、查询与版本管理，避免频繁切换浏览器。",
+        "使用 Go 编写，单二进制分发，跨平台友好，适合集成到自动化科研工作流（如论文发表后自动归档数据）。",
+        "填补 Zenodo 官方缺乏轻量命令行的空白，对需要可复现研究的开发者/研究者有实用价值。"
+      ],
+      "target_users": "科研人员、数据科学家、需要归档开放数据的开发者、DevOps 科研流程维护者",
+      "quick_start": "1) 从 Releases 下载对应平台二进制或 go install；2) 获取 Zenodo API Token 并设置环境变量；3) 运行 zenodo-cli upload <file> 即可上传，zenodo-cli list 查看已有记录。"
+    }
+  ]
+}
