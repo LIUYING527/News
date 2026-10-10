@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-10",
+  "picks": [
+    {
+      "full_name": "erencivril/claude-code-failover",
+      "url": "https://github.com/erencivril/claude-code-failover",
+      "summary": "Claude Code 会话自动故障转移工具",
+      "highlights": [
+        "解决 AI 编程助手常见的痛点：当 Claude Code 遭遇 API 错误、速率限制或死循环时，会话会中断，此工具能自动捕获这些异常并无缝切换",
+        "支持跨 Agent CLI 转移任务，可将未完成的任务交给 Codex、Gemini、Aider 或另一个 Claude 模型继续执行，实现真正的多模型协作容错",
+        "基于 Shell 实现，轻量易集成，能自动恢复会话并保留上下文，对依赖 Claude Code 长时间运行任务的开发者价值很高"
+      ],
+      "target_users": "重度使用 Claude Code 或多种 AI 编程 CLI 的开发者、需要长时间无人值守运行 AI 编码任务的工程师",
+      "quick_start": "克隆仓库后运行安装脚本，配置好各 CLI 的 API key 环境变量，将 claude 命令替换为 failover 包装命令即可。遇到错误时会自动切换到备用 Agent 继续任务。"
+    },
+    {
+      "full_name": "GTosetti/eslabon-v2",
+      "url": "https://github.com/GTosetti/eslabon-v2",
+      "summary": "检测恶意 PyPI/npm 包的静态分析器",
+      "highlights": [
+        "针对供应链攻击这一日益严重的安全威胁，结合 YARA 规则与 Python 启发式分析，能有效识别恶意 PyPI/npm 包",
+        "输出符合 ECS 规范的 JSON Lines 并映射到 MITRE ATT&CK 框架，便于与 Wazuh 等 SIEM 系统集成，实现端到端的安全监控",
+        "已在 Wazuh 上完成端到端验证，具备实际落地能力，适合纳入 CI/CD 或包管理审计流程"
+      ],
+      "target_users": "DevSecOps 工程师、供应链安全研究人员、需要审计第三方依赖的开发者与安全团队",
+      "quick_start": "克隆仓库并安装 Python 依赖，运行扫描命令指向目标包目录或包名，即可获得 ECS 格式的 JSON 检测结果；如需集成 Wazuh，按 README 配置解码器与规则即可。"
+    }
+  ]
+}
