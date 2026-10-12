@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "picks": [
+    {
+      "full_name": "octoclonius/libreauto",
+      "url": "https://github.com/octoclonius/libreauto",
+      "summary": "脱离谷歌服务的安卓车机协议实现",
+      "highlights": [
+        "重新实现 Android Auto 协议手机端，无需 Google Play Services，对去谷歌化（de-Googled）用户和定制 ROM 社区有实际价值",
+        "使用 Kotlin 编写，便于 Android 开发者阅读和二次开发，可研究车机投屏、USB/蓝牙通信等底层协议细节",
+        "填补了开源车机互联方案的空缺，适合集成到自定义车载系统或隐私优先的车载方案中"
+      ],
+      "target_users": "Android 系统开发者、定制 ROM 爱好者、去谷歌化用户、车载系统集成开发者",
+      "quick_start": "克隆仓库后用 Android Studio 打开，连接支持 Android Auto 协议的车机或模拟环境，编译安装 APK 即可测试基本连接与投屏流程"
+    },
+    {
+      "full_name": "cfq123451/phone-mirror-assistant",
+      "url": "https://github.com/cfq123451/phone-mirror-assistant",
+      "summary": "基于 scrcpy 的 USB 优先手机投屏工具",
+      "highlights": [
+        "封装 scrcpy 为 Windows 桌面工具，USB 优先连接，延迟低、画质稳定，适合日常办公演示与手机调试",
+        "C# 实现，界面友好，相比命令行 scrcpy 降低了使用门槛，对非技术用户也友好",
+        "可用于自动化测试、远程协助、游戏直播等场景，是 scrcpy 生态中少见的图形化集成方案"
+      ],
+      "target_users": "Windows 用户、Android 应用测试人员、直播/录屏用户、需要手机投屏演示的开发者",
+      "quick_start": "下载 Release 中的 Windows 可执行文件，手机开启 USB 调试并用数据线连接电脑，运行程序即可自动识别设备并开始投屏"
+    }
+  ]
+}
