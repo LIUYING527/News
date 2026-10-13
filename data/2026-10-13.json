@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-13",
+  "picks": [
+    {
+      "full_name": "BlackLineInteractive/Driveclub-Port",
+      "url": "https://github.com/BlackLineInteractive/Driveclub-Port",
+      "summary": "PS4独占赛车游戏Driveclub的PC移植项目",
+      "highlights": [
+        "将PS4平台独占的Driveclub赛车游戏逆向移植到PC平台，涉及图形渲染、输入系统、资源解包等底层技术，对游戏逆向工程和主机移植感兴趣的开发者极具参考价值",
+        "使用Objective-C++编写，展示了跨平台游戏移植中的架构设计思路，包括PS4 GNM API到PC图形API的转换适配",
+        "此类主机独占游戏移植项目在开源社区极为罕见，技术门槛高，一旦有实质进展将吸引大量关注"
+      ],
+      "target_users": "游戏逆向工程师、主机模拟器/移植开发者、对PS4底层图形API感兴趣的技术研究者",
+      "quick_start": "克隆仓库后查看README中的构建说明，通常需要PS4固件相关工具链和原始游戏资源文件；关注Issues和Projects了解当前开发进度与贡献方式"
+    },
+    {
+      "full_name": "LyChee620/auto-kaoyan-schedule",
+      "url": "https://github.com/LyChee620/auto-kaoyan-schedule",
+      "summary": "自动化考研学习日程安排工具",
+      "highlights": [
+        "面向中国考研群体的自动化日程管理工具，解决备考过程中计划制定与执行跟踪的实际痛点，实用性强",
+        "自动化排程思路可复用到其他学习/工作场景，对需要构建个人效率工具的开发者有借鉴意义",
+        "考研群体庞大且需求明确，此类工具容易形成社区共建生态"
+      ],
+      "target_users": "正在备考研究生的学生、需要自动化学习计划管理的用户、对个人效率工具开发感兴趣的开发者",
+      "quick_start": "克隆仓库后根据README配置个人考试日期和科目，运行脚本生成每日学习计划；可fork后按自身需求定制排程算法"
+    }
+  ]
+}
