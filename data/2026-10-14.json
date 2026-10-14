@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-14",
+  "picks": [
+    {
+      "full_name": "MrLouisWright/sitemap-beacon",
+      "url": "https://github.com/MrLouisWright/sitemap-beacon",
+      "summary": "零依赖的 XML sitemap 审计工具",
+      "highlights": [
+        "零依赖实现，纯 JavaScript 编写，可轻松集成到任何 Node/CI 环境，无需担心依赖膨胀或供应链风险",
+        "覆盖 SEO 关键检查项：站点地图大小限制、跨域 URL、缺失页面、noindex/非规范页面、lastmod 时间戳有效性、可索引页面遗漏等",
+        "输出格式丰富（Text/JSON/SARIF/Markdown），原生支持 GitHub Action，可直接在 PR 中自动审计并标注问题",
+        "支持带过期时间的 allowlist，兼顾严格校验与合理豁免"
+      ],
+      "target_users": "前端/全栈开发者、SEO 工程师、静态站点（Next.js/Astro/Hugo 等）维护者、需要在 CI 中做站点质量门禁的团队",
+      "quick_start": "1) 克隆仓库或直接 npx 运行：npx sitemap-beacon --site ./dist --sitemap ./dist/sitemap.xml；2) 查看终端输出的 JSON/Text 报告；3) 在 .github/workflows 中加入官方 GitHub Action，指定站点构建目录与 sitemap 路径即可在每次 PR 自动审计。"
+    },
+    {
+      "full_name": "benmprojects/RoamDesk-public",
+      "url": "https://github.com/benmprojects/RoamDesk-public",
+      "summary": "用安卓手机免手操控电脑上的 Claude",
+      "highlights": [
+        "打通移动端与桌面端的 AI 工作流：安卓手机作为语音/遥控入口，Windows PC 上的 Claude 作为执行端，实现真正的“随身 AI 助手”",
+        "免手操作（hands-free）体验，适合在离开键盘时用语音下达任务、让 Claude 在 PC 上继续编码或处理文档",
+        "TypeScript 实现，跨平台思路清晰，对想自建“个人 AI 远程控制层”的开发者有很强的参考与二次开发价值"
+      ],
+      "target_users": "重度使用 Claude 的开发者、需要远程/免手操作 PC 的效率爱好者、想研究移动端与桌面 AI 联动架构的工程师",
+      "quick_start": "1) 访问仓库按 README 安装 Windows 端服务与安卓 APK；2) 手机与 PC 处于同一网络（或用文档说明的配对方式）完成连接；3) 在手机端说出指令，观察 PC 上 Claude 执行并回传结果，即可体验免手工作流。"
+    }
+  ]
+}
