@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-15",
+  "picks": [
+    {
+      "full_name": "DrKJeff16/triforce.nvim",
+      "url": "https://github.com/DrKJeff16/triforce.nvim",
+      "summary": "给 Neovim 编码加游戏化成就系统",
+      "highlights": [
+        "将游戏化机制（XP、等级、成就、活动热力图）引入 Neovim，让日常编码变成可量化的成长体验，提升长期编码动力。",
+        "深度集成 lualine，状态栏直接展示等级与进度，无需额外窗口即可获得正反馈，符合 Vim 用户低干扰的工作流习惯。",
+        "纯 Lua 实现，轻量且易于配置，社区已有一定关注度，属于 Neovim 生态中少见的「趣味性 + 实用性」结合型插件。"
+      ],
+      "target_users": "Neovim 用户、喜欢游戏化激励的开发者、追求个性化开发环境的工程师",
+      "quick_start": "使用 lazy.nvim 或 packer 添加 'DrKJeff16/triforce.nvim'，按 README 配置 lualine 组件后重启 Neovim，即可在状态栏看到 XP 与等级，编码时自动累积经验。"
+    },
+    {
+      "full_name": "Binaryify/MonitorBar",
+      "url": "https://github.com/Binaryify/MonitorBar",
+      "summary": "跨平台显示器管理与输入源切换工具",
+      "highlights": [
+        "不依赖 DDC/CI 协议，绕过许多显示器兼容性问题，通过澎湃 OS 局域网接口实现输入源切换与音量调节，方案新颖。",
+        "同时支持 macOS 菜单栏与 Windows 托盘，覆盖主流桌面平台，适合多设备（如 Mac + 主机 + 笔记本）频繁切换显示器的用户。",
+        "由知名开源作者 Binaryify（网易云音乐 API 作者）维护，Go 实现，代码质量与后续维护有保障。"
+      ],
+      "target_users": "多显示器/多设备切换用户、macOS 与 Windows 桌面用户、对显示器控制工具感兴趣的开发者",
+      "quick_start": "从 Releases 下载对应平台二进制文件，运行后驻留菜单栏/托盘，确保显示器与设备处于同一局域网，即可在菜单中切换输入源和调节音量。"
+    }
+  ]
+}
