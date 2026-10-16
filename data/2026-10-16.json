@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-16",
+  "picks": [
+    {
+      "full_name": "bisimulationn/ssasem",
+      "url": "https://github.com/bisimulationn/ssasem",
+      "summary": "Lean 4 形式化的 SSA 语义与元理论",
+      "highlights": [
+        "在 Lean 4 中机械化 SSA（静态单赋值）的操作语义与元理论，为编译器验证提供形式化基础",
+        "包含一个可证明正确的解释器，可用于验证编译器优化（如 SSA 转换）的语义等价性",
+        "对编程语言理论、编译器正确性证明方向的研究者和工程师有较高参考价值，属于稀缺的 Lean 形式化项目"
+      ],
+      "target_users": "编译器开发者、程序语言理论研究者、形式化验证爱好者",
+      "quick_start": "克隆仓库后安装 Lean 4 工具链（elan），执行 `lake build` 编译，再运行 `lake exe` 或查看 `Main.lean` 中的解释器示例来体验 SSA 语义执行。"
+    },
+    {
+      "full_name": "Lucaslu2010/agrippa",
+      "url": "https://github.com/Lucaslu2010/agrippa",
+      "summary": "带隔离子任务与显式交接的 AI 协作器",
+      "highlights": [
+        "基于 Hermes Agent 构建，将复杂任务拆分为隔离的 side tasks，通过显式 handoff 机制协调，提升多步 AI 工作流的可靠性",
+        "隔离设计减少上下文污染，显式交接便于调试和审计 AI 代理的决策路径",
+        "Python 实现，易于集成到现有自动化流程，适合探索多代理协作模式的开发者"
+      ],
+      "target_users": "AI Agent 开发者、自动化工作流工程师、对多代理系统感兴趣的研究者",
+      "quick_start": "克隆仓库，创建虚拟环境并 `pip install -r requirements.txt`，参照 README 配置 Hermes Agent 的 API key，运行示例脚本即可观察任务拆分与 handoff 流程。"
+    }
+  ]
+}
