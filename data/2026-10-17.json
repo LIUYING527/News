@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-17",
+  "picks": [
+    {
+      "full_name": "getcanvasplus/canvas-grades",
+      "url": "https://github.com/getcanvasplus/canvas-grades",
+      "summary": "Canvas LMS 成绩计算与 GPA 预测工具",
+      "highlights": [
+        "解决 Canvas LMS 原生成绩显示不直观的痛点，能计算当前加权成绩、期末考所需分数、每项作业占比及 GPA",
+        "纯 JavaScript 实现，可直接作为浏览器扩展或脚本注入使用，无需后端服务，部署成本极低",
+        "面向学生的高频刚需场景，逻辑清晰易二次开发，适合作为学习 Web 前端与 LMS API 集成的参考项目"
+      ],
+      "target_users": "使用 Canvas LMS 的大学生、在线课程学习者、教育类浏览器扩展开发者",
+      "quick_start": "克隆仓库后查看 README 中的安装说明，将脚本作为浏览器用户脚本（如 Tampermonkey）注入到 Canvas 页面，刷新成绩页面即可看到增强后的成绩与 GPA 计算面板"
+    },
+    {
+      "full_name": "ydss0857/PYNQ-Z2-HDMI-Video-Processing-Pipeline",
+      "url": "https://github.com/ydss0857/PYNQ-Z2-HDMI-Video-Processing-Pipeline",
+      "summary": "PYNQ-Z2 上的实时 HDMI 视频处理流水线",
+      "highlights": [
+        "基于 Xilinx Zynq-7020 实现完整的 HDMI 输入到输出实时视频流水线，包含自定义 AXI4-Stream RTL，是 FPGA 视频处理少见的端到端开源示例",
+        "使用 Verilog 编写可综合的硬件逻辑，搭配 PYNQ 的 Python 高层接口，兼顾底层性能与开发效率",
+        "适合学习 FPGA 图像处理、AXI4-Stream 协议、软硬件协同设计的开发者作为实战模板"
+      ],
+      "target_users": "FPGA 工程师、嵌入式视觉开发者、Zynq/PYNQ 学习者、高校电子与计算机工程学生",
+      "quick_start": "准备 PYNQ-Z2 开发板与 HDMI 线缆，克隆仓库后按 README 将 bitstream 与 overlay 部署到板卡，通过 PYNQ Jupyter Notebook 加载 overlay，接入 HDMI 源与显示器即可看到实时处理效果"
+    }
+  ]
+}
