@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-18",
+  "picks": [
+    {
+      "full_name": "Yowlry/Fourier-Signal-Synthesizer",
+      "url": "https://github.com/Yowlry/Fourier-Signal-Synthesizer",
+      "summary": "交互式傅里叶谐波合成可视化工具",
+      "highlights": [
+        "纯 HTML 实现，无需安装依赖，浏览器直接打开即可运行，降低学习门槛",
+        "通过叠加谐波正弦波直观展示时域合成与频域叠加，是理解傅里叶变换的绝佳教学工具",
+        "相位干涉可视化对信号处理、音频合成、通信等领域的初学者有很强的启发价值"
+      ],
+      "target_users": "信号处理/通信/音频方向的学生与工程师、需要直观理解傅里叶变换的教学者、对数学可视化感兴趣的前端开发者",
+      "quick_start": "克隆仓库后直接用浏览器打开 index.html，拖动滑块调整各次谐波的振幅与相位，实时观察时域波形与频谱叠加效果"
+    },
+    {
+      "full_name": "kamalkimahek14/eval-loop-kit",
+      "url": "https://github.com/kamalkimahek14/eval-loop-kit",
+      "summary": "检测自改进循环过拟合的评估工具",
+      "highlights": [
+        "同时使用训练面板与全新盲测面板打分，能明确区分真实提升与过拟合，方法学上比单一指标更严谨",
+        "纯 Python 标准库实现，附带测试与 CI，零依赖易集成到现有 LLM/Agent 评估流水线",
+        "针对自改进循环（self-improvement loop）这一当前 Agent 研究热点提供可复用的评估范式，能及早发现性能停滞"
+      ],
+      "target_users": "构建 LLM Agent 自迭代/自我改进系统的研究者与工程师、需要评估模型持续学习效果的 MLOps 团队、关注过拟合检测的评估工程师",
+      "quick_start": "git clone 后运行仓库中的示例脚本，用自己的训练集与盲测集替换示例数据，执行评估命令即可得到过拟合与停滞标记"
+    }
+  ]
+}
