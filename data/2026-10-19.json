@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-19",
+  "picks": [
+    {
+      "full_name": "dannymaaz/edge-devtools-mcp",
+      "url": "https://github.com/dannymaaz/edge-devtools-mcp",
+      "summary": "Edge浏览器自动化的MCP服务器",
+      "highlights": [
+        "基于Model Context Protocol（MCP）实现，可让Claude等AI助手直接驱动Microsoft Edge浏览器进行自动化操作，打通了AI Agent与浏览器控制的链路",
+        "完整支持Chrome/Edge DevTools Protocol（CDP），可进行页面导航、元素交互、网络请求拦截、性能分析等深度调试操作",
+        "定位为生产级（production-grade）方案，适合构建AI驱动的Web自动化、爬虫、UI测试等实际场景，而非玩具项目"
+      ],
+      "target_users": "AI Agent开发者、Web自动化工程师、需要将浏览器控制能力接入LLM工具链的后端开发者、QA自动化测试人员",
+      "quick_start": "1) git clone仓库并npm install；2) 在Claude Desktop或其他MCP客户端的配置文件中添加该server（指定command和args）；3) 确保本地已安装Edge浏览器；4) 重启客户端后即可通过自然语言指令让AI打开网页、点击元素、抓取内容，5分钟内完成首个自动化任务"
+    },
+    {
+      "full_name": "soniciso1/ps5-linux-loader",
+      "url": "https://github.com/soniciso1/ps5-linux-loader",
+      "summary": "在PS5上运行Linux的加载器",
+      "highlights": [
+        "支持最新的13.60系统固件，包括PS5 Pro机型，是目前少数跟进新固件版本的PS5 Linux引导方案，填补了新版主机无法运行Linux的空白",
+        "属于ps5-linux/ps5-linux-loader的活跃fork，延续了PS5自制系统社区的技术积累，对主机底层引导、固件漏洞利用有较高研究价值",
+        "为嵌入式Linux、逆向工程和主机安全研究者提供了真实硬件上的实验平台，可用于研究AMD定制APU在非官方OS下的驱动适配"
+      ],
+      "target_users": "主机破解/自制系统研究者、嵌入式Linux爱好者、逆向工程与固件安全研究人员、PS5硬件折腾玩家",
+      "quick_start": "1) 阅读仓库README确认自己的PS5固件版本（13.60及以下）与机型兼容性；2) 准备U盘并按文档制作Linux启动镜像；3) 在PS5上通过对应漏洞入口触发loader；4) 按提示从U盘引导进入Linux环境，注意操作有变砖风险，建议先通读issue区经验帖"
+    }
+  ]
+}
