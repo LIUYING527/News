@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-20",
+  "picks": [
+    {
+      "full_name": "Alpha-Park/genpark-tri-state-circuit-breaker-router-skill",
+      "url": "https://github.com/Alpha-Park/genpark-tri-state-circuit-breaker-router-skill",
+      "summary": "LLM 多供应商熔断路由技能",
+      "highlights": [
+        "三态熔断器（关闭/开启/半开）结合滑动错误窗口，能精细控制 LLM 供应商连续失败时的降级与恢复，避免级联故障拖垮整个应用",
+        "半开探针机制允许在故障恢复期用少量试探请求验证供应商可用性，兼顾稳定性与恢复速度，适合多模型聚合/路由场景",
+        "提供技能化封装，可直接作为 Claude/Agent 工具集成，降低在 AI 应用中实现高可用路由的门槛"
+      ],
+      "target_users": "构建 LLM 应用或 AI Agent 的开发者、需要多模型容灾路由的后端工程师、关注 AI 服务稳定性的平台团队",
+      "quick_start": "克隆仓库后阅读 README，按说明将 skill 注册到你的 Agent/Claude 环境，配置多个 LLM provider 的 endpoint 与错误阈值，运行示例脚本即可观察熔断与半开探针的切换行为"
+    },
+    {
+      "full_name": "joseph-kang777/browse-trendshift",
+      "url": "https://github.com/joseph-kang777/browse-trendshift",
+      "summary": "Trendshift 趋势仓库语义检索",
+      "highlights": [
+        "对 trendshift.io 每日热门 GitHub 仓库的元数据与 README 做 bge-m3 向量化，支持按语义而非关键词检索历史趋势项目",
+        "TypeScript 实现，便于前端/Node 开发者复用，可用于构建技术选型助手、趋势分析工具或内部知识库",
+        "数据覆盖每日趋势快照，适合做开源生态的时间序列分析与相似项目发现"
+      ],
+      "target_users": "做技术选型调研的开发者、开源趋势分析爱好者、构建 AI 检索/推荐应用的全栈工程师",
+      "quick_start": "克隆仓库并安装依赖（pnpm/npm），按 README 配置 bge-m3 嵌入服务或本地模型，导入/生成趋势数据索引，运行查询脚本输入自然语言描述即可检索相似项目"
+    }
+  ]
+}
