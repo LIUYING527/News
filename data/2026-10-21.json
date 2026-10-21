@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-21",
+  "picks": [
+    {
+      "full_name": "pboyer/polystrata",
+      "url": "https://github.com/pboyer/polystrata",
+      "summary": "高性能拓扑稳健的2D多边形裁剪库",
+      "highlights": [
+        "解决了传统多边形裁剪库在退化情况（共线边、自相交、浮点误差）下产生错误结果的老大难问题，拓扑稳健性是几何计算中的硬需求",
+        "用 TypeScript 实现，可直接在 Web 前端或 Node 环境使用，适合地图、CAD、游戏碰撞检测、图形编辑器等需要布尔运算的场景",
+        "性能导向设计，相比通用几何库（如 turf.js 的裁剪）更适合高频、大批量多边形运算的实时应用"
+      ],
+      "target_users": "前端图形开发者、GIS/地图应用开发者、CAD 与矢量编辑器开发者、游戏引擎工具链开发者",
+      "quick_start": "git clone 仓库后 npm install && npm run build，查看 README 中的示例代码，用两个相交多边形调用裁剪 API 对比结果；也可直接在其 demo 页面粘贴多边形坐标测试。"
+    },
+    {
+      "full_name": "25Braeden/jellyfin-livetv-plugin",
+      "url": "https://github.com/25Braeden/jellyfin-livetv-plugin",
+      "summary": "Jellyfin 按用户分配 Live TV 调谐器",
+      "highlights": [
+        "填补 Jellyfin 官方 Live TV 的一个实际缺口：目前调谐器是全局共享的，该插件实现每用户独占一个调谐器、每用户一条流，避免家庭成员互相抢占频道",
+        "C# 编写、直接对接 Jellyfin 插件体系，对自建媒体服务器的用户来说安装成本低、收益明确",
+        "适合多用户家庭或小型共享服务器场景，是典型的“小而实用”的生态补丁型项目"
+      ],
+      "target_users": "自建 Jellyfin 媒体服务器的用户、家庭影音爱好者、需要多用户隔离 Live TV 的小型运维者",
+      "quick_start": "在 Jellyfin 管理后台的插件仓库中添加该项目的仓库地址，搜索安装后在 Live TV 设置里为每个用户绑定调谐器并重启服务即可验证。"
+    }
+  ]
+}
