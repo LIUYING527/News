@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22",
+  "picks": [
+    {
+      "full_name": "GeekyADAMS/gitmarks",
+      "url": "https://github.com/GeekyADAMS/gitmarks",
+      "summary": "用 GitHub 仓库存储私有书签",
+      "highlights": [
+        "数据完全自主可控：书签以 commit 形式存入自己的 GitHub 仓库，无需第三方服务，天然具备版本历史和备份能力",
+        "多渠道采集：支持网页、浏览器扩展、X（Twitter）以及 iPhone/Android 分享菜单保存，覆盖日常信息收集的主要入口",
+        "分类管理 + 隐私性：私有仓库存储，支持分类标签，适合收藏敏感或专业资料，避免依赖商业书签服务的隐私风险"
+      ],
+      "target_users": "注重数据隐私的开发者、重度信息收集者、需要跨设备同步书签但不想依赖商业服务的技术用户",
+      "quick_start": "1) Fork 或新建一个私有仓库；2) 按 README 配置 GitHub Token 与仓库信息；3) 安装浏览器扩展或打开 Web 界面；4) 保存第一个书签，到仓库中即可看到对应 commit。"
+    },
+    {
+      "full_name": "bison520/awesome-muse-playbooks",
+      "url": "https://github.com/bison520/awesome-muse-playbooks",
+      "summary": "一人公司 AI Agent 实战配方库",
+      "highlights": [
+        "可直接复用的配方：15 个 AI Agent 实战配方（8 个改编 + 7 个原创且真机跑通），降低从零设计 Agent 工作流的门槛",
+        "面向一人公司/独立开发者场景：聚焦用 AI Agent 完成实际业务任务，而非纯理论，适合快速搭建自动化流程",
+        "中文内容 + 结构化整理：以 awesome 列表形式组织，便于检索和按需抄作业，节省试错成本"
+      ],
+      "target_users": "独立开发者、一人公司创业者、想用 AI Agent 落地自动化工作流的工程师和产品人员",
+      "quick_start": "1) 打开仓库阅读 README 的配方目录；2) 挑选一个与自身场景匹配的配方；3) 按配方中的步骤和提示词配置对应工具（如 LLM API/Agent 框架）；4) 跑通后按需改造为自己的业务流程。"
+    }
+  ]
+}
