@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-23",
+  "picks": [
+    {
+      "full_name": "ccc644/complaint-system",
+      "url": "https://github.com/ccc644/complaint-system",
+      "summary": "AI驱动的售后客诉工单全流程平台",
+      "highlights": [
+        "覆盖受理、AI结构化、派工、进度跟踪、解决方案、客户确认到知识沉淀与数据分析的完整闭环，业务链路完整度高，可直接作为售后工单系统的参考实现或二次开发基座",
+        "引入 AI 结构化环节，将非结构化的客户投诉文本自动转化为可派工、可统计的结构化数据，解决传统工单系统录入成本高的痛点",
+        "使用 Python 技术栈，便于与现有后端服务、数据分析流程集成，适合设备制造、售后运维等场景落地"
+      ],
+      "target_users": "售后/客服系统开发者、企业信息化团队、需要搭建工单管理平台的 Python 后端工程师",
+      "quick_start": "克隆仓库后查看 README 中的依赖安装与环境配置说明，按提示初始化数据库并启动服务，用示例账号登录体验从提交投诉到 AI 结构化、派工的完整流程"
+    },
+    {
+      "full_name": "gkson-lab/omnitool",
+      "url": "https://github.com/gkson-lab/omnitool",
+      "summary": "集成150种工具的Windows开发者桌面应用",
+      "highlights": [
+        "把 150 个开发与日常小工具整合进单一窗口，避免为格式化、编码转换、正则测试等零散需求频繁切换网站或命令行，显著提升日常效率",
+        "同时提供 Windows 桌面版与可直接从 index.html 运行的 Web 版，部署和分享门槛极低，团队内可快速推广",
+        "内置 LabsCode 编辑器并集成 Omni Agent（支持 Claude 或离线模式），在工具集之上叠加了 AI 辅助能力，具备一定的扩展想象空间"
+      ],
+      "target_users": "需要大量日常小工具的开发者、运维人员、希望离线使用工具箱的 Windows 用户",
+      "quick_start": "直接打开仓库中的 index.html 在浏览器体验 Web 版；或下载 Windows 桌面版安装包运行，从工具列表中选择任意工具即可使用，无需额外配置"
+    }
+  ]
+}
