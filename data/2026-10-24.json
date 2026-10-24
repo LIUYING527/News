@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-24",
+  "picks": [
+    {
+      "full_name": "jeffersongoncalves/peek-cli",
+      "url": "https://github.com/jeffersongoncalves/peek-cli",
+      "summary": "SSH远程服务器只读排查CLI工具",
+      "highlights": [
+        "内置 ls/cat/tail/grep/ps/df/free/uptime/tree/systemctl status 等只读命令封装，通过命名配置文件快速切换多台服务器，避免反复手敲 SSH 长命令",
+        "支持 table 与 json 两种结构化输出，天然适配 LLM/Agent 场景——可直接把服务器状态喂给 AI 做诊断，减少人工整理日志的环节",
+        "只读设计降低误操作风险，适合作为轻量级运维巡检与故障排查的入口工具，PHP 实现便于在已有 PHP 环境中直接部署"
+      ],
+      "target_users": "需要频繁排查远程服务器的后端/运维工程师，以及正在构建 AI 运维 Agent、需要结构化服务器状态输入的开发者",
+      "quick_start": "git clone 仓库后按 README 配置 composer 依赖，在 profiles 中填入目标服务器 SSH 信息，执行 `peek --profile <name> --json ps` 即可看到结构化进程列表输出"
+    },
+    {
+      "full_name": "ULookLookMe/agent-mode",
+      "url": "https://github.com/ULookLookMe/agent-mode",
+      "summary": "让MacBook为编码Agent保持唤醒",
+      "highlights": [
+        "解决真实痛点：长时间运行 Claude Code、Codex 等编码 Agent 时 MacBook 合盖或休眠会中断任务，该工具可在开盖/合盖状态下维持唤醒",
+        "内置自动安全暂停机制，避免设备长时间高负载运行导致过热或电量耗尽，比直接使用 caffeinate 更可控",
+        "Swift 原生实现，轻量贴合 macOS 生态，适合作为本地 AI 编码工作流的常驻小工具"
+      ],
+      "target_users": "在 MacBook 上长时间运行 AI 编码 Agent（Claude Code、Aider、Codex 等）的开发者，尤其是需要挂机跑长任务的场景",
+      "quick_start": "克隆仓库后用 Xcode 打开并运行，或在 Releases 中下载应用；启动后开启 agent-mode，即可在合盖状态下让 Agent 任务持续运行，必要时手动触发安全暂停"
+    }
+  ]
+}
