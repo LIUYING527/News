@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25",
+  "picks": [
+    {
+      "full_name": "Alpha-Park/genpark-agent-semantic-cache-query-matcher-skill",
+      "url": "https://github.com/Alpha-Park/genpark-agent-semantic-cache-query-matcher-skill",
+      "summary": "语义查询缓存，避免重复调用LLM",
+      "highlights": [
+        "通过模糊词相似度与规范化意图哈希实现语义级缓存匹配，能命中表述不同但意图相同的查询，比传统精确匹配缓存命中率更高",
+        "直接降低LLM调用成本与延迟，对高频问答、客服机器人、RAG检索等场景收益明显，属于生产环境刚需的降本组件",
+        "以Python实现、独立skill形式提供，易于嵌入现有Agent框架，改造侵入性低"
+      ],
+      "target_users": "构建LLM应用的后端/AI工程师、Agent框架开发者、关注推理成本优化的团队",
+      "quick_start": "克隆仓库后阅读README，按示例将matcher接入你的查询入口：先对prompt做意图哈希与相似度检索，未命中再调用LLM，并回填缓存；用自带示例数据跑一遍验证命中率。"
+    },
+    {
+      "full_name": "Alpha-Park/genpark-agent-adaptive-retry-circuit-breaker-skill",
+      "url": "https://github.com/Alpha-Park/genpark-agent-adaptive-retry-circuit-breaker-skill",
+      "summary": "自适应重试与熔断器组件",
+      "highlights": [
+        "集成指数退避、抖动、失败阈值与半开状态探测，是调用外部API/第三方模型服务时的标准韧性模式，能有效防止雪崩",
+        "‘自适应’设计可根据失败情况动态调整策略，比固定参数熔断器更贴合真实流量波动",
+        "Python独立skill，可直接用于Agent工具调用链路，补足多数LLM应用在外部依赖容错上的短板"
+      ],
+      "target_users": "需要调用外部API的Agent/后端开发者、SRE、构建高可用AI服务的工程团队",
+      "quick_start": "克隆仓库，运行示例脚本观察熔断状态机行为；将装饰器/封装层套在你的外部API调用函数上，配置失败阈值与退避参数，用mock失败服务测试半开恢复逻辑。"
+    }
+  ]
+}
