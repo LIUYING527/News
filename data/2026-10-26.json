@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-26",
+  "picks": [
+    {
+      "full_name": "web3illy/private-second-brain-skills",
+      "url": "https://github.com/web3illy/private-second-brain-skills",
+      "summary": "为AI代理提供持久记忆的技能集",
+      "highlights": [
+        "解决AI编码代理的上下文丢失痛点：通过8个Agent Skills记录对话中说过、决定过和承诺过的事项，让Claude Code、Codex等代理在长会话中保持记忆连续性",
+        "跨平台兼容设计：同一套技能可同时用于Wisp、Claude Code和Codex，降低多代理工作流的迁移成本",
+        "隐私优先的'第二大脑'理念：强调private，适合处理敏感项目上下文而不依赖外部云记忆服务"
+      ],
+      "target_users": "重度使用AI编码代理的开发者、需要长会话上下文管理的工程师、关注AI工作流隐私的技术团队",
+      "quick_start": "克隆仓库后查看README中的skills目录结构，将对应skill配置复制到你的Claude Code或Codex技能目录，启动一次会话并让其记录一条决策，验证记忆是否在后续对话中被引用"
+    },
+    {
+      "full_name": "VivecVelothian/mem_man",
+      "url": "https://github.com/VivecVelothian/mem_man",
+      "summary": "用C实现的垃圾回收器",
+      "highlights": [
+        "底层系统编程的硬核练习：从零实现GC是理解内存管理、指针追踪和对象生命周期的最佳途径，对C开发者技术成长价值高",
+        "可作为教学或嵌入式场景的轻量GC参考实现，代码规模可控，便于阅读和二次改造",
+        "填补了Trending中稀缺的系统级基础设施项目空白，相比大量脚本/游戏外挂类仓库更具长期技术沉淀价值"
+      ],
+      "target_users": "C语言学习者、系统编程爱好者、需要理解或自研内存管理机制的嵌入式/运行时开发者",
+      "quick_start": "git clone后阅读头文件了解API，编译示例程序（通常make或gcc直接编译），运行测试用例观察内存分配与回收日志，再尝试在示例中制造循环引用验证GC行为"
+    }
+  ]
+}
