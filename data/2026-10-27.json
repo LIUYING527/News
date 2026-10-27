@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-27",
+  "picks": [
+    {
+      "full_name": "nizarchtioui/cloudflare-origin-protection",
+      "url": "https://github.com/nizarchtioui/cloudflare-origin-protection",
+      "summary": "检测并封堵绕过Cloudflare直连源站的攻击路径",
+      "highlights": [
+        "直击真实痛点：很多团队接入Cloudflare后，源站IP仍可能通过历史DNS记录、证书透明日志、子域名等途径泄露，攻击者可绕过WAF直接打源站，这个项目系统性地梳理了所有泄露路径并给出封堵与验证方法。",
+        "零依赖 + Agent Skill 形态：工具本身无第三方依赖，易于审计和集成；同时提供 Agent Skill 封装，可让 AI 编码助手直接调用，适合嵌入自动化安全巡检流程。",
+        "强调可证明性：不仅提供'找到并关闭'的能力，还强调'证明已关闭'，对安全合规和事后审计有实际价值。"
+      ],
+      "target_users": "使用 Cloudflare 的中小团队运维/安全工程师、独立开发者、做安全加固与渗透测试的安全从业者",
+      "quick_start": "克隆仓库后阅读 README 中的检测清单，运行零依赖脚本扫描自己的域名与证书透明日志，定位源站泄露路径；再按文档在防火墙/源站侧配置仅允许 Cloudflare IP 段访问，最后用工具复测验证封堵生效。"
+    },
+    {
+      "full_name": "d03n3rfr1tz3/rf433",
+      "url": "https://github.com/d03n3rfr1tz3/rf433",
+      "summary": "树莓派通过内核驱动发送433MHz遥控原始码",
+      "highlights": [
+        "走内核 gpio-ir-tx 驱动而非用户态时序模拟，发送 433MHz RAW 码的时序精度和稳定性明显优于常见的 Python 位翻转方案，减少丢帧和误触发。",
+        "遥控码以 LIRC 风格文本文件保存，便于复用、版本管理和社区共享已有遥控配置，降低逆向与调试成本。",
+        "面向物联网/智能家居 DIY 场景，可直接用树莓派替代专用发射硬件，控制窗帘、插座、灯具等常见 433MHz 设备。"
+      ],
+      "target_users": "智能家居 DIY 玩家、树莓派爱好者、做 433MHz 射频逆向与物联网安全研究的开发者",
+      "quick_start": "在树莓派上启用 gpio-ir-tx 设备树覆盖并重启，克隆仓库，将示例 LIRC 风格码文件放到指定目录，运行脚本指定 GPIO 引脚与码文件即可发射；先用已知遥控器码验证，再录制/整理自己的设备码。"
+    }
+  ]
+}
