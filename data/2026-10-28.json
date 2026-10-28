@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-28",
+  "picks": [
+    {
+      "full_name": "abubakarsiddique360/SQL-Migration-Linter",
+      "url": "https://github.com/abubakarsiddique360/SQL-Migration-Linter",
+      "summary": "SQL迁移脚本静态风险检查工具",
+      "highlights": [
+        "针对数据库迁移场景做静态分析，能识别破坏性语句（如 DROP/TRUNCATE）、缺失事务、阻塞性 DDL、命名与执行顺序问题，覆盖了生产环境中最常见的迁移事故来源。",
+        "Python 实现，易于集成到 CI/CD 流水线中，作为迁移前的强制门禁，降低上线风险。",
+        "对后端与 DBA 团队有直接价值：把人工 code review 中容易遗漏的迁移风险自动化，减少生产事故。"
+      ],
+      "target_users": "后端工程师、DBA、DevOps/平台工程团队，尤其是频繁做数据库 schema 变更的项目",
+      "quick_start": "git clone 仓库后进入目录，pip install 依赖，直接对目标 .sql 迁移文件运行 CLI（参考 README 的用法示例），或将其接入 CI 在 PR 阶段自动检查迁移脚本。"
+    },
+    {
+      "full_name": "creaffy/unity-pdb",
+      "url": "https://github.com/creaffy/unity-pdb",
+      "summary": "Unity PDB 符号文件下载器",
+      "highlights": [
+        "解决 Unity 逆向/调试中的实际痛点：自动下载 UnityPlayer.dll 对应的 PDB 符号文件，并已适配 Unity 6.x 新版本。",
+        "对使用 dnSpy、IDA、x64dbg 等进行 Unity 游戏调试、崩溃分析或安全研究的开发者非常实用，能显著提升堆栈可读性。",
+        "Python 实现，工具单一职责、上手成本低，属于小而美的实用脚本。"
+      ],
+      "target_users": "Unity 游戏开发者、逆向工程师、安全研究人员、需要分析 Unity 崩溃堆栈的技术支持人员",
+      "quick_start": "克隆仓库，确保本机有 Python 环境，按 README 指定 UnityPlayer.dll 路径或版本运行脚本，即可自动拉取匹配的 PDB 文件并放入调试器符号路径。"
+    }
+  ]
+}
