@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "picks": [
+    {
+      "full_name": "fuziontech/ubxtop",
+      "url": "https://github.com/fuziontech/ubxtop",
+      "summary": "零依赖的GNSS接收器终端诊断工具",
+      "highlights": [
+        "零依赖设计，纯Python实现，无需安装第三方库即可运行，适合嵌入式或受限环境下的快速部署",
+        "支持UBX二进制协议与NMEA 0183双协议解析，可直接对接u-blox系列GNSS模块，覆盖卫星定位调试的核心场景",
+        "24位TrueColor TUI界面，类似top的实时监控体验，方便开发者在终端中直观观察卫星信号质量、定位状态等关键指标"
+      ],
+      "target_users": "从事GPS/GNSS硬件开发、无人机/机器人定位调试、物联网设备定位模块集成的嵌入式与后端工程师",
+      "quick_start": "git clone 仓库后直接运行 python ubxtop.py --port /dev/ttyUSB0（或对应串口），无需pip安装任何依赖，即可在终端看到实时卫星状态面板；接上u-blox模块即可体验。"
+    },
+    {
+      "full_name": "MRdark-ops/Syscall",
+      "url": "https://github.com/MRdark-ops/Syscall",
+      "summary": "带调用篡改的间接系统调用实现",
+      "highlights": [
+        "演示Clean Indirect Syscalls与Syscall Tampering技术，是研究EDR绕过、系统调用层安全对抗的实用参考代码",
+        "用C语言实现，代码轻量易读，适合作为学习Windows底层系统调用机制与红队技术的教学样例",
+        "对安全研究人员理解现代恶意软件规避手法、以及防御方设计检测规则都有直接参考价值"
+      ],
+      "target_users": "红队/渗透测试人员、恶意软件分析研究员、Windows底层安全与EDR开发工程师",
+      "quick_start": "克隆仓库后用MSVC或MinGW编译C源文件，阅读主文件中的syscall stub构造与篡改逻辑，在隔离虚拟机中运行观察行为，配合Process Monitor/Windbg跟踪系统调用。"
+    }
+  ]
+}
