@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-30",
+  "picks": [
+    {
+      "full_name": "Alpha-Park/genpark-read-write-splitting-and-replication-lag-router-skill",
+      "url": "https://github.com/Alpha-Park/genpark-read-write-splitting-and-replication-lag-router-skill",
+      "summary": "基于AST的读写分离与复制延迟路由技能",
+      "highlights": [
+        "通过解析SQL的AST自动判断查询类型，将读请求路由到从库、写请求路由到主库，省去手工判断和中间件配置成本",
+        "动态感知复制延迟并在延迟过高时自动降级或节流过期读，避免脏读问题，对高并发读多写少的业务场景很实用",
+        "以Agent Skill形式封装，可直接集成到AI编码/运维助手工作流中，适合快速给现有系统加一层智能路由能力"
+      ],
+      "target_users": "后端工程师、数据库/中间件开发者、做读写分离架构的SRE与运维人员，以及构建数据库相关AI Agent的开发者",
+      "quick_start": "克隆仓库后查看README中的skill定义与示例配置，按说明把技能注册到你的Agent框架（如GenPark），用一条SELECT和一条INSERT测试路由结果，并模拟从库延迟观察降级行为"
+    },
+    {
+      "full_name": "Alpha-Park/genpark-agent-deep-research-fact-checker-skill",
+      "url": "https://github.com/Alpha-Park/genpark-agent-deep-research-fact-checker-skill",
+      "summary": "多源交叉验证的AI事实核查技能",
+      "highlights": [
+        "针对LLM幻觉问题，提供多源交叉引用与证据置信度打分机制，可直接嵌入RAG或研究型Agent流水线提升输出可信度",
+        "检测并标注无法被佐证的主张，输出结构化核查结果，适合构建自动化研究报告、内容审核等需要可追溯性的场景",
+        "以可复用的Skill形式发布，接入成本低，开发者可快速在自己的Agent中复用其核查逻辑而非从零实现"
+      ],
+      "target_users": "构建RAG/研究型Agent的AI应用开发者、内容审核与事实核查产品团队、需要高可信输出的媒体与情报分析工具开发者",
+      "quick_start": "克隆仓库阅读skill说明与输入输出schema，按示例准备一组待核查主张和来源URL，在GenPark或兼容的Agent框架中调用该技能，查看返回的置信度评分与佐证结果"
+    }
+  ]
+}
