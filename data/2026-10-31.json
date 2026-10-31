@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-31",
+  "picks": [
+    {
+      "full_name": "marzukia/mlx-rocm",
+      "url": "https://github.com/marzukia/mlx-rocm",
+      "summary": "让 MLX 框架跑在 AMD ROCm 上",
+      "highlights": [
+        "填补生态空白：Apple 的 MLX 原本只支持 Apple Silicon（Metal），此项目尝试将其移植到 AMD ROCm 平台，让 AMD GPU 用户也能用上 MLX 简洁的数组/自动微分 API",
+        "技术探索价值高：涉及后端抽象层适配、算子映射到 HIP/ROCm，对想做跨硬件 ML 框架移植的开发者是很好的参考样本",
+        "潜在实用场景：在 AMD 显卡（如 Instinct、消费级 Radeon）上做本地 LLM 推理和实验，绕开 CUDA 生态限制"
+      ],
+      "target_users": "使用 AMD GPU 的机器学习开发者、想在非 Apple 硬件上体验 MLX 的研究者、关注跨平台 ML 框架移植的工程师",
+      "quick_start": "1) git clone 仓库；2) 按 README 安装 ROCm 驱动与依赖（pip install -r requirements.txt）；3) 运行仓库自带的示例脚本验证基础张量运算；4) 若示例通过，尝试把一个小型 MLX 模型（如简单 MLP）在 ROCm 设备上跑通并对比 CPU 结果"
+    },
+    {
+      "full_name": "vrnrn/fluidither",
+      "url": "https://github.com/vrnrn/fluidither",
+      "summary": "弹簧驱动的抖动风格 UI 组件库",
+      "highlights": [
+        "技术创新：将抖动（dithering）视觉风格与弹簧物理动画结合，用同一套 design token 同时输出到纯 Web 和 GPUI 两个渲染目标，保证两端像素级一致的单元格表现",
+        "跨目标一致性：一套 token、两个 target（Web / GPUI），对需要桌面端 + Web 端统一视觉语言的 Rust 应用很有吸引力",
+        "风格独特：抖动 + 弹簧动效是当下复古像素/终端美学的热门方向，适合做差异化产品界面"
+      ],
+      "target_users": "Rust 桌面应用开发者（GPUI 生态）、追求复古/终端美学的前端工程师、需要 Web 与桌面端统一 UI 的设计系统维护者",
+      "quick_start": "1) git clone 仓库并安装 Rust 工具链；2) 进入示例目录 cargo run 启动 GPUI demo 查看动效；3) 打开仓库内的 Web 示例页面（或按 README 本地起静态服务）对比两端渲染；4) 修改 token 文件中的颜色/弹簧参数，观察两端同步变化"
+    }
+  ]
+}
