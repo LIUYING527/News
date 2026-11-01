@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-01",
+  "picks": [
+    {
+      "full_name": "EmreSarikaya35/KAFFIN-Browser",
+      "url": "https://github.com/EmreSarikaya35/KAFFIN-Browser",
+      "summary": "轻量原生macOS浏览器，兼容Chrome扩展",
+      "highlights": [
+        "使用Swift原生开发，界面仿Chrome，性能开销低，适合在Mac上追求轻量体验的用户",
+        "支持Chrome Web Store扩展，兼顾原生性能与庞大扩展生态，技术整合难度较高",
+        "作为开源浏览器项目，可作为学习WebKit/SwiftUI集成、浏览器架构与扩展兼容层的参考实现"
+      ],
+      "target_users": "macOS开发者、浏览器技术爱好者、希望研究或定制自己浏览器的Swift工程师",
+      "quick_start": "git clone 仓库后，用Xcode打开工程，选择macOS目标直接Run即可编译运行；首次启动后可尝试从Chrome Web Store侧载扩展验证兼容性"
+    },
+    {
+      "full_name": "davidstalmarck/atech-sg90-servo-tester",
+      "url": "https://github.com/davidstalmarck/atech-sg90-servo-tester",
+      "summary": "SG90舵机测试器，旋钮1:1控制带屏显",
+      "highlights": [
+        "硬件+固件完整开源，C++实现旋钮实时映射舵机角度，屏幕反馈板卡状态，适合嵌入式入门实战",
+        "面向常见廉价SG90舵机，成本低、可复现性强，是学习PWM舵机控制与ADC/显示外设的好范例",
+        "解决了调试舵机时缺乏直观控制与状态反馈的痛点，可用于机器人、机械臂原型阶段的快速验证"
+      ],
+      "target_users": "嵌入式/Arduino开发者、机器人爱好者、电子工程学生、创客",
+      "quick_start": "按README接线（旋钮接ADC、SG90接PWM引脚、屏幕接I2C/SPI），用Arduino IDE或PlatformIO烧录固件，上电后转动旋钮即可看到舵机1:1跟随并同步显示状态"
+    }
+  ]
+}
