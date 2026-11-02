@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-02",
+  "picks": [
+    {
+      "full_name": "krawlup/cli",
+      "url": "https://github.com/krawlup/cli",
+      "summary": "终端里的产品SEO与流量分析TUI",
+      "highlights": [
+        "基于 Ink + React 构建于 Bun 运行时之上，提供交互式终端 UI，无需打开浏览器即可查看产品、SEO/AEO 评分、无 Cookie 分析数据和自动复扫结果",
+        "将 SEO 审计、无 Cookie 隐私分析、定时重扫整合进一个 CLI 工具，适合在 CI/CD 或本地开发流程中快速检查站点健康度",
+        "TypeScript 技术栈 + 现代终端交互范式，对想学习 TUI 开发或构建开发者工具的工程师有较强参考价值"
+      ],
+      "target_users": "前端/全栈开发者、独立开发者、SEO 与增长工程师、喜欢终端工作流的 DevOps 人员",
+      "quick_start": "确保已安装 Bun，执行 git clone https://github.com/krawlup/cli && cd cli && bun install && bun run dev（或按 README 使用 bunx krawlup 直接运行），在 TUI 中输入目标站点 URL 即可查看评分与分析结果"
+    },
+    {
+      "full_name": "Skell4/APL",
+      "url": "https://github.com/Skell4/APL",
+      "summary": "无依赖的 header-only C++ 音频播放库",
+      "highlights": [
+        "单头文件、零外部依赖，只需 include 即可播放音频，支持音量控制与循环播放，大幅降低 C++ 项目集成音频功能的成本",
+        "适合游戏、工具软件、嵌入式或原型开发等需要轻量音频能力的场景，避免引入 SDL/OpenAL 等重型依赖",
+        "header-only 设计便于跨平台移植和静态链接，对关注音频质量与代码简洁性的 C++ 开发者实用性强"
+      ],
+      "target_users": "C++ 开发者、游戏/工具软件开发者、嵌入式与原型开发者、需要轻量音频方案的学生与爱好者",
+      "quick_start": "下载 APL 头文件放入项目 include 目录，在源码中 #include \"APL.h\"，调用其播放接口加载音频文件并设置音量/循环参数，编译时链接系统音频后端（详见仓库 README 示例）即可运行"
+    }
+  ]
+}
