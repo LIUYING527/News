@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-03",
+  "picks": [
+    {
+      "full_name": "shanselman/gputaskman",
+      "url": "https://github.com/shanselman/gputaskman",
+      "summary": "Windows 上的 NVIDIA GPU 版 htop",
+      "highlights": [
+        "把 htop 式的实时监控体验搬到 NVIDIA GPU 上，可查看每个进程占用的显存、GPU 引擎活动（如 3D、Copy、NVENC 等），定位是哪个进程在吃显卡",
+        "对本地跑 LLM 的开发者尤其有价值：支持查看模型权重和 KV-cache 的显存占用，帮助调优 batch size、上下文长度和显存分配",
+        "Windows 平台 GPU 监控工具相对稀缺，nvidia-smi 输出不够直观，这个项目填补了交互式 TUI 的空白"
+      ],
+      "target_users": "在 Windows 上做深度学习/本地大模型推理的开发者、需要排查 GPU 占用异常的工程师、AI 应用性能调优人员",
+      "quick_start": "克隆仓库后按 README 安装依赖（Python 环境 + NVIDIA 驱动），直接运行主脚本即可看到实时 TUI 界面；建议先开一个 LLM 推理进程再启动，观察权重与 KV-cache 的显存变化"
+    },
+    {
+      "full_name": "StopBanning/locust-glass",
+      "url": "https://github.com/StopBanning/locust-glass",
+      "summary": "Electron 的液态玻璃 UI 效果库",
+      "highlights": [
+        "把 Apple 在 macOS 26 上的“液态玻璃”视觉效果带到 Electron 应用，同时提供透镜、果冻融化按钮、光泽等效果，跨系统可用",
+        "MIT 协议免费开源，对 Electron 桌面应用开发者来说是可以直接集成的高质量视觉组件，省去自己实现毛玻璃/折射着色器的工作",
+        "JavaScript 实现、接入成本低，适合快速给现有 Electron 项目提升 UI 质感"
+      ],
+      "target_users": "Electron 桌面应用开发者、追求现代 UI 质感的前端工程师、想快速做视觉原型的独立开发者",
+      "quick_start": "克隆仓库，npm install 后运行示例应用查看效果；参考 README 将玻璃/透镜组件引入自己的 Electron 渲染进程，先在 demo 中调参数再迁移"
+    }
+  ]
+}
