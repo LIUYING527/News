@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "picks": [
+    {
+      "full_name": "ArameTashdjian/citrozest",
+      "url": "https://github.com/ArameTashdjian/citrozest",
+      "summary": "3DS自制程序的轻量3D渲染封装层",
+      "highlights": [
+        "在citro3D之上提供极简C++抽象，几行代码即可实现立体3D、双屏渲染、网格、着色器与纹理，显著降低Nintendo 3DS homebrew图形开发门槛",
+        "封装了3DS平台特有的立体3D与双屏硬件特性，填补了该小众但活跃的复古主机自制生态中易用渲染层的空白",
+        "代码量小、结构清晰，适合作为学习嵌入式/固定管线GPU渲染的教学参考，也可直接复用到个人3DS游戏中"
+      ],
+      "target_users": "3DS homebrew开发者、复古主机游戏爱好者、想学习嵌入式图形渲染的C++程序员",
+      "quick_start": "克隆仓库并安装devkitPro（含citro3D），查看示例代码，用make编译生成.3dsx文件，通过Homebrew Launcher在3DS或Citra模拟器上运行即可看到双屏立体渲染效果"
+    },
+    {
+      "full_name": "npiresofc/gerador-de-curriculos",
+      "url": "https://github.com/npiresofc/gerador-de-curriculos",
+      "summary": "纯前端实时预览简历生成器",
+      "highlights": [
+        "零依赖纯HTML/CSS/JS实现，输入即实时预览，浏览器端直接导出PDF，无需后端与构建工具，部署成本极低",
+        "代码结构简单直观，是学习DOM操作、实时表单绑定与浏览器打印/PDF导出方案的优质入门范例",
+        "实用性强，可直接fork改造为个人简历工具或作为前端教学模板"
+      ],
+      "target_users": "前端初学者、需要快速生成简历的求职者、寻找轻量前端项目模板的开发者",
+      "quick_start": "克隆仓库后直接用浏览器打开index.html，填写表单即可实时预览，点击导出按钮通过浏览器打印功能保存为PDF"
+    }
+  ]
+}
