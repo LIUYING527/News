@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-05",
+  "picks": [
+    {
+      "full_name": "appletechie/agent-chief-of-staff",
+      "url": "https://github.com/appletechie/agent-chief-of-staff",
+      "summary": "厂商中立的AI幕僚长架构设计",
+      "highlights": [
+        "提出'协调者Agent + 持久化账本 + 受控派发 + 合并/部署门禁 + 基于证明的验证'的完整多Agent编排范式，解决了多Agent协作中任务追踪、权限控制与结果可信度三大痛点",
+        "强调vendor-neutral（厂商中立），不绑定特定LLM或云平台，便于在自研/混合技术栈中落地，适合作为企业级Agent系统的架构参考",
+        "引入'proof-based verification'与merge/deploy gates概念，把Agent输出当作需要验证的产物而非直接信任的黑盒，对生产环境部署Agent有直接借鉴价值"
+      ],
+      "target_users": "AI应用架构师、多Agent系统开发者、需要将LLM Agent接入CI/CD或企业工作流的技术负责人",
+      "quick_start": "克隆仓库后阅读README中的架构设计文档与账本/派发/门禁的流程图，按其设计蓝图在现有Agent框架（如LangGraph、AutoGen）中复用协调者与验证层模式，无需安装依赖即可理解整体方案"
+    },
+    {
+      "full_name": "Captainvictor-coder/Elimusensehub",
+      "url": "https://github.com/Captainvictor-coder/Elimusensehub",
+      "summary": "图表PDF转语音讲解的无障碍学习工具",
+      "highlights": [
+        "面向盲人及低视力学习者，上传图表、示意图、地图或PDF即可转为音频讲解并支持实时追问，填补了多模态内容无障碍化的实际空白",
+        "基于Meta的Muse Spark构建，展示了多模态理解 + 语音交互 + 实时问答的完整链路，对其他无障碍或教育类应用有直接复用价值",
+        "使用TypeScript实现，前后端一体化，便于开发者快速二次开发或集成到现有在线教育平台"
+      ],
+      "target_users": "无障碍/教育科技开发者、在线学习平台工程师、关注多模态AI落地的全栈开发者",
+      "quick_start": "克隆仓库并安装依赖（npm install），配置Meta Muse Spark的API Key到环境变量，运行开发服务器后上传一张图表或PDF，即可听到语音讲解并尝试实时追问"
+    }
+  ]
+}
