@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-06",
+  "picks": [
+    {
+      "full_name": "aritabryan/copyover",
+      "url": "https://github.com/aritabryan/copyover",
+      "summary": "局域网跨设备剪贴板同步工具",
+      "highlights": [
+        "支持 iPhone、Android、Windows、Linux 多平台互通，解决跨系统复制粘贴的痛点，无需依赖云服务，数据走本地网络更隐私安全",
+        "Python 实现，代码轻量易读，适合作为局域网发现、设备配对、剪贴板同步等机制的学习参考",
+        "跨设备剪贴板是高频刚需场景，本地网络方案避免了第三方云剪贴板服务的隐私顾虑和延迟问题"
+      ],
+      "target_users": "多设备办公用户、注重隐私的开发者、想学习局域网 P2P 通信实现的 Python 开发者",
+      "quick_start": "克隆仓库后安装依赖（如 pip install -r requirements.txt），在一台设备上启动服务端，其他设备运行客户端并确保处于同一局域网，按 README 提示完成设备配对即可测试剪贴板同步"
+    },
+    {
+      "full_name": "Termix-SSH/Plugin-Security-Center",
+      "url": "https://github.com/Termix-SSH/Plugin-Security-Center",
+      "summary": "SSH 密钥审计与主机漏洞扫描插件",
+      "highlights": [
+        "围绕 SSH 这一运维核心入口，提供密钥审计、密钥轮换、主机已知漏洞扫描的完整闭环，直接对应真实运维安全需求",
+        "TypeScript 实现，作为 Termix-SSH 生态插件，便于集成到现有 SSH 管理工具链中，降低安全巡检的接入成本",
+        "将密钥生命周期管理和漏洞扫描自动化，减少人工排查疏漏，适合纳入日常安全运维流程"
+      ],
+      "target_users": "运维工程师、DevOps/SRE、负责服务器安全巡检的安全工程师、使用 Termix-SSH 的团队",
+      "quick_start": "克隆仓库并安装依赖（npm/pnpm install），按 README 配置要扫描的主机和 SSH 凭据，运行插件对目标主机执行密钥审计与漏洞扫描，查看生成的报告"
+    }
+  ]
+}
