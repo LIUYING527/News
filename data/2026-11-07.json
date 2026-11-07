@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-07",
+  "picks": [
+    {
+      "full_name": "liangdabiao/dsh-seedance-studio",
+      "url": "https://github.com/liangdabiao/dsh-seedance-studio",
+      "summary": "一句话故事生成上美影风格短剧的AI工坊",
+      "highlights": [
+        "全流程自动化：从一句话故事出发，自动生成剧本、色盘、资产图、每集15秒分镜，最终拼接成完整短剧，覆盖内容创作完整链路",
+        "集成即梦官方CLI（dreamina-canvas）：直接调用即梦画布出图出片，无需离开对话界面，实现'对话即创作'的沉浸式工作流",
+        "可复用的Skill架构：将'上美影风格短剧'封装为skill并迁移到DeepSeek Harness，便于扩展其他风格模板，对AI Agent工作流开发者有参考价值"
+      ],
+      "target_users": "AI内容创作者、短视频/短剧制作者、探索LLM Agent工作流的开发者、对AIGC工具链集成感兴趣的技术人员",
+      "quick_start": "1) git clone仓库并阅读README中的依赖说明；2) 配置即梦官方CLI（dreamina-canvas）的API凭证；3) 在DeepSeek Harness环境中加载该skill；4) 输入一句话故事描述，按提示逐步生成剧本与分镜，最终在即梦画布导出成片"
+    },
+    {
+      "full_name": "V993/deep-vote",
+      "url": "https://github.com/V993/deep-vote",
+      "summary": "用神经网络学习投票规则与社会选择函数",
+      "highlights": [
+        "跨学科创新：将深度学习应用于社会选择理论，用神经网络学习满足公理的投票规则，属于计算社会科学与AI交叉的前沿探索",
+        "公理约束建模：聚焦'axiom-satisfying'，即让模型输出符合公平性、无关选项独立性等经典公理，对AI对齐与约束优化研究有借鉴意义",
+        "实验可复现：Python实现，便于研究者在此基础上扩展不同投票规则、公理集合与网络结构，适合作为教学或论文复现基线"
+      ],
+      "target_users": "计算社会科学研究者、AI对齐/约束优化方向的研究者、对博弈论与社会选择感兴趣的学生、需要投票/排序算法的工程师",
+      "quick_start": "1) git clone仓库并创建Python虚拟环境；2) pip install -r requirements.txt安装依赖；3) 运行仓库中的示例脚本或notebook，观察神经网络学习到的投票规则；4) 修改公理约束或投票场景参数，对比模型输出与经典规则（如Borda、Condorcet）的差异"
+    }
+  ]
+}
