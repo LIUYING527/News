@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-08",
+  "picks": [
+    {
+      "full_name": "zaynsdev/ZCode",
+      "url": "https://github.com/zaynsdev/ZCode",
+      "summary": "多智能体议会式AI编程代理",
+      "highlights": [
+        "采用'议会制'多智能体决策架构，多个AI代理协作讨论后再给出代码方案，相比单模型输出更稳健，适合复杂重构与架构设计场景",
+        "内置'写入前安全检查门'(pre-write safety gates)，在AI修改代码前进行风险拦截，降低代理误改生产代码的风险，对日常开发实用性强",
+        "集成逆向工程能力，可辅助理解遗留代码库，适合接手老项目或做代码审计的开发者"
+      ],
+      "target_users": "希望用AI代理辅助重构/审计代码的中高级开发者、需要处理遗留系统的工程师、对多智能体协作架构感兴趣的AI应用开发者",
+      "quick_start": "克隆仓库后按README安装依赖(通常为npm/pnpm install)，配置所选的LLM API Key，运行开发命令启动本地界面，导入一个小型代码仓库试用其多代理讨论与安全检查流程"
+    },
+    {
+      "full_name": "carlosfaria-dev/cursor-skill-git-publish",
+      "url": "https://github.com/carlosfaria-dev/cursor-skill-git-publish",
+      "summary": "Cursor代理一键发布项目到GitHub技能",
+      "highlights": [
+        "为Cursor AI代理提供标准化技能，自动完成本地项目发布到GitHub的完整流程，省去手动建仓、配置remote等重复操作",
+        "内置分支审查(review branch)、备份机制与secrets泄露防护，避免误提交敏感信息，安全性与实用性兼顾",
+        "使用SSH方式发布，配置一次后可复用，对频繁开新项目或做原型验证的开发者效率提升明显"
+      ],
+      "target_users": "Cursor编辑器用户、频繁创建新项目并需要快速上GitHub的独立开发者、注重提交安全与流程规范的团队开发者",
+      "quick_start": "克隆仓库并将技能文件放入Cursor的skills目录，按文档配置好GitHub SSH Key，在Cursor中打开一个本地项目，调用该技能即可自动完成建仓、分支审查与推送"
+    }
+  ]
+}
