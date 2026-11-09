@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-09",
+  "picks": [
+    {
+      "full_name": "TeiketsuCN/ToneBox",
+      "url": "https://github.com/TeiketsuCN/ToneBox",
+      "summary": "Rust写的音乐库与转码播放工具",
+      "highlights": [
+        "使用 Rust + egui 构建，单文件原生 Windows 应用，性能好、内存占用低，适合作为学习 Rust 桌面 GUI 开发的参考项目",
+        "集成了格式顾问、音乐库管理、播放与转码于一体，是少见的'轻量级一体化音频工具'思路，可二次开发为自己的本地音乐管理方案",
+        "技术栈现代（Rust + egui），代码结构对想入门 Rust GUI 或音频处理的开发者有较高参考价值"
+      ],
+      "target_users": "Rust 学习者、桌面应用开发者、需要本地音乐库/转码工具的极客用户",
+      "quick_start": "克隆仓库后安装 Rust 工具链，执行 cargo run --release 即可编译运行；Windows 用户也可直接下载 Release 中的可执行文件试用"
+    },
+    {
+      "full_name": "jeremylegere-wq/hockey-manager",
+      "url": "https://github.com/jeremylegere-wq/hockey-manager",
+      "summary": "Python开源冰球经理模拟游戏",
+      "highlights": [
+        "完整的单机 GM 模拟玩法：阵容、工资帽、交易、选秀、球探、财务、2D 回放，是少见的开源体育经营类完整项目",
+        "纯 Python 实现，代码可读性高，适合作为游戏逻辑设计、模拟系统、状态管理的学习样例，也方便魔改成其他运动项目",
+        "开源可自行搭建联赛与规则，对想做体育数据分析、模拟器或独立游戏原型的人有直接复用价值"
+      ],
+      "target_users": "Python 开发者、独立游戏爱好者、体育模拟/数据分析方向的学习者",
+      "quick_start": "克隆仓库，创建虚拟环境并 pip install -r requirements.txt，运行主入口脚本（如 python main.py）即可开始一局；先读 README 了解目录结构与玩法说明"
+    }
+  ]
+}
