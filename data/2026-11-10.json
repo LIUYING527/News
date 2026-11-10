@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-10",
+  "picks": [
+    {
+      "full_name": "jkmind-set/trackmate-ros2",
+      "url": "https://github.com/jkmind-set/trackmate-ros2",
+      "summary": "ROS 2 履带式 AI 助理机器人",
+      "highlights": [
+        "将 SLAM、视觉感知与大模型（LLM）推理集成在 ROS 2 Jazzy 上，是少见的端到端机器人 AI 助理参考实现",
+        "基于 MentorPi 履带底盘，硬件选型明确，便于复刻与二次开发，适合作为具身智能/移动机器人学习项目",
+        "覆盖建图导航、视觉识别与自然语言交互多个层次，可作为 ROS 2 综合实战教学案例"
+      ],
+      "target_users": "ROS 2 学习者、移动机器人/具身智能方向的学生与研究者、想搭建 AI 助理机器人原型的开发者",
+      "quick_start": "克隆仓库后阅读 README 的硬件清单与环境依赖，按步骤安装 ROS 2 Jazzy 及依赖包，在 MentorPi 底盘或仿真环境中启动 launch 文件，即可观察 SLAM 建图与语音/视觉交互流程"
+    },
+    {
+      "full_name": "meowsilk/meow-driver",
+      "url": "https://github.com/meowsilk/meow-driver",
+      "summary": "可手动映射进内核的 Windows 驱动",
+      "highlights": [
+        "面向 Windows x64 内核、设计为可手动映射（manual mapping）进 ntoskrnl 的驱动，属于安全研究与内核开发的高价值参考代码",
+        "对理解驱动加载机制、内核态内存操作与反检测思路有直接学习价值，可用于红队/蓝队研究与防护验证",
+        "C++ 实现、代码规模可控，适合作为内核驱动开发的入门研读样本"
+      ],
+      "target_users": "Windows 内核开发者、安全研究员、红蓝队工程师、对驱动加载与内核机制感兴趣的高级开发者",
+      "quick_start": "在隔离的虚拟机中克隆仓库，使用 Visual Studio + WDK 编译出驱动文件，配合手动映射工具在测试环境中加载，观察内核行为（务必仅在授权/隔离环境操作）"
+    }
+  ]
+}
