@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-11",
+  "picks": [
+    {
+      "full_name": "ImJ9y/Secure-Parcel-Dropbox-Two-Factor-Access-on-STM32-with-FreeRTOS",
+      "url": "https://github.com/ImJ9y/Secure-Parcel-Dropbox-Two-Factor-Access-on-STM32-with-FreeRTOS",
+      "summary": "STM32+FreeRTOS双因素智能快递箱",
+      "highlights": [
+        "完整的嵌入式系统实战范例：基于 STM32L475 IoT Discovery 板，用 FreeRTOS 多任务（ToF 检测、NFC 认证、PWM 锁控、WiFi 通知）通过队列驱动状态机协同，是学习 RTOS 任务调度与任务间通信的优质参考实现。",
+        "低功耗 + 双因素安全设计：结合 NFC 手机认证与包裹到达检测，适合研究 IoT 设备在功耗约束下的安全访问控制方案，可直接迁移到智能柜、门禁、储物柜等场景。",
+        "端到端可复现：涵盖硬件选型、传感器集成、无线通知全链路，对做嵌入式毕设或原型验证的开发者来说是少见的完整案例。"
+      ],
+      "target_users": "嵌入式/IoT 开发者、STM32 与 FreeRTOS 学习者、做智能硬件原型或毕业设计的学生、关注低功耗安全访问控制的工程师",
+      "quick_start": "克隆仓库后阅读 README 中的硬件清单与接线说明；用 STM32CubeIDE 打开工程，按文档配置 STM32L475 Discovery 板并烧录；若无硬件，可先阅读 FreeRTOS 任务与队列代码理解状态机逻辑，再在开发板上验证 NFC 认证与开锁流程。"
+    },
+    {
+      "full_name": "evortech/Windows-11-UEFI-Boot-Recovery-Toolkit",
+      "url": "https://github.com/evortech/Windows-11-UEFI-Boot-Recovery-Toolkit",
+      "summary": "Win11 UEFI启动修复工具集",
+      "highlights": [
+        "直击高频痛点：针对 Windows 11 UEFI 启动失败，提供 EFI 分区修复、BCD 重建、诊断脚本的分步方案，无需重装系统或丢失个人文件，实用性强。",
+        "可操作性高：以步骤化排障文档 + 诊断脚本形式组织，开发者/IT 支持人员可照着执行，快速定位并修复启动问题，节省大量排查时间。",
+        "覆盖面广：涵盖 EFI 分区、BCD 引导配置等 UEFI 启动核心环节，适合作为日常运维与故障应急的参考手册。"
+      ],
+      "target_users": "IT 运维与技术支持人员、经常折腾双系统/装机的开发者、需要应急修复启动故障的个人用户",
+      "quick_start": "克隆仓库并阅读 README 的排障流程；先用其中的诊断脚本在 WinPE/恢复环境中检查 EFI 分区与 BCD 状态；再按文档逐步执行 EFI 分区修复与 BCD 重建命令，重启验证。"
+    }
+  ]
+}
