@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-12",
+  "picks": [
+    {
+      "full_name": "fakie-dev/herdr-suspender",
+      "url": "https://github.com/fakie-dev/herdr-suspender",
+      "summary": "让闲置AI编码Agent休眠并恢复会话",
+      "highlights": [
+        "解决多Agent并行时的资源浪费问题：可将闲置的 Claude Code / Codex Agent 挂起，需要时在同一标签页唤醒同一段对话，避免重复启动上下文",
+        "会话持久化能力强：支持跨进程重启甚至设备重启后恢复，适合长时间运行的开发工作流",
+        "TypeScript 实现，作为 Herdr App 的 mod 形式集成，对已有终端/Agent 工作流侵入性低，便于二次开发"
+      ],
+      "target_users": "同时运行多个 AI 编码 Agent 的开发者、重度使用 Claude Code/Codex 的命令行用户、需要长时间保持 Agent 会话状态的工程师",
+      "quick_start": "1) 克隆仓库并安装依赖（npm/pnpm install）；2) 按 README 将 mod 加载到 Herdr App；3) 启动一个 Claude Code 或 Codex 会话，触发闲置挂起后在同一标签页唤醒，验证对话上下文是否保留"
+    },
+    {
+      "full_name": "sktjgudals/fable-5-2-prompting",
+      "url": "https://github.com/sktjgudals/fable-5-2-prompting",
+      "summary": "审计调优Claude提示词与技能文件",
+      "highlights": [
+        "基于 Anthropic 官方 prompting guide 构建，聚焦 CLAUDE.md、skills、harness 等实际工程化提示资产的审计与调优，实用性强",
+        "把提示词质量从“凭感觉”变成可检查项，适合团队建立提示工程规范与评审流程",
+        "作为 Agent skill 形式提供，可嵌入现有 Claude 工作流直接使用，降低上手成本"
+      ],
+      "target_users": "提示工程师、使用 Claude 构建 Agent 的开发者、需要维护 CLAUDE.md/技能库的团队、关注提示词质量与可复现性的 AI 应用开发者",
+      "quick_start": "1) 克隆仓库阅读 README 了解 skill 安装方式；2) 将 skill 接入你的 Claude 环境；3) 拿一份现有 CLAUDE.md 或 prompt 文件跑一次审计，查看输出建议并对比修改前后效果"
+    }
+  ]
+}
