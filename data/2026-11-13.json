@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-13",
+  "picks": [
+    {
+      "full_name": "AnonimusShamshiAlex/FleyAIGlasses",
+      "url": "https://github.com/AnonimusShamshiAlex/FleyAIGlasses",
+      "summary": "ESP32-S3智能眼镜AI助手项目",
+      "highlights": [
+        "基于ESP32-S3的完整可穿戴AI硬件方案，集成语音识别、实时摄像头视频分析、威胁评估、拍照存储与语音播报，是少见的端侧AI+嵌入式完整闭环项目",
+        "硬件成本低、可复现性强，适合作为边缘AI、多模态交互、可穿戴设备的实战学习样本，技术栈覆盖C++固件、摄像头、音频、存储",
+        "AI助手风格类似E.D.I.T.H.，具备较强的产品想象力，适合做个人助手类硬件原型的起点"
+      ],
+      "target_users": "嵌入式开发者、边缘AI爱好者、可穿戴/IoT硬件创客、想入门ESP32多模态项目的学生与工程师",
+      "quick_start": "克隆仓库后查看README中的硬件清单（ESP32-S3开发板、摄像头、麦克风、扬声器、SD卡），按接线图组装，用Arduino/ESP-IDF烧录固件，配置语音命令与AI接口密钥，即可上电测试语音唤醒与拍照功能"
+    },
+    {
+      "full_name": "siddhantarora7/ui-bank",
+      "url": "https://github.com/siddhantarora7/ui-bank",
+      "summary": "成品级UI组件与动效库",
+      "highlights": [
+        "汇集真实上线产品中的界面组件、设计token与动效：玻璃拟态hero、质感按钮、弹簧动画，含14套主题和在线预览画廊，可直接借鉴到生产项目",
+        "基于TypeScript，组件与设计系统分离清晰，适合作为前端设计系统、动效实现的参考模板，节省从零打磨视觉细节的时间",
+        "提供live gallery便于快速浏览与挑选，对追求视觉质感的独立开发者和小团队尤其友好"
+      ],
+      "target_users": "前端开发者、UI/UX工程师、独立开发者、需要快速搭建高质量界面与动效的设计系统团队",
+      "quick_start": "克隆仓库并安装依赖（npm/pnpm install），运行开发服务器打开live gallery预览14套主题，挑中心仪组件直接复制代码或token到自己的项目中"
+    }
+  ]
+}
