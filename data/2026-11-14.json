@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "picks": [
+    {
+      "full_name": "zhujiale520/hot100-228",
+      "url": "https://github.com/zhujiale520/hot100-228",
+      "summary": "LeetCode面试228题多语言速成手册",
+      "highlights": [
+        "内容体系完整：整合 LeetCode Hot 100 与代码随想录共228题，每题包含一句话记忆点、解题思路、复杂度分析、易错点，并同时提供 LeetCode 提交版与 ACM 完整程序两种代码形态，覆盖 Python/C++/Java/Go 四语言。",
+        "工程化配套齐全：附带四本 PDF、LaTeX 源码以及代码校验脚本，方便离线阅读、二次编辑和自动化验证，适合作为长期复习资料沉淀。",
+        "面试导向明确：针对求职刷题场景做了结构化整理，降低从『刷题』到『讲清楚思路』之间的转化成本。"
+      ],
+      "target_users": "准备技术面试的求职者、需要系统梳理算法知识点的在校生、想跨语言复习数据结构的开发者",
+      "quick_start": "克隆仓库后直接阅读根目录 PDF 快速浏览，或打开对应题目的 Markdown 查看解题思路与多语言代码；运行仓库内的代码校验脚本可验证本地代码正确性，5分钟内即可上手刷第一题。"
+    },
+    {
+      "full_name": "JohnnYoru/ComfyUI-TagGallery",
+      "url": "https://github.com/JohnnYoru/ComfyUI-TagGallery",
+      "summary": "按提示词标签筛选ComfyUI出图",
+      "highlights": [
+        "解决真实痛点：ComfyUI 输出目录随生成量增长后极难检索，该插件从 prompt 中自动提取标签，支持按标签浏览与过滤历史生成结果，显著提升素材复用效率。",
+        "与工作流无缝集成：作为 ComfyUI 扩展（Python 实现），安装后融入现有界面，无需改变生成流程即可获得图库式管理能力。",
+        "面向 AI 绘画重度用户：对需要反复对比、筛选、归档大量生成图的创作者而言，是补足 ComfyUI 原生管理短板的小而实用工具。"
+      ],
+      "target_users": "ComfyUI 重度用户、AI 绘画创作者、需要管理大量生成素材的 Stable Diffusion 工作流使用者",
+      "quick_start": "将仓库克隆到 ComfyUI 的 custom_nodes 目录，重启 ComfyUI 后在界面中找到 TagGallery 面板，生成几张图即可看到按 prompt 标签自动归类的图库并尝试筛选。"
+    }
+  ]
+}
