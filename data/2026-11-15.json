@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-15",
+  "picks": [
+    {
+      "full_name": "RyFinance/tenor",
+      "url": "https://github.com/RyFinance/tenor",
+      "summary": "Mac桌面期权终端，含波动率曲面",
+      "highlights": [
+        "面向量化与期权交易开发者，内置微笑拟合期权链、波动率看板、策略构建器和模拟交易簿，把专业期权分析工具做成桌面应用，省去自建数据管线的成本。",
+        "使用JavaScript技术栈实现，结构相对轻量，适合作为学习期权定价、波动率曲面建模的参考实现，也便于二次开发接入自己的行情源。",
+        "填补了开源领域'专业期权终端'的空白，相比昂贵的商业软件，对个人开发者和小团队更友好。"
+      ],
+      "target_users": "量化交易开发者、期权研究者、金融工程学生、需要自建分析工具的独立交易员",
+      "quick_start": "克隆仓库后按README安装Node依赖，运行启动脚本打开Mac桌面应用，导入或接入期权链数据即可查看波动率曲面和策略构建界面。"
+    },
+    {
+      "full_name": "sqlinjected/sat2x",
+      "url": "https://github.com/sqlinjected/sat2x",
+      "summary": "世嘉土星方向盘转Xbox手柄固件",
+      "highlights": [
+        "用一块Arduino Pro Micro把老式Sega Saturn模拟赛车方向盘转成即插即用的XInput控制器，无需驱动或按键映射软件，硬件改造思路清晰、成本极低。",
+        "是嵌入式HID协议转换的优秀教学案例，展示了如何解析老式外设的模拟信号并封装为标准USB游戏手柄报告，可迁移到其他复古外设适配项目。",
+        "解决了复古硬件玩家'老设备无法在新PC使用'的实际痛点，实用性和可复现性都很强。"
+      ],
+      "target_users": "嵌入式/固件开发者、复古游戏硬件爱好者、DIY外设改造玩家",
+      "quick_start": "准备Arduino Pro Micro，克隆仓库用Arduino IDE烧录固件，按接线图连接Saturn方向盘的转向与踏板信号线，插入PC即被识别为Xbox手柄。"
+    }
+  ]
+}
