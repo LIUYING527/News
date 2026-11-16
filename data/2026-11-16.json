@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-16",
+  "picks": [
+    {
+      "full_name": "zer0ducksgiven/ReXenon",
+      "url": "https://github.com/zer0ducksgiven/ReXenon",
+      "summary": "Xbox 360 PowerPC 到 C++ 的静态重编译器分支",
+      "highlights": [
+        "基于 hedge-dev/XenonRecomp 的活跃分支，用于将 Xbox 360 的 PowerPC 二进制静态转换为可编译的 C++ 代码，是主机游戏移植/逆向工程领域少见的开源工具链实践",
+        "已被用于《Forza Motorsport 2》的 PC 移植项目，说明其在真实大型商业游戏上具备可行性，对研究模拟器替代方案、静态二进制翻译的开发者有直接参考价值",
+        "C++ 实现，涉及指令解码、控制流重建、ABI 映射等底层技术，适合学习二进制翻译与重编译（recompilation）架构"
+      ],
+      "target_users": "主机模拟器/逆向工程研究者、二进制翻译与编译器爱好者、游戏移植开发者、对 PowerPC 架构感兴趣的系统程序员",
+      "quick_start": "克隆仓库后阅读 README 了解依赖（CMake + C++ 工具链），查看示例输入/输出目录，用仓库提供的构建脚本编译工具本体，再对一个小型 Xbox 360 XEX/ELF 样本运行重编译流程，观察生成的 C++ 源码结构"
+    },
+    {
+      "full_name": "ACR1209/tipasa",
+      "url": "https://github.com/ACR1209/tipasa",
+      "summary": "用 YAML 编写引导式产品导览的 Rails 引擎",
+      "highlights": [
+        "把用户引导流程（product tour）声明式地写在 YAML 里，与业务代码解耦，改文案/步骤无需动 Ruby 代码，显著降低产品与开发的协作成本",
+        "面向 Rails 生态，可直接挂载为引擎集成进现有应用，适合 SaaS 产品做新功能引导、onboarding 流程",
+        "相比前端重型引导库，后端驱动的方式更易做权限、用户状态与多语言控制，架构思路值得借鉴"
+      ],
+      "target_users": "Rails 全栈开发者、SaaS 产品团队、需要快速上线用户引导/新手教程的独立开发者",
+      "quick_start": "在 Gemfile 中加入该 gem 并 bundle install，按 README 在 routes 挂载引擎，新建一个 tours/*.yml 定义步骤（选择器 + 文案），在布局中引入引擎提供的 JS/CSS，启动 rails server 访问页面即可看到引导浮层"
+    }
+  ]
+}
