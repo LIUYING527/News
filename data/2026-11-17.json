@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-17",
+  "picks": [
+    {
+      "full_name": "ncesar/clean-old-node-modules",
+      "url": "https://github.com/ncesar/clean-old-node-modules",
+      "summary": "本地网页清理陈旧node_modules",
+      "highlights": [
+        "零依赖实现：纯HTML/JS本地Web UI，无需安装任何npm包或运行时，直接打开即可扫描磁盘上的node_modules目录",
+        "痛点精准：自动识别数月未修改的项目目录，避免误删活跃项目，帮助开发者回收大量磁盘空间（node_modules常占数GB）",
+        "操作可视化：以列表形式展示候选目录及最后修改时间，支持勾选后一键删除，比手动find+grep更安全直观"
+      ],
+      "target_users": "前端/Node.js开发者、磁盘空间紧张的笔记本用户、需要定期清理多项目工作区的工程师",
+      "quick_start": "克隆仓库后直接用浏览器打开index.html（或按README启动本地静态服务），授权选择扫描根目录，等待列出陈旧node_modules，勾选后点击删除即可。"
+    },
+    {
+      "full_name": "Broyojo/dockwatch",
+      "url": "https://github.com/Broyojo/dockwatch",
+      "summary": "修复macOS隐藏Dock占屏Bug",
+      "highlights": [
+        "解决真实系统Bug：针对Mission Control后隐藏Dock仍预留屏幕空间的macOS已知问题，提供轻量Workaround",
+        "Swift原生实现：贴近系统层，资源占用低，适合作为macOS小工具开发的学习参考",
+        "场景明确：对全屏/多桌面重度用户、外接显示器用户可显著改善窗口布局体验"
+      ],
+      "target_users": "macOS重度用户、多显示器/多桌面工作者、对窗口空间敏感的开发者与设计师",
+      "quick_start": "克隆仓库，用Xcode打开项目并Build运行（或按README下载Release），授权后常驻菜单栏，触发Mission Control验证Dock占位是否被释放。"
+    }
+  ]
+}
