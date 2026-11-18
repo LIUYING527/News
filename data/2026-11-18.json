@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-18",
+  "picks": [
+    {
+      "full_name": "Dipshet/GracemeriaRecomp",
+      "url": "https://github.com/Dipshet/GracemeriaRecomp",
+      "summary": "用XenonRecomp重编译的皇牌空战6原生PC移植",
+      "highlights": [
+        "展示了XenonRecomp工具链的实战能力：将Xbox 360的PowerPC二进制重编译为可在PC原生运行的C++代码，是逆向工程与静态重编译技术的典型案例，对研究旧主机游戏移植的开发者有很高参考价值。",
+        "相比模拟器方案，原生重编译移植通常能获得更好的性能与稳定性，并为进一步的MOD、宽屏/高帧率适配打开空间，是游戏保存（game preservation）社区关注的方向。",
+        "项目体量小、代码结构相对清晰，适合作为学习『二进制重编译→原生移植』完整流程的入门样本。"
+      ],
+      "target_users": [
+        "游戏逆向工程与模拟器开发者",
+        "对静态重编译（static recompilation）技术感兴趣的研究者",
+        "游戏保存/复古游戏移植爱好者",
+        "想学习C++与底层二进制分析的工程师"
+      ],
+      "quick_start": "克隆仓库后阅读README了解所需的XenonRecomp工具链与原始游戏文件依赖；按文档配置构建环境（C++编译器+重编译工具），编译生成可执行文件，将合法持有的游戏资源放入指定目录后运行。注意：需自备游戏本体，项目本身不包含版权资源。"
+    },
+    {
+      "full_name": "lumi-softworks/LumiFactory",
+      "url": "https://github.com/lumi-softworks/LumiFactory",
+      "summary": "为Lumi系列应用提供共享宿主装配引擎与窗口外壳",
+      "highlights": [
+        "以Swift Package形式实现『Composition Root（组合根）』模式：把依赖注入与对象装配集中到可复用的宿主层，让多个兄弟应用共享同一套启动/装配逻辑，减少重复代码。",
+        "提供统一的窗口外壳（window shell），对macOS多应用产品线来说，是可复用的架构基础设施，有助于统一UI容器、生命周期与依赖管理。",
+        "是学习Swift Package模块化设计、组合根与多应用共享架构的实用范例，代码可直接借鉴到自己的macOS工程中。"
+      ],
+      "target_users": [
+        "macOS / Swift 应用开发者",
+        "维护多款兄弟应用、希望统一架构的产品团队",
+        "对依赖注入、组合根、模块化架构感兴趣的工程师"
+      ],
+      "quick_start": "在Xcode中通过Swift Package Manager添加该仓库为依赖（或在Package.swift中声明），然后在宿主App的入口处引入LumiFactory的装配引擎与窗口外壳，按示例代码注册你的模块与依赖，运行即可看到统一窗口容器启动。"
+    }
+  ]
+}
