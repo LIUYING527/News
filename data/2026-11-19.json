@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-19",
+  "picks": [
+    {
+      "full_name": "kyouki-ai/glean",
+      "url": "https://github.com/kyouki-ai/glean",
+      "summary": "给AI代理用的超省token浏览器",
+      "highlights": [
+        "核心创新在于把网页内容压缩到约500 tokens/页，相比原始HTML的约25万tokens降低约500倍，直接大幅削减AI代理的上下文成本和延迟",
+        "对构建Web自动化代理、RAG抓取、爬虫类AI应用的开发者有直接价值，可显著降低API调用费用并突破上下文窗口限制",
+        "用JavaScript实现，便于集成到Node.js生态的Agent框架中，属于AI Agent基础设施方向的前沿探索"
+      ],
+      "target_users": "AI Agent开发者、RAG/爬虫工程师、需要为LLM提供网页上下文的团队",
+      "quick_start": "克隆仓库后按README安装依赖（npm install），运行示例脚本加载一个目标URL，对比输出的token精简结果与原始HTML体积差异即可验证效果"
+    },
+    {
+      "full_name": "PedroMarinhoDev/ComfyUI-H3-Image-EasyFix",
+      "url": "https://github.com/PedroMarinhoDev/ComfyUI-H3-Image-EasyFix",
+      "summary": "ComfyUI图像生成画质修复插件",
+      "highlights": [
+        "针对MiniMax-H3-Image文生图在ComfyUI中的颗粒感/细纹理噪点问题，提供Steering与Re-Noise Sampler两种采样修正手段，属于具体可落地的画质优化方案",
+        "附带最高256MP的分辨率选择器，解决高分辨率出图时的显存与质量平衡问题，对出图工作流有实际增益",
+        "以插件形式接入ComfyUI，无需改动主程序，安装成本低，适合快速验证"
+      ],
+      "target_users": "ComfyUI用户、AI绘画工作流搭建者、追求高分辨率与细腻纹理的生成式图像创作者",
+      "quick_start": "将仓库放入ComfyUI的custom_nodes目录，重启ComfyUI，在工作流中添加该插件的Re-Noise Sampler与Resolution Selector节点，用默认参数生成一张图对比修复前后纹理"
+    }
+  ]
+}
