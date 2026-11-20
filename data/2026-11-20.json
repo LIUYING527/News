@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-20",
+  "picks": [
+    {
+      "full_name": "murderbymodem/github-release-archiver",
+      "url": "https://github.com/murderbymodem/github-release-archiver",
+      "summary": "图形化归档GitHub Release到本地",
+      "highlights": [
+        "解决实际痛点：GitHub Release 的二进制资产可能被作者删除或仓库下架，本地归档可保证长期可获取，适合依赖第三方工具链的团队做供应链留存",
+        "Rust 编写 + 简单 GUI，开箱即用，无需命令行操作，可归档到本地磁盘或网络共享（NAS/SMB），便于团队共享",
+        "相比 gh CLI 或脚本方案，提供可视化选择仓库与版本、批量下载的体验，降低非运维人员的使用门槛"
+      ],
+      "target_users": "需要长期保存依赖/工具二进制的开发者、运维与安全团队、离线或内网环境维护者、开源项目镜像维护者",
+      "quick_start": "1) 从 Releases 页面下载对应平台的预编译包（Windows/macOS/Linux）；2) 启动 GUI，粘贴目标仓库 URL（如 owner/repo）；3) 选择要归档的 Release 版本与保存目录（本地或网络共享路径）；4) 点击开始，等待下载完成即可在目录中看到归档文件。"
+    },
+    {
+      "full_name": "andremaiqui/Tizen-Twitch-Andre-Maiqui",
+      "url": "https://github.com/andremaiqui/Tizen-Twitch-Andre-Maiqui",
+      "summary": "三星Tizen电视开源Twitch客户端",
+      "highlights": [
+        "填补生态空白：三星 Tizen 智能电视官方已停止支持 Twitch 应用，该项目提供可自行侧载的开源替代方案，恢复大屏观看直播能力",
+        "技术参考价值：展示了 Tizen Web 应用（HTML/JS）的完整工程结构、打包与侧载流程，对想开发智能电视应用的开发者是难得的实战样例",
+        "实用且可定制：可自行修改界面、清晰度策略或适配遥控器交互，适合作为个人电视端流媒体客户端的二次开发基础"
+      ],
+      "target_users": "拥有三星 Tizen 电视的 Twitch 用户、智能电视/Web 应用开发者、想学习 Tizen 侧载与打包流程的技术爱好者",
+      "quick_start": "1) 克隆仓库并安装 Tizen Studio（含 TV 扩展）；2) 用 Tizen Studio 导入项目，配置证书（可用公开测试证书）；3) 电视开启开发者模式并连接同一网络，通过 Device Manager 连接电视；4) 右键项目 Run As > Tizen Web Application 直接安装运行；或打包 .wgt 后用 USB/SDB 侧载。"
+    }
+  ]
+}
