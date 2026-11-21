@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-21",
+  "picks": [
+    {
+      "full_name": "holdmysocks/SixNG",
+      "url": "https://github.com/holdmysocks/SixNG",
+      "summary": "GTA VI 资源提取器，导出模型与贴图",
+      "highlights": [
+        "技术稀缺性极高：针对 GTA VI（Xbox Series 版 RPF9 打包格式）的资源解包工具，这类逆向工程成果在开源社区极其罕见，涉及 RPF9 归档格式解析、模型转 glTF、贴图与地图数据提取等硬核技术",
+        "双形态交付：同时提供 CLI 与桌面 GUI，既能脚本化批量处理，也方便非命令行用户直接使用，工程完整度高",
+        "明确的法律边界：仅支持提取用户自己合法拥有的游戏安装，采用 GPL-3.0 开源协议，对二次创作、MOD 开发、游戏资源研究有直接价值"
+      ],
+      "target_users": "游戏 MOD 开发者、3D 资产研究者、逆向工程爱好者、GTA 系列社区创作者",
+      "quick_start": "git clone 仓库后按 README 安装 Rust 工具链并 cargo build --release，或直接下载 Releases 中的桌面版；指向本地合法的 GTA VI 安装目录，运行 CLI 指定输出格式为 glTF 即可导出模型与贴图"
+    },
+    {
+      "full_name": "tdotlab/driveblox",
+      "url": "https://github.com/tdotlab/driveblox",
+      "summary": "用 Python/Shell 远程驱动 Roblox Studio",
+      "highlights": [
+        "借助 Roblox Studio 内置的 MCP（Model Context Protocol）服务器，把游戏引擎变成可编程接口，实现从终端或 Python 脚本自动化操作 Studio，思路新颖且贴合当前 MCP 生态趋势",
+        "对 Roblox 开发者是实打实的效率工具：可脚本化场景搭建、批量修改、自动化测试，摆脱纯手工点击",
+        "Python + Shell 双入口，易于集成到现有 CI/自动化流水线，降低游戏开发自动化的门槛"
+      ],
+      "target_users": "Roblox 游戏开发者、游戏自动化测试工程师、想用脚本提效的 Studio 用户",
+      "quick_start": "克隆仓库并安装 Python 依赖，在 Roblox Studio 中启用内置 MCP 服务器，然后运行仓库提供的示例脚本（或直接在 shell 中调用 CLI）连接并执行一条简单指令，如创建 Part 或读取场景树"
+    }
+  ]
+}
