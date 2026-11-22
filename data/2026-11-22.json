@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-22",
+  "picks": [
+    {
+      "full_name": "kevin-alilab2094a4/deep-live-cam-cuda-portable-win11",
+      "url": "https://github.com/kevin-alilab2094a4/deep-live-cam-cuda-portable-win11",
+      "summary": "一键CUDA的实时换脸便携工具",
+      "highlights": [
+        "把 Deep-Live-Cam v2.1 的 CUDA 环境配置封装成一键安装器，绕开了 PyTorch/CUDA/cuDNN 版本匹配这个最容易卡住新手的环节，对想快速验证实时换脸效果的开发者非常友好。",
+        "以 C# 便携包形式分发，支持 OBS/Discord 直接接入，可当作虚拟摄像头使用，适合做直播工具、视频会议特效等场景的原型验证。",
+        "相比其他榜单项目，它是唯一一个偏 AI 视觉/多媒体方向、且技术栈相对通用（非游戏作弊类）的项目，复用价值更高。"
+      ],
+      "target_users": "AI 视觉方向开发者、直播/短视频工具开发者、想快速体验实时换脸 demo 的技术爱好者",
+      "quick_start": "在 Windows 10/11 x64 机器上下载便携发布包，运行一键 CUDA 安装脚本，启动程序后选择摄像头并接入 OBS 虚拟摄像头即可看到实时换脸效果。注意：请遵守当地法律与平台规则，仅用于合规的娱乐与研发测试。"
+    },
+    {
+      "full_name": "jake-smithlab04r0/hyperliquid-perp-market-maker-bot-win11",
+      "url": "https://github.com/jake-smithlab04r0/hyperliquid-perp-market-maker-bot-win11",
+      "summary": "Hyperliquid 永续做市与套利机器人",
+      "highlights": [
+        "聚焦 Hyperliquid 永续 DEX 的做市、Vault 跟单与资金费率套利，属于量化交易中技术含量较高的策略组合，可作为学习链上永续交易机器人架构的参考实现。",
+        "Python 技术栈，便于二次开发与策略回测改造，适合作为自建交易系统的起点或对照样本。",
+        "提供 Windows 便携包与热重载 JSON 配置，降低了部署门槛，可快速跑通端到端流程。"
+      ],
+      "target_users": "量化交易开发者、链上 DeFi 策略研究者、想学习做市/套利机器人架构的工程师",
+      "quick_start": "下载 Windows x64 便携包，准备 Hyperliquid API 密钥并填入 JSON 配置文件，先在测试网/小额资金下启动机器人观察挂单与套利行为，确认逻辑后再调整参数。注意：涉及真实资金，务必先做风控与小额验证。"
+    }
+  ]
+}
