@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-23",
+  "picks": [
+    {
+      "full_name": "Eriskii/erisinky",
+      "url": "https://github.com/Eriskii/erisinky",
+      "summary": "苹果芯片上的Rust原生LLM推理引擎",
+      "highlights": [
+        "完全从零实现 Rust + Metal 推理引擎，不依赖 llama.cpp 等现成框架，对理解 GGUF 格式、Metal 着色器编程和 Transformer 推理底层细节有很高学习价值",
+        "针对 Apple Silicon 统一内存架构做专门优化，是研究端侧/本地推理性能调优的优质参考实现",
+        "用 Rust 实现内存安全与零成本抽象，适合作为生产级本地推理组件的技术验证起点"
+      ],
+      "target_users": "对本地大模型推理、Apple Silicon 性能优化、Rust 系统编程感兴趣的开发者与研究者",
+      "quick_start": "git clone 仓库后按 README 安装 Rust 工具链（rustup），准备一个 Inkling 2 Mini 的 GGUF 模型文件，执行 cargo run --release -- --model <path.gguf> 即可在 M 系列 Mac 上跑通推理"
+    },
+    {
+      "full_name": "h45sh/ether",
+      "url": "https://github.com/h45sh/ether",
+      "summary": "面向AI代理的进程监管与图遥测引擎",
+      "highlights": [
+        "集反应式进程监管、AST 校验与确定性图遥测于一体，为自主 AI Agent 提供可观测、可约束的执行底座",
+        "AST 校验机制可在代码/工具调用执行前做静态安全审查，对构建安全敏感型 Agent 工具链有直接价值",
+        "确定性图遥测让 Agent 的多步执行路径可复现、可审计，便于调试与合规追踪"
+      ],
+      "target_users": "构建自主 AI Agent、安全自动化工具或需要执行可观测性的平台工程师",
+      "quick_start": "克隆仓库后创建 Python 虚拟环境并 pip install -e .，参照示例脚本启动一个受监管的子进程并接入 AST 校验钩子，观察遥测图输出"
+    }
+  ]
+}
