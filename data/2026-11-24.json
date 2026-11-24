@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-24",
+  "picks": [
+    {
+      "full_name": "prajwalpat1l/CPP-ML-LIBRARY",
+      "url": "https://github.com/prajwalpat1l/CPP-ML-LIBRARY",
+      "summary": "头文件式C++20机器学习库",
+      "highlights": [
+        "纯头文件（header-only）设计，无需编译链接即可集成到现有C++工程，适合对性能敏感、希望避免Python运行时开销的场景",
+        "提供可读的模型实现、经过测试的数值内核、可运行示例和可复现基准，便于学习ML算法底层原理或作为教学参考",
+        "C++20标准，利用现代语言特性编写，对想了解如何在生产级C++中落地机器学习逻辑的开发者有参考价值"
+      ],
+      "target_users": "C++后端/嵌入式开发者、需要在高性能场景嵌入ML推理的工程师、学习机器学习底层实现的学生与研究者",
+      "quick_start": "git clone 仓库后进入目录，直接包含头文件编写一个最小示例（如线性回归），用CMake或g++ -std=c++20编译运行examples目录下的示例程序，对照benchmarks验证结果"
+    },
+    {
+      "full_name": "MeAngela-spec/NCSC-RO1_Project",
+      "url": "https://github.com/MeAngela-spec/NCSC-RO1_Project",
+      "summary": "文档路由与跟踪系统",
+      "highlights": [
+        "聚焦公文/文档流转与跟踪这一企业高频刚需场景，可作为OA、审批流、档案管理系统的基础参考实现",
+        "项目定位明确（Document Routing and Tracking System），对需要快速搭建内部文档流转原型的团队有直接借鉴意义",
+        "相比榜单中大量同名分叉和游戏类仓库，它解决的是真实业务痛点，具备可落地的工程价值"
+      ],
+      "target_users": "企业信息化/内部工具开发者、需要实现审批流或文档管理系统的后端工程师、政务或机构IT项目团队",
+      "quick_start": "克隆仓库后阅读README了解技术栈与目录结构，按说明安装依赖并启动服务，用示例数据走一遍“创建文档→路由→跟踪状态”的完整流程"
+    }
+  ]
+}
