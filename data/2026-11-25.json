@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-25",
+  "picks": [
+    {
+      "full_name": "lori1635/krypolybot-polymarket-mcp-whale-trader",
+      "url": "https://github.com/lori1635/krypolybot-polymarket-mcp-whale-trader",
+      "summary": "Polymarket 巨鲸交易 MCP 机器人",
+      "highlights": [
+        "基于 MCP（Model Context Protocol）构建，可让 Claude 等 AI 助手直接调用预测市场数据与交易能力，是 MCP 生态在金融场景的实用示例",
+        "聚焦 Polymarket 巨鲸地址追踪，可作为链上数据分析、跟单策略与量化研究的参考实现",
+        "Python 实现，结构相对轻量，便于二次开发接入自己的风控与策略逻辑"
+      ],
+      "target_users": "对预测市场、链上数据分析、AI Agent 工具链（MCP）感兴趣的量化开发者与 Web3 研究者",
+      "quick_start": "git clone 仓库后阅读 README 配置 Polymarket API/钱包相关环境变量，安装 Python 依赖，运行内置启动脚本即可在本地拉起 MCP 服务并接入支持的 AI 客户端测试查询功能"
+    },
+    {
+      "full_name": "pinargomez/pinokio-ai-browser-portable-installer",
+      "url": "https://github.com/pinargomez/pinokio-ai-browser-portable-installer",
+      "summary": "Pinokio AI 浏览器便携安装器",
+      "highlights": [
+        "围绕 Pinokio（一键安装本地 AI 应用的浏览器式启动器）提供便携化方案，降低本地部署 Stable Diffusion、LLM 等工具的门槛",
+        "Windows 便携安装思路对无管理员权限或需要多环境隔离的开发者很实用，可快速搭建可迁移的 AI 实验环境",
+        "Python 实现，便于阅读其安装编排逻辑，学习如何自动化管理复杂 AI 依赖"
+      ],
+      "target_users": "想在本地快速试用各类 AI 工具、又不愿折腾复杂环境配置的开发者与 AI 爱好者",
+      "quick_start": "下载仓库中的便携安装包或克隆后运行安装脚本，按提示选择安装目录，启动后即可在 Pinokio 界面中一键安装并运行各类 AI 应用"
+    }
+  ]
+}
