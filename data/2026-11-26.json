@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-26",
+  "picks": [
+    {
+      "full_name": "M7MDSH1/video-translator",
+      "url": "https://github.com/M7MDSH1/video-translator",
+      "summary": "本地视频语音与字幕翻译工具",
+      "highlights": [
+        "完全本地运行，无需上传视频到云端，隐私友好，适合处理敏感或大体积素材",
+        "同时支持识别视频中的语音内容和烧录字幕（burned-in subtitles），覆盖面比单一 ASR 方案更广",
+        "自动生成翻译字幕并合入视频，一步完成「听写→翻译→字幕压制」流程，省去多工具切换"
+      ],
+      "target_users": "需要处理外语视频的内容创作者、字幕组、跨境团队、研究/学习人员，以及注重隐私不想上传素材的用户",
+      "quick_start": "克隆仓库后按 README 安装 Python 依赖（含语音识别与翻译模型），在 Windows 上运行主程序，选择本地视频文件、指定源语言与目标语言，点击开始即可生成带翻译字幕的视频"
+    },
+    {
+      "full_name": "requiemdoomed/SynthLens",
+      "url": "https://github.com/requiemdoomed/SynthLens",
+      "summary": "检测AI生成虚假商品评论的混合模型",
+      "highlights": [
+        "将 NLP 向量化与文体特征（stylistic features）融合，比单一文本分类更贴合「AI 评论」的语言模式",
+        "基于 Scikit-Learn pipeline 实现，代码轻量、可解释性强，便于二次训练和迁移到其他文本检测场景",
+        "针对电商虚假评论这一真实痛点，可直接用于评论审核、数据清洗或反作弊系统的原型验证"
+      ],
+      "target_users": "做 NLP/反欺诈的算法工程师、电商平台风控与内容审核开发者、数据科学学习者",
+      "quick_start": "克隆仓库并安装 scikit-learn 等依赖，打开 Jupyter Notebook 按顺序运行数据加载、特征提取与模型训练单元格，用自带样本或替换为自己的评论数据集即可查看检测效果"
+    }
+  ]
+}
