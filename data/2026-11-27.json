@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-27",
+  "picks": [
+    {
+      "full_name": "galaxous/passync",
+      "url": "https://github.com/galaxous/passync",
+      "summary": "零落盘明文的三方密码同步器",
+      "highlights": [
+        "采用 Rust 编写，主打『Zero-Disk-Plaintext』安全模型，密码在同步过程中不落盘为明文，规避了传统密码管理器导出/导入环节的泄露风险",
+        "打通 macOS 上 iCloud Passwords 与 Google Password Manager 两个生态，解决跨平台密码库割裂的痛点，对同时在 Apple 和 Google 生态间切换的用户很实用",
+        "同步器类工具在开源社区较少见，三方同步且强调安全模型的设计有一定技术参考价值"
+      ],
+      "target_users": "同时使用 macOS 与 Google 生态、对密码安全敏感、愿意折腾开源工具的开发者与极客用户",
+      "quick_start": "克隆仓库后按 README 安装 Rust 工具链（cargo），执行 cargo build --release 编译；运行前先备份 iCloud 与 Google 密码库，按文档配置两端授权凭据，先在小规模测试账号上验证同步流程再全量使用"
+    },
+    {
+      "full_name": "szft2026/MCGS-MCP",
+      "url": "https://github.com/szft2026/MCGS-MCP",
+      "summary": "基于 MCP 协议的 Python 工具项目",
+      "highlights": [
+        "MCP（Model Context Protocol）是当前 AI Agent 工具集成的主流协议，项目用 Python 实现，便于开发者接入自己的 LLM/Agent 工作流",
+        "Python 技术栈门槛低，适合作为学习 MCP 服务端/客户端实现的参考样例，快速理解协议交互方式",
+        "MCP 生态仍处早期，此类项目对探索 AI 工具链集成的开发者有实践价值"
+      ],
+      "target_users": "正在构建 AI Agent、需要接入 MCP 工具协议的 Python 开发者与 AI 应用工程师",
+      "quick_start": "克隆仓库，用 Python 虚拟环境安装依赖（pip install -r requirements.txt），阅读 README 中的配置说明，将服务注册到支持 MCP 的客户端（如 Claude Desktop 或自建 Agent）后即可试用"
+    }
+  ]
+}
