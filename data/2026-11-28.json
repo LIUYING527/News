@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-28",
+  "picks": [
+    {
+      "full_name": "rishabhallen/witcher-3-trainer-mod-menu",
+      "url": "https://github.com/rishabhallen/witcher-3-trainer-mod-menu",
+      "summary": "巫师3单机作弊修改器工具",
+      "highlights": [
+        "面向单机游戏的内存修改实践，涉及进程注入、内存读写、ESP 叠加层渲染等底层技术，对学习 Windows 游戏逆向与内存操作有参考价值",
+        "覆盖无限生命、物品、速度、ESP 透视等多种功能，是研究游戏状态同步与 Overlay 渲染的完整示例",
+        "单机游戏场景无对抗性争议，适合作为 Go 语言编写系统级工具的学习样本"
+      ],
+      "target_users": "对 Windows 内存操作、游戏逆向、Go 系统编程感兴趣的开发者与安全研究人员",
+      "quick_start": "克隆仓库后阅读 README 中的构建说明，使用 Go 编译出可执行文件，在离线单机环境启动游戏后运行工具，按菜单提示启用对应功能"
+    },
+    {
+      "full_name": "Iyer163/ball-vs-ball-roblox-script",
+      "url": "https://github.com/Iyer163/ball-vs-ball-roblox-script",
+      "summary": "Roblox球球对战自动化脚本",
+      "highlights": [
+        "展示了 Lua 脚本与 Roblox 客户端交互的自动化模式，包括自动挂机、传送、GUI Hub 等常见脚本架构",
+        "Keyless GUI Hub 的设计思路对研究脚本分发与轻量级 UI 注入有参考意义",
+        "作为游戏自动化脚本案例，可帮助理解客户端行为模拟与状态读取的实现方式"
+      ],
+      "target_users": "对 Lua 脚本、游戏自动化、Roblox 平台机制感兴趣的学习者与脚本开发者",
+      "quick_start": "克隆仓库查看脚本目录，按 README 指引将脚本加载到支持的 Roblox 执行环境中，打开 GUI Hub 选择所需功能即可体验"
+    }
+  ]
+}
